@@ -13,13 +13,13 @@ import { OnlineDot } from "@/components/OnlineDot";
 export const Route = createFileRoute("/_authenticated/friends")({
   head: () => ({ meta: [
       { name: "description", content: "Connect with fellow JEE aspirants and manage your study circle." },
-      { property: "og:title", content: "Friends — JEE Prep Hub" },
+      { property: "og:title", content: "Friends — PREPWIAN" },
       { property: "og:description", content: "Connect with fellow JEE aspirants and manage your study circle." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Friends — JEE Prep Hub" },
+      { name: "twitter:title", content: "Friends — PREPWIAN" },
       { name: "twitter:description", content: "Connect with fellow JEE aspirants and manage your study circle." },
-{ title: "Friends — JEE Prep Hub" }] }),
+{ title: "Friends — PREPWIAN" }] }),
   component: FriendsPage,
   errorComponent: ({ error }: { error: unknown }) => <div className="p-6 text-sm text-destructive">{error instanceof Error ? error.message : String(error)}</div>,
 });

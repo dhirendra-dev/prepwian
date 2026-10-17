@@ -32,13 +32,13 @@ import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/quiz/battle/$battleId")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Live Quiz Battle — JEE Prep Hub" },
+      { property: "og:title", content: "Live Quiz Battle — PREPWIAN" },
       { property: "og:description", content: "Face another JEE aspirant in a live quiz battle." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Live Quiz Battle — JEE Prep Hub" },
+      { name: "twitter:title", content: "Live Quiz Battle — PREPWIAN" },
       { name: "twitter:description", content: "Face another JEE aspirant in a live quiz battle." },
-{ title: "Live Quiz Battle — JEE Prep Hub" }, { name: "description", content: "Face another JEE aspirant in a live quiz battle." }] }),
+{ title: "Live Quiz Battle — PREPWIAN" }, { name: "description", content: "Face another JEE aspirant in a live quiz battle." }] }),
  component: BattleRoute });
 type Any = any;
 function BattleRoute() {

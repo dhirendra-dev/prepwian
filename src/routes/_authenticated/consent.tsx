@@ -21,15 +21,15 @@ export const Route = createFileRoute("/_authenticated/consent")({
   head: () => ({
     meta: [
       { name: "description", content: "Review verification requirements for your restricted account." },
-      { property: "og:title", content: "Restricted Account Verification — JEE Prep Hub" },
+      { property: "og:title", content: "Restricted Account Verification — PREPWIAN" },
       { property: "og:description", content: "Review verification requirements for your restricted account." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Restricted Account Verification — JEE Prep Hub" },
+      { name: "twitter:title", content: "Restricted Account Verification — PREPWIAN" },
       { name: "twitter:description", content: "Review verification requirements for your restricted account." },
 
       {
-        title: "Restricted Account Verification — JEE Prep Hub",
+        title: "Restricted Account Verification — PREPWIAN",
       },
       {
         name: "robots",
@@ -976,7 +976,7 @@ setLoading(false);
             <span className="text-sm leading-6">
               I understand that this is a restricted-account
               verification process. I have reviewed the information
-              requested above and consent to JEE Prep Hub collecting
+              requested above and consent to PREPWIAN collecting
               and processing the submitted information for the stated
               account verification and moderation purpose.
             </span>

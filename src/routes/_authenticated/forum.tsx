@@ -49,13 +49,13 @@ const searchSchema = z.object({ thread: z.string().optional(), reply: z.string()
 export const Route = createFileRoute("/_authenticated/forum")({
   head: () => ({ meta: [
       { name: "description", content: "Discuss JEE preparation, share questions and explore community threads." },
-      { property: "og:title", content: "Threads — JEE Prep Hub" },
+      { property: "og:title", content: "Threads — PREPWIAN" },
       { property: "og:description", content: "Discuss JEE preparation, share questions and explore community threads." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Threads — JEE Prep Hub" },
+      { name: "twitter:title", content: "Threads — PREPWIAN" },
       { name: "twitter:description", content: "Discuss JEE preparation, share questions and explore community threads." },
-{ title: "Threads — JEE Prep Hub" }] }),
+{ title: "Threads — PREPWIAN" }] }),
   validateSearch: searchSchema,
   component: ForumPage,
 });
@@ -217,7 +217,7 @@ function ThreadList() {
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div>
               <span className="mb-2 inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
-                JEE Prep Hub Community
+                PREPWIAN Community
               </span>
               <h1 className="font-display text-2xl font-bold sm:text-3xl">Threads</h1>
               <p className="mt-1 text-sm text-muted-foreground">

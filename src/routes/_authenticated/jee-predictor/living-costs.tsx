@@ -252,7 +252,7 @@ function LivingCostExplorer() {
                 <p className="mx-auto mt-2 max-w-lg text-sm text-muted-foreground">
                   Verified hostel and living-cost data has not
                   been imported for the selected filters yet.
-                  JEE Prep Hub will not invent these figures.
+                  PREPWIAN will not invent these figures.
                 </p>
               </CardContent>
             </Card>

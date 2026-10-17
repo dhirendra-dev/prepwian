@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // Premium Liquid Glass / Lens Mobile Navigation v3
 // File: src/features/watch-party/components/MobilePartyTabs.tsx
 // ============================================================

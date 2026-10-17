@@ -15,7 +15,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/_authenticated/admin/tests/")({
-  head: () => ({ meta: [{ title: "Admin — Tests | JEE Prep Hub" }] }),
+  head: () => ({ meta: [{ title: "Admin — Tests | PREPWIAN" }] }),
 
   beforeLoad: async ({ context }) => {
     await requireFullAdmin(context.user.id);

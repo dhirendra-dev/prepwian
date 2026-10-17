@@ -2,7 +2,7 @@
   "routes": [
     {
       "path": "/",
-      "title": "JEE Prep Hub — Crack JEE Together"
+      "title": "PREPWIAN — Crack JEE Together"
     },
     {
       "path": "/about",
@@ -10,7 +10,7 @@
     },
     {
       "path": "/admin",
-      "title": "Admin Center"
+      "title": "Admin Center — PREPWIAN"
     },
     {
       "path": "/admin/appeals",
@@ -18,15 +18,15 @@
     },
     {
       "path": "/admin/audit",
-      "title": "Admin · Audit Log"
+      "title": "Admin · Audit Log — PREPWIAN"
     },
     {
       "path": "/admin/certificates",
-      "title": "Admin · Certificates"
+      "title": "Admin · Certificates — PREPWIAN"
     },
     {
       "path": "/admin/community",
-      "title": "Admin · Community"
+      "title": "Admin · Community — PREPWIAN"
     },
     {
       "path": "/admin/consent-settings",
@@ -46,43 +46,43 @@
     },
     {
       "path": "/admin/email",
-      "title": "Admin · Email Center"
+      "title": "Admin · Email Center — PREPWIAN"
     },
     {
       "path": "/admin/feedback",
-      "title": "Feedback Console"
+      "title": "Feedback Console — PREPWIAN Admin"
     },
     {
       "path": "/admin/materials",
-      "title": "Admin · Materials"
+      "title": "Admin · Materials — PREPWIAN"
     },
     {
       "path": "/admin/moderators",
-      "title": "Admin · Moderators"
+      "title": "Admin · Moderators — PREPWIAN"
     },
     {
       "path": "/admin/notes",
-      "title": "Admin · Notes"
+      "title": "Admin · Notes — PREPWIAN"
     },
     {
       "path": "/admin/notices",
-      "title": "Admin · Notice Board"
+      "title": "Admin · Notice Board — PREPWIAN"
     },
     {
       "path": "/admin/notifications",
-      "title": "Admin · Notifications"
+      "title": "Admin · Notifications — PREPWIAN"
     },
     {
       "path": "/admin/nta",
-      "title": "Admin · NTA Sync"
+      "title": "Admin · NTA Sync — PREPWIAN"
     },
     {
       "path": "/admin/pro",
-      "title": "Admin · Pro Members"
+      "title": "Admin · Pro Members — PREPWIAN"
     },
     {
       "path": "/admin/scheduled-tests",
-      "title": "Scheduled Test Runs — Admin"
+      "title": "Scheduled Test Runs — Admin | PREPWIAN"
     },
     {
       "path": "/admin/search-analytics",
@@ -90,55 +90,55 @@
     },
     {
       "path": "/admin/security",
-      "title": "Admin · Security"
+      "title": "Admin · Security — PREPWIAN"
     },
     {
       "path": "/admin/system",
-      "title": "System Control Center"
+      "title": "System Control Center — PREPWIAN"
     },
     {
       "path": "/admin/tests",
-      "title": "Admin — Tests"
+      "title": "Admin — Tests | PREPWIAN"
     },
     {
       "path": "/admin/tests/:testId",
-      "title": "Edit Test"
+      "title": "Edit Test | PREPWIAN"
     },
     {
       "path": "/admin/tests/:testId/import",
-      "title": "Import PDF — Admin"
+      "title": "Import PDF — Admin | PREPWIAN"
     },
     {
       "path": "/admin/tests/approvals",
-      "title": "Admin — CBT Approvals"
+      "title": "Admin — CBT Approvals | PREPWIAN"
     },
     {
       "path": "/admin/toppers",
-      "title": "Admin · Toppers"
+      "title": "Admin · Toppers — PREPWIAN"
     },
     {
       "path": "/admin/users",
-      "title": "Admin · Users"
+      "title": "Admin · Users — PREPWIAN"
     },
     {
       "path": "/admin/verification",
-      "title": "Admin · Account Verification"
+      "title": "Admin · Account Verification — PREPWIAN"
     },
     {
       "path": "/admin/videos",
-      "title": "Video Lectures — Admin"
+      "title": "Video Lectures — Admin | PREPWIAN"
     },
     {
       "path": "/ai-chat",
-      "title": "AI Study Chat"
+      "title": "AI Study Chat — PREPWIAN"
     },
     {
       "path": "/app",
-      "title": "JEE Prep Hub — The JEE Preparation Ecosystem"
+      "title": "PREPWIAN — The JEE Preparation Ecosystem"
     },
     {
       "path": "/appeal",
-      "title": "Appeal My Account"
+      "title": "Appeal My Account — PREPWIAN"
     },
     {
       "path": "/articles",
@@ -150,15 +150,15 @@
     },
     {
       "path": "/auth",
-      "title": "Sign in to JEE Prep Hub — Join the JEE 2028 Community"
+      "title": "Sign in to PREPWIAN — Join the JEE 2028 Community"
     },
     {
       "path": "/birthday",
-      "title": "Birthday Hub"
+      "title": "Birthday Hub — PREPWIAN"
     },
     {
       "path": "/certificates",
-      "title": "Certificates"
+      "title": "Certificates | PREPWIAN"
     },
     {
       "path": "/certificates/verify/:code",
@@ -166,27 +166,27 @@
     },
     {
       "path": "/community",
-      "title": "Community Chat"
+      "title": "Community Chat — PREPWIAN"
     },
     {
       "path": "/consent",
-      "title": "Restricted Account Verification"
+      "title": "Restricted Account Verification — PREPWIAN"
     },
     {
       "path": "/contact",
-      "title": "Contact Admin"
+      "title": "Contact Admin — PREPWIAN"
     },
     {
       "path": "/dashboard",
-      "title": "Dashboard"
+      "title": "Dashboard — PREPWIAN"
     },
     {
       "path": "/developer",
-      "title": "Developer Portal"
+      "title": "Developer Portal — PREPWIAN"
     },
     {
       "path": "/donate",
-      "title": "Support JEE Prep Hub"
+      "title": "Support PREPWIAN"
     },
     {
       "path": "/engineering",
@@ -194,15 +194,15 @@
     },
     {
       "path": "/faq",
-      "title": "FAQs"
+      "title": "FAQs — PREPWIAN"
     },
     {
       "path": "/feed",
-      "title": "Community Feed"
+      "title": "Community Feed — PREPWIAN"
     },
     {
       "path": "/feedback",
-      "title": "Feedback Hub"
+      "title": "Feedback Hub — PREPWIAN"
     },
     {
       "path": "/focus",
@@ -238,43 +238,43 @@
     },
     {
       "path": "/follow-channel",
-      "title": "Follow WhatsApp Channel"
+      "title": "Follow WhatsApp Channel — PREPWIAN"
     },
     {
       "path": "/forum",
-      "title": "Threads"
+      "title": "Threads — PREPWIAN"
     },
     {
       "path": "/friends",
-      "title": "Friends"
+      "title": "Friends — PREPWIAN"
     },
     {
       "path": "/groups",
-      "title": "Communities & Groups"
+      "title": "Communities & Groups — PREPWIAN"
     },
     {
       "path": "/help",
-      "title": "Help Center"
+      "title": "Help Center — PREPWIAN"
     },
     {
       "path": "/home",
-      "title": "JEE Prep Hub — Crack JEE Together"
+      "title": "PREPWIAN — Crack JEE Together"
     },
     {
       "path": "/jee-advanced-chemistry-problems",
-      "title": "${TITLE}"
+      "title": "${TITLE} | PREPWIAN"
     },
     {
       "path": "/jee-advanced-math-problems",
-      "title": "JEE Advanced Math Problems — Free PYQs, Books & Notes"
+      "title": "JEE Advanced Math Problems — Free PYQs, Books & Notes | PREPWIAN"
     },
     {
       "path": "/jee-advanced-physics-problems",
-      "title": "JEE Advanced Physics Problems — Free PYQs, Books & Notes"
+      "title": "JEE Advanced Physics Problems — Free PYQs, Books & Notes | PREPWIAN"
     },
     {
       "path": "/jee-predictor",
-      "title": "JEE Predictor"
+      "title": "JEE Predictor — PREPWIAN"
     },
     {
       "path": "/jee-predictor/admission-fit",
@@ -306,7 +306,7 @@
     },
     {
       "path": "/jee-predictor/college",
-      "title": "JEE College Predictor"
+      "title": "JEE College Predictor — PREPWIAN"
     },
     {
       "path": "/jee-predictor/college-comparison",
@@ -466,63 +466,63 @@
     },
     {
       "path": "/jee360/backlog",
-      "title": "Lecture Backlog — JEE 360"
+      "title": "Lecture Backlog — JEE 360 | PREPWIAN"
     },
     {
       "path": "/jee360/coach",
-      "title": "Study Coach — JEE 360"
+      "title": "Study Coach — JEE 360 | PREPWIAN"
     },
     {
       "path": "/jee360/errors",
-      "title": "Mistake Book — JEE 360"
+      "title": "Mistake Book — JEE 360 | PREPWIAN"
     },
     {
       "path": "/jee360/focus",
-      "title": "Focus Sessions — JEE 360"
+      "title": "Focus Sessions — JEE 360 | PREPWIAN"
     },
     {
       "path": "/jee360/lab",
-      "title": "Study Lab — JEE 360"
+      "title": "Study Lab — JEE 360 | PREPWIAN"
     },
     {
       "path": "/jee360/memory",
-      "title": "Revision Cards — JEE 360"
+      "title": "Revision Cards — JEE 360 | PREPWIAN"
     },
     {
       "path": "/jee360/plans",
-      "title": "Study Plans — JEE 360"
+      "title": "Study Plans — JEE 360 | PREPWIAN"
     },
     {
       "path": "/jee360/rank",
-      "title": "Rank Estimates — JEE 360"
+      "title": "Rank Estimates — JEE 360 | PREPWIAN"
     },
     {
       "path": "/jee360/reminders",
-      "title": "Study Reminders — JEE 360"
+      "title": "Study Reminders — JEE 360 | PREPWIAN"
     },
     {
       "path": "/jee360/schedule",
-      "title": "Lecture Schedule — JEE 360"
+      "title": "Lecture Schedule — JEE 360 | PREPWIAN"
     },
     {
       "path": "/jee360/sprint",
-      "title": "Study Sprint — JEE 360"
+      "title": "Study Sprint — JEE 360 | PREPWIAN"
     },
     {
       "path": "/jee360/tests",
-      "title": "Mock Test Log — JEE 360"
+      "title": "Mock Test Log — JEE 360 | PREPWIAN"
     },
     {
       "path": "/jee360/upload",
-      "title": "Import Study Data — JEE 360"
+      "title": "Import Study Data — JEE 360 | PREPWIAN"
     },
     {
       "path": "/leaderboard",
-      "title": "Leaderboard"
+      "title": "Leaderboard — PREPWIAN"
     },
     {
       "path": "/lecture-tracker",
-      "title": "Lecture Tracker"
+      "title": "Lecture Tracker — PREPWIAN"
     },
     {
       "path": "/legal",
@@ -530,63 +530,63 @@
     },
     {
       "path": "/legal/:docId",
-      "title": "Policy not found"
+      "title": "Policy not found — PREPWIAN"
     },
     {
       "path": "/materials",
-      "title": "Study Material"
+      "title": "Study Material — PREPWIAN"
     },
     {
       "path": "/messages",
-      "title": "Squad"
+      "title": "Squad — PREPWIAN"
     },
     {
       "path": "/messages/:peerId",
-      "title": "Private Chat"
+      "title": "Private Chat — PREPWIAN"
     },
     {
       "path": "/my-activity",
-      "title": "My Activity"
+      "title": "My Activity — PREPWIAN"
     },
     {
       "path": "/notes",
-      "title": "Notes & NCERT"
+      "title": "Notes & NCERT — PREPWIAN"
     },
     {
       "path": "/notes/:classId/:subject",
-      "title": "Class ${params.classId} ${params.subject} Notes"
+      "title": "Class ${params.classId} ${params.subject} Notes — PREPWIAN"
     },
     {
       "path": "/notes/chapter/:chapterId",
-      "title": "Chapter Notes"
+      "title": "Chapter Notes — PREPWIAN"
     },
     {
       "path": "/notices",
-      "title": "Notice Board"
+      "title": "Notice Board — PREPWIAN"
     },
     {
       "path": "/notifications",
-      "title": "Notifications"
+      "title": "Notifications — PREPWIAN"
     },
     {
       "path": "/nta",
-      "title": "NTA JEE Main"
+      "title": "NTA JEE Main — PREPWIAN"
     },
     {
       "path": "/official",
-      "title": "Official Website"
+      "title": "Official Website — PREPWIAN"
     },
     {
       "path": "/planner",
-      "title": "Study Planner"
+      "title": "Study Planner — PREPWIAN"
     },
     {
       "path": "/prep-lab",
-      "title": "Prep Lab — Adaptive JEE & NEET Practice"
+      "title": "Prep Lab — Adaptive JEE & NEET Practice | PREPWIAN"
     },
     {
       "path": "/pricing",
-      "title": "Earn JEE Prep Hub Pro — Weekly Leaderboard"
+      "title": "Earn PREPWIAN Pro — Weekly Leaderboard"
     },
     {
       "path": "/pro",
@@ -594,15 +594,15 @@
     },
     {
       "path": "/profile",
-      "title": "Profile"
+      "title": "Profile — PREPWIAN"
     },
     {
       "path": "/progress",
-      "title": "Progress Tracker — Rating, Tiers & Badges"
+      "title": "Progress Tracker — Rating, Tiers & Badges | PREPWIAN"
     },
     {
       "path": "/pulse",
-      "title": "Pulse AI"
+      "title": "Pulse AI — PREPWIAN"
     },
     {
       "path": "/quiz",
@@ -610,31 +610,31 @@
     },
     {
       "path": "/quiz/battle/:battleId",
-      "title": "Live Quiz Battle"
+      "title": "Live Quiz Battle — PREPWIAN"
     },
     {
       "path": "/sahai",
-      "title": "SahAI — your AI study buddy"
+      "title": "SahAI — your AI study buddy | PREPWIAN"
     },
     {
       "path": "/searches",
-      "title": "Search JEE Resources"
+      "title": "Search JEE Resources — PREPWIAN"
     },
     {
       "path": "/settings",
-      "title": "Account Settings"
+      "title": "Account Settings — PREPWIAN"
     },
     {
       "path": "/squad/:groupId",
-      "title": "Squad Chat"
+      "title": "Squad Chat — PREPWIAN"
     },
     {
       "path": "/squad/join/:code",
-      "title": "Join Squad"
+      "title": "Join Squad — PREPWIAN"
     },
     {
       "path": "/start",
-      "title": "Choose your next step"
+      "title": "Choose your next step — PREPWIAN"
     },
     {
       "path": "/tests",
@@ -642,31 +642,31 @@
     },
     {
       "path": "/tests/:testId",
-      "title": "Test Details"
+      "title": "Test Details — PREPWIAN"
     },
     {
       "path": "/tests/attempt/:attemptId",
-      "title": "CBT Test — In Progress"
+      "title": "CBT Test — In Progress | PREPWIAN"
     },
     {
       "path": "/tests/create",
-      "title": "Create a CBT Test"
+      "title": "Create a CBT Test — PREPWIAN"
     },
     {
       "path": "/tests/jee-hub",
-      "title": "JEEHub Paper Archive — Test Series"
+      "title": "JEEHub Paper Archive — Test Series | PREPWIAN"
     },
     {
       "path": "/tests/leaderboard",
-      "title": "Test Series Ranking — Points Leaderboard"
+      "title": "Test Series Ranking — Points Leaderboard | PREPWIAN"
     },
     {
       "path": "/tests/leaderboard/:testId",
-      "title": "Test Leaderboard"
+      "title": "Test Leaderboard | PREPWIAN"
     },
     {
       "path": "/tests/result/:attemptId",
-      "title": "Test Result"
+      "title": "Test Result | PREPWIAN"
     },
     {
       "path": "/timer",
@@ -674,23 +674,23 @@
     },
     {
       "path": "/toppers",
-      "title": "Toppers Hall of Fame"
+      "title": "Toppers Hall of Fame | PREPWIAN"
     },
     {
       "path": "/u/:userId",
-      "title": "Member profile"
+      "title": "Member profile — PREPWIAN"
     },
     {
       "path": "/updates",
-      "title": "Updates & Change History"
+      "title": "Updates & Change History — PREPWIAN"
     },
     {
       "path": "/verified",
-      "title": "How to get the Blue Tick"
+      "title": "How to get the Blue Tick — PREPWIAN"
     },
     {
       "path": "/verify-account",
-      "title": "Verify Account"
+      "title": "Verify Account — PREPWIAN"
     },
     {
       "path": "/watch",
@@ -698,19 +698,19 @@
     },
     {
       "path": "/watch-history",
-      "title": "Watch History"
+      "title": "Watch History — PREPWIAN"
     },
     {
       "path": "/watch/:roomId",
-      "title": "Study Watch Party"
+      "title": "Study Watch Party — PREPWIAN"
     },
     {
       "path": "/welcome",
-      "title": "Welcome to JEE Prep Hub"
+      "title": "Welcome to PREPWIAN"
     },
     {
       "path": "/youtube-checklist",
-      "title": "YouTube Study Checklist"
+      "title": "YouTube Study Checklist — PREPWIAN"
     }
   ]
 }

@@ -15,12 +15,12 @@ import type { MistakeKind, Subject } from "@/lib/jee360/types";
 
 export const Route = createFileRoute("/jee360/errors")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Mistake Book — JEE 360 | JEE Prep Hub" },
+      { property: "og:title", content: "Mistake Book — JEE 360 | PREPWIAN" },
       { property: "og:description", content: "Record practice mistakes and plan targeted JEE revision." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Mistake Book — JEE 360 | JEE Prep Hub" },
-      { name: "twitter:description", content: "Record practice mistakes and plan targeted JEE revision." },{ title: "Mistake Book — JEE 360 | JEE Prep Hub" }, { name: "description", content: "Record practice mistakes and plan targeted JEE revision." }] }),
+      { name: "twitter:title", content: "Mistake Book — JEE 360 | PREPWIAN" },
+      { name: "twitter:description", content: "Record practice mistakes and plan targeted JEE revision." },{ title: "Mistake Book — JEE 360 | PREPWIAN" }, { name: "description", content: "Record practice mistakes and plan targeted JEE revision." }] }),
  component: ErrorsPage });
 
 const KINDS: { value: MistakeKind; label: string }[] = [

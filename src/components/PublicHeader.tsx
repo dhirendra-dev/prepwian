@@ -62,7 +62,7 @@ export function PublicHeader() {
         <FeaturesSlideMenu />
         <Link to="/" className="ml-1 hidden items-center gap-2 sm:flex">
           <Logo className="h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14" />
-          <span className="font-display text-lg font-semibold lg:text-xl">JEE Prep Hub</span>
+          <span className="font-display text-lg font-semibold lg:text-xl">PREPWIAN</span>
         </Link>
       </div>
       {/* Fixed header control row: do not add feature shortcuts here without explicit user approval. */}

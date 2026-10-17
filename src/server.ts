@@ -65,7 +65,7 @@ async function normalizeCatastrophicSsrResponse(
 /**
  * Security headers.
  *
- * Production framing is restricted to JEE Prep Hub itself.
+ * Production framing is restricted to PREPWIAN itself.
  * Lovable preview/editor framing remains available on non-production hosts.
  */
 function applySecurityHeaders(
@@ -123,7 +123,7 @@ function applySecurityHeaders(
           "base-uri 'self'",
           "form-action 'self'",
 
-          // Production: only JEE Prep Hub can frame itself.
+          // Production: only PREPWIAN can frame itself.
           // Preview: retain Lovable editor/preview compatibility.
           `frame-ancestors 'self' ${
             isProduction

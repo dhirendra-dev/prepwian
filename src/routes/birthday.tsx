@@ -41,17 +41,17 @@ export const Route = createFileRoute("/birthday")({
   ssr: false,
   head: () => ({
     meta: [
-      { property: "og:title", content: "Birthday Hub — JEE Prep Hub" },
-      { property: "og:description", content: "Celebrate the JEE Prep Hub community with birthday wishes and a year of new possibilities." },
+      { property: "og:title", content: "Birthday Hub — PREPWIAN" },
+      { property: "og:description", content: "Celebrate the PREPWIAN community with birthday wishes and a year of new possibilities." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Birthday Hub — JEE Prep Hub" },
-      { name: "twitter:description", content: "Celebrate the JEE Prep Hub community with birthday wishes and a year of new possibilities." },
-      { title: "Birthday Hub — JEE Prep Hub" },
+      { name: "twitter:title", content: "Birthday Hub — PREPWIAN" },
+      { name: "twitter:description", content: "Celebrate the PREPWIAN community with birthday wishes and a year of new possibilities." },
+      { title: "Birthday Hub — PREPWIAN" },
       {
         name: "description",
         content:
-          "Celebrate the JEE Prep Hub community with birthday wishes and a year of new possibilities.",
+          "Celebrate the PREPWIAN community with birthday wishes and a year of new possibilities.",
       },
     ],
   }),
@@ -436,7 +436,7 @@ function BirthdayHubPage() {
   async function sendWish(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!user || isAnonymousAccount(user)) {
-      toast.error("Sign in with your JEE Prep Hub account to send a birthday wish.");
+      toast.error("Sign in with your PREPWIAN account to send a birthday wish.");
       return;
     }
     if (!selected) return;
@@ -480,8 +480,8 @@ function BirthdayHubPage() {
     birthdayUrl.searchParams.set("user", selected.user_id);
     const text =
       selected.days_until === 0
-        ? `Join me in celebrating ${selected.display_name} today on JEE Prep Hub!`
-        : `${selected.display_name}'s birthday is coming up in ${selected.days_until} day${selected.days_until === 1 ? "" : "s"} on JEE Prep Hub.`;
+        ? `Join me in celebrating ${selected.display_name} today on PREPWIAN!`
+        : `${selected.display_name}'s birthday is coming up in ${selected.days_until} day${selected.days_until === 1 ? "" : "s"} on PREPWIAN.`;
     try {
       if (navigator.share) {
         await navigator.share({ title: "Birthday Hub", text, url: birthdayUrl.toString() });
@@ -542,7 +542,7 @@ function BirthdayHubPage() {
           <BirthdayHeroDecorations />
           <div className="relative z-20 max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-amber-200/80 bg-amber-50 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[.18em] text-amber-800 dark:border-amber-100/20 dark:bg-white/10 dark:text-amber-100">
-              <PartyPopper className="h-4 w-4" /> The JEE Prep Hub celebration wall
+              <PartyPopper className="h-4 w-4" /> The PREPWIAN celebration wall
             </div>
             <h1
               id="birthday-hub-title"

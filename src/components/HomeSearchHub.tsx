@@ -105,7 +105,7 @@ export function HomeSearchHub({ onOpenMenu }: { onOpenMenu?: () => void }) {
         <div>
           <div className="mb-5 flex flex-wrap items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
             <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/10 px-3 py-1.5 text-primary">
-              <Command className="h-3 w-3" /> JEE Prep Hub
+              <Command className="h-3 w-3" /> PREPWIAN
             </span>
             <span className="rounded-full border border-border/70 bg-card/50 px-3 py-1.5">
               One search, across the hub
@@ -135,7 +135,7 @@ export function HomeSearchHub({ onOpenMenu }: { onOpenMenu?: () => void }) {
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               placeholder="Search JEE resources, posts, messages, people…"
-              aria-label="Search JEE Prep Hub"
+              aria-label="Search PREPWIAN"
               autoComplete="off"
               maxLength={200}
               className="h-14 rounded-2xl border-primary/25 bg-card/80 pl-12 pr-24 text-base shadow-xl shadow-primary/5 backdrop-blur-xl"
@@ -210,7 +210,7 @@ export function HomeSearchHub({ onOpenMenu }: { onOpenMenu?: () => void }) {
           <div className="flex items-center justify-between gap-3 border-b border-border/60 pb-4">
             <div>
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
-                {normalizedQuery ? "Cross-site search" : "Explore JEE Prep Hub"}
+                {normalizedQuery ? "Cross-site search" : "Explore PREPWIAN"}
               </p>
               <h2 className="mt-1 font-display text-xl font-bold">
                 {normalizedQuery ? `Results for “${normalizedQuery}”` : "Popular starting points"}

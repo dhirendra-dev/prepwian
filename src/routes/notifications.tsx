@@ -33,13 +33,13 @@ import { Input } from "@/components/ui/input";
 
 export const Route = createFileRoute("/notifications")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Notifications — JEE Prep Hub" },
-      { property: "og:description", content: "Read your JEE Prep Hub notifications and community updates." },
+      { property: "og:title", content: "Notifications — PREPWIAN" },
+      { property: "og:description", content: "Read your PREPWIAN notifications and community updates." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Notifications — JEE Prep Hub" },
-      { name: "twitter:description", content: "Read your JEE Prep Hub notifications and community updates." },
-{ title: "Notifications — JEE Prep Hub" }, { name: "description", content: "Read your JEE Prep Hub notifications and community updates." }] }),
+      { name: "twitter:title", content: "Notifications — PREPWIAN" },
+      { name: "twitter:description", content: "Read your PREPWIAN notifications and community updates." },
+{ title: "Notifications — PREPWIAN" }, { name: "description", content: "Read your PREPWIAN notifications and community updates." }] }),
 
   component: NotificationsPage,
 });
@@ -350,7 +350,7 @@ function NotificationsPage() {
           </Button>
           <div className="min-w-0 flex-1">
             <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[.16em] text-primary">
-              <Bell className="h-3.5 w-3.5" /> JEE Prep Hub
+              <Bell className="h-3.5 w-3.5" /> PREPWIAN
             </div>
             <h1 className="mt-1 text-2xl font-extrabold tracking-tight sm:text-3xl">
               Notifications
@@ -537,7 +537,7 @@ function NotificationsPage() {
                   className="mt-5 rounded-xl"
                   onClick={() => void router.navigate({ to: "/" as never })}
                 >
-                  Explore JEE Prep Hub <ChevronRight className="ml-1 h-4 w-4" />
+                  Explore PREPWIAN <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
               )}
             </div>

@@ -24,7 +24,7 @@ export const Route = createFileRoute("/tests/")({
       { name: "twitter:title", content: "JEE Test Series — CBT Mock Tests" },
       { name: "twitter:description", content: "Real-exam CBT interface with timer, palette, negative marking, and post-attempt analysis." },
 
-      { title: "JEE Test Series — Practice CBT Mock Tests | JEE Prep Hub" },
+      { title: "JEE Test Series — Practice CBT Mock Tests | PREPWIAN" },
       { name: "description", content: "Attempt JEE Main, Advanced and NEET style CBT mock tests with real exam interface, timer, and detailed analytics." },
       { property: "og:title", content: "JEE Test Series — CBT Mock Tests" },
       { property: "og:description", content: "Real-exam CBT interface with timer, palette, negative marking, and post-attempt analysis." },

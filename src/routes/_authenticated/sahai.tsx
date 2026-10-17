@@ -17,12 +17,12 @@ export const Route = createFileRoute("/_authenticated/sahai")({
   head: () => ({
     meta: [
       { name: "twitter:title", content: "SahAI — your AI study buddy" },
-      { name: "twitter:description", content: "Ask doubts, plan revision and beat burnout with SahAI inside JEE Prep Hub." },
+      { name: "twitter:description", content: "Ask doubts, plan revision and beat burnout with SahAI inside PREPWIAN." },
 
-      { title: "SahAI — your AI study buddy | JEE Prep Hub" },
-      { name: "description", content: "SahAI is the shared AI study buddy for every JEE Prep Hub student — doubts, revision plans and motivation, any time." },
+      { title: "SahAI — your AI study buddy | PREPWIAN" },
+      { name: "description", content: "SahAI is the shared AI study buddy for every PREPWIAN student — doubts, revision plans and motivation, any time." },
       { property: "og:title", content: "SahAI — your AI study buddy" },
-      { property: "og:description", content: "Ask doubts, plan revision and beat burnout with SahAI inside JEE Prep Hub." },
+      { property: "og:description", content: "Ask doubts, plan revision and beat burnout with SahAI inside PREPWIAN." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -188,7 +188,7 @@ function SahaiPage() {
 
         <div className="rounded-xl border border-border bg-muted/30 p-3 text-xs text-muted-foreground">
           <div className="mb-1 flex items-center gap-1.5 font-semibold text-foreground"><KeyRound className="h-3.5 w-3.5" /> Platform-managed AI</div>
-          SahAI uses the centrally configured Gemini credential. API keys are not stored on this device. If AI is unavailable, contact a JEE Prep Hub administrator.
+          SahAI uses the centrally configured Gemini credential. API keys are not stored on this device. If AI is unavailable, contact a PREPWIAN administrator.
         </div>
       </div>
     </AppShell>

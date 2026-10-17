@@ -17,14 +17,14 @@ import { Link } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/_authenticated/follow-channel")({
   head: () => ({ meta: [
-      { name: "description", content: "Follow the JEE Prep Hub WhatsApp channel for community updates." },
-      { property: "og:title", content: "Follow WhatsApp Channel — JEE Prep Hub" },
-      { property: "og:description", content: "Follow the JEE Prep Hub WhatsApp channel for community updates." },
+      { name: "description", content: "Follow the PREPWIAN WhatsApp channel for community updates." },
+      { property: "og:title", content: "Follow WhatsApp Channel — PREPWIAN" },
+      { property: "og:description", content: "Follow the PREPWIAN WhatsApp channel for community updates." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Follow WhatsApp Channel — JEE Prep Hub" },
-      { name: "twitter:description", content: "Follow the JEE Prep Hub WhatsApp channel for community updates." },
-{ title: "Follow WhatsApp Channel — JEE Prep Hub" }] }),
+      { name: "twitter:title", content: "Follow WhatsApp Channel — PREPWIAN" },
+      { name: "twitter:description", content: "Follow the PREPWIAN WhatsApp channel for community updates." },
+{ title: "Follow WhatsApp Channel — PREPWIAN" }] }),
   component: FollowChannelPage,
 });
 
@@ -134,7 +134,7 @@ function FollowChannelPage() {
                   </div>
                   <p className="mt-1 text-sm text-muted-foreground">
                     {q.data?.request?.status === "rejected"
-                      ? "This request was not approved. Contact the JEE Prep Hub team if you have new evidence."
+                      ? "This request was not approved. Contact the PREPWIAN team if you have new evidence."
                       : "Your request is awaiting staff verification. The certificate will appear only if approved."}
                   </p>
                 </div>
@@ -147,7 +147,7 @@ function FollowChannelPage() {
                       className="mt-0.5"
                     />
                     <span>
-                      I confirm that I have followed the official JEE Prep Hub WhatsApp channel.
+                      I confirm that I have followed the official PREPWIAN WhatsApp channel.
                     </span>
                   </label>
                   {!opened && (

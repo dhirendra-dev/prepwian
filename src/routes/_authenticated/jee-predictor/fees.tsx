@@ -115,7 +115,7 @@ function FeeExplorer() {
           </h1>
 
           <p className="max-w-3xl text-muted-foreground">
-            Explore fee records imported into JEE Prep Hub and
+            Explore fee records imported into PREPWIAN and
             review their source information.
           </p>
         </div>

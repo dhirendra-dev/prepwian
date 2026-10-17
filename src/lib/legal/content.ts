@@ -1,7 +1,7 @@
 /**
- * JEE Prep Hub — policy framework content.
+ * PREPWIAN — policy framework content.
  *
- * Everything written in [SQUARE BRACKETS] is a PLACEHOLDER that JEE Prep Hub
+ * Everything written in [SQUARE BRACKETS] is a PLACEHOLDER that PREPWIAN
  * administrators must fill in before these documents are relied upon.
  * No addresses, emails, registrations, jurisdictions or affiliations are invented here.
  */
@@ -27,9 +27,9 @@ export type PolicyDoc = {
 const AFFILIATION_DISCLAIMER: PolicySection = {
   heading: "Important official-affiliation disclaimer",
   body: [
-    "JEE Prep Hub is a student-run, independent educational initiative. It is NOT an official organisation, agency, portal or partner of the National Testing Agency (NTA), JEE Main, JEE Advanced, JoSAA, any IIT or NIT, the Ministry of Education, or the Government of India.",
+    "PREPWIAN is a student-run, independent educational initiative. It is NOT an official organisation, agency, portal or partner of the National Testing Agency (NTA), JEE Main, JEE Advanced, JoSAA, any IIT or NIT, the Ministry of Education, or the Government of India.",
     "We do not claim affiliation, endorsement, authorisation, sponsorship or partnership with any examination authority, university, or coaching institute. We will only describe such a relationship if a genuine written agreement exists.",
-    "Nothing on JEE Prep Hub is an official examination announcement. Everything we publish about examinations is informational assistance contributed by students, volunteers and moderators, and must be verified against official sources before you act on it.",
+    "Nothing on PREPWIAN is an official examination announcement. Everything we publish about examinations is informational assistance contributed by students, volunteers and moderators, and must be verified against official sources before you act on it.",
     "Always confirm examination information with the relevant authority:",
     "- National Testing Agency (NTA)",
     "- The official JEE Main portal",
@@ -53,14 +53,14 @@ const VERSION_SECTION: PolicySection = {
 export const POLICY_DOCS: PolicyDoc[] = [
   {
     id: "about",
-    title: "About JEE Prep Hub",
+    title: "About PREPWIAN",
     summary:
       "Who we are, what we are not, and how this student-run initiative operates.",
     sections: [
       {
         heading: "Introduction",
         body: [
-          "JEE Prep Hub is a student-run, independent educational community built to help students preparing for JEE Main, JEE Advanced and related engineering entrance examinations.",
+          "PREPWIAN is a student-run, independent educational community built to help students preparing for JEE Main, JEE Advanced and related engineering entrance examinations.",
           "Depending on the features available at any time, the platform may provide study resources and notes, planning and scheduling tools, practice tests and question discussions, productivity tools, announcements, and community discussion spaces.",
           "Content may be contributed by students, volunteers, moderators and other community members. It is shared as peer educational assistance, not as an official source of examination rules.",
         ],
@@ -69,7 +69,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "A student-led initiative",
         body: [
-          "JEE Prep Hub operates as a student-led educational initiative. Features may be added, changed, paused or discontinued as volunteer time and resources allow.",
+          "PREPWIAN operates as a student-led educational initiative. Features may be added, changed, paused or discontinued as volunteer time and resources allow.",
           "We make no claim to be a non-profit organisation, a registered NGO, a registered company, a government-recognised body, or an official educational institution. If any such status is ever obtained, it will be stated here with the relevant details.",
           "Current operating status: [DESCRIBE OPERATING STATUS — e.g. informal student initiative]. Operating entity or owner, if any: [LEGAL ENTITY OR INDIVIDUAL, IF APPLICABLE].",
         ],
@@ -77,26 +77,26 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Social media and official channels",
         body: [
-          "If JEE Prep Hub operates social-media accounts, the official ones will be listed here: [LIST OF OFFICIAL CHANNELS].",
-          "- Do not assume that every account, group or channel using the JEE Prep Hub name is official.",
-          "- Impersonating JEE Prep Hub, its team, its moderators or its channels is prohibited.",
-          "- Where an announcement matters, verify it through an official JEE Prep Hub channel listed above, and verify examination facts with the examination authority.",
+          "If PREPWIAN operates social-media accounts, the official ones will be listed here: [LIST OF OFFICIAL CHANNELS].",
+          "- Do not assume that every account, group or channel using the PREPWIAN name is official.",
+          "- Impersonating PREPWIAN, its team, its moderators or its channels is prohibited.",
+          "- Where an announcement matters, verify it through an official PREPWIAN channel listed above, and verify examination facts with the examination authority.",
         ],
       },
       {
         heading: "Branding and trademark",
         body: [
-          "The JEE Prep Hub name, logo, designs, interface, original written content, databases and software are the intellectual property of JEE Prep Hub and/or its contributors, as applicable.",
+          "The PREPWIAN name, logo, designs, interface, original written content, databases and software are the intellectual property of PREPWIAN and/or its contributors, as applicable.",
           "- You may not use our branding in a way that suggests official endorsement, affiliation or partnership.",
           "- You may not use our branding for misleading, commercial or deceptive purposes without written permission.",
           "- We make no claim of registered trademark status unless and until registration is completed and stated here: [TRADEMARK STATUS, IF ANY].",
-          "Fair references — for example, mentioning JEE Prep Hub in a review, news item or academic discussion — are welcome.",
+          "Fair references — for example, mentioning PREPWIAN in a review, news item or academic discussion — are welcome.",
         ],
       },
       {
         heading: "Emergencies and urgent safety situations",
         body: [
-          "JEE Prep Hub is an educational platform. It is not an emergency service, a crisis helpline, a medical service, a legal service or a counselling service.",
+          "PREPWIAN is an educational platform. It is not an emergency service, a crisis helpline, a medical service, a legal service or a counselling service.",
           "If you or someone else is in danger, or facing a medical, mental-health, safety or legal emergency, contact local emergency services, a trusted adult, a parent or guardian, school authorities, or a qualified professional immediately.",
           "Please do not rely on moderators or community members for emergency help — volunteers may be offline, and they are not trained responders.",
         ],
@@ -104,7 +104,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Language",
         body: [
-          "Content on JEE Prep Hub may appear in English, Hindi, Hinglish, Assamese or other languages used by our community.",
+          "Content on PREPWIAN may appear in English, Hindi, Hinglish, Assamese or other languages used by our community.",
           "Translated or community-provided versions of these policies are offered for convenience only. Where a legal question arises, the authoritative version is the [AUTHORITATIVE LANGUAGE VERSION — e.g. English] version published on this website.",
         ],
       },
@@ -116,12 +116,12 @@ export const POLICY_DOCS: PolicyDoc[] = [
     id: "terms",
     title: "Terms of Use",
     summary:
-      "The agreement that applies when you access or use JEE Prep Hub, including eligibility, responsibilities, liability and governing law.",
+      "The agreement that applies when you access or use PREPWIAN, including eligibility, responsibilities, liability and governing law.",
     sections: [
       {
         heading: "Acceptance of these terms",
         body: [
-          "By accessing or using the JEE Prep Hub website, app or community spaces, you agree to these Terms of Use and to the other policies linked from them, including the Community Guidelines, Privacy Policy, Copyright Policy and Safety Policy.",
+          "By accessing or using the PREPWIAN website, app or community spaces, you agree to these Terms of Use and to the other policies linked from them, including the Community Guidelines, Privacy Policy, Copyright Policy and Safety Policy.",
           "If you do not agree with any part of these terms, please discontinue use of the platform.",
         ],
       },
@@ -129,7 +129,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Eligibility",
         body: [
-          "JEE Prep Hub is intended for students preparing for engineering entrance examinations, and for parents or guardians, teachers, mentors, volunteers and other visitors with a genuine educational interest.",
+          "PREPWIAN is intended for students preparing for engineering entrance examinations, and for parents or guardians, teachers, mentors, volunteers and other visitors with a genuine educational interest.",
           "- Some features may require you to create an account.",
           "- If you are below the age of majority in your country (18 in India), you should use the platform with the knowledge and permission of a parent or guardian.",
           "- Parents and guardians are responsible for supervising the online activity of the minors in their care, including what those students post, share and download here.",
@@ -140,7 +140,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Your responsibilities as a user",
         body: [
-          "When using JEE Prep Hub you agree to:",
+          "When using PREPWIAN you agree to:",
           "- Provide accurate information when you register, and keep your account details reasonably up to date.",
           "- Follow the Community Guidelines, Academic Integrity Policy and all other published rules.",
           "- Respect other students, volunteers and moderators.",
@@ -154,7 +154,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Educational disclaimer — no guarantee of results",
         body: [
-          "JEE Prep Hub does not promise or guarantee any of the following:",
+          "PREPWIAN does not promise or guarantee any of the following:",
           "- a particular JEE rank, percentile, score or marks",
           "- admission to any institute, branch or programme",
           "- seat or college allocation in counselling",
@@ -175,7 +175,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Changes to the services",
         body: [
-          "JEE Prep Hub may, at its discretion, add features, modify features, remove features, temporarily suspend a service, discontinue a service, update educational resources, or change community rules.",
+          "PREPWIAN may, at its discretion, add features, modify features, remove features, temporarily suspend a service, discontinue a service, update educational resources, or change community rules.",
           "Where practical, we will communicate significant changes in advance. Because this is a volunteer-run initiative, advance notice may not always be possible.",
         ],
       },
@@ -190,13 +190,13 @@ export const POLICY_DOCS: PolicyDoc[] = [
           "- cyber incidents, abuse or attacks",
           "- third-party service failures (for example hosting, storage, email or video providers)",
           "- events outside our reasonable control (force majeure)",
-          "Please keep your own copies of anything important to you. Do not rely on JEE Prep Hub as your only store of study material or records.",
+          "Please keep your own copies of anything important to you. Do not rely on PREPWIAN as your only store of study material or records.",
         ],
       },
       {
         heading: "Payments and refunds",
         body: [
-          "At the time of writing, JEE Prep Hub is intended to be usable free of charge. Where the platform is free, no paid-service or refund policy applies.",
+          "At the time of writing, PREPWIAN is intended to be usable free of charge. Where the platform is free, no paid-service or refund policy applies.",
           "Some optional features may involve voluntary contributions or donations to support running costs. Voluntary contributions are not purchases of a product or service and, unless stated otherwise, are not refundable.",
           "If paid features are ever introduced, the following must be published before any charge is taken: [PRICING], [BILLING CYCLE], [REFUND WINDOW AND CONDITIONS], [CANCELLATION PROCESS], [PAYMENT PROCESSOR], [SUPPORT CONTACT FOR BILLING].",
           "We do not invent or imply any refund period, guarantee or commercial commitment that has not been published.",
@@ -205,7 +205,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Limitation of liability",
         body: [
-          "To the maximum extent permitted by applicable law, JEE Prep Hub, its team, volunteers and moderators are not liable for loss or damage arising from:",
+          "To the maximum extent permitted by applicable law, PREPWIAN, its team, volunteers and moderators are not liable for loss or damage arising from:",
           "- reliance on educational content, notes, solutions or study plans",
           "- reliance on unofficial examination information published or discussed here",
           "- user-generated content, opinions or statements of other users",
@@ -221,7 +221,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Indemnification",
         body: [
-          "If a third party brings a claim against JEE Prep Hub because of something you did, you agree to reasonably cooperate with us and, to the extent permitted by applicable law, to be responsible for the reasonable costs and losses directly caused by:",
+          "If a third party brings a claim against PREPWIAN because of something you did, you agree to reasonably cooperate with us and, to the extent permitted by applicable law, to be responsible for the reasonable costs and losses directly caused by:",
           "- your breach of these terms or our policies",
           "- your unlawful activity on or through the platform",
           "- your infringement of another person's intellectual property, privacy or other rights",
@@ -233,7 +233,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
         heading: "Governing law and dispute resolution",
         body: [
           "These terms are intended to be governed by the laws of India.",
-          "The specific jurisdiction and dispute-resolution mechanism must be finalised based on the actual legal structure and operating location of JEE Prep Hub, which has not yet been determined. Placeholders:",
+          "The specific jurisdiction and dispute-resolution mechanism must be finalised based on the actual legal structure and operating location of PREPWIAN, which has not yet been determined. Placeholders:",
           "- Governing law: the laws of India, with state-specific matters as applicable in [JURISDICTION / STATE, INDIA]",
           "- Courts: the competent courts at [CITY / DISTRICT, STATE, INDIA]",
           "- Alternative dispute resolution, if adopted: [MEDIATION / ARBITRATION DETAILS AND SEAT, IF ANY]",
@@ -244,7 +244,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Termination",
         body: [
-          "You may stop using JEE Prep Hub at any time, and may request deletion of your account as described in the Privacy Policy.",
+          "You may stop using PREPWIAN at any time, and may request deletion of your account as described in the Privacy Policy.",
           "We may restrict, suspend or remove an account where these terms or our policies are breached, where required by law, or where necessary to protect users — following the graduated enforcement process in the Community Guidelines, except where a serious risk requires immediate action.",
         ],
       },
@@ -261,14 +261,14 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Our basic expectation",
         body: [
-          "JEE Prep Hub is a study community of students, many of whom are school-age. Be the kind of senior or classmate you would want to have: helpful, patient and honest.",
+          "PREPWIAN is a study community of students, many of whom are school-age. Be the kind of senior or classmate you would want to have: helpful, patient and honest.",
           "You may disagree with anyone — about a solution, a strategy, a book or a coaching approach. Disagreement is welcome. Personal attacks are not.",
         ],
       },
       {
         heading: "Student code of conduct — prohibited behaviour",
         body: [
-          "The following are prohibited anywhere on JEE Prep Hub, including posts, comments, messages, group chats, profiles, usernames and uploaded files:",
+          "The following are prohibited anywhere on PREPWIAN, including posts, comments, messages, group chats, profiles, usernames and uploaded files:",
           "- harassment, bullying, threats or intimidation",
           "- hate speech or discrimination based on caste, religion, region, language, gender, disability, appearance, category, income or any similar characteristic",
           "- abusive, obscene or degrading language directed at a person",
@@ -368,7 +368,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
           "- copyright infringement",
           "- misinformation about examinations",
           "- scams, fraud or suspicious money requests",
-          "- impersonation of a person, institute or JEE Prep Hub itself",
+          "- impersonation of a person, institute or PREPWIAN itself",
           "- security issues and vulnerabilities",
           "- inappropriate or sexual content",
           "- academic misconduct, answer-selling or leaked papers",
@@ -433,7 +433,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Academic integrity — strictly enforced",
         body: [
-          "JEE Prep Hub does not support examination malpractice in any form. The following are strictly prohibited:",
+          "PREPWIAN does not support examination malpractice in any form. The following are strictly prohibited:",
           "- cheating in any examination, test or assessment, including tests on this platform",
           "- selling, buying or requesting examination answers",
           "- sharing, requesting or distributing leaked examination papers",
@@ -460,7 +460,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Tests, questions and solutions",
         body: [
-          "Tests, quizzes, question sets and solutions available here may be created by JEE Prep Hub, by volunteers, or by community members.",
+          "Tests, quizzes, question sets and solutions available here may be created by PREPWIAN, by volunteers, or by community members.",
           "- Question accuracy: we try to check questions, but errors in wording, options, diagrams or answer keys can occur.",
           "- Unofficial solutions: any solution on this platform is unofficial. It may contain mistakes, non-standard methods, or approaches that differ from official answer keys.",
           "- Independent verification: for anything that matters — an answer key dispute, a syllabus question, a marking scheme — verify against official material or your teacher.",
@@ -468,14 +468,14 @@ export const POLICY_DOCS: PolicyDoc[] = [
           "- Answer discussions should focus on method and reasoning. Do not use them to circumvent a live test.",
           "- Copyright: do not upload copyrighted question papers, books or solution manuals without permission. See the Copyright Policy.",
           "- Corrections: report suspected mistakes using the in-app option or [EMAIL] so that we can review and correct them.",
-          "Scores, ranks, percentiles and predictions shown on JEE Prep Hub are practice estimates based on our own data. They are not official results and are not predictions of your actual examination outcome.",
+          "Scores, ranks, percentiles and predictions shown on PREPWIAN are practice estimates based on our own data. They are not official results and are not predictions of your actual examination outcome.",
         ],
       },
       {
         heading: "AI usage policy",
         body: [
           "Some features may use artificial intelligence, and you may bring your own AI provider key for certain tools.",
-          "Acceptable uses of AI on JEE Prep Hub include:",
+          "Acceptable uses of AI on PREPWIAN include:",
           "- getting explanations of concepts and steps",
           "- brainstorming approaches to a problem",
           "- building study plans and revision schedules",
@@ -507,31 +507,31 @@ export const POLICY_DOCS: PolicyDoc[] = [
         body: [
           "This policy applies to notes, PDFs, question papers, solutions, lectures, educational videos, books, website links, test series, study plans and any other resource shared here.",
           "We distinguish four categories:",
-          "- Original JEE Prep Hub content — created by our team or volunteers for this platform.",
+          "- Original PREPWIAN content — created by our team or volunteers for this platform.",
           "- User-generated content — uploaded or written by community members, who remain responsible for it.",
           "- Third-party educational content — created by publishers, coaching institutes, teachers or platforms, and only shared here where sharing is permitted.",
           "- External links — pointers to material hosted elsewhere.",
-          "Linking to a third-party resource does not mean JEE Prep Hub owns, verifies, endorses or is responsible for it.",
+          "Linking to a third-party resource does not mean PREPWIAN owns, verifies, endorses or is responsible for it.",
           "Before uploading any resource, ask yourself: do I have the right to share this publicly? If not, share a link to the official source instead of a copy.",
         ],
       },
       {
         heading: "Copyright and intellectual property",
         body: [
-          "JEE Prep Hub respects intellectual property rights and expects the same from every user.",
+          "PREPWIAN respects intellectual property rights and expects the same from every user.",
           "- Do not upload or distribute copyrighted material — books, coaching modules, paid test series, paid lectures, publisher solutions — without authorisation from the rights holder.",
           "- Do not remove watermarks, credits or author attributions.",
           "- Do not claim third-party material as your own.",
           "- Rights holders may submit an infringement complaint using the procedure below.",
           "- We may remove or restrict access to disputed material while a complaint is being investigated.",
           "- Repeat infringement may lead to account restriction or permanent removal.",
-          "Nothing in these policies transfers to you any ownership of JEE Prep Hub's branding, logos, software, source code, designs, interface, databases or original content.",
+          "Nothing in these policies transfers to you any ownership of PREPWIAN's branding, logos, software, source code, designs, interface, databases or original content.",
         ],
       },
       {
         heading: "Copyright complaint procedure (India)",
         body: [
-          "JEE Prep Hub is an India-focused platform. We operate a notice-and-action process modelled on good practice under Indian law, including the Copyright Act, 1957 and applicable intermediary rules. We do not claim to be subject to the United States DMCA process, and references to 'DMCA' elsewhere online do not apply to us unless we state otherwise.",
+          "PREPWIAN is an India-focused platform. We operate a notice-and-action process modelled on good practice under Indian law, including the Copyright Act, 1957 and applicable intermediary rules. We do not claim to be subject to the United States DMCA process, and references to 'DMCA' elsewhere online do not apply to us unless we state otherwise.",
           "Send complaints to [COPYRIGHT EMAIL]. Please include every item in this checklist — incomplete complaints may be delayed:",
           "- your full name (and organisation, if you act for one)",
           "- your contact information (email, and phone or postal address if you wish)",
@@ -556,10 +556,10 @@ export const POLICY_DOCS: PolicyDoc[] = [
         body: [
           "Where the platform allows it, you may submit posts, comments, doubts, questions, solutions, notes, files, profile details and feedback.",
           "- You keep ownership of your lawful original content. We do not claim to own it.",
-          "- By submitting content, you grant JEE Prep Hub a non-exclusive, royalty-free permission to host, store, display, reproduce, adapt for formatting, moderate and technically process that content, only as reasonably necessary to operate the platform and the features you used.",
+          "- By submitting content, you grant PREPWIAN a non-exclusive, royalty-free permission to host, store, display, reproduce, adapt for formatting, moderate and technically process that content, only as reasonably necessary to operate the platform and the features you used.",
           "- That permission lasts as long as your content is on the platform, and for a reasonable period afterwards for backups, logs and legal-compliance copies.",
           "- You must have the necessary rights to submit whatever you upload.",
-          "- You are responsible for your own content. JEE Prep Hub is not responsible for every statement made by individual users, and user opinions are not our opinions.",
+          "- You are responsible for your own content. PREPWIAN is not responsible for every statement made by individual users, and user opinions are not our opinions.",
           "- We may remove, hide or restrict content that breaks these rules or the law.",
           "Plagiarism and unauthorised redistribution are prohibited:",
           "- Do not copy another member's notes, solutions or writing and present it as your own.",
@@ -580,7 +580,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Our approach",
         body: [
-          "JEE Prep Hub is a student community, and we try to collect as little personal information as reasonably possible.",
+          "PREPWIAN is a student community, and we try to collect as little personal information as reasonably possible.",
           "This policy uses conditional language on purpose: what is collected depends on which features you actually use. If you only browse public pages, far less information is involved than if you create an account, join a group or upload files.",
         ],
       },
@@ -728,7 +728,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
         body: [
           "- Keep conversations on the platform, and inside study topics.",
           "- Never share your home address, phone number, school timings, live location or identity documents with people you meet online.",
-          "- Nobody from JEE Prep Hub will ever ask you for your password, OTP, or money.",
+          "- Nobody from PREPWIAN will ever ask you for your password, OTP, or money.",
           "- If someone makes you uncomfortable, block and report them.",
           "- If a situation feels serious or frightening, tell a parent, guardian, teacher or another trusted adult, and contact the appropriate authorities. Do not wait for a moderator to come online.",
         ],
@@ -742,7 +742,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
           "- Sign out on shared or public devices, and end sessions you do not recognise where the feature is available.",
           "- Impersonating another person, or creating an account in someone else's name, is prohibited.",
           "- If you notice suspicious activity, or think your account is compromised, change your password immediately and contact [SECURITY EMAIL].",
-          "JEE Prep Hub will never ask you to reveal your password publicly, in a chat, or to a moderator. Any such request is a scam — report it.",
+          "PREPWIAN will never ask you to reveal your password publicly, in a chat, or to a moderator. Any such request is a scam — report it.",
         ],
       },
       {
@@ -803,7 +803,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Educational disclaimer",
         body: [
-          "Everything on JEE Prep Hub is provided for general educational assistance only. It is not professional academic advice, career counselling, legal advice or medical advice.",
+          "Everything on PREPWIAN is provided for general educational assistance only. It is not professional academic advice, career counselling, legal advice or medical advice.",
           "We do not guarantee any rank, percentile, marks, admission, seat allocation, examination success, scholarship, or improvement in academic performance. Your results depend on many factors, and your preparation and decisions remain your own responsibility.",
           "Study plans, predicted ranks, difficulty estimates and progress scores shown here are indicative tools, not forecasts.",
         ],
@@ -843,7 +843,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Advertising and sponsorship",
         body: [
-          "At the time of writing, JEE Prep Hub does not claim to have advertisers, sponsors or affiliate partners. Current status: [ADVERTISING / SPONSORSHIP STATUS].",
+          "At the time of writing, PREPWIAN does not claim to have advertisers, sponsors or affiliate partners. Current status: [ADVERTISING / SPONSORSHIP STATUS].",
           "If advertisements, sponsorships, affiliate links or promotional content are introduced, the following will apply:",
           "- sponsored or paid content will be labelled as such where reasonably possible",
           "- the presence of an advertisement is not an endorsement or a recommendation",
@@ -866,7 +866,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "What we use",
         body: [
-          "JEE Prep Hub uses cookies and similar browser technologies such as localStorage and sessionStorage. Depending on the features you use, these may include:",
+          "PREPWIAN uses cookies and similar browser technologies such as localStorage and sessionStorage. Depending on the features you use, these may include:",
           "- Essential: keeping you signed in, maintaining your session, protecting forms, and remembering that you have unlocked a gated section.",
           "- Preferences: your theme (light or dark), interface mode, background settings, and other display choices stored in your own browser.",
           "- Feature storage: local-only tools such as planners, timers and offline study data stored on your device rather than on our servers.",
@@ -898,7 +898,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Our commitment",
         body: [
-          "We want JEE Prep Hub to be usable by as many students as possible, including those using screen readers, keyboard navigation, magnification, or assistive tools.",
+          "We want PREPWIAN to be usable by as many students as possible, including those using screen readers, keyboard navigation, magnification, or assistive tools.",
           "We aim to provide readable text and contrast, keyboard-reachable controls, meaningful labels on interactive elements, alternative text on meaningful images, and layouts that work on small screens and low-end devices.",
           "We are a volunteer team and cannot claim full conformance with any formal accessibility standard. Target standard, if adopted: [ACCESSIBILITY STANDARD, IF ANY].",
         ],
@@ -923,7 +923,7 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Contact and legal notices",
         body: [
-          "The following details must be completed by JEE Prep Hub administrators. We do not publish invented contact details.",
+          "The following details must be completed by PREPWIAN administrators. We do not publish invented contact details.",
           "- Website: [WEBSITE]",
           "- General contact: [EMAIL]",
           "- Privacy contact: [PRIVACY EMAIL]",
@@ -966,13 +966,13 @@ export const POLICY_DOCS: PolicyDoc[] = [
       {
         heading: "Frequently asked legal and community questions",
         body: [
-          "### Is JEE Prep Hub official, or connected to NTA or the IITs?",
+          "### Is PREPWIAN official, or connected to NTA or the IITs?",
           "No. It is an independent, student-run initiative with no affiliation to NTA, JEE Main, JEE Advanced, JoSAA, the IITs, any coaching institute, or the Government of India.",
           "### Can I rely on exam dates and rules posted here?",
           "Treat them as helpful pointers only. Always confirm with the official examination portal before acting.",
           "### Will using this platform improve my rank?",
           "We hope it helps, but we cannot and do not guarantee any rank, score or admission outcome.",
-          "### Is JEE Prep Hub free?",
+          "### Is PREPWIAN free?",
           "It is intended to be usable free of charge. If paid features are ever added, the terms will be published before any charge applies.",
           "### Can I upload my coaching institute's material?",
           "Only if you have permission from the rights holder. Otherwise, share a link to the official source instead of a copy.",

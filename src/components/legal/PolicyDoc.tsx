@@ -65,7 +65,7 @@ export function PolicyDocView({ doc }: { doc: PolicyDocType }) {
         </div>
         <p className="text-sm text-muted-foreground">{doc.summary}</p>
         <p className="mt-3 rounded-lg border border-amber-500/30 bg-amber-500/10 p-3 text-xs leading-relaxed text-muted-foreground">
-          JEE Prep Hub is a student-run, independent educational initiative. It is not affiliated with NTA, JEE Main,
+          PREPWIAN is a student-run, independent educational initiative. It is not affiliated with NTA, JEE Main,
           JEE Advanced, JoSAA, the IITs or the Government of India. Text shown in [SQUARE BRACKETS] is a placeholder
           our administrators still need to complete — please do not treat it as a published fact.
         </p>

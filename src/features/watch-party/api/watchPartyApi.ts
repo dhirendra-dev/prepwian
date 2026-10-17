@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // API layer
 // File: src/features/watch-party/api/watchPartyApi.ts
 // ============================================================

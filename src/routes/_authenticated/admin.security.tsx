@@ -43,7 +43,7 @@ import {
 import { adminListUsers } from "@/lib/users.functions";
 
 export const Route = createFileRoute("/_authenticated/admin/security")({
-  head: () => ({ meta: [{ title: "Admin · Security — JEE Prep Hub" }] }),
+  head: () => ({ meta: [{ title: "Admin · Security — PREPWIAN" }] }),
   ssr: false,
   beforeLoad: async ({ context }) => {
     const { data } = await supabase

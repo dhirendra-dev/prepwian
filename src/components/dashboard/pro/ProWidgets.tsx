@@ -826,7 +826,7 @@ export function InstallBanner() {
       <button type="button" aria-label="Dismiss" onClick={() => setHidden(true)} className="absolute right-3 top-3 rounded-full p-1.5 text-muted-foreground hover:bg-muted">
         <X className="h-4 w-4" />
       </button>
-      <p className="text-lg font-bold">Install JEE Prep Hub on your device</p>
+      <p className="text-lg font-bold">Install PREPWIAN on your device</p>
       <p className="mt-1 pr-6 text-sm text-muted-foreground">
         Get a home-screen icon, full-screen focus mode and faster access. No app store needed.
       </p>

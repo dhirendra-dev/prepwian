@@ -17,14 +17,14 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/_authenticated/jee-predictor")({
   head: () => ({
     meta: [
-      { property: "og:title", content: "JEE Predictor — JEE Prep Hub" },
+      { property: "og:title", content: "JEE Predictor — PREPWIAN" },
       { property: "og:description", content: "Estimate your JEE Main rank from your NTA percentile and explore your preparation targets." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "JEE Predictor — JEE Prep Hub" },
+      { name: "twitter:title", content: "JEE Predictor — PREPWIAN" },
       { name: "twitter:description", content: "Estimate your JEE Main rank from your NTA percentile and explore your preparation targets." },
 
-      { title: "JEE Predictor — JEE Prep Hub" },
+      { title: "JEE Predictor — PREPWIAN" },
       {
         name: "description",
         content:

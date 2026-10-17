@@ -18,8 +18,8 @@ export const Route = createFileRoute("/quiz/")({
       { name: "twitter:title", content: "Quiz Arena — Daily Challenge & Battles" },
       { name: "twitter:description", content: "A premium competitive quiz experience for JEE aspirants." },
 
-    { title: "Quiz Arena — Daily Challenge & Battles | JEE Prep Hub" },
-    { name: "description", content: "Compete in the JEE Prep Hub Quiz Arena with daily challenges, timed practice battles, XP, streaks and real performance results." },
+    { title: "Quiz Arena — Daily Challenge & Battles | PREPWIAN" },
+    { name: "description", content: "Compete in the PREPWIAN Quiz Arena with daily challenges, timed practice battles, XP, streaks and real performance results." },
     { property: "og:title", content: "Quiz Arena — Daily Challenge & Battles" },
     { property: "og:description", content: "A premium competitive quiz experience for JEE aspirants." },
     { property: "og:type", content: "website" },

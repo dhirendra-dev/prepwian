@@ -16,16 +16,16 @@ import { Users, Plus, Globe, Lock, Megaphone, Sparkles, MessageCircle, Search } 
 export const Route = createFileRoute("/_authenticated/groups")({
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "Communities & Groups — JEE Prep Hub" },
+      { name: "twitter:title", content: "Communities & Groups — PREPWIAN" },
       { name: "twitter:description", content: "Join subject, goal, batch and social groups with fellow JEE & NEET aspirants." },
 
-      { title: "Communities & Groups — JEE Prep Hub" },
+      { title: "Communities & Groups — PREPWIAN" },
       {
         name: "description",
         content:
-          "Every JEE Prep Hub community group in one place — subject rooms, goal squads, batch chats and social groups.",
+          "Every PREPWIAN community group in one place — subject rooms, goal squads, batch chats and social groups.",
       },
-      { property: "og:title", content: "Communities & Groups — JEE Prep Hub" },
+      { property: "og:title", content: "Communities & Groups — PREPWIAN" },
       {
         property: "og:description",
         content: "Join subject, goal, batch and social groups with fellow JEE & NEET aspirants.",

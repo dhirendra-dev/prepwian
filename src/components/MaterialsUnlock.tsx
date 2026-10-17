@@ -12,7 +12,7 @@ import { unlockMaterials } from "@/lib/materials-gate.functions";
 export function MaterialsUnlock({
   onUnlocked,
   title = "Study material is locked",
-  description = "This section holds copyrighted study material, so it is protected. Enter the current access password shared by the JEE Prep Hub team to continue.",
+  description = "This section holds copyrighted study material, so it is protected. Enter the current access password shared by the PREPWIAN team to continue.",
 }: {
   onUnlocked: () => void;
   title?: string;

@@ -4,7 +4,7 @@ import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { getSystemSecret } from "@/lib/system-secrets.server";
 
 const DOUBT_SYSTEM_PROMPT =
-  "You are the JEE Prep Hub doubt-solving assistant for Indian Class 11-12 JEE/NEET aspirants. " +
+  "You are the PREPWIAN doubt-solving assistant for Indian Class 11-12 JEE/NEET aspirants. " +
   "Answer the student's doubt clearly and concisely (under 220 words). " +
   "Use short numbered steps for derivations. Wrap ALL mathematics in $...$ (inline) or $$...$$ (display) LaTeX. " +
   "Finish with a one-line takeaway. Never invent syllabus that is not in JEE/NEET. Plain text + LaTeX only, no markdown headings.";

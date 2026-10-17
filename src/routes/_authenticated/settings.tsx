@@ -68,13 +68,13 @@ import {
 
 export const Route = createFileRoute("/_authenticated/settings")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Account Settings — JEE Prep Hub" },
+      { property: "og:title", content: "Account Settings — PREPWIAN" },
       { property: "og:description", content: "Manage your account and study preferences." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Account Settings — JEE Prep Hub" },
+      { name: "twitter:title", content: "Account Settings — PREPWIAN" },
       { name: "twitter:description", content: "Manage your account and study preferences." },
-{ title: "Account Settings — JEE Prep Hub" }, { name: "description", content: "Manage your account and study preferences." }] }),
+{ title: "Account Settings — PREPWIAN" }, { name: "description", content: "Manage your account and study preferences." }] }),
 
   component: SettingsPage,
 });
@@ -259,7 +259,7 @@ function SettingsPage() {
         catch { localBrowserData[key] = value; }
       }
       const archive = {
-        format: "JEE Prep Hub personal data archive",
+        format: "PREPWIAN personal data archive",
         formatVersion: 1,
         exportedAt: new Date().toISOString(),
         account: {
@@ -430,7 +430,7 @@ function SettingsPage() {
         <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex min-w-0 items-start gap-4">
             <div className="grid h-14 w-14 shrink-0 place-items-center rounded-[20px] bg-gradient-to-br from-primary to-primary/70 text-primary-foreground shadow-lg shadow-primary/20"><Settings2 className="h-7 w-7"/></div>
-            <div className="min-w-0"><p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">Personal control center</p><h1 className="mt-1 text-3xl font-black tracking-tight sm:text-4xl">Settings</h1><p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">Make JEE Prep Hub work for you—manage your account, learning targets, privacy, appearance, and AI tools in one place.</p></div>
+            <div className="min-w-0"><p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">Personal control center</p><h1 className="mt-1 text-3xl font-black tracking-tight sm:text-4xl">Settings</h1><p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">Make PREPWIAN work for you—manage your account, learning targets, privacy, appearance, and AI tools in one place.</p></div>
           </div>
           <div className="flex shrink-0 items-center gap-3 rounded-2xl border border-border/70 bg-background/65 px-4 py-3 shadow-sm"><div className="grid h-10 w-10 place-items-center rounded-full bg-primary/10 font-bold text-primary">{user?.email?.slice(0, 1).toUpperCase() ?? "S"}</div><div className="min-w-0"><p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Signed in as</p><p className="max-w-[220px] truncate text-sm font-semibold">{user?.email ?? "Your account"}</p></div></div>
         </div>
@@ -470,7 +470,7 @@ function SettingsPage() {
 
         <div id="activity" className="p-5 sm:p-6">
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <div><h2 className="flex items-center gap-2 font-semibold"><Shield className="h-4 w-4 text-primary"/>Recent security activity</h2><p className="mt-1 text-xs text-muted-foreground">Only activity recorded by JEE Prep Hub is shown. Device details depend on what was captured at sign-in.</p></div>
+            <div><h2 className="flex items-center gap-2 font-semibold"><Shield className="h-4 w-4 text-primary"/>Recent security activity</h2><p className="mt-1 text-xs text-muted-foreground">Only activity recorded by PREPWIAN is shown. Device details depend on what was captured at sign-in.</p></div>
             <div className="flex flex-wrap gap-2"><button type="button" onClick={() => { setActivityLoading(true); setActivityRefresh((value) => value + 1); }} disabled={activityLoading} className="inline-flex h-10 items-center justify-center gap-2 rounded-xl border border-border bg-background/70 px-3 text-sm font-semibold transition hover:bg-muted disabled:opacity-50"><RefreshCw className={`h-4 w-4 ${activityLoading ? "animate-spin" : ""}`}/>Refresh</button><button type="button" onClick={() => void downloadAccountSnapshot()} disabled={!user || exporting} className="inline-flex h-10 items-center justify-center gap-2 rounded-xl border border-primary/25 bg-primary/10 px-3 text-sm font-semibold text-primary transition hover:bg-primary/15 disabled:opacity-50">{exporting ? <Loader2 className="h-4 w-4 animate-spin"/> : <Download className="h-4 w-4"/>}{exporting ? "Preparing archive…" : "Export all my data"}</button></div>
           </div>
           <div className="mt-4 flex flex-col gap-2 sm:flex-row">
@@ -520,7 +520,7 @@ function SettingsPage() {
           <label className="block"><span className="mb-2 block text-xs font-semibold">Sound effect</span><select value={jeeAlerts.preferences.sound} onChange={(event) => { const sound = event.target.value as typeof jeeAlerts.preferences.sound; jeeAlerts.update({ sound }); if (jeeAlerts.preferences.soundEnabled) playJeeAlertSound(sound); }} className="h-11 w-full rounded-xl border border-border bg-background/75 px-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-primary/30">{JEE_ALERT_SOUNDS.map((sound) => <option key={sound.id} value={sound.id}>{sound.label} · {sound.description}</option>)}</select></label>
           <button type="button" onClick={() => playJeeAlertSound(jeeAlerts.preferences.sound)} className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-border bg-background/70 px-4 text-sm font-semibold transition hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30"><Volume2 className="h-4 w-4"/>Preview sound</button>
         </div>
-        <p className="mt-3 text-[11px] leading-5 text-muted-foreground">Desktop notifications arrive while JEE Prep Hub is open in a browser tab. This project does not currently have a background push service for alerts when the browser is closed.</p>
+        <p className="mt-3 text-[11px] leading-5 text-muted-foreground">Desktop notifications arrive while PREPWIAN is open in a browser tab. This project does not currently have a background push service for alerts when the browser is closed.</p>
       </section>
 
       <NotificationStyleSetting />
@@ -553,7 +553,7 @@ function SettingsPage() {
               <button type="button" onClick={scholarTypography.reset} className="inline-flex h-10 items-center justify-center gap-2 rounded-xl border border-border bg-background/70 px-3 text-xs font-semibold transition hover:bg-muted"><RefreshCw className="h-3.5 w-3.5"/>Reset typography</button>
             </div>
             <div className="mt-4 rounded-xl border border-border/70 bg-card p-4" style={{ fontFamily: selectedScholarFont.family }}>
-              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-primary">Live sample · JEE Prep Hub</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-primary">Live sample · PREPWIAN</p>
               <p className="mt-2 font-bold leading-tight" style={{ fontSize: `${24 * scholarTypography.preference.scale}px` }}>Make every study session count.</p>
               <p className="mt-1 text-sm leading-relaxed text-muted-foreground">Clear notes. Confident practice. Your choice of type, sized for comfortable reading.</p>
             </div>
@@ -838,7 +838,7 @@ function SettingsPage() {
             </p>
 
             <p className="mt-1 text-sm leading-6 text-muted-foreground">
-              JEE Prep Hub does not need to store your API key.
+              PREPWIAN does not need to store your API key.
               AI requests are sent directly from your browser to
               the selected provider.
             </p>

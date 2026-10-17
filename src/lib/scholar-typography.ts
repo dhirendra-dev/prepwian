@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 
 export const SCHOLAR_FONTS = [
   { id: "editorial", label: "Editorial Serif", description: "Book-like headings and a classic reading feel", family: "Georgia, 'Times New Roman', serif" },
-  { id: "epilogue", label: "Epilogue", description: "The clean JEE Prep Hub sans-serif", family: "'Epilogue', system-ui, sans-serif" },
+  { id: "epilogue", label: "Epilogue", description: "The clean PREPWIAN sans-serif", family: "'Epilogue', system-ui, sans-serif" },
   { id: "urbanist", label: "Urbanist", description: "Geometric, modern and slightly softer", family: "'Urbanist', system-ui, sans-serif" },
   { id: "system", label: "System UI", description: "Fast native fonts from this device", family: "system-ui, -apple-system, 'Segoe UI', sans-serif" },
   { id: "mono", label: "Mono Focus", description: "A technical, code-like study notebook", family: "'JetBrains Mono', ui-monospace, SFMono-Regular, monospace" },

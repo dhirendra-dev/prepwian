@@ -6,14 +6,14 @@ export const Route = createFileRoute("/articles/")({
     meta: [
       { property: "og:description", content: "Explore JEE concept explainers, exam strategies and student-written insights." },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Articles — JEE Prep Hub" },
+      { name: "twitter:title", content: "Articles — PREPWIAN" },
       { name: "twitter:description", content: "Explore JEE concept explainers, exam strategies and student-written insights." },
-      { title: "Articles — JEE Prep Hub" },
+      { title: "Articles — PREPWIAN" },
       {
         name: "description",
         content: "Explore JEE concept explainers, exam strategies and student-written insights.",
       },
-      { property: "og:title", content: "Articles — JEE Prep Hub" },
+      { property: "og:title", content: "Articles — PREPWIAN" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://jeeprephub.co.in/articles" },
     ],

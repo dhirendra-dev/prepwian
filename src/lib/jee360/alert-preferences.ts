@@ -143,7 +143,7 @@ export function deliverHighPriorityDesktopAlert(
   if (!canNotify() || Notification.permission !== "granted") return;
   try {
     const notification = new Notification(`High-priority JEE alert: ${alert.title}`, {
-      body: alert.body || "Open JEE Prep Hub to view the details.",
+      body: alert.body || "Open PREPWIAN to view the details.",
       icon: "/favicon.png",
       tag: `jph-high-priority-${alert.id}`,
     });

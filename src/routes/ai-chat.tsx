@@ -18,15 +18,15 @@ import { aiChatCompletion } from "@/lib/ai-chat.functions";
 export const Route = createFileRoute("/ai-chat")({
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "AI Study Chat — JEE Prep Hub" },
+      { name: "twitter:title", content: "AI Study Chat — PREPWIAN" },
       { name: "twitter:description", content: "Your 24x7 AI tutor for JEE & NEET doubts, concepts and practice problems." },
-      { title: "AI Study Chat — JEE Prep Hub" },
+      { title: "AI Study Chat — PREPWIAN" },
       {
         name: "description",
         content:
           "Ask an AI study tutor anything about JEE Main, JEE Advanced and NEET — concepts, derivations, doubts and practice questions, with step-by-step answers.",
       },
-      { property: "og:title", content: "AI Study Chat — JEE Prep Hub" },
+      { property: "og:title", content: "AI Study Chat — PREPWIAN" },
       {
         property: "og:description",
         content: "Your 24x7 AI tutor for JEE & NEET doubts, concepts and practice problems.",

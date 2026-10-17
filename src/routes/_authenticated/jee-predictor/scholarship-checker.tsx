@@ -121,7 +121,7 @@ function ScholarshipChecker() {
 
           <p className="max-w-3xl text-muted-foreground">
             Enter your basic details to filter the scholarship
-            records available in JEE Prep Hub.
+            records available in PREPWIAN.
           </p>
         </div>
 

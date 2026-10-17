@@ -120,9 +120,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
       { name: "google-site-verification", content: "NerLHIaXz3SznqEtcwLVEa2kQxoXNsjLeODX4RHsHVk" },
-      { name: "author", content: "JEE Prep Hub" },
-      { name: "application-name", content: "JEE Prep Hub" },
-      { name: "apple-mobile-web-app-title", content: "JEE Prep Hub" },
+      { name: "author", content: "PREPWIAN" },
+      { name: "application-name", content: "PREPWIAN" },
+      { name: "apple-mobile-web-app-title", content: "PREPWIAN" },
       {
         httpEquiv: "Content-Security-Policy",
         content:
@@ -134,7 +134,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         name: "permissions-policy",
         content: "camera=(), microphone=(), geolocation=(self), payment=()",
       },
-      { property: "og:site_name", content: "JEE Prep Hub" },
+      { property: "og:site_name", content: "PREPWIAN" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

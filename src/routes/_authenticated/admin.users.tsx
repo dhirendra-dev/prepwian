@@ -30,7 +30,7 @@ import {
 import { adminSetTrustedMaterialsAccess } from "@/lib/materials-gate.functions";
 
 export const Route = createFileRoute("/_authenticated/admin/users")({
-  head: () => ({ meta: [{ title: "Admin · Users — JEE Prep Hub" }] }),
+  head: () => ({ meta: [{ title: "Admin · Users — PREPWIAN" }] }),
   ssr: false,
   beforeLoad: async ({ context }) => {
     await requirePermission(context.user.id, "users");

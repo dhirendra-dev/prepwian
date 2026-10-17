@@ -47,16 +47,16 @@ import { OAUTH_RETURN_PATH_KEY, POST_LOGIN_CHOICE_KEY } from "@/lib/post-login-d
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "JEE Prep Hub — Crack JEE Together" },
+      { name: "twitter:title", content: "PREPWIAN — Crack JEE Together" },
       { name: "twitter:description", content: "Curated materials, Pomodoro timer, leaderboard, live chat, and a focused community of JEE Class 11 & 12 aspirants." },
-      { title: "JEE Prep Hub — Crack JEE Together" },
+      { title: "PREPWIAN — Crack JEE Together" },
       {
         name: "description",
         content:
           "Curated materials, Pomodoro timer, leaderboard, live chat, and a focused community of JEE Class 11 & 12 aspirants.",
       },
-      { property: "og:title", content: "JEE Prep Hub — Crack JEE Together" },
-      { property: "og:site_name", content: "JEE Prep Hub" },
+      { property: "og:title", content: "PREPWIAN — Crack JEE Together" },
+      { property: "og:site_name", content: "PREPWIAN" },
       {
         property: "og:description",
         content:
@@ -73,7 +73,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "JEE Prep Hub",
+          name: "PREPWIAN",
           url: "https://jeeprephub.co.in/",
           description:
             "Curated materials, Pomodoro timer, leaderboard, live chat, and a focused community of JEE Class 11 & 12 aspirants.",
@@ -84,7 +84,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "JEE Prep Hub",
+          name: "PREPWIAN",
           url: "https://jeeprephub.co.in/",
         }),
       },
@@ -263,7 +263,7 @@ export function Landing({ data }: { data: LandingData }) {
         )}
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 pb-8 sm:px-5" aria-label="Explore JEE Prep Hub">
+      <section className="mx-auto max-w-6xl px-4 pb-8 sm:px-5" aria-label="Explore PREPWIAN">
         <div className="grid gap-2 sm:grid-cols-3">
           {[
             {
@@ -275,7 +275,7 @@ export function Landing({ data }: { data: LandingData }) {
             {
               to: "/about",
               label: "About Us",
-              description: "Get to know JEE Prep Hub",
+              description: "Get to know PREPWIAN",
               icon: Info,
             },
             {
@@ -321,7 +321,7 @@ export function Landing({ data }: { data: LandingData }) {
             <MessageCircle className="h-6 w-6 text-accent" /> Help & Support
           </h2>
           <p className="mt-1 text-sm text-muted-foreground">
-            Need help or have an idea? Reach the team or help us improve JEE Prep Hub.
+            Need help or have an idea? Reach the team or help us improve PREPWIAN.
           </p>
         </div>
         <div className="grid gap-3 sm:grid-cols-2">

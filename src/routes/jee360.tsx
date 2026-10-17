@@ -39,7 +39,7 @@ export const Route = createFileRoute("/jee360")({
       {
         name: "description",
         content:
-          "JEE 360 keeps your coaching lectures, backlog, mock tests, revision cards and focus sessions in one offline planner inside JEE Prep Hub.",
+          "JEE 360 keeps your coaching lectures, backlog, mock tests, revision cards and focus sessions in one offline planner inside PREPWIAN.",
       },
       { property: "og:title", content: "JEE 360 — Your JEE command centre" },
       {

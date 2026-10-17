@@ -26,14 +26,14 @@ export const Route = createFileRoute("/tests/jee-hub")({
   }),
   head: () => ({
     meta: [
-      { property: "og:title", content: "JEEHub Paper Archive — Test Series | JEE Prep Hub" },
+      { property: "og:title", content: "JEEHub Paper Archive — Test Series | PREPWIAN" },
       { property: "og:description", content: "Practice repository-backed JEE, NEET, BITSAT, COMEDK, and MHT-CET question sets." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "JEEHub Paper Archive — Test Series | JEE Prep Hub" },
+      { name: "twitter:title", content: "JEEHub Paper Archive — Test Series | PREPWIAN" },
       { name: "twitter:description", content: "Practice repository-backed JEE, NEET, BITSAT, COMEDK, and MHT-CET question sets." },
 
-      { title: "JEEHub Paper Archive — Test Series | JEE Prep Hub" },
+      { title: "JEEHub Paper Archive — Test Series | PREPWIAN" },
       {
         name: "description",
         content: "Practice repository-backed JEE, NEET, BITSAT, COMEDK, and MHT-CET question sets.",

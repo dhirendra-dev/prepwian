@@ -14,14 +14,14 @@ function titleFromSlug(slug: string): string {
 
 export const Route = createFileRoute("/articles/$slug")({
   head: ({ params }) => {
-    const title = `${titleFromSlug(params.slug)} — JEE Prep Hub`;
+    const title = `${titleFromSlug(params.slug)} — PREPWIAN`;
     const url = `${BASE}/articles/${params.slug}`;
     return {
       meta: [
-      { name: "description", content: `Read ${titleFromSlug(params.slug)}: a JEE preparation article from the JEE Prep Hub community.` },
-      { property: "og:description", content: `Read ${titleFromSlug(params.slug)}: a JEE preparation article from the JEE Prep Hub community.` },
+      { name: "description", content: `Read ${titleFromSlug(params.slug)}: a JEE preparation article from the PREPWIAN community.` },
+      { property: "og:description", content: `Read ${titleFromSlug(params.slug)}: a JEE preparation article from the PREPWIAN community.` },
       { name: "twitter:title", content: title },
-      { name: "twitter:description", content: `Read ${titleFromSlug(params.slug)}: a JEE preparation article from the JEE Prep Hub community.` },
+      { name: "twitter:description", content: `Read ${titleFromSlug(params.slug)}: a JEE preparation article from the PREPWIAN community.` },
         { title },
         { property: "og:title", content: title },
         { property: "og:type", content: "article" },
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/articles/$slug")({
             mainEntityOfPage: url,
             publisher: {
               "@type": "Organization",
-              name: "JEE Prep Hub",
+              name: "PREPWIAN",
               url: BASE,
             },
           }),

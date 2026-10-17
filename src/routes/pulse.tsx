@@ -37,12 +37,12 @@ const COMPLETED_KEY = "jph:pulse:completed:v2";
 export const Route = createFileRoute("/pulse")({
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "Pulse AI — JEE Prep Hub" },
+      { name: "twitter:title", content: "Pulse AI — PREPWIAN" },
       { name: "twitter:description", content: "Learn, revise, track and discover with Pulse AI." },
 
-      { title: "Pulse AI — JEE Prep Hub" },
+      { title: "Pulse AI — PREPWIAN" },
       { name: "description", content: "Your intelligent JEE learning feed with lectures, community updates, AI study guidance and progress tools." },
-      { property: "og:title", content: "Pulse AI — JEE Prep Hub" },
+      { property: "og:title", content: "Pulse AI — PREPWIAN" },
       { property: "og:description", content: "Learn, revise, track and discover with Pulse AI." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -245,8 +245,8 @@ function PulsePage() {
     setLikeOverride(m=>({...m,[item.id]:{liked:!wasLiked,delta:wasLiked?-1:1}}));try{await toggleLike({data:{targetType:"post",targetId:item.id}});qc.invalidateQueries({queryKey:["feed-my-likes"]})}catch{setLikeOverride(m=>{const n={...m};delete n[item.id];return n});toast.error("Couldn't save your like")}
   }
   async function onShare(item:PulseItem){
-    const url=`${SITE_URL}/feed`;const text=(item.body_text??item.title??"JEE Prep Hub").slice(0,120);
-    if(navigator.share){try{await navigator.share({title:"JEE Prep Hub",text,url});return}catch{}}
+    const url=`${SITE_URL}/feed`;const text=(item.body_text??item.title??"PREPWIAN").slice(0,120);
+    if(navigator.share){try{await navigator.share({title:"PREPWIAN",text,url});return}catch{}}
     try{await navigator.clipboard.writeText(url);toast.success("Link copied")}catch{toast.error("Couldn't share")}
   }
   async function onDelete(item:PulseItem){

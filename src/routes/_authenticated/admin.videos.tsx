@@ -23,10 +23,10 @@ import { Eye, ListVideo, Loader2, RefreshCw, Search, Trash2, Video } from "lucid
 export const Route = createFileRoute("/_authenticated/admin/videos")({
   head: () => ({
     meta: [
-      { title: "Video Lectures — Admin | JEE Prep Hub" },
+      { title: "Video Lectures — Admin | PREPWIAN" },
       { name: "description", content: "Add, publish and manage the YouTube video lectures that appear in the Pulse feed." },
       { property: "og:title", content: "Video Lectures — Admin" },
-      { property: "og:description", content: "Manage Pulse video lectures for JEE Prep Hub." },
+      { property: "og:description", content: "Manage Pulse video lectures for PREPWIAN." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],

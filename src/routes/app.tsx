@@ -20,24 +20,24 @@ import {
 export const Route = createFileRoute("/app")({
   head: () => ({
     meta: [
-      { property: "og:description", content: "Explore JEE Prep Hub: a connected ecosystem for planning, learning, practice, analysis, focus, AI, resources and community." },
-      { name: "twitter:title", content: "JEE Prep Hub — The JEE Preparation Ecosystem" },
-      { name: "twitter:description", content: "Explore JEE Prep Hub: a connected ecosystem for planning, learning, practice, analysis, focus, AI, resources and community." },
+      { property: "og:description", content: "Explore PREPWIAN: a connected ecosystem for planning, learning, practice, analysis, focus, AI, resources and community." },
+      { name: "twitter:title", content: "PREPWIAN — The JEE Preparation Ecosystem" },
+      { name: "twitter:description", content: "Explore PREPWIAN: a connected ecosystem for planning, learning, practice, analysis, focus, AI, resources and community." },
       {
-        title: "JEE Prep Hub — The JEE Preparation Ecosystem",
+        title: "PREPWIAN — The JEE Preparation Ecosystem",
       },
       {
         name: "description",
         content:
-          "Explore JEE Prep Hub: a connected ecosystem for planning, learning, practice, analysis, focus, AI, resources and community.",
+          "Explore PREPWIAN: a connected ecosystem for planning, learning, practice, analysis, focus, AI, resources and community.",
       },
       {
         property: "og:title",
-        content: "JEE Prep Hub — The JEE Preparation Ecosystem",
+        content: "PREPWIAN — The JEE Preparation Ecosystem",
       },
       {
         property: "og:site_name",
-        content: "JEE Prep Hub",
+        content: "PREPWIAN",
       },
       {
         property: "og:url",
@@ -154,7 +154,7 @@ function AppHub() {
         <div className="mx-auto max-w-4xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/60 px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[.2em] backdrop-blur-xl">
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
-            JEE Prep Hub · The preparation ecosystem
+            PREPWIAN · The preparation ecosystem
           </span>
 
           <h1 className="mt-7 font-display text-4xl font-extrabold leading-[.98] tracking-[-.045em] sm:text-6xl md:text-7xl">
@@ -233,7 +233,7 @@ function AppHub() {
               JEE preparation is often fragmented: lectures in one place,
               PDFs in another, tests somewhere else, planning in a notebook,
               discussion in a group and progress in a spreadsheet.
-              JEE Prep Hub is built around the opposite idea: connect the
+              PREPWIAN is built around the opposite idea: connect the
               pieces so students spend less energy managing tools and more
               energy learning.
             </p>
@@ -551,7 +551,7 @@ function AppHub() {
         <Kicker>06 · THE STORY BEHIND THE PRODUCT</Kicker>
 
         <h2 className="mt-3 font-display text-3xl font-bold sm:text-5xl">
-          JEE Prep Hub, explained in depth.
+          PREPWIAN, explained in depth.
         </h2>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -657,7 +657,7 @@ function AppHub() {
         </p>
 
         <p>
-          Inside JEE Prep Hub, engineering also means thinking about
+          Inside PREPWIAN, engineering also means thinking about
           interfaces, data, authentication, permissions, security,
           reliability, performance and failure cases — not merely making
           a button work.
@@ -787,7 +787,7 @@ function AppHub() {
         title="Privacy is part of the product, not a footer link."
       >
         <p>
-          Students may use JEE Prep Hub for accounts, study plans, tests,
+          Students may use PREPWIAN for accounts, study plans, tests,
           community participation and progress tracking. Responsible data
           handling is therefore an engineering requirement, not an
           afterthought.
@@ -861,7 +861,7 @@ function AppHub() {
             <div className="relative min-h-[520px] overflow-hidden lg:min-h-[700px]">
               <img
                 src="/founder-dhirendra-portrait.jpg"
-                alt="Dhirendra Kumar, founder of JEE Prep Hub"
+                alt="Dhirendra Kumar, founder of PREPWIAN"
                 className="absolute inset-0 h-full w-full object-cover"
               />
 
@@ -883,7 +883,7 @@ function AppHub() {
             {/* Founder story */}
             <div className="p-6 sm:p-10 lg:p-14">
               <p className="text-lg leading-8 sm:text-xl">
-                JEE Prep Hub began as a student-built attempt to solve a
+                PREPWIAN began as a student-built attempt to solve a
                 deceptively difficult problem: preparing seriously while
                 also managing resources, lectures, schedules, tests,
                 community, notes and progress.
@@ -964,7 +964,7 @@ function AppHub() {
             </h2>
 
             <p className="mt-4 text-sm leading-7 text-muted-foreground">
-              JEE Prep Hub is continuously evolving. The changelog records
+              PREPWIAN is continuously evolving. The changelog records
               how the product has changed over time rather than presenting
               it as something that appeared fully formed.
             </p>
@@ -1086,7 +1086,7 @@ function AppHub() {
               href="/dashboard"
               className="rounded-2xl bg-primary px-6 py-3 text-sm font-bold text-primary-foreground"
             >
-              Enter JEE Prep Hub
+              Enter PREPWIAN
             </a>
 
             <a

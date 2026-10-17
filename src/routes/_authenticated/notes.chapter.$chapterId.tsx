@@ -23,13 +23,13 @@ import {
 export const Route = createFileRoute("/_authenticated/notes/chapter/$chapterId")({
   head: () => ({ meta: [
       { name: "description", content: "Study chapter notes, formulas, summaries and practice questions." },
-      { property: "og:title", content: "Chapter Notes — JEE Prep Hub" },
+      { property: "og:title", content: "Chapter Notes — PREPWIAN" },
       { property: "og:description", content: "Study chapter notes, formulas, summaries and practice questions." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Chapter Notes — JEE Prep Hub" },
+      { name: "twitter:title", content: "Chapter Notes — PREPWIAN" },
       { name: "twitter:description", content: "Study chapter notes, formulas, summaries and practice questions." },
-{ title: "Chapter Notes — JEE Prep Hub" }] }),
+{ title: "Chapter Notes — PREPWIAN" }] }),
   component: ChapterPage,
   errorComponent: ({ error }: { error: unknown }) => <div className="p-6 text-sm text-destructive">{error instanceof Error ? error.message : String(error)}</div>,
 });

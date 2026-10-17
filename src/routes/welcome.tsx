@@ -22,14 +22,14 @@ import "./welcome.css";
 export const Route = createFileRoute("/welcome")({
   head: () => ({
     meta: [
-      { property: "og:title", content: "Welcome to JEE Prep Hub" },
+      { property: "og:title", content: "Welcome to PREPWIAN" },
       { property: "og:description", content: "A calmer, smarter starting point for JEE Main, JEE Advanced and NEET preparation." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Welcome to JEE Prep Hub" },
+      { name: "twitter:title", content: "Welcome to PREPWIAN" },
       { name: "twitter:description", content: "A calmer, smarter starting point for JEE Main, JEE Advanced and NEET preparation." },
 
-      { title: "Welcome to JEE Prep Hub" },
+      { title: "Welcome to PREPWIAN" },
       {
         name: "description",
         content:

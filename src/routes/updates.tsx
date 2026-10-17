@@ -14,19 +14,19 @@ import {
 export const Route = createFileRoute("/updates")({
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "Updates & Change History — JEE Prep Hub" },
-      { name: "twitter:description", content: "Day-by-day history of everything that changed on JEE Prep Hub." },
+      { name: "twitter:title", content: "Updates & Change History — PREPWIAN" },
+      { name: "twitter:description", content: "Day-by-day history of everything that changed on PREPWIAN." },
 
-      { title: "Updates & Change History — JEE Prep Hub" },
+      { title: "Updates & Change History — PREPWIAN" },
       {
         name: "description",
         content:
-          "Recorded JEE Prep Hub changes, grouped by day — new features, improvements, fixes, security work and design updates.",
+          "Recorded PREPWIAN changes, grouped by day — new features, improvements, fixes, security work and design updates.",
       },
-      { property: "og:title", content: "Updates & Change History — JEE Prep Hub" },
+      { property: "og:title", content: "Updates & Change History — PREPWIAN" },
       {
         property: "og:description",
-        content: "Day-by-day history of everything that changed on JEE Prep Hub.",
+        content: "Day-by-day history of everything that changed on PREPWIAN.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

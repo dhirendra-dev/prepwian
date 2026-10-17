@@ -383,7 +383,7 @@ function CollegeComparison() {
           <CardContent className="p-5">
             <p className="text-sm leading-6 text-muted-foreground">
               This comparison uses historical JEE/JoSAA records
-              imported into JEE Prep Hub. Historical opening and
+              imported into PREPWIAN. Historical opening and
               closing ranks are not an admission guarantee.
             </p>
           </CardContent>

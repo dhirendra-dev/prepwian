@@ -15,7 +15,7 @@ const MILESTONES = [3, 7, 14, 30, 50, 100, 365];
 let lastClaimedUser = "";
 
 function message(c: Claim) {
-  if (c.is_new) return { title: "Welcome to JEE Prep Hub! 🎉", sub: "Your streak starts today. Come back tomorrow to grow it." };
+  if (c.is_new) return { title: "Welcome to PREPWIAN! 🎉", sub: "Your streak starts today. Come back tomorrow to grow it." };
   if (MILESTONES.includes(c.streak)) return { title: `🏆 ${c.streak}-day milestone!`, sub: "Incredible consistency. Keep going!" };
   if (c.streak <= 1) return { title: "Fresh start!", sub: "Day 1 is done. Show up tomorrow to build your streak." };
   return { title: `${c.streak} days in a row!`, sub: "Come back tomorrow to keep the flame alive." };

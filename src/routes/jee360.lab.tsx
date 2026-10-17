@@ -12,12 +12,12 @@ import { todayISO } from "@/lib/jee360/dates";
 
 export const Route = createFileRoute("/jee360/lab")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Study Lab — JEE 360 | JEE Prep Hub" },
+      { property: "og:title", content: "Study Lab — JEE 360 | PREPWIAN" },
       { property: "og:description", content: "Explore JEE 360 preparation tools and study experiments." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Study Lab — JEE 360 | JEE Prep Hub" },
-      { name: "twitter:description", content: "Explore JEE 360 preparation tools and study experiments." },{ title: "Study Lab — JEE 360 | JEE Prep Hub" }, { name: "description", content: "Explore JEE 360 preparation tools and study experiments." }] }),
+      { name: "twitter:title", content: "Study Lab — JEE 360 | PREPWIAN" },
+      { name: "twitter:description", content: "Explore JEE 360 preparation tools and study experiments." },{ title: "Study Lab — JEE 360 | PREPWIAN" }, { name: "description", content: "Explore JEE 360 preparation tools and study experiments." }] }),
  component: LabPage });
 
 const LINKS = [

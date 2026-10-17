@@ -109,7 +109,7 @@ export default function NTASync() {
 
             <p className="mt-1 text-xs text-muted-foreground">
               This sync reads official JEE Main/NTA pages and stores their
-              metadata and official links in JEE Prep Hub.
+              metadata and official links in PREPWIAN.
             </p>
           </div>
 

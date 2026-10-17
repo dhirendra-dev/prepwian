@@ -404,8 +404,8 @@ export default function GoogleSearchHome() {
               ref={inputRef}
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Search the whole JEE Prep Hub…"
-              aria-label="Search JEE Prep Hub"
+              placeholder="Search the whole PREPWIAN…"
+              aria-label="Search PREPWIAN"
               autoComplete="off"
               maxLength={160}
             />

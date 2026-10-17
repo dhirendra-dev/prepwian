@@ -32,7 +32,7 @@ export const Route = createFileRoute("/_authenticated/admin/feedback")({
   },
   head: () => ({
     meta: [
-      { title: "Feedback Console — JEE Prep Hub Admin" },
+      { title: "Feedback Console — PREPWIAN Admin" },
       { name: "robots", content: "noindex, nofollow" },
     ],
   }),

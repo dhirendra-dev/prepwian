@@ -41,7 +41,7 @@ export function VerifiedTick({
             <BadgeCheck className="h-7 w-7 fill-white text-sky-500" strokeWidth={2.5} />
             <div>
               <h3 className="font-bold text-base leading-tight">Verified Member</h3>
-              <p className="text-xs text-sky-50/90">JEE Prep Hub blue tick</p>
+              <p className="text-xs text-sky-50/90">PREPWIAN blue tick</p>
             </div>
           </div>
         </div>

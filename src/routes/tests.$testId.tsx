@@ -19,7 +19,7 @@ export const Route = createFileRoute("/tests/$testId")({
       { name: "twitter:title", content: "Test Details" },
       { name: "twitter:description", content: "Real-exam CBT interface." },
 
-      { title: `Test Details — JEE Prep Hub` },
+      { title: `Test Details — PREPWIAN` },
       { name: "description", content: "Full CBT test details, instructions, and start options." },
       { property: "og:title", content: "Test Details" },
       { property: "og:description", content: "Real-exam CBT interface." },

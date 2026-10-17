@@ -27,14 +27,14 @@ import {
 export const Route = createFileRoute("/_authenticated/faq")({
   head: () => ({
     meta: [
-      { property: "og:title", content: "FAQs — JEE Prep Hub" },
+      { property: "og:title", content: "FAQs — PREPWIAN" },
       { property: "og:description", content: "Practical answers about study resources, tests, JEE 360, focus sessions, progress, and account support." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "FAQs — JEE Prep Hub" },
+      { name: "twitter:title", content: "FAQs — PREPWIAN" },
       { name: "twitter:description", content: "Practical answers about study resources, tests, JEE 360, focus sessions, progress, and account support." },
 
-      { title: "FAQs — JEE Prep Hub" },
+      { title: "FAQs — PREPWIAN" },
       {
         name: "description",
         content:
@@ -56,7 +56,7 @@ type FAQItem = {
 const faqs: FAQItem[] = [
   {
     category: "Getting started",
-    q: "Where should I start if I am new to JEE Prep Hub?",
+    q: "Where should I start if I am new to PREPWIAN?",
     a: "After signing in, open your dashboard and choose one next action: find a resource, add or watch a lecture, or try a suitable practice set. A small task you can finish is more useful than opening every tool at once.",
     icon: Sparkles,
     tags: "beginner first login home start today dashboard",
@@ -420,7 +420,7 @@ const faqs: FAQItem[] = [
   },
   {
     category: "Support",
-    q: "How do I contact the JEE Prep Hub team?",
+    q: "How do I contact the PREPWIAN team?",
     a: "Open Contact Admin, choose the closest subject/category, and explain what happened and what you expected. Include visible error text, steps to reproduce, and the relevant page or test name.",
     icon: LifeBuoy,
     tags: "contact admin support send message help feedback",

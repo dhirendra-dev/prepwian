@@ -18,7 +18,7 @@ import { toast } from "sonner";
 import { Trash2, Trophy, Plus } from "lucide-react";
 
 export const Route = createFileRoute("/_authenticated/admin/toppers")({
-  head: () => ({ meta: [{ title: "Admin · Toppers — JEE Prep Hub" }] }),
+  head: () => ({ meta: [{ title: "Admin · Toppers — PREPWIAN" }] }),
   ssr: false,
   beforeLoad: async ({ context }) => {
     const { data } = await supabase

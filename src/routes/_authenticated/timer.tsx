@@ -26,12 +26,12 @@ export const Route = createFileRoute("/_authenticated/timer")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Focus Timer — JEE Prep Hub" },
+      { name: "twitter:title", content: "Focus Timer — PREPWIAN" },
       { name: "twitter:description", content: "Pomodoro, stopwatch, deep focus mode and analytics — every session saved forever." },
 
       { title: "Focus Timer — Pomodoro, Stopwatch & Analytics for JEE Aspirants" },
       { name: "description", content: "Deep-focus workspace: Pomodoro, stopwatch, custom countdown, fullscreen mode, ambient sounds, and detailed daily/weekly/monthly study analytics." },
-      { property: "og:title", content: "Focus Timer — JEE Prep Hub" },
+      { property: "og:title", content: "Focus Timer — PREPWIAN" },
       { property: "og:description", content: "Pomodoro, stopwatch, deep focus mode and analytics — every session saved forever." },
     ],
   }),

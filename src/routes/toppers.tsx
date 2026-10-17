@@ -78,16 +78,16 @@ export const Route = createFileRoute("/toppers")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Toppers Hall of Fame | JEE Prep Hub" },
+      { name: "twitter:title", content: "Toppers Hall of Fame | PREPWIAN" },
       { name: "twitter:description", content: "Meet inspiring school, JEE and NEET achievers from across India." },
 
-      { title: "Toppers Hall of Fame | JEE Prep Hub" },
+      { title: "Toppers Hall of Fame | PREPWIAN" },
       {
         name: "description",
         content:
           "Celebrate Class 10, Class 11, Class 12, JEE Advanced, JEE Main and NEET toppers. Explore ranks, scores and stories from outstanding students.",
       },
-      { property: "og:title", content: "Toppers Hall of Fame | JEE Prep Hub" },
+      { property: "og:title", content: "Toppers Hall of Fame | PREPWIAN" },
       {
         property: "og:description",
         content: "Meet inspiring school, JEE and NEET achievers from across India.",
@@ -201,7 +201,7 @@ function TopperPage() {
           <div className="relative grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-amber-200/20 bg-amber-100/10 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.18em] text-amber-200">
-                <Sparkles className="h-3.5 w-3.5" /> JEE Prep Hub · Hall of Fame
+                <Sparkles className="h-3.5 w-3.5" /> PREPWIAN · Hall of Fame
               </div>
               <h1 className="mt-5 max-w-2xl text-4xl font-black leading-[1.03] tracking-tight sm:text-5xl lg:text-6xl">
                 Big dreams.

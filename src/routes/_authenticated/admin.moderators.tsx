@@ -18,7 +18,7 @@ import {
 
 export const Route = createFileRoute("/_authenticated/admin/moderators")({
   head: () => ({
-    meta: [{ title: "Admin · Moderators — JEE Prep Hub" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "Admin · Moderators — PREPWIAN" }, { name: "robots", content: "noindex" }],
   }),
   ssr: false,
   beforeLoad: async ({ context }) => {
@@ -118,7 +118,7 @@ function AdminModerators() {
   });
 
   const credentialText = creds
-    ? `JEE Prep Hub — Admin Access\nName: ${creds.full_name}\nLogin email: ${creds.email}\nPassword: ${creds.password}\nLogin here: https://jeeprephub.co.in/auth\n\nKeep this confidential. Please change your password after first login.`
+    ? `PREPWIAN — Admin Access\nName: ${creds.full_name}\nLogin email: ${creds.email}\nPassword: ${creds.password}\nLogin here: https://jeeprephub.co.in/auth\n\nKeep this confidential. Please change your password after first login.`
     : "";
 
   return (

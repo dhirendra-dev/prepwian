@@ -23,19 +23,19 @@ export const Route = createFileRoute("/auth")({
   head: () => ({
     meta: [
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Sign in to JEE Prep Hub" },
+      { name: "twitter:title", content: "Sign in to PREPWIAN" },
       { name: "twitter:description", content: "Create your free account and join thousands of JEE 2028 aspirants studying together." },
       {
-        title: "Sign in to JEE Prep Hub — Join the JEE 2028 Community",
+        title: "Sign in to PREPWIAN — Join the JEE 2028 Community",
       },
       {
         name: "description",
         content:
-          "Sign in or create your free JEE Prep Hub account to access curated study materials, focus timer, study squads, leaderboard and a community of Class 11 & 12 aspirants.",
+          "Sign in or create your free PREPWIAN account to access curated study materials, focus timer, study squads, leaderboard and a community of Class 11 & 12 aspirants.",
       },
       {
         property: "og:title",
-        content: "Sign in to JEE Prep Hub",
+        content: "Sign in to PREPWIAN",
       },
       {
         property: "og:description",

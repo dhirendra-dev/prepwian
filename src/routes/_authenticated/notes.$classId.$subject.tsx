@@ -12,14 +12,14 @@ import { SUBJECTS, fetchChapterList, chapterPct, pad2, type ClassLevel, type Sub
 export const Route = createFileRoute("/_authenticated/notes/$classId/$subject")({
   head: ({ params }) => ({
     meta: [
-      { property: "og:title", content: `Class ${params.classId} ${params.subject} Notes — JEE Prep Hub` },
+      { property: "og:title", content: `Class ${params.classId} ${params.subject} Notes — PREPWIAN` },
       { property: "og:description", content: `Chapter-wise Class ${params.classId} ${params.subject} notes, NCERT, summaries, formulas, questions and solutions.` },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: `Class ${params.classId} ${params.subject} Notes — JEE Prep Hub` },
+      { name: "twitter:title", content: `Class ${params.classId} ${params.subject} Notes — PREPWIAN` },
       { name: "twitter:description", content: `Chapter-wise Class ${params.classId} ${params.subject} notes, NCERT, summaries, formulas, questions and solutions.` },
 
-      { title: `Class ${params.classId} ${params.subject} Notes — JEE Prep Hub` },
+      { title: `Class ${params.classId} ${params.subject} Notes — PREPWIAN` },
       { name: "description", content: `Chapter-wise Class ${params.classId} ${params.subject} notes, NCERT, summaries, formulas, questions and solutions.` },
     ],
   }),

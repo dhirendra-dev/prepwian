@@ -225,7 +225,7 @@ export function AdminNavigation({ pathname }: { pathname: string }) {
             <Command className="h-5 w-5" />
           </span>
           <span className="min-w-0">
-            <span className="block truncate text-sm font-bold">JEE Prep Hub</span>
+            <span className="block truncate text-sm font-bold">PREPWIAN</span>
             <span className="block text-[11px] text-muted-foreground">Admin workspace</span>
           </span>
         </Link>

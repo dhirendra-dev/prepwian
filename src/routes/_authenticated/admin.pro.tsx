@@ -11,7 +11,7 @@ import { Crown, ChevronLeft } from "lucide-react";
 import { grantPro, revokePro } from "@/lib/pro.functions";
 
 export const Route = createFileRoute("/_authenticated/admin/pro")({
-  head: () => ({ meta: [{ title: "Admin · Pro Members — JEE Prep Hub" }] }),
+  head: () => ({ meta: [{ title: "Admin · Pro Members — PREPWIAN" }] }),
   ssr: false,
   beforeLoad: async ({ context }) => {
     await requirePermission(context.user.id, "pro");
@@ -76,7 +76,7 @@ function AdminPro() {
           <Crown className="h-6 w-6 text-amber-500 dark:text-amber-300" />
           <h1 className="font-display text-2xl font-bold">Pro Members</h1>
         </div>
-        <p className="mt-1 text-sm text-muted-foreground">Grant or revoke JEE Prep Hub Pro membership.</p>
+        <p className="mt-1 text-sm text-muted-foreground">Grant or revoke PREPWIAN Pro membership.</p>
 
         <div className="mt-6 rounded-xl border border-border bg-card p-4">
           <h2 className="text-sm font-semibold">Grant Pro to a user</h2>

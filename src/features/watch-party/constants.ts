@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // Shared synchronization constants
 // File: src/features/watch-party/constants.ts
 // ============================================================

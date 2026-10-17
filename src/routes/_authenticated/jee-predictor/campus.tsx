@@ -230,7 +230,7 @@ function CampusExplorer() {
         <Card>
           <CardContent className="p-5">
             <p className="text-sm leading-6 text-muted-foreground">
-              Location information comes from the JEE Prep Hub
+              Location information comes from the PREPWIAN
               institute directory. Official websites are provided
               as navigation links where available. No campus
               facilities or rankings are inferred from location

@@ -98,7 +98,7 @@ function InstituteDirectory() {
 
           <p className="max-w-3xl text-muted-foreground">
             Search institutes, locations and the JEE data available
-            for each institute in JEE Prep Hub.
+            for each institute in PREPWIAN.
           </p>
         </div>
 
@@ -248,7 +248,7 @@ function InstituteDirectory() {
           <CardContent className="p-5">
             <p className="text-sm leading-6 text-muted-foreground">
               Program, cutoff and seat counts represent records
-              currently imported into JEE Prep Hub. A missing count
+              currently imported into PREPWIAN. A missing count
               does not mean the institute itself lacks those
               programs or seats.
             </p>

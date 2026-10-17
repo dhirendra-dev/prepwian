@@ -537,7 +537,7 @@ export function BirthdayCelebrationExperience() {
               id="birthday-message"
               className="mx-auto mt-3 max-w-xl text-sm leading-6 text-slate-600 dark:text-indigo-50/85 sm:text-base"
             >
-              From everyone at JEE Prep Hub: may your day bring joy, fresh inspiration, and the
+              From everyone at PREPWIAN: may your day bring joy, fresh inspiration, and the
               confidence to keep reaching for what matters to you.
             </p>
 
@@ -801,7 +801,7 @@ export function BirthdayCelebrationExperience() {
                 onClick={close}
                 className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-4 text-sm font-medium text-muted-foreground transition hover:text-foreground dark:text-indigo-100/80 dark:hover:text-white"
               >
-                <Check className="h-4 w-4" /> Continue to JEE Prep Hub
+                <Check className="h-4 w-4" /> Continue to PREPWIAN
               </button>
             </div>
             <p className="mt-3 text-xs text-muted-foreground dark:text-white/50">

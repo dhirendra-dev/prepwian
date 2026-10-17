@@ -15,12 +15,12 @@ export const Route = createFileRoute("/_authenticated/notes/")({
     meta: [
       { property: "og:description", content: "Chapter-wise notes, summaries, formula sheets, questions and solutions for Class 11 and 12 Physics, Chemistry, Mathematics and Biology." },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Notes & NCERT — JEE Prep Hub" },
+      { name: "twitter:title", content: "Notes & NCERT — PREPWIAN" },
       { name: "twitter:description", content: "Chapter-wise notes, summaries, formula sheets, questions and solutions for Class 11 and 12 Physics, Chemistry, Mathematics and Biology." },
 
-      { title: "Notes & NCERT — JEE Prep Hub" },
+      { title: "Notes & NCERT — PREPWIAN" },
       { name: "description", content: "Chapter-wise notes, summaries, formula sheets, questions and solutions for Class 11 and 12 Physics, Chemistry, Mathematics and Biology." },
-      { property: "og:title", content: "Notes & NCERT — JEE Prep Hub" },
+      { property: "og:title", content: "Notes & NCERT — PREPWIAN" },
       { property: "og:type", content: "website" },
     ],
     links: [{ rel: "canonical", href: "https://jeeprephub.co.in/notes" }],

@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // Synchronization utilities
 // File: src/features/watch-party/utils/syncUtils.ts
 // ============================================================

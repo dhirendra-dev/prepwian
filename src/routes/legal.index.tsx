@@ -3,9 +3,9 @@ import { ShieldCheck, FileText } from "lucide-react";
 import { AppShell } from "@/components/AppShell";
 import { POLICY_DOCS, POLICY_VERSION, POLICY_LAST_UPDATED } from "@/lib/legal/content";
 
-const TITLE = "Policies, Terms & Community Rules — JEE Prep Hub";
+const TITLE = "Policies, Terms & Community Rules — PREPWIAN";
 const DESC =
-  "Terms of Use, Community Guidelines, Privacy Policy, Copyright Policy, Safety rules and disclaimers for JEE Prep Hub, an independent student-run JEE preparation community.";
+  "Terms of Use, Community Guidelines, Privacy Policy, Copyright Policy, Safety rules and disclaimers for PREPWIAN, an independent student-run JEE preparation community.";
 
 export const Route = createFileRoute("/legal/")({
   head: () => ({
@@ -34,7 +34,7 @@ function LegalIndex() {
             <h1 className="font-display text-2xl font-bold sm:text-3xl">Policies & Community Rules</h1>
           </div>
           <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground">
-            JEE Prep Hub is a student-run, independent educational initiative for students preparing for JEE Main, JEE
+            PREPWIAN is a student-run, independent educational initiative for students preparing for JEE Main, JEE
             Advanced and related engineering entrance examinations. These documents explain how the community works,
             what we do and do not promise, and how your information is handled.
           </p>

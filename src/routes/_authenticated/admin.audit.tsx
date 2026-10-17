@@ -19,7 +19,7 @@ import {
 import { adminListAuditLogs, type AuditLogRow } from "@/lib/audit.functions";
 
 export const Route = createFileRoute("/_authenticated/admin/audit")({
-  head: () => ({ meta: [{ title: "Admin · Audit Log — JEE Prep Hub" }] }),
+  head: () => ({ meta: [{ title: "Admin · Audit Log — PREPWIAN" }] }),
   ssr: false,
   beforeLoad: async ({ context }) => {
     const { data } = await supabase

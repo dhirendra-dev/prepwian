@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // Premium Liquid Glass / Lens Header
 // File: src/features/watch-party/components/PartyHeader.tsx
 // ============================================================

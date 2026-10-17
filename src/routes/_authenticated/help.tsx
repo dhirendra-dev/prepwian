@@ -24,14 +24,14 @@ import {
 export const Route = createFileRoute("/_authenticated/help")({
   head: () => ({
     meta: [
-      { property: "og:title", content: "Help Center — JEE Prep Hub" },
+      { property: "og:title", content: "Help Center — PREPWIAN" },
       { property: "og:description", content: "Step-by-step guides for study materials, tests, JEE 360 planning, focus, and account support." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Help Center — JEE Prep Hub" },
+      { name: "twitter:title", content: "Help Center — PREPWIAN" },
       { name: "twitter:description", content: "Step-by-step guides for study materials, tests, JEE 360 planning, focus, and account support." },
 
-      { title: "Help Center — JEE Prep Hub" },
+      { title: "Help Center — PREPWIAN" },
       {
         name: "description",
         content:
@@ -364,7 +364,7 @@ function HelpCenterPage() {
         <header className="relative isolate overflow-hidden rounded-2xl border border-border bg-card p-5 shadow-soft sm:rounded-3xl sm:p-8">
           <div className="pointer-events-none absolute -right-12 -top-16 -z-10 h-56 w-56 rounded-full bg-primary/15 blur-3xl" />
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3 py-1.5 text-xs font-semibold text-primary">
-            <Sparkles className="h-3.5 w-3.5" /> JEE PREP HUB · SUPPORT
+            <Sparkles className="h-3.5 w-3.5" /> PREPWIAN · SUPPORT
           </div>
           <h1 className="mt-4 break-words font-display text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
             Help Center

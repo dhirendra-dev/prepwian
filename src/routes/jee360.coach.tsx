@@ -14,12 +14,12 @@ import type { CoachMode } from "@/lib/jee360/types";
 
 export const Route = createFileRoute("/jee360/coach")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Study Coach — JEE 360 | JEE Prep Hub" },
+      { property: "og:title", content: "Study Coach — JEE 360 | PREPWIAN" },
       { property: "og:description", content: "Work on doubts and revision plans with the JEE 360 study coach." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Study Coach — JEE 360 | JEE Prep Hub" },
-      { name: "twitter:description", content: "Work on doubts and revision plans with the JEE 360 study coach." },{ title: "Study Coach — JEE 360 | JEE Prep Hub" }, { name: "description", content: "Work on doubts and revision plans with the JEE 360 study coach." }] }),
+      { name: "twitter:title", content: "Study Coach — JEE 360 | PREPWIAN" },
+      { name: "twitter:description", content: "Work on doubts and revision plans with the JEE 360 study coach." },{ title: "Study Coach — JEE 360 | PREPWIAN" }, { name: "description", content: "Work on doubts and revision plans with the JEE 360 study coach." }] }),
  component: CoachPage });
 
 function CoachPage() {

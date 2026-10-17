@@ -52,7 +52,7 @@ export function ProStatusCard({ userId }: { userId: string | undefined }) {
             <Crown className="h-3 w-3" strokeWidth={2.8} /> Weekly challenge
           </div>
           <h3 className="mt-2 font-display text-lg font-bold sm:text-xl">
-            Earn <span className="pro-gradient-text">JEE Prep Hub Pro</span>
+            Earn <span className="pro-gradient-text">PREPWIAN Pro</span>
           </h3>
           <p className="mt-0.5 text-xs text-muted-foreground sm:text-sm">
             Finish #1 on this week's study leaderboard. Every saved Pomodoro, stopwatch, and manual study log counts.

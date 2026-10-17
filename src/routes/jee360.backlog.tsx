@@ -23,12 +23,12 @@ import type { BacklogStatus, Priority, Subject } from "@/lib/jee360/types";
 
 export const Route = createFileRoute("/jee360/backlog")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Lecture Backlog — JEE 360 | JEE Prep Hub" },
+      { property: "og:title", content: "Lecture Backlog — JEE 360 | PREPWIAN" },
       { property: "og:description", content: "Track pending lectures and organize your JEE study backlog." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Lecture Backlog — JEE 360 | JEE Prep Hub" },
-      { name: "twitter:description", content: "Track pending lectures and organize your JEE study backlog." },{ title: "Lecture Backlog — JEE 360 | JEE Prep Hub" }, { name: "description", content: "Track pending lectures and organize your JEE study backlog." }] }),
+      { name: "twitter:title", content: "Lecture Backlog — JEE 360 | PREPWIAN" },
+      { name: "twitter:description", content: "Track pending lectures and organize your JEE study backlog." },{ title: "Lecture Backlog — JEE 360 | PREPWIAN" }, { name: "description", content: "Track pending lectures and organize your JEE study backlog." }] }),
  component: BacklogPage });
 
 const COLUMNS: { key: BacklogStatus; label: string }[] = [

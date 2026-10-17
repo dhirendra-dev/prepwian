@@ -15,12 +15,12 @@ import { useAppStore } from "@/lib/jee360/store";
 
 export const Route = createFileRoute("/jee360/rank")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Rank Estimates — JEE 360 | JEE Prep Hub" },
+      { property: "og:title", content: "Rank Estimates — JEE 360 | PREPWIAN" },
       { property: "og:description", content: "Explore rank estimates from the mock tests recorded in JEE 360." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Rank Estimates — JEE 360 | JEE Prep Hub" },
-      { name: "twitter:description", content: "Explore rank estimates from the mock tests recorded in JEE 360." },{ title: "Rank Estimates — JEE 360 | JEE Prep Hub" }, { name: "description", content: "Explore rank estimates from the mock tests recorded in JEE 360." }] }),
+      { name: "twitter:title", content: "Rank Estimates — JEE 360 | PREPWIAN" },
+      { name: "twitter:description", content: "Explore rank estimates from the mock tests recorded in JEE 360." },{ title: "Rank Estimates — JEE 360 | PREPWIAN" }, { name: "description", content: "Explore rank estimates from the mock tests recorded in JEE 360." }] }),
  component: RankPage });
 
 function RankPage() {

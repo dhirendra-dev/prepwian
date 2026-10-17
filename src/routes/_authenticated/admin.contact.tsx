@@ -54,17 +54,17 @@ const DEFAULT_TEMPLATES: Template[] = [
   {
     id: "ack",
     name: "Acknowledge receipt",
-    body: "Hi {name},\n\nThanks for reaching out — we've received your message and will look into it shortly.\n\n— JEE Prep Hub Team",
+    body: "Hi {name},\n\nThanks for reaching out — we've received your message and will look into it shortly.\n\n— PREPWIAN Team",
   },
   {
     id: "resolved",
     name: "Issue resolved",
-    body: "Hi {name},\n\nThe issue you reported has been fixed. Please refresh the app and let us know if it persists.\n\n— JEE Prep Hub Team",
+    body: "Hi {name},\n\nThe issue you reported has been fixed. Please refresh the app and let us know if it persists.\n\n— PREPWIAN Team",
   },
   {
     id: "need-info",
     name: "Need more info",
-    body: "Hi {name},\n\nCould you share a few more details (screenshot, exact steps, device/browser)? That will help us reproduce and fix this faster.\n\n— JEE Prep Hub Team",
+    body: "Hi {name},\n\nCould you share a few more details (screenshot, exact steps, device/browser)? That will help us reproduce and fix this faster.\n\n— PREPWIAN Team",
   },
 ];
 

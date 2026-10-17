@@ -30,16 +30,16 @@ import {
 export const Route = createFileRoute("/_authenticated/progress")({
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "Progress Tracker — JEE Prep Hub" },
+      { name: "twitter:title", content: "Progress Tracker — PREPWIAN" },
       { name: "twitter:description", content: "Rating, tiers, streaks, subject breakdowns and achievement badges from your real test data." },
 
-      { title: "Progress Tracker — Rating, Tiers & Badges | JEE Prep Hub" },
+      { title: "Progress Tracker — Rating, Tiers & Badges | PREPWIAN" },
       {
         name: "description",
         content:
-          "Track your JEE Prep Hub rating, climb Bronze to Diamond tiers, review subject-wise and test-wise performance, and unlock achievement badges.",
+          "Track your PREPWIAN rating, climb Bronze to Diamond tiers, review subject-wise and test-wise performance, and unlock achievement badges.",
       },
-      { property: "og:title", content: "Progress Tracker — JEE Prep Hub" },
+      { property: "og:title", content: "Progress Tracker — PREPWIAN" },
       { property: "og:description", content: "Rating, tiers, streaks, subject breakdowns and achievement badges from your real test data." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

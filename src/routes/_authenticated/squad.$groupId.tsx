@@ -65,13 +65,13 @@ import {
 export const Route = createFileRoute("/_authenticated/squad/$groupId")({
   head: () => ({ meta: [
       { name: "description", content: "Connect with your study squad in a shared group conversation." },
-      { property: "og:title", content: "Squad Chat — JEE Prep Hub" },
+      { property: "og:title", content: "Squad Chat — PREPWIAN" },
       { property: "og:description", content: "Connect with your study squad in a shared group conversation." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Squad Chat — JEE Prep Hub" },
+      { name: "twitter:title", content: "Squad Chat — PREPWIAN" },
       { name: "twitter:description", content: "Connect with your study squad in a shared group conversation." },
-{ title: "Squad Chat — JEE Prep Hub" }] }),
+{ title: "Squad Chat — PREPWIAN" }] }),
   component: SquadChatPage,
 });
 
@@ -652,7 +652,7 @@ function SquadChatPage() {
       try {
         await navigator.share({
           title: `Join ${group.name}`,
-          text: `Join ${group.name} on JEE Prep Hub`,
+          text: `Join ${group.name} on PREPWIAN`,
           url,
         });
         return;

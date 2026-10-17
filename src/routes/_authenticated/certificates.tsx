@@ -27,14 +27,14 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/_authenticated/certificates")({
   head: () => ({
     meta: [
-      { name: "description", content: "Explore your JEE Prep Hub certificates and achievements." },
-      { property: "og:title", content: "Certificates | JEE Prep Hub" },
-      { property: "og:description", content: "Explore your JEE Prep Hub certificates and achievements." },
+      { name: "description", content: "Explore your PREPWIAN certificates and achievements." },
+      { property: "og:title", content: "Certificates | PREPWIAN" },
+      { property: "og:description", content: "Explore your PREPWIAN certificates and achievements." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Certificates | JEE Prep Hub" },
-      { name: "twitter:description", content: "Explore your JEE Prep Hub certificates and achievements." },
-{ title: "Certificates | JEE Prep Hub" }],
+      { name: "twitter:title", content: "Certificates | PREPWIAN" },
+      { name: "twitter:description", content: "Explore your PREPWIAN certificates and achievements." },
+{ title: "Certificates | PREPWIAN" }],
   }),
   component: CertificatesPage,
 });
@@ -181,7 +181,7 @@ function CertificateArtwork({
       <div className="relative flex h-full flex-col items-center justify-center px-3 py-4 text-center">
         <div className="mb-1.5 flex items-center gap-1 text-[7px] font-bold tracking-[0.15em] text-amber-200 min-[420px]:text-[8px] sm:mb-2 sm:gap-1.5 sm:tracking-[0.24em] sm:text-[10px]">
           <Sparkles className="h-3 w-3" />
-          JEE PREP HUB
+          PREPWIAN
         </div>
         <div className="text-[7px] font-medium tracking-[0.12em] text-sky-100/80 sm:text-[10px] sm:tracking-[0.2em]">
           CERTIFICATE
@@ -362,7 +362,7 @@ function CertificatesPage() {
     const title = getCertificateTitle(cert, type);
     const url =
       `${window.location.origin}/certificates/verify/${encodeURIComponent(cert.verification_code)}`;
-    const text = `I earned "${title}" on JEE Prep Hub! Verify my certificate: ${url}`;
+    const text = `I earned "${title}" on PREPWIAN! Verify my certificate: ${url}`;
 
     try {
       if (navigator.share) {
@@ -402,7 +402,7 @@ function CertificatesPage() {
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-700 dark:text-amber-300">
-                JEE Prep Hub
+                PREPWIAN
               </p>
               <h1 className="text-lg font-bold tracking-tight sm:text-2xl">Certificates</h1>
             </div>
@@ -429,7 +429,7 @@ function CertificatesPage() {
                 </span>
               </h2>
               <p className="mt-3 max-w-xl text-[13px] leading-5 text-blue-100/80 sm:mt-4 sm:text-base sm:leading-6">
-                Celebrate your consistency, academic progress, test performance, and contributions to the JEE Prep Hub community.
+                Celebrate your consistency, academic progress, test performance, and contributions to the PREPWIAN community.
               </p>
               <div className="mt-5 flex flex-wrap gap-2.5 sm:mt-6 sm:gap-3">
                 <Button

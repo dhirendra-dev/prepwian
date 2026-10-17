@@ -7,17 +7,17 @@ import {
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Copy, Heart, MessageCircle, Send, Share2 } from "lucide-react";
 
-const TITLE = "Engineering — JEE Prep Hub Engineering Journal";
+const TITLE = "Engineering — PREPWIAN Engineering Journal";
 export const Route = createFileRoute("/engineering")({
   head: () => ({
     meta: [
       { name: "twitter:card", content: "summary" },
       { name: "twitter:title", content: TITLE },
-      { name: "twitter:description", content: "Engineering branches, coding, AI, systems and the future — explored through the JEE Prep Hub Engineering Journal." },
+      { name: "twitter:description", content: "Engineering branches, coding, AI, systems and the future — explored through the PREPWIAN Engineering Journal." },
       { title: TITLE },
-      { name: "description", content: "Explore every engineering branch, coding, AI, emerging technologies, careers and the future through the JEE Prep Hub Engineering Journal." },
+      { name: "description", content: "Explore every engineering branch, coding, AI, emerging technologies, careers and the future through the PREPWIAN Engineering Journal." },
       { property: "og:title", content: TITLE },
-      { property: "og:description", content: "Engineering branches, coding, AI, systems and the future — explored through the JEE Prep Hub Engineering Journal." },
+      { property: "og:description", content: "Engineering branches, coding, AI, systems and the future — explored through the PREPWIAN Engineering Journal." },
       { property: "og:image", content: "https://jeeprephub.co.in/founder-dhirendra-profile.jpg" },
       { property: "og:type", content: "website" },
     ],
@@ -114,7 +114,7 @@ const articles = [
   { id: "coding", category: "Coding", title: "Coding as an Engineering Tool", description: "Why programming now matters in every engineering branch.", icon: Code2, read: "8 min read" },
   { id: "software", category: "Technology", title: "When Software Starts Writing Software", description: "AI-assisted development, verification, architecture and security.", icon: Cpu, read: "8 min read" },
   { id: "limits", category: "Ethics", title: "The Advantages and Limits of Engineering", description: "Every system brings constraints, risks and responsibilities.", icon: ShieldCheck, read: "8 min read" },
-  { id: "building-jph", category: "Case study", title: "Building JEE Prep Hub", description: "What building a student platform as a solo developer teaches about real engineering.", icon: Wrench, read: "8 min read" },
+  { id: "building-jph", category: "Case study", title: "Building PREPWIAN", description: "What building a student platform as a solo developer teaches about real engineering.", icon: Wrench, read: "8 min read" },
   { id: "security", category: "Security", title: "Security Is an Engineering Problem", description: "Why security is designed in from the start, not added at the end.", icon: Building2, read: "8 min read" },
 ];
 
@@ -167,7 +167,7 @@ const bodies: Record<string, string[]> = {
     "Before building anything, ask the question from the mindset section: should we build it at all? Sometimes the best engineering decision is to simplify, wait or not build.",
   ],
   "building-jph": [
-    "JEE Prep Hub started as an attempt to build useful tools for students preparing for JEE and NEET. Building it as a single developer turned a list of features into a series of engineering decisions.",
+    "PREPWIAN started as an attempt to build useful tools for students preparing for JEE and NEET. Building it as a single developer turned a list of features into a series of engineering decisions.",
     "The first lesson was to pick tools that let one person move fast. A hosted backend, a modern React front end and a database with access rules removed a lot of setup, so time went to the product instead of the plumbing.",
     "The second lesson was that data access is a design problem. Who may read a profile, who may edit a post and what an admin can do all have to be decided deliberately. Writing those rules early prevents painful rewrites.",
     "The third lesson was cost. Free tiers and limited credits shape architecture. Storing some data on the user's device, caching and avoiding unnecessary requests make the platform cheaper and often faster.",
@@ -422,13 +422,13 @@ function EngineeringPage() {
     setShareKey(null);
   };
   const nativeShare = async (k: string, title: string) => {
-    try { await navigator.share({ title, text: title + " — JEE Prep Hub Engineering Journal", url: linkFor(k) }); } catch {}
+    try { await navigator.share({ title, text: title + " — PREPWIAN Engineering Journal", url: linkFor(k) }); } catch {}
     setShareKey(null);
   };
   const actionBar = (k: string, title: string) => {
     const liked = likes.includes(k);
     const canNative = typeof navigator !== "undefined" && !!navigator.share;
-    const msg = encodeURIComponent(title + " — JEE Prep Hub Engineering Journal\n" + linkFor(k));
+    const msg = encodeURIComponent(title + " — PREPWIAN Engineering Journal\n" + linkFor(k));
     const url = encodeURIComponent(linkFor(k));
     return (
       <div className="eng-actionbar">
@@ -490,7 +490,7 @@ function EngineeringPage() {
         <nav className="eng-card eng-nav">
           <Link to="/" className="eng-brand">
             <span className="eng-logo"><BookOpen size={18} /></span>
-            <span><b>JEE Prep Hub</b><small>Engineering</small></span>
+            <span><b>PREPWIAN</b><small>Engineering</small></span>
           </Link>
           <div className="eng-links">{navItems.map(([l, h]) => <a key={h} href={h} className="eng-link">{l}</a>)}</div>
           <div className="eng-actions">
@@ -498,14 +498,14 @@ function EngineeringPage() {
             <button onClick={toggle} className="eng-icon" aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}>
               {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
             </button>
-            <Link to="/app" className="eng-btn eng-btn-sm eng-hide-sm">JEE Prep Hub <ArrowRight size={14} /></Link>
+            <Link to="/app" className="eng-btn eng-btn-sm eng-hide-sm">PREPWIAN <ArrowRight size={14} /></Link>
             <button onClick={() => setMenu(!menu)} className="eng-icon eng-only-sm" aria-label="Menu">{menu ? <X size={18} /> : <Menu size={18} />}</button>
           </div>
         </nav>
         {menu && (
           <div className="eng-card eng-mobile-menu">
             {navItems.map(([l, h]) => <a key={h} href={h} onClick={() => setMenu(false)} className="eng-link">{l}</a>)}
-            <Link to="/app" className="eng-link">Open JEE Prep Hub</Link>
+            <Link to="/app" className="eng-link">Open PREPWIAN</Link>
           </div>
         )}
       </header>
@@ -517,7 +517,7 @@ function EngineeringPage() {
           <div className="eng-hero-body">
             <p className="eng-kicker">Explore · Understand · Build · Imagine</p>
             <h1 className="eng-title">ENGINEERING</h1>
-            <p className="eng-sub">The JEE Prep Hub Journal</p>
+            <p className="eng-sub">The PREPWIAN Journal</p>
             <p className="eng-lead">A deep exploration of engineering, coding, artificial intelligence, systems, science, emerging technologies, careers and the future — written to help curious minds understand how the world is built.</p>
             <div className="eng-row">
               <a href="#branches" className="eng-btn eng-btn-primary"><Sparkles size={16} /> Explore branches <ArrowRight size={16} /></a>
@@ -658,7 +658,7 @@ print(deflection(L))  # tip deflection (m)`}</code></pre>
         <div className="eng-card eng-panel eng-founder">
           <img src="/founder-dhirendra-profile.jpg" alt="Dhirendra Kumar" className="eng-photo" />
           <div>
-            <Heading icon={<GraduationCap size={16} />} eyebrow="About the founder" title="Dhirendra Kumar" text="JEE Prep Hub began as an attempt to build useful tools for students. The Engineering Journal extends that idea into the wider world of engineering, software, AI and science. It documents what I learn, build, break and discover." />
+            <Heading icon={<GraduationCap size={16} />} eyebrow="About the founder" title="Dhirendra Kumar" text="PREPWIAN began as an attempt to build useful tools for students. The Engineering Journal extends that idea into the wider world of engineering, software, AI and science. It documents what I learn, build, break and discover." />
             <ul className="eng-chips">{["Building", "Learning", "Engineering", "AI", "Technology", "Future"].map((x) => <li key={x} className="eng-chip">{x}</li>)}</ul>
           </div>
         </div>
@@ -672,7 +672,7 @@ print(deflection(L))  # tip deflection (m)`}</code></pre>
           <p className="eng-muted">Ask questions, understand systems, test ideas and make things that did not exist before.</p>
           <div className="eng-row eng-row-c">
             <a href="#branches" className="eng-btn eng-btn-primary">Explore branches <ArrowRight size={16} /></a>
-            <Link to="/app" className="eng-btn">Open JEE Prep Hub</Link>
+            <Link to="/app" className="eng-btn">Open PREPWIAN</Link>
           </div>
         </div>
       </section>
@@ -731,7 +731,7 @@ print(deflection(L))  # tip deflection (m)`}</code></pre>
               <button onClick={() => setOpenId(null)} className="eng-icon" aria-label="Close article"><X size={16} /></button>
             </div>
             <h2>{articles[openIdx].title}</h2>
-            <p className="eng-muted eng-by">By Dhirendra Kumar · JEE Prep Hub Engineering Journal</p>
+            <p className="eng-muted eng-by">By Dhirendra Kumar · PREPWIAN Engineering Journal</p>
             {bodies[articles[openIdx].id].map((para, i) => <p key={i} className="eng-para">{para}</p>)}
             {extra[articles[openIdx].id].sections.map(([h, t]) => (<div key={h}><h3 className="eng-gh">{h}</h3><p className="eng-para">{t}</p></div>))}
             <h3 className="eng-gh">Key takeaways</h3>
@@ -749,7 +749,7 @@ print(deflection(L))  # tip deflection (m)`}</code></pre>
 
       <footer className="eng-footer">
         <div className="eng-wrap eng-between eng-wrapflex">
-          <div><b>JEE Prep Hub Engineering</b><br /><small className="eng-muted">The Engineering Journal · By Dhirendra Kumar</small></div>
+          <div><b>PREPWIAN Engineering</b><br /><small className="eng-muted">The Engineering Journal · By Dhirendra Kumar</small></div>
           <div className="eng-row">{navItems.map(([l, h]) => <a key={h} href={h} className="eng-link">{l}</a>)}</div>
         </div>
       </footer>

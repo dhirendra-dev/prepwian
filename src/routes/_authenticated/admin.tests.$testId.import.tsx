@@ -25,7 +25,7 @@ import { useMemo, useState } from "react";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/_authenticated/admin/tests/$testId/import")({
-  head: () => ({ meta: [{ title: "Import PDF — Admin | JEE Prep Hub" }] }),
+  head: () => ({ meta: [{ title: "Import PDF — Admin | PREPWIAN" }] }),
   component: ImportPage,
 });
 

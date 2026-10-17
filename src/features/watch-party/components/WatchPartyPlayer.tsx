@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // Premium Liquid Glass / Lens Watch Player v2
 // File: src/features/watch-party/components/WatchPartyPlayer.tsx
 // ============================================================

@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // Queue panel
 // File: src/features/watch-party/components/QueuePanel.tsx
 // ============================================================

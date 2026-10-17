@@ -26,13 +26,13 @@ import { CATEGORIES, categoryOf } from "@/features/party/partyLib";
 
 export const Route = createFileRoute("/_authenticated/watch/")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Watch Party Lobby — JEE Prep Hub" },
+      { property: "og:title", content: "Watch Party Lobby — PREPWIAN" },
       { property: "og:description", content: "Discover shared lecture sessions and create a watch party with fellow students." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Watch Party Lobby — JEE Prep Hub" },
+      { name: "twitter:title", content: "Watch Party Lobby — PREPWIAN" },
       { name: "twitter:description", content: "Discover shared lecture sessions and create a watch party with fellow students." },
-{ title: "Watch Party Lobby — JEE Prep Hub" }, { name: "description", content: "Discover shared lecture sessions and create a watch party with fellow students." }] }),
+{ title: "Watch Party Lobby — PREPWIAN" }, { name: "description", content: "Discover shared lecture sessions and create a watch party with fellow students." }] }),
 
   component: WatchLobby,
 });
@@ -613,7 +613,7 @@ function PartyCard({
   onOpen: (id: string) => void;
 }) {
   const category = categoryOf(room.category);
-  const host = room.host_name?.trim() || "JEE Prep Hub";
+  const host = room.host_name?.trim() || "PREPWIAN";
   return (
     <button
       type="button"

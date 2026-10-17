@@ -15,7 +15,7 @@ export function DeveloperAccessInfoPanel() {
       </h1>
       <p className="mx-auto mt-4 max-w-md text-sm leading-6 text-muted-foreground">
         This page is reserved for authorised administrators. It is intended for development and
-        maintenance of JEE Prep Hub, not general account use.
+        maintenance of PREPWIAN, not general account use.
       </p>
 
       <div className="mx-auto mt-6 flex max-w-md items-center gap-3 rounded-2xl border border-border bg-muted/35 p-3 text-left">

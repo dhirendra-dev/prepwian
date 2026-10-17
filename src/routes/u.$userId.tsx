@@ -24,14 +24,14 @@ const SITE_URL = "https://jeeprephub.co.in";
 export const Route = createFileRoute("/u/$userId")({
   head: ({ params }) => ({
     meta: [
-      { property: "og:title", content: "Member profile — JEE Prep Hub" },
-      { property: "og:description", content: "View a JEE Prep Hub community member's profile, posts, study activity, and certificates." },
+      { property: "og:title", content: "Member profile — PREPWIAN" },
+      { property: "og:description", content: "View a PREPWIAN community member's profile, posts, study activity, and certificates." },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Member profile — JEE Prep Hub" },
-      { name: "twitter:description", content: "View a JEE Prep Hub community member's profile, posts, study activity, and certificates." },
+      { name: "twitter:title", content: "Member profile — PREPWIAN" },
+      { name: "twitter:description", content: "View a PREPWIAN community member's profile, posts, study activity, and certificates." },
 
-      { title: "Member profile — JEE Prep Hub" },
-      { name: "description", content: "View a JEE Prep Hub community member's profile, posts, study activity, and certificates." },
+      { title: "Member profile — PREPWIAN" },
+      { name: "description", content: "View a PREPWIAN community member's profile, posts, study activity, and certificates." },
       { property: "og:url", content: `${SITE_URL}/u/${params.userId}` },
       { property: "og:type", content: "profile" },
     ],

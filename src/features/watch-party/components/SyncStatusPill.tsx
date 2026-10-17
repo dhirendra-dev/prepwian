@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // Sync status indicator
 // File: src/features/watch-party/components/SyncStatusPill.tsx
 // ============================================================

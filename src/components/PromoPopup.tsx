@@ -49,7 +49,7 @@ export default function PromoPopup() {
     >
       <div
         role="dialog"
-        aria-label="JEE Prep Hub Official Community"
+        aria-label="PREPWIAN Official Community"
         className="pointer-events-auto relative w-full max-w-sm overflow-hidden rounded-2xl bg-white p-6 text-center shadow-2xl"
       >
         <button
@@ -60,7 +60,7 @@ export default function PromoPopup() {
           ✕
         </button>
         <h2 className="text-lg font-bold text-slate-900 mb-2">
-          JEE Prep Hub Official Community
+          PREPWIAN Official Community
         </h2>
         <p className="text-sm text-slate-600 mb-4">
           Only important announcements and updates. No groups or unnecessary chats.
