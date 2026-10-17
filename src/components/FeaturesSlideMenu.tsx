@@ -67,11 +67,12 @@ import { Logo } from "@/components/Logo";
 import { useAuth, useIsAdmin } from "@/hooks/use-auth";
 import { useMenuStyle, type MenuStyle } from "@/lib/menu-style";
 import { cn } from "@/lib/utils";
+import type { LucideIcon } from "lucide-react";
 
 type Item = {
   to: string;
   label: string;
-  icon: any;
+  icon: LucideIcon;
   desc: string;
   params?: Record<string, string>;
   hideWhenSignedIn?: boolean;
@@ -80,7 +81,7 @@ type Item = {
 type Group = {
   id: string;
   title: string;
-  icon: any;
+  icon: LucideIcon;
   color: string;
   bg: string;
   defaultOpen?: boolean;
@@ -102,12 +103,32 @@ const allGroups: Group[] = [
     items: [
       { to: "/searches", label: "Search Engine", icon: Search, desc: "Find any JEE resource fast" },
       { to: "/home", label: "Home", icon: Home, desc: "Landing & quick highlights" },
-      { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard, desc: "Overview, checklist & targets" },
-      { to: "/notes", label: "Notes", icon: BookOpen, desc: "Class 11 & 12 notes, NCERT & solutions" },
-      { to: "/materials", label: "Material Hub", icon: Library, desc: "Notes, modules, PYQs & tests" },
+      {
+        to: "/dashboard",
+        label: "Dashboard",
+        icon: LayoutDashboard,
+        desc: "Overview, checklist & targets",
+      },
+      {
+        to: "/notes",
+        label: "Notes",
+        icon: BookOpen,
+        desc: "Class 11 & 12 notes, NCERT & solutions",
+      },
+      {
+        to: "/materials",
+        label: "Material Hub",
+        icon: Library,
+        desc: "Notes, modules, PYQs & tests",
+      },
       { to: "/tests", label: "Test Series", icon: FileText, desc: "JEE-style CBT mock tests" },
       { to: "/progress", label: "Study Streak", icon: Flame, desc: "Track your streak & progress" },
-      { to: "/sahai", label: "SahAI", icon: Sparkles, desc: "Your AI study buddy for doubts, plans & motivation" },
+      {
+        to: "/sahai",
+        label: "SahAI",
+        icon: Sparkles,
+        desc: "Your AI study buddy for doubts, plans & motivation",
+      },
       { to: "/timer", label: "Focus Timer", icon: Timer, desc: "Pomodoro & study stats" },
     ],
   },
@@ -118,14 +139,44 @@ const allGroups: Group[] = [
     color: "text-violet-600",
     bg: "bg-violet-500/10",
     items: [
-      { to: "/planner", label: "Weekly Planner", icon: ListChecks, desc: "Weekly tasks by subject" },
+      {
+        to: "/planner",
+        label: "Weekly Planner",
+        icon: ListChecks,
+        desc: "Weekly tasks by subject",
+      },
       { to: "/focus", label: "Focus Zone", icon: ListChecks, desc: "Todos, habits & sessions" },
       { to: "/jee360", label: "JEE 360", icon: Atom, desc: "Lectures, backlog, tests & revision" },
-      { to: "/lecture-tracker", label: "Lecture Tracker", icon: Video, desc: "Track lectures and watch progress" },
-      { to: "/youtube-checklist", label: "YouTube Checklist", icon: Youtube, desc: "Turn videos & playlists into checklists" },
-      { to: "/watch", label: "Watch Party", icon: UsersRound, desc: "Watch and study videos together" },
-      { to: "/watch-history", label: "Watch History", icon: Radio, desc: "Resume lectures you started" },
-      { to: "/ai-chat", label: "AI Study Chat", icon: Sparkles, desc: "Step-by-step JEE & NEET tutor" },
+      {
+        to: "/lecture-tracker",
+        label: "Lecture Tracker",
+        icon: Video,
+        desc: "Track lectures and watch progress",
+      },
+      {
+        to: "/youtube-checklist",
+        label: "YouTube Checklist",
+        icon: Youtube,
+        desc: "Turn videos & playlists into checklists",
+      },
+      {
+        to: "/watch",
+        label: "Watch Party",
+        icon: UsersRound,
+        desc: "Watch and study videos together",
+      },
+      {
+        to: "/watch-history",
+        label: "Watch History",
+        icon: Radio,
+        desc: "Resume lectures you started",
+      },
+      {
+        to: "/ai-chat",
+        label: "AI Study Chat",
+        icon: Sparkles,
+        desc: "Step-by-step JEE & NEET tutor",
+      },
     ],
   },
   {
@@ -135,16 +186,66 @@ const allGroups: Group[] = [
     color: "text-rose-600",
     bg: "bg-rose-500/10",
     items: [
-      { to: "/prep-lab", label: "Prep Lab", icon: Brain, desc: "2,000 generated practice questions, adaptive sets & mistake revision" },
-      { to: "/tests/leaderboard", label: "Test Rank Leaderboard", icon: Trophy, desc: "Points & ranks across all tests" },
-      { to: "/tests/create", label: "Create CBT Test", icon: FileText, desc: "Turn your PDFs into a CBT test" },
-      { to: "/jee-predictor/pyq", label: "JEE PYQ Practice", icon: FileText, desc: "Chapter and topic-wise PYQs" },
-      { to: "/jee-predictor/daily-practice", label: "Daily JEE Practice", icon: Flame, desc: "Complete your daily practice set" },
-      { to: "/jee-predictor/dpp-tracker", label: "DPP Tracker", icon: CheckCircle2, desc: "Track daily practice sheets" },
-      { to: "/jee-predictor/mistake-book", label: "Mistake Book", icon: FileText, desc: "Track and learn from your mistakes" },
-      { to: "/jee-advanced-math-problems", label: "JEE Advanced Math", icon: Sigma, desc: "Curated PYQs & problems" },
-      { to: "/jee-advanced-physics-problems", label: "JEE Advanced Physics", icon: Atom, desc: "Curated PYQs & problems" },
-      { to: "/jee-advanced-chemistry-problems", label: "JEE Advanced Chemistry", icon: FlaskConical, desc: "Curated PYQs & problems" },
+      {
+        to: "/prep-lab",
+        label: "Prep Lab",
+        icon: Brain,
+        desc: "2,000 generated practice questions, adaptive sets & mistake revision",
+      },
+      {
+        to: "/tests/leaderboard",
+        label: "Test Rank Leaderboard",
+        icon: Trophy,
+        desc: "Points & ranks across all tests",
+      },
+      {
+        to: "/tests/create",
+        label: "Create CBT Test",
+        icon: FileText,
+        desc: "Turn your PDFs into a CBT test",
+      },
+      {
+        to: "/jee-predictor/pyq",
+        label: "JEE PYQ Practice",
+        icon: FileText,
+        desc: "Chapter and topic-wise PYQs",
+      },
+      {
+        to: "/jee-predictor/daily-practice",
+        label: "Daily JEE Practice",
+        icon: Flame,
+        desc: "Complete your daily practice set",
+      },
+      {
+        to: "/jee-predictor/dpp-tracker",
+        label: "DPP Tracker",
+        icon: CheckCircle2,
+        desc: "Track daily practice sheets",
+      },
+      {
+        to: "/jee-predictor/mistake-book",
+        label: "Mistake Book",
+        icon: FileText,
+        desc: "Track and learn from your mistakes",
+      },
+      {
+        to: "/jee-advanced-math-problems",
+        label: "JEE Advanced Math",
+        icon: Sigma,
+        desc: "Curated PYQs & problems",
+      },
+      {
+        to: "/jee-advanced-physics-problems",
+        label: "JEE Advanced Physics",
+        icon: Atom,
+        desc: "Curated PYQs & problems",
+      },
+      {
+        to: "/jee-advanced-chemistry-problems",
+        label: "JEE Advanced Chemistry",
+        icon: FlaskConical,
+        desc: "Curated PYQs & problems",
+      },
     ],
   },
   {
@@ -154,19 +255,84 @@ const allGroups: Group[] = [
     color: "text-emerald-600",
     bg: "bg-emerald-500/10",
     items: [
-      { to: "/jee-predictor/syllabus", label: "Syllabus Tracker", icon: BookOpen, desc: "Track chapter and topic completion" },
-      { to: "/jee-predictor/study-planner", label: "JEE Study Planner", icon: ListChecks, desc: "Plan your daily JEE preparation" },
-      { to: "/jee-predictor/study-now", label: "What Should I Study Now?", icon: Timer, desc: "Get your next study recommendation" },
-      { to: "/jee-predictor/daily-targets", label: "Daily Targets", icon: Target, desc: "Track today's study targets" },
-      { to: "/jee-predictor/study-goals", label: "Study Goals", icon: Target, desc: "Set measurable study goals" },
-      { to: "/jee-predictor/backlog", label: "Backlog Manager", icon: ListChecks, desc: "Track pending chapters and work" },
-      { to: "/jee-predictor/smart-revision", label: "Smart Revision", icon: Sparkles, desc: "Turn backlog into prioritized revision" },
-      { to: "/jee-predictor/revision", label: "Revision System", icon: RefreshCw, desc: "Schedule and track chapter revisions" },
-      { to: "/jee-predictor/weekly-review", label: "Weekly Study Review", icon: BarChart3, desc: "Review tests, weaknesses and revisions" },
-      { to: "/jee-predictor/exam-countdown", label: "Exam Countdown", icon: CalendarClock, desc: "Track important exam milestones" },
-      { to: "/jee-predictor/question-bookmarks", label: "Question Review Queue", icon: Bookmark, desc: "Review bookmarked questions" },
-      { to: "/jee-predictor/heatmap", label: "Syllabus Heatmap", icon: Flame, desc: "See strongest and weakest chapters" },
-      { to: "/jee-predictor/concept-map", label: "Concept Dependency Map", icon: Atom, desc: "Understand chapter prerequisites" },
+      {
+        to: "/jee-predictor/syllabus",
+        label: "Syllabus Tracker",
+        icon: BookOpen,
+        desc: "Track chapter and topic completion",
+      },
+      {
+        to: "/jee-predictor/study-planner",
+        label: "JEE Study Planner",
+        icon: ListChecks,
+        desc: "Plan your daily JEE preparation",
+      },
+      {
+        to: "/jee-predictor/study-now",
+        label: "What Should I Study Now?",
+        icon: Timer,
+        desc: "Get your next study recommendation",
+      },
+      {
+        to: "/jee-predictor/daily-targets",
+        label: "Daily Targets",
+        icon: Target,
+        desc: "Track today's study targets",
+      },
+      {
+        to: "/jee-predictor/study-goals",
+        label: "Study Goals",
+        icon: Target,
+        desc: "Set measurable study goals",
+      },
+      {
+        to: "/jee-predictor/backlog",
+        label: "Backlog Manager",
+        icon: ListChecks,
+        desc: "Track pending chapters and work",
+      },
+      {
+        to: "/jee-predictor/smart-revision",
+        label: "Smart Revision",
+        icon: Sparkles,
+        desc: "Turn backlog into prioritized revision",
+      },
+      {
+        to: "/jee-predictor/revision",
+        label: "Revision System",
+        icon: RefreshCw,
+        desc: "Schedule and track chapter revisions",
+      },
+      {
+        to: "/jee-predictor/weekly-review",
+        label: "Weekly Study Review",
+        icon: BarChart3,
+        desc: "Review tests, weaknesses and revisions",
+      },
+      {
+        to: "/jee-predictor/exam-countdown",
+        label: "Exam Countdown",
+        icon: CalendarClock,
+        desc: "Track important exam milestones",
+      },
+      {
+        to: "/jee-predictor/question-bookmarks",
+        label: "Question Review Queue",
+        icon: Bookmark,
+        desc: "Review bookmarked questions",
+      },
+      {
+        to: "/jee-predictor/heatmap",
+        label: "Syllabus Heatmap",
+        icon: Flame,
+        desc: "See strongest and weakest chapters",
+      },
+      {
+        to: "/jee-predictor/concept-map",
+        label: "Concept Dependency Map",
+        icon: Atom,
+        desc: "Understand chapter prerequisites",
+      },
     ],
   },
   {
@@ -176,10 +342,30 @@ const allGroups: Group[] = [
     color: "text-amber-600",
     bg: "bg-amber-500/10",
     items: [
-      { to: "/jee-predictor/mock-analysis", label: "Mock Test Analysis", icon: BarChart3, desc: "Analyse completed mock tests" },
-      { to: "/jee-predictor/performance-trends", label: "Performance Trends", icon: BarChart3, desc: "Track test performance over time" },
-      { to: "/jee-predictor/mock-test-comparison", label: "Mock Test Comparison", icon: Scale, desc: "Compare two completed tests" },
-      { to: "/jee-predictor/weak-chapters", label: "Weak Chapter Detector", icon: Target, desc: "Find chapters needing attention" },
+      {
+        to: "/jee-predictor/mock-analysis",
+        label: "Mock Test Analysis",
+        icon: BarChart3,
+        desc: "Analyse completed mock tests",
+      },
+      {
+        to: "/jee-predictor/performance-trends",
+        label: "Performance Trends",
+        icon: BarChart3,
+        desc: "Track test performance over time",
+      },
+      {
+        to: "/jee-predictor/mock-test-comparison",
+        label: "Mock Test Comparison",
+        icon: Scale,
+        desc: "Compare two completed tests",
+      },
+      {
+        to: "/jee-predictor/weak-chapters",
+        label: "Weak Chapter Detector",
+        icon: Target,
+        desc: "Find chapters needing attention",
+      },
     ],
   },
   {
@@ -189,11 +375,36 @@ const allGroups: Group[] = [
     color: "text-indigo-600",
     bg: "bg-indigo-500/10",
     items: [
-      { to: "/jee-predictor", label: "JEE Main Rank Predictor", icon: GraduationCap, desc: "Estimate rank from NTA percentile" },
-      { to: "/jee-predictor/advanced", label: "JEE Advanced Rank Estimator", icon: Sigma, desc: "Estimate rank from Advanced marks" },
-      { to: "/jee-predictor/marks-percentile", label: "Marks ↔ Percentile", icon: Sigma, desc: "Marks and percentile relationships" },
-      { to: "/jee-predictor/marks-rank", label: "Marks ↔ Rank", icon: Trophy, desc: "Historical marks-to-rank data" },
-      { to: "/jee-predictor/rank-trends", label: "Rank Trends", icon: RefreshCw, desc: "Explore historical rank trends" },
+      {
+        to: "/jee-predictor",
+        label: "JEE Main Rank Predictor",
+        icon: GraduationCap,
+        desc: "Estimate rank from NTA percentile",
+      },
+      {
+        to: "/jee-predictor/advanced",
+        label: "JEE Advanced Rank Estimator",
+        icon: Sigma,
+        desc: "Estimate rank from Advanced marks",
+      },
+      {
+        to: "/jee-predictor/marks-percentile",
+        label: "Marks ↔ Percentile",
+        icon: Sigma,
+        desc: "Marks and percentile relationships",
+      },
+      {
+        to: "/jee-predictor/marks-rank",
+        label: "Marks ↔ Rank",
+        icon: Trophy,
+        desc: "Historical marks-to-rank data",
+      },
+      {
+        to: "/jee-predictor/rank-trends",
+        label: "Rank Trends",
+        icon: RefreshCw,
+        desc: "Explore historical rank trends",
+      },
     ],
   },
   {
@@ -203,17 +414,72 @@ const allGroups: Group[] = [
     color: "text-cyan-600",
     bg: "bg-cyan-500/10",
     items: [
-      { to: "/jee-predictor/college", label: "College Predictor", icon: GraduationCap, desc: "Colleges from your expected rank" },
-      { to: "/jee-predictor/nit-iiit-gfti", label: "NIT / IIIT / GFTI Predictor", icon: GraduationCap, desc: "Explore NITs, IIITs and GFTIs" },
-      { to: "/jee-predictor/range-explorer", label: "College Range Explorer", icon: BookOpen, desc: "Colleges across rank ranges" },
-      { to: "/jee-predictor/cutoffs", label: "Cutoff Explorer", icon: FileText, desc: "College and branch cutoffs" },
-      { to: "/jee-predictor/cutoff-tracker", label: "Historical Cutoff Tracker", icon: RefreshCw, desc: "Cutoff trends across years" },
-      { to: "/jee-predictor/seat-matrix", label: "Seat Matrix", icon: Users, desc: "Available seats and categories" },
-      { to: "/jee-predictor/institutes", label: "Institute Directory", icon: Building2, desc: "Browse institutes and programs" },
-      { to: "/jee-predictor/programs", label: "Academic Program Explorer", icon: BookOpen, desc: "Programs and branches" },
-      { to: "/jee-predictor/branches", label: "Branch & Program Search", icon: Search, desc: "Search branches and programs" },
-      { to: "/jee-predictor/branch-demand", label: "Branch Demand", icon: Trophy, desc: "Branch demand patterns" },
-      { to: "/jee-predictor/campus", label: "Campus Explorer", icon: Home, desc: "College locations and campuses" },
+      {
+        to: "/jee-predictor/college",
+        label: "College Predictor",
+        icon: GraduationCap,
+        desc: "Colleges from your expected rank",
+      },
+      {
+        to: "/jee-predictor/nit-iiit-gfti",
+        label: "NIT / IIIT / GFTI Predictor",
+        icon: GraduationCap,
+        desc: "Explore NITs, IIITs and GFTIs",
+      },
+      {
+        to: "/jee-predictor/range-explorer",
+        label: "College Range Explorer",
+        icon: BookOpen,
+        desc: "Colleges across rank ranges",
+      },
+      {
+        to: "/jee-predictor/cutoffs",
+        label: "Cutoff Explorer",
+        icon: FileText,
+        desc: "College and branch cutoffs",
+      },
+      {
+        to: "/jee-predictor/cutoff-tracker",
+        label: "Historical Cutoff Tracker",
+        icon: RefreshCw,
+        desc: "Cutoff trends across years",
+      },
+      {
+        to: "/jee-predictor/seat-matrix",
+        label: "Seat Matrix",
+        icon: Users,
+        desc: "Available seats and categories",
+      },
+      {
+        to: "/jee-predictor/institutes",
+        label: "Institute Directory",
+        icon: Building2,
+        desc: "Browse institutes and programs",
+      },
+      {
+        to: "/jee-predictor/programs",
+        label: "Academic Program Explorer",
+        icon: BookOpen,
+        desc: "Programs and branches",
+      },
+      {
+        to: "/jee-predictor/branches",
+        label: "Branch & Program Search",
+        icon: Search,
+        desc: "Search branches and programs",
+      },
+      {
+        to: "/jee-predictor/branch-demand",
+        label: "Branch Demand",
+        icon: Trophy,
+        desc: "Branch demand patterns",
+      },
+      {
+        to: "/jee-predictor/campus",
+        label: "Campus Explorer",
+        icon: Home,
+        desc: "College locations and campuses",
+      },
     ],
   },
   {
@@ -223,11 +489,36 @@ const allGroups: Group[] = [
     color: "text-fuchsia-600",
     bg: "bg-fuchsia-500/10",
     items: [
-      { to: "/jee-predictor/compare", label: "Branch Comparison", icon: Scale, desc: "Compare branches and admission options" },
-      { to: "/jee-predictor/college-comparison", label: "College Comparison", icon: Scale, desc: "Compare colleges side by side" },
-      { to: "/jee-predictor/comparison-360", label: "College Comparison 360°", icon: Atom, desc: "Deep comparison workspace" },
-      { to: "/jee-predictor/admission-fit", label: "Admission Fit", icon: BadgeCheck, desc: "How your profile fits options" },
-      { to: "/jee-predictor/recommendations", label: "Recommendation Workspace", icon: Sparkles, desc: "Structured JEE recommendations" },
+      {
+        to: "/jee-predictor/compare",
+        label: "Branch Comparison",
+        icon: Scale,
+        desc: "Compare branches and admission options",
+      },
+      {
+        to: "/jee-predictor/college-comparison",
+        label: "College Comparison",
+        icon: Scale,
+        desc: "Compare colleges side by side",
+      },
+      {
+        to: "/jee-predictor/comparison-360",
+        label: "College Comparison 360°",
+        icon: Atom,
+        desc: "Deep comparison workspace",
+      },
+      {
+        to: "/jee-predictor/admission-fit",
+        label: "Admission Fit",
+        icon: BadgeCheck,
+        desc: "How your profile fits options",
+      },
+      {
+        to: "/jee-predictor/recommendations",
+        label: "Recommendation Workspace",
+        icon: Sparkles,
+        desc: "Structured JEE recommendations",
+      },
     ],
   },
   {
@@ -237,12 +528,42 @@ const allGroups: Group[] = [
     color: "text-teal-600",
     bg: "bg-teal-500/10",
     items: [
-      { to: "/jee-predictor/preferences", label: "Preference List Builder", icon: ListChecks, desc: "Build your preference list" },
-      { to: "/jee-predictor/preference-optimizer", label: "Preference Optimizer", icon: Sparkles, desc: "Analyze and optimize your list" },
-      { to: "/jee-predictor/choice-filling", label: "Choice Filling Assistant", icon: FileText, desc: "Validate and organize choices" },
-      { to: "/jee-predictor/shortlist", label: "College Shortlist", icon: Bookmark, desc: "Save colleges you are considering" },
-      { to: "/jee-predictor/counselling-checklist", label: "Counselling Checklist", icon: CheckCircle2, desc: "Track your counselling tasks" },
-      { to: "/jee-predictor/documents", label: "Documents & Certificates", icon: FileText, desc: "Track admission documents" },
+      {
+        to: "/jee-predictor/preferences",
+        label: "Preference List Builder",
+        icon: ListChecks,
+        desc: "Build your preference list",
+      },
+      {
+        to: "/jee-predictor/preference-optimizer",
+        label: "Preference Optimizer",
+        icon: Sparkles,
+        desc: "Analyze and optimize your list",
+      },
+      {
+        to: "/jee-predictor/choice-filling",
+        label: "Choice Filling Assistant",
+        icon: FileText,
+        desc: "Validate and organize choices",
+      },
+      {
+        to: "/jee-predictor/shortlist",
+        label: "College Shortlist",
+        icon: Bookmark,
+        desc: "Save colleges you are considering",
+      },
+      {
+        to: "/jee-predictor/counselling-checklist",
+        label: "Counselling Checklist",
+        icon: CheckCircle2,
+        desc: "Track your counselling tasks",
+      },
+      {
+        to: "/jee-predictor/documents",
+        label: "Documents & Certificates",
+        icon: FileText,
+        desc: "Track admission documents",
+      },
     ],
   },
   {
@@ -252,12 +573,42 @@ const allGroups: Group[] = [
     color: "text-lime-600",
     bg: "bg-lime-500/10",
     items: [
-      { to: "/jee-predictor/fees", label: "College Fee Explorer", icon: Wallet, desc: "Explore college fees and costs" },
-      { to: "/jee-predictor/living-costs", label: "Hostel & Living Costs", icon: Home, desc: "Hostel and living expenses" },
-      { to: "/jee-predictor/placements", label: "Placement & ROI Explorer", icon: Trophy, desc: "Placement and ROI information" },
-      { to: "/jee-predictor/roi", label: "ROI Calculator", icon: Calculator, desc: "Education cost versus return" },
-      { to: "/jee-predictor/scholarships", label: "Scholarship Explorer", icon: Award, desc: "Scholarships and fee waivers" },
-      { to: "/jee-predictor/scholarship-checker", label: "Scholarship Eligibility", icon: BadgeCheck, desc: "Check scholarship eligibility" },
+      {
+        to: "/jee-predictor/fees",
+        label: "College Fee Explorer",
+        icon: Wallet,
+        desc: "Explore college fees and costs",
+      },
+      {
+        to: "/jee-predictor/living-costs",
+        label: "Hostel & Living Costs",
+        icon: Home,
+        desc: "Hostel and living expenses",
+      },
+      {
+        to: "/jee-predictor/placements",
+        label: "Placement & ROI Explorer",
+        icon: Trophy,
+        desc: "Placement and ROI information",
+      },
+      {
+        to: "/jee-predictor/roi",
+        label: "ROI Calculator",
+        icon: Calculator,
+        desc: "Education cost versus return",
+      },
+      {
+        to: "/jee-predictor/scholarships",
+        label: "Scholarship Explorer",
+        icon: Award,
+        desc: "Scholarships and fee waivers",
+      },
+      {
+        to: "/jee-predictor/scholarship-checker",
+        label: "Scholarship Eligibility",
+        icon: BadgeCheck,
+        desc: "Check scholarship eligibility",
+      },
     ],
   },
   {
@@ -267,9 +618,19 @@ const allGroups: Group[] = [
     color: "text-rose-600",
     bg: "bg-rose-500/10",
     items: [
-      { to: "/pulse", label: "Pulse", icon: Radio, desc: "Lectures + community updates in one feed" },
+      {
+        to: "/pulse",
+        label: "Pulse",
+        icon: Radio,
+        desc: "Lectures + community updates in one feed",
+      },
       { to: "/groups", label: "Study Squads", icon: Users, desc: "Group chats & files" },
-      { to: "/community", label: "Community Chat & Doubts", icon: MessageCircle, desc: "Live chat, doubt board & AI answers" },
+      {
+        to: "/community",
+        label: "Community Chat & Doubts",
+        icon: MessageCircle,
+        desc: "Live chat, doubt board & AI answers",
+      },
       { to: "/feed", label: "Social Feed", icon: Rss, desc: "Share, ask, like & comment" },
       { to: "/forum", label: "Forum", icon: MessagesSquare, desc: "Threaded subject discussions" },
       {
@@ -280,7 +641,12 @@ const allGroups: Group[] = [
       },
       { to: "/friends", label: "Friends", icon: UserPlus, desc: "Follow aspirants" },
       { to: "/messages", label: "Messages", icon: Send, desc: "Private 1-on-1 chats" },
-      { to: "/follow-channel", label: "WhatsApp Channel", icon: MessageCircle, desc: "Follow & earn a certificate" },
+      {
+        to: "/follow-channel",
+        label: "WhatsApp Channel",
+        icon: MessageCircle,
+        desc: "Follow & earn a certificate",
+      },
     ],
   },
   {
@@ -291,11 +657,31 @@ const allGroups: Group[] = [
     bg: "bg-orange-500/10",
     items: [
       { to: "/leaderboard", label: "Leaderboard", icon: Trophy, desc: "Top aspirants by hours" },
-      { to: "/notices", label: "Notice Board", icon: Megaphone, desc: "Official updates & announcements" },
-      { to: "/nta", label: "NTA JEE Main", icon: GraduationCap, desc: "Official notices, papers & answer keys" },
-      { to: "/toppers", label: "Toppers Hall of Fame", icon: Trophy, desc: "JEE & NEET AIR toppers" },
+      {
+        to: "/notices",
+        label: "Notice Board",
+        icon: Megaphone,
+        desc: "Official updates & announcements",
+      },
+      {
+        to: "/nta",
+        label: "NTA JEE Main",
+        icon: GraduationCap,
+        desc: "Official notices, papers & answer keys",
+      },
+      {
+        to: "/toppers",
+        label: "Toppers Hall of Fame",
+        icon: Trophy,
+        desc: "JEE & NEET AIR toppers",
+      },
       { to: "/certificates", label: "Certificates", icon: Award, desc: "Earn & download awards" },
-      { to: "/updates", label: "Updates & History", icon: Sparkles, desc: "Everything we shipped, day by day" },
+      {
+        to: "/updates",
+        label: "Updates & History",
+        icon: Sparkles,
+        desc: "Everything we shipped, day by day",
+      },
     ],
   },
   {
@@ -306,7 +692,12 @@ const allGroups: Group[] = [
     bg: "bg-cyan-500/10",
     items: [
       { to: "/contact", label: "Contact the team", icon: Send, desc: "Ask a question or get help" },
-      { to: "/feedback", label: "Feedback Hub", icon: MessageCircle, desc: "Report issues and suggest improvements" },
+      {
+        to: "/feedback",
+        label: "Feedback Hub",
+        icon: MessageCircle,
+        desc: "Report issues and suggest improvements",
+      },
     ],
   },
   {
@@ -317,11 +708,31 @@ const allGroups: Group[] = [
     bg: "bg-emerald-500/10",
     items: [
       { to: "/profile", label: "My Profile", icon: User, desc: "Avatar, bio & stats" },
-      { to: "/my-activity", label: "My Activity", icon: LayoutDashboard, desc: "Appeals, tickets, certificates & more" },
+      {
+        to: "/my-activity",
+        label: "My Activity",
+        icon: LayoutDashboard,
+        desc: "Appeals, tickets, certificates & more",
+      },
       { to: "/pricing", label: "Earn Pro", icon: Trophy, desc: "Weekly #1 champion reward" },
-      { to: "/verified", label: "Get Blue Tick", icon: BadgeCheck, desc: "How to become a verified member" },
-      { to: "/consent", label: "Consent & Details", icon: ShieldCheck, desc: "Manage verification & data sharing" },
-      { to: "/donate", label: "Support the website", icon: Heart, desc: "Optional UPI contribution" },
+      {
+        to: "/verified",
+        label: "Get Blue Tick",
+        icon: BadgeCheck,
+        desc: "How to become a verified member",
+      },
+      {
+        to: "/consent",
+        label: "Consent & Details",
+        icon: ShieldCheck,
+        desc: "Manage verification & data sharing",
+      },
+      {
+        to: "/donate",
+        label: "Support the website",
+        icon: Heart,
+        desc: "Optional UPI contribution",
+      },
     ],
   },
   {
@@ -331,11 +742,31 @@ const allGroups: Group[] = [
     color: "text-slate-600",
     bg: "bg-slate-500/10",
     items: [
-      { to: "/engineering", label: "Engineering", icon: Building2, desc: "Explore engineering branches and careers" },
+      {
+        to: "/engineering",
+        label: "Engineering",
+        icon: Building2,
+        desc: "Explore engineering branches and careers",
+      },
       { to: "/about", label: "About Us", icon: Info, desc: "Learn about the PREPWIAN ecosystem" },
-      { to: "/developer", label: "Developer Portal", icon: Code2, desc: "Explore the public GitHub project" },
-      { to: "/official", label: "Official", icon: BadgeCheck, desc: "Official PREPWIAN resources and links" },
-      { to: "/legal", label: "About & Policies", icon: ShieldCheck, desc: "Who we are, rules & all documents" },
+      {
+        to: "/developer",
+        label: "Developer Portal",
+        icon: Code2,
+        desc: "Explore the public GitHub project",
+      },
+      {
+        to: "/official",
+        label: "Official",
+        icon: BadgeCheck,
+        desc: "Official PREPWIAN resources and links",
+      },
+      {
+        to: "/legal",
+        label: "About & Policies",
+        icon: ShieldCheck,
+        desc: "Who we are, rules & all documents",
+      },
     ],
   },
   {
@@ -346,22 +777,92 @@ const allGroups: Group[] = [
     bg: "bg-amber-500/10",
     admin: true,
     items: [
-      { to: "/admin", label: "Admin Center", icon: LayoutDashboard, desc: "Overview of all admin tools" },
-      { to: "/admin/system", label: "System Control Center", icon: ShieldCheck, desc: "Securely manage platform AI credentials" },
-      { to: "/admin/users", label: "User Management", icon: ShieldCheck, desc: "Roles & member search" },
-      { to: "/admin/materials", label: "Manage Materials", icon: FileText, desc: "Upload & edit resources" },
+      {
+        to: "/admin",
+        label: "Admin Center",
+        icon: LayoutDashboard,
+        desc: "Overview of all admin tools",
+      },
+      {
+        to: "/admin/system",
+        label: "System Control Center",
+        icon: ShieldCheck,
+        desc: "Securely manage platform AI credentials",
+      },
+      {
+        to: "/admin/users",
+        label: "User Management",
+        icon: ShieldCheck,
+        desc: "Roles & member search",
+      },
+      {
+        to: "/admin/materials",
+        label: "Manage Materials",
+        icon: FileText,
+        desc: "Upload & edit resources",
+      },
       { to: "/admin/tests", label: "Manage Tests", icon: FileText, desc: "CBT tests & questions" },
-      { to: "/admin/tests/approvals", label: "CBT Approvals", icon: BadgeCheck, desc: "Review learner-made tests" },
-      { to: "/admin/scheduled-tests", label: "Scheduled AI Tests", icon: CalendarClock, desc: "Monitor automated test generation" },
+      {
+        to: "/admin/tests/approvals",
+        label: "CBT Approvals",
+        icon: BadgeCheck,
+        desc: "Review learner-made tests",
+      },
+      {
+        to: "/admin/scheduled-tests",
+        label: "Scheduled AI Tests",
+        icon: CalendarClock,
+        desc: "Monitor automated test generation",
+      },
       { to: "/admin/videos", label: "Video Lectures", icon: Video, desc: "Manage Pulse lectures" },
-      { to: "/admin/community", label: "Manage Community", icon: MessageCircle, desc: "WhatsApp & groups" },
-      { to: "/admin/notifications", label: "Send Notifications", icon: Megaphone, desc: "Broadcast announcements" },
-      { to: "/admin/notices", label: "Manage Notice Board", icon: Megaphone, desc: "Publish official updates" },
-      { to: "/admin/nta", label: "NTA Sync", icon: RefreshCw, desc: "Fetch official JEE Main updates" },
-      { to: "/admin/certificates", label: "Manage Certificates", icon: BadgeCheck, desc: "Types & awards" },
-      { to: "/admin/toppers", label: "Manage Toppers", icon: Trophy, desc: "Add JEE/NEET AIR toppers" },
-      { to: "/admin/feedback", label: "Feedback Console", icon: MessageCircle, desc: "Review feedback & requests" },
-      { to: "/admin/search-analytics", label: "Search Analytics", icon: Search, desc: "See what students search for" },
+      {
+        to: "/admin/community",
+        label: "Manage Community",
+        icon: MessageCircle,
+        desc: "WhatsApp & groups",
+      },
+      {
+        to: "/admin/notifications",
+        label: "Send Notifications",
+        icon: Megaphone,
+        desc: "Broadcast announcements",
+      },
+      {
+        to: "/admin/notices",
+        label: "Manage Notice Board",
+        icon: Megaphone,
+        desc: "Publish official updates",
+      },
+      {
+        to: "/admin/nta",
+        label: "NTA Sync",
+        icon: RefreshCw,
+        desc: "Fetch official JEE Main updates",
+      },
+      {
+        to: "/admin/certificates",
+        label: "Manage Certificates",
+        icon: BadgeCheck,
+        desc: "Types & awards",
+      },
+      {
+        to: "/admin/toppers",
+        label: "Manage Toppers",
+        icon: Trophy,
+        desc: "Add JEE/NEET AIR toppers",
+      },
+      {
+        to: "/admin/feedback",
+        label: "Feedback Console",
+        icon: MessageCircle,
+        desc: "Review feedback & requests",
+      },
+      {
+        to: "/admin/search-analytics",
+        label: "Search Analytics",
+        icon: Search,
+        desc: "See what students search for",
+      },
       { to: "/admin/audit", label: "Audit Log", icon: Bell, desc: "Admin actions & sign-ins" },
     ],
   },
@@ -422,7 +923,9 @@ function MenuBody({
               aria-expanded={open}
               className="flex w-full items-center gap-2.5 rounded-xl px-1.5 py-2 text-left"
             >
-              <span className={cn("grid h-7 w-7 shrink-0 place-items-center rounded-lg", g.bg, g.color)}>
+              <span
+                className={cn("grid h-7 w-7 shrink-0 place-items-center rounded-lg", g.bg, g.color)}
+              >
                 <g.icon className="h-4 w-4" />
               </span>
               <span className="min-w-0 flex-1 truncate text-[12px] font-bold uppercase tracking-wide text-foreground/80">
@@ -449,8 +952,12 @@ function MenuBody({
                         <f.icon className="h-4 w-4" />
                       </span>
                       <span className="min-w-0 flex-1">
-                        <span className="block truncate text-sm font-semibold leading-tight">{f.label}</span>
-                        <span className="block truncate text-[11px] text-muted-foreground">{f.desc}</span>
+                        <span className="block truncate text-sm font-semibold leading-tight">
+                          {f.label}
+                        </span>
+                        <span className="block truncate text-[11px] text-muted-foreground">
+                          {f.desc}
+                        </span>
                       </span>
                       <ArrowRight className="h-3.5 w-3.5 shrink-0 text-muted-foreground/60" />
                     </>
@@ -470,7 +977,7 @@ function MenuBody({
                     <Link
                       key={f.label}
                       to={f.to}
-                      params={f.params as any}
+                      params={f.params as never}
                       onClick={onNavigate}
                       className={cn(itemCls, active && "ring-2 ring-primary/40")}
                     >
@@ -488,7 +995,7 @@ function MenuBody({
 }
 
 function StyleSwitch({ style, onChange }: { style: MenuStyle; onChange: (s: MenuStyle) => void }) {
-  const options: { key: MenuStyle; label: string; icon: any }[] = [
+  const options: { key: MenuStyle; label: string; icon: LucideIcon }[] = [
     { key: "drawer", label: "Side drawer", icon: PanelLeft },
     { key: "sheet", label: "Bottom sheet", icon: PanelBottom },
   ];
@@ -502,7 +1009,9 @@ function StyleSwitch({ style, onChange }: { style: MenuStyle; onChange: (s: Menu
           aria-pressed={style === o.key}
           className={cn(
             "inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-semibold transition-colors",
-            style === o.key ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground",
+            style === o.key
+              ? "bg-primary text-primary-foreground"
+              : "text-muted-foreground hover:text-foreground",
           )}
         >
           <o.icon className="h-3.5 w-3.5" /> {o.label}
@@ -618,15 +1127,14 @@ export function FeaturesSlideMenu() {
           type="button"
           whileTap={reduceMotion ? undefined : { scale: 0.985 }}
           transition={menuTransition}
-          className="feature-menu-trigger nav-glass-btn inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm font-semibold"
+          aria-label="Open PREPWIAN feature menu"
+          className="feature-menu-trigger nav-glass-btn inline-flex min-h-10 shrink-0 items-center gap-2 rounded-full px-2.5 py-2 text-sm font-semibold sm:px-3"
         >
-          <Menu className="h-4 w-4" /> Menu
+          <Menu className="h-4 w-4" /> <span className="hidden sm:inline">Menu</span>
         </motion.button>
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay
-          className="feature-menu-overlay data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 fixed inset-0 z-50 bg-foreground/30"
-        />
+        <Dialog.Overlay className="feature-menu-overlay data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 fixed inset-0 z-50 bg-foreground/30" />
         {style === "sheet" ? (
           <Dialog.Content
             className="feature-menu-content feature-menu-mobile-surface data-[state=closed]:animate-out data-[state=closed]:slide-out-to-bottom data-[state=closed]:fade-out-0 liquid-glass-card fixed inset-x-0 bottom-0 z-50 flex max-h-[88vh] flex-col rounded-t-[2.2rem] p-0"
@@ -645,7 +1153,9 @@ export function FeaturesSlideMenu() {
                 {header}
                 {searchBar}
               </div>
-              <nav className="feature-menu-section feature-menu-nav min-h-0 min-w-0 flex-1 overflow-x-hidden overflow-y-auto overscroll-contain px-3 py-3">{body}</nav>
+              <nav className="feature-menu-section feature-menu-nav min-h-0 min-w-0 flex-1 overflow-x-hidden overflow-y-auto overscroll-contain px-3 py-3">
+                {body}
+              </nav>
               <div className="feature-menu-section feature-menu-footer shrink-0 border-t border-border/50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3">
                 {footer}
               </div>
@@ -666,12 +1176,16 @@ export function FeaturesSlideMenu() {
                 {header}
                 {searchBar}
               </div>
-              <nav className="feature-menu-section feature-menu-nav min-h-0 min-w-0 flex-1 overflow-x-hidden overflow-y-auto overscroll-contain px-3 py-3">{body}</nav>
-              <div className="feature-menu-section feature-menu-footer shrink-0 border-t border-border/50 p-3">{footer}</div>
+              <nav className="feature-menu-section feature-menu-nav min-h-0 min-w-0 flex-1 overflow-x-hidden overflow-y-auto overscroll-contain px-3 py-3">
+                {body}
+              </nav>
+              <div className="feature-menu-section feature-menu-footer shrink-0 border-t border-border/50 p-3">
+                {footer}
+              </div>
             </motion.div>
           </Dialog.Content>
         )}
       </Dialog.Portal>
     </Dialog.Root>
   );
-      }
+}

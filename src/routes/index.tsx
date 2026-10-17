@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import "@/styles/landing-redesign.css";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import {
   Atom,
@@ -48,7 +49,11 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { name: "twitter:title", content: "PREPWIAN — Crack JEE Together" },
-      { name: "twitter:description", content: "Curated materials, Pomodoro timer, leaderboard, live chat, and a focused community of JEE Class 11 & 12 aspirants." },
+      {
+        name: "twitter:description",
+        content:
+          "Curated materials, Pomodoro timer, leaderboard, live chat, and a focused community of JEE Class 11 & 12 aspirants.",
+      },
       { title: "PREPWIAN — Crack JEE Together" },
       {
         name: "description",
@@ -143,70 +148,96 @@ export function Landing({ data }: { data: LandingData }) {
   return (
     <div className="min-h-screen">
       {/* ── Hero ───────────────────────────────────────────── */}
-      <section className="mx-auto max-w-6xl px-4 pb-10 pt-4 sm:px-5 sm:pt-8">
-        <div className="grid gap-4 lg:grid-cols-[1.35fr_1fr]">
-          <GlassSurface className="relative overflow-hidden rounded-3xl p-6 sm:p-9">
-            <span className="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full bg-primary/25 blur-3xl" />
-            <span className="pointer-events-none absolute -bottom-24 -left-10 h-56 w-56 rounded-full bg-accent/20 blur-3xl" />
+      <section className="mx-auto max-w-7xl px-4 pb-10 pt-4 sm:px-6 sm:pb-14 sm:pt-8">
+        <div className="grid gap-4 lg:grid-cols-[minmax(0,1.35fr)_minmax(19rem,0.75fr)]">
+          <GlassSurface className="home-hero-panel relative isolate overflow-hidden rounded-[2rem] p-5 sm:p-8 lg:p-10">
+            <span
+              className="home-hero-grid pointer-events-none absolute inset-0"
+              aria-hidden="true"
+            />
+            <span
+              className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-primary/20 blur-3xl"
+              aria-hidden="true"
+            />
+            <div className="relative z-10">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/15 bg-primary/8 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.16em] text-primary sm:text-[11px]">
+                  <Sparkles className="h-3.5 w-3.5" aria-hidden="true" /> Built for JEE aspirants
+                </span>
+                <Link
+                  to="/updates"
+                  className="inline-flex max-w-full items-center gap-1.5 rounded-full bg-background/65 px-3 py-1.5 text-[11px] font-semibold text-muted-foreground transition-colors hover:text-foreground"
+                  aria-label={`Latest update: ${latestUpdate.headline ?? "Latest update"}, ${formatChangeDate(latestUpdate.date)}`}
+                >
+                  <span className="truncate">{latestUpdate.headline ?? "Latest update"}</span>
+                  <span className="shrink-0 opacity-70">
+                    · {formatChangeDate(latestUpdate.date)}
+                  </span>
+                  <ArrowRight className="h-3 w-3 shrink-0" aria-hidden="true" />
+                </Link>
+              </div>
 
-            <Link
-              to="/updates"
-              className="relative inline-flex max-w-full items-center gap-2 rounded-full bg-muted/50 px-3 py-1.5 text-[11px] font-semibold text-muted-foreground hover:text-foreground"
-            >
-              <Sparkles className="h-3.5 w-3.5 shrink-0 text-accent" />
-              <span className="truncate">{latestUpdate.headline ?? "Latest update"}</span>
-              <span className="shrink-0 opacity-70">· {formatChangeDate(latestUpdate.date)}</span>
-            </Link>
+              <h1 className="mt-7 max-w-3xl font-display text-[2.55rem] font-bold leading-[1.04] tracking-[-0.045em] sm:mt-9 sm:text-6xl lg:text-[4.25rem]">
+                A calmer way
+                <br />
+                <span className="text-liquid">to crack JEE.</span>
+              </h1>
+              <p className="mt-4 max-w-xl text-sm leading-6 text-muted-foreground sm:mt-5 sm:text-base sm:leading-7">
+                Your study plan, practice, materials and focus tools—together in one place, so you
+                always know what to do next.
+              </p>
 
-            <h1 className="relative mt-5 font-display text-[2rem] font-bold leading-[1.08] tracking-tight sm:text-6xl">
-              <span className="text-liquid">Crack JEE</span>
-              <br />
-              with focus, materials
-              <br className="hidden sm:block" /> and a squad.
-            </h1>
-            <p className="relative mt-4 max-w-xl text-sm text-muted-foreground sm:text-base">
-              Everything a Class 11, 12 or dropper aspirant needs — study material, CBT mock tests,
-              a focus timer, quizzes and a community that actually shows up. Open it all without an
-              account.
-            </p>
+              <div className="mt-6 flex flex-wrap gap-3 sm:mt-7">
+                <Link
+                  to="/dashboard"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition hover:-translate-y-0.5 hover:opacity-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                >
+                  Start studying <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </Link>
+                <Link
+                  to="/materials"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl border border-border/70 bg-background/60 px-5 py-3 text-sm font-semibold transition hover:border-primary/40 hover:bg-background/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                >
+                  <BookOpen className="h-4 w-4 text-primary" aria-hidden="true" /> Browse free
+                  materials
+                </Link>
+              </div>
 
-            <div className="relative mt-6 flex flex-wrap gap-2.5">
-              <Link
-                to="/dashboard"
-                className="inline-flex items-center gap-2 rounded-2xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-95"
-              >
-                Start studying <ArrowRight className="h-4 w-4" />
-              </Link>
-              <Link
-                to="/community"
-                className="inline-flex items-center gap-2 glass-surface glass-surface-interactive rounded-2xl px-5 py-3 text-sm font-semibold"
-              >
-                Join community <MessageCircle className="h-4 w-4" />
-              </Link>
+              <dl className="mt-8 grid max-w-lg grid-cols-3 gap-2 border-t border-border/60 pt-5 sm:mt-10">
+                <Stat label="Study resources" value={`${counts.materials}+`} />
+                <Stat label="Study groups" value={`${counts.groups}`} />
+                <Stat label="Product updates" value={`${totalChangeCount()}`} />
+              </dl>
             </div>
-
-            <dl className="relative mt-7 grid grid-cols-3 gap-2 sm:max-w-md">
-              <Stat label="Materials" value={`${counts.materials}+`} />
-              <Stat label="Groups" value={`${counts.groups}`} />
-              <Stat label="Updates" value={`${totalChangeCount()}`} />
-            </dl>
           </GlassSurface>
 
-          <div className="grid gap-4">
+          <div className="grid content-start gap-4">
             <ExamCountdown isAdmin={isAdmin} />
-            <GlassSurface className="p-4">
-              <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-muted-foreground">
-                Jump straight in
-              </p>
-              <div className="mt-3 grid grid-cols-4 gap-2">
+            <GlassSurface className="rounded-3xl p-4 sm:p-5">
+              <div className="flex items-end justify-between gap-3">
+                <div>
+                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary sm:text-[11px]">
+                    Your toolkit
+                  </p>
+                  <h2 className="mt-1 font-display text-lg font-bold sm:text-xl">
+                    Pick your next move
+                  </h2>
+                </div>
+                <span className="pb-0.5 text-xs text-muted-foreground">8 ways to study</span>
+              </div>
+              <div className="mt-4 grid grid-cols-2 gap-2">
                 {quickActions.map((a) => (
                   <Link
                     key={a.label}
                     to={a.to}
-                    className="flex flex-col items-center gap-1.5 rounded-xl bg-muted/30 p-2 text-center transition hover:bg-muted/60"
+                    className="home-action-tile group flex items-center gap-2 rounded-xl border border-border/60 bg-background/55 px-2.5 py-2 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:gap-2.5 sm:px-3"
                   >
-                    <a.icon className="h-4.5 w-4.5 text-accent" />
-                    <span className="text-[10px] font-semibold leading-tight">{a.label}</span>
+                    <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary/15">
+                      <a.icon className="h-4 w-4" aria-hidden="true" />
+                    </span>
+                    <span className="min-w-0 text-xs font-semibold leading-tight sm:text-[13px]">
+                      {a.label}
+                    </span>
                   </Link>
                 ))}
               </div>
@@ -746,11 +777,9 @@ export function Landing({ data }: { data: LandingData }) {
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-2xl bg-muted/30 p-3">
-      <dd className="font-display text-xl font-bold">{value}</dd>
-      <dt className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-        {label}
-      </dt>
+    <div className="rounded-2xl border border-border/50 bg-background/55 p-3">
+      <dd className="font-display text-2xl font-bold tabular-nums">{value}</dd>
+      <dt className="text-[11px] font-medium leading-snug text-muted-foreground">{label}</dt>
     </div>
   );
 }

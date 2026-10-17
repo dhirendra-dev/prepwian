@@ -60,9 +60,15 @@ export function PublicHeader() {
     <header className="mx-auto flex w-full max-w-[1440px] items-center justify-between gap-2 px-3 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4">
       <div className="flex items-center gap-2">
         <FeaturesSlideMenu />
-        <Link to="/" className="ml-1 hidden items-center gap-2 sm:flex">
-          <Logo className="h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14" />
-          <span className="font-display text-lg font-semibold lg:text-xl">PREPWIAN</span>
+        <Link
+          to="/"
+          aria-label="PREPWIAN home"
+          className="ml-1 flex min-w-0 shrink-0 items-center gap-1.5 sm:gap-2"
+        >
+          <Logo className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14" />
+          <span className="hidden font-display text-sm font-bold tracking-tight min-[420px]:inline sm:text-lg lg:text-xl">
+            PREPWIAN
+          </span>
         </Link>
       </div>
       {/* Fixed header control row: do not add feature shortcuts here without explicit user approval. */}
@@ -117,7 +123,7 @@ export function PublicHeader() {
         ) : (
           <Link
             to="/auth"
-            className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:opacity-90"
+            className="inline-flex min-h-10 items-center justify-center rounded-xl bg-primary px-3 py-2 text-xs font-semibold text-primary-foreground transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:px-4 sm:text-sm"
           >
             Sign in
           </Link>
