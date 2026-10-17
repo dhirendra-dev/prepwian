@@ -1,0 +1,1 @@
+GRANT EXECUTE ON FUNCTION public.public_feed_authors(uuid[]) TO anon;

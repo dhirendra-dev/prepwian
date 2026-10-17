@@ -1,0 +1,4 @@
+Canonical: https://jeeprephub.co.in/.well-known/security.txt
+Contact: https://jeeprephub.co.in/contact
+Expires: 2027-09-30T00:00:00Z
+Preferred-Languages: en

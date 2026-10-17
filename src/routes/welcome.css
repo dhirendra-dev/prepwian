@@ -1,0 +1,144 @@
+.welcome-page {
+  background:
+    radial-gradient(circle at 10% 4%, hsl(var(--primary) / 0.08), transparent 28rem),
+    radial-gradient(circle at 90% 22%, hsl(245 80% 72% / 0.08), transparent 25rem),
+    hsl(var(--background));
+}
+
+.welcome-subject--blue {
+  border-color: rgb(147 197 253 / 0.65);
+  background: linear-gradient(135deg, rgb(239 248 255 / 0.96), rgb(224 242 254 / 0.8));
+  color: rgb(15 58 110);
+}
+.welcome-subject--violet {
+  border-color: rgb(196 181 253 / 0.65);
+  background: linear-gradient(135deg, rgb(248 245 255 / 0.96), rgb(237 233 254 / 0.8));
+  color: rgb(67 45 132);
+}
+.welcome-subject--amber {
+  border-color: rgb(253 230 138 / 0.7);
+  background: linear-gradient(135deg, rgb(255 252 235 / 0.98), rgb(254 243 199 / 0.8));
+  color: rgb(112 72 10);
+}
+.welcome-subject--green {
+  border-color: rgb(167 243 208 / 0.7);
+  background: linear-gradient(135deg, rgb(240 253 250 / 0.98), rgb(220 252 231 / 0.8));
+  color: rgb(13 83 61);
+}
+.dark .welcome-subject--blue {
+  border-color: rgb(96 165 250 / 0.25);
+  background: linear-gradient(135deg, rgb(30 64 110 / 0.72), rgb(23 52 92 / 0.72));
+  color: rgb(219 234 254);
+}
+.dark .welcome-subject--violet {
+  border-color: rgb(167 139 250 / 0.25);
+  background: linear-gradient(135deg, rgb(67 47 125 / 0.72), rgb(51 38 96 / 0.72));
+  color: rgb(237 233 254);
+}
+.dark .welcome-subject--amber {
+  border-color: rgb(251 191 36 / 0.25);
+  background: linear-gradient(135deg, rgb(106 73 17 / 0.72), rgb(79 57 17 / 0.72));
+  color: rgb(254 243 199);
+}
+.dark .welcome-subject--green {
+  border-color: rgb(52 211 153 / 0.25);
+  background: linear-gradient(135deg, rgb(15 83 67 / 0.72), rgb(17 68 49 / 0.72));
+  color: rgb(209 250 229);
+}
+
+.welcome-butterfly {
+  position: absolute;
+  display: block;
+  font-size: 1rem;
+  opacity: 0;
+  transform: translate3d(-10vw, 20vh, 0) rotate(-8deg);
+  animation: welcome-fly 24s ease-in-out infinite;
+}
+.welcome-butterfly--one {
+  left: 8%;
+  top: 20%;
+  font-size: 1.35rem;
+  animation-delay: 2s;
+}
+.welcome-butterfly--two {
+  left: 64%;
+  top: 42%;
+  font-size: 0.8rem;
+  animation-delay: 10s;
+  animation-duration: 28s;
+}
+.welcome-butterfly--three {
+  left: 35%;
+  top: 72%;
+  font-size: 1.8rem;
+  animation-delay: 17s;
+  animation-duration: 31s;
+}
+.welcome-butterfly--four {
+  left: 82%;
+  top: 16%;
+  font-size: 0.72rem;
+  animation-delay: 5s;
+  animation-duration: 26s;
+}
+.welcome-butterfly--five {
+  left: 20%;
+  top: 52%;
+  font-size: 2.25rem;
+  animation-delay: 13s;
+  animation-duration: 29s;
+}
+.welcome-butterfly--six {
+  left: 73%;
+  top: 68%;
+  font-size: 0.68rem;
+  animation-delay: 20s;
+  animation-duration: 34s;
+}
+.welcome-butterfly--seven {
+  left: 48%;
+  top: 8%;
+  font-size: 1.1rem;
+  animation-delay: 8s;
+  animation-duration: 23s;
+}
+.welcome-butterfly--eight {
+  left: 92%;
+  top: 56%;
+  font-size: 1.55rem;
+  animation-delay: 23s;
+  animation-duration: 30s;
+}
+
+@keyframes welcome-fly {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translate3d(-10vw, 12vh, 0) rotate(-8deg);
+  }
+  12%,
+  78% {
+    opacity: 0.34;
+  }
+  50% {
+    opacity: 0.22;
+    transform: translate3d(52vw, -10vh, 0) rotate(10deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-butterfly {
+    animation: none;
+    opacity: 0.16;
+    transform: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .welcome-hero h1 {
+    font-size: 2.25rem;
+  }
+  .welcome-hero {
+    padding: 1rem;
+  }
+}

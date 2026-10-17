@@ -1,0 +1,3733 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-physics: var(--physics);
+  --color-chemistry: var(--chemistry);
+  --color-mathematics: var(--mathematics);
+  --color-info: var(--info);
+  --color-role: var(--role);
+  --color-vote-up: var(--vote-up);
+  --color-vote-down: var(--vote-down);
+  --color-story-ring: var(--story-ring);
+  --color-palette-ocean: oklch(0.57 0.17 240);
+  --color-palette-forest: oklch(0.58 0.14 157);
+  --color-palette-coral: oklch(0.66 0.2 28);
+  --color-palette-violet: oklch(0.57 0.19 295);
+  --color-palette-rose: oklch(0.61 0.19 350);
+  --color-palette-amber: oklch(0.62 0.16 72);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-sans: "Epilogue", system-ui, sans-serif;
+  --font-display: "Urbanist", system-ui, sans-serif;
+  --shadow-soft: 0 1px 2px oklch(0.2 0.05 260 / 0.05), 0 4px 16px oklch(0.2 0.05 260 / 0.06);
+  --shadow-glow: 0 0 0 1px oklch(0.55 0.18 255 / 0.15), 0 8px 30px oklch(0.55 0.18 255 / 0.18);
+}
+
+:root {
+  --radius: 0.75rem;
+  --site-global-header-height: calc(3.5rem + env(safe-area-inset-top, 0px));
+  /* Ice-blue foundation with deep navy accent (matches app header palette) */
+  --background: oklch(0.945 0.03 225);
+  --foreground: oklch(0.24 0.07 262);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.24 0.07 262);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.24 0.07 262);
+  --primary: oklch(0.3 0.09 262);
+  --primary-foreground: oklch(0.97 0.01 225);
+  --secondary: oklch(0.93 0.03 225);
+  --secondary-foreground: oklch(0.3 0.09 262);
+  --muted: oklch(0.94 0.02 228);
+  --muted-foreground: oklch(0.5 0.05 258);
+  --accent: oklch(0.72 0.14 225);
+  --accent-foreground: oklch(0.2 0.07 262);
+  --success: oklch(0.68 0.16 155);
+  --success-foreground: oklch(0.99 0 0);
+  --warning: oklch(0.78 0.16 75);
+  --warning-foreground: oklch(0.2 0.05 60);
+  --destructive: oklch(0.6 0.22 27);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.91 0.012 250);
+  --input: oklch(0.91 0.012 250);
+  --ring: oklch(0.55 0.16 255);
+  --physics: oklch(0.62 0.2 255);
+  --chemistry: oklch(0.65 0.18 145);
+  --mathematics: oklch(0.7 0.19 35);
+  --info: oklch(0.62 0.19 240);
+  --role: oklch(0.58 0.18 305);
+  --vote-up: oklch(0.66 0.18 45);
+  --vote-down: oklch(0.56 0.18 270);
+  --story-ring: oklch(0.66 0.2 28);
+  --sidebar: oklch(0.22 0.06 260);
+  --sidebar-foreground: oklch(0.92 0.01 250);
+  --sidebar-primary: oklch(0.72 0.16 215);
+  --sidebar-primary-foreground: oklch(0.18 0.04 260);
+  --sidebar-accent: oklch(0.28 0.06 260);
+  --sidebar-accent-foreground: oklch(0.96 0.005 250);
+  --sidebar-border: oklch(0.3 0.05 260);
+  --sidebar-ring: oklch(0.72 0.16 215);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --site-global-header-height: calc(4rem + env(safe-area-inset-top, 0px));
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --site-global-header-height: calc(4.5rem + env(safe-area-inset-top, 0px));
+  }
+}
+
+.site-global-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  isolation: isolate;
+  padding-top: env(safe-area-inset-top, 0px);
+  background-color: color-mix(in srgb, var(--background) 94%, transparent);
+  transition:
+    background-color 180ms var(--motion-ease, ease-out),
+    box-shadow 180ms var(--motion-ease, ease-out);
+}
+
+.site-global-header[data-scroll-position="scrolled"] {
+  background-color: color-mix(in srgb, var(--background) 97%, transparent);
+  box-shadow: 0 12px 30px -25px color-mix(in srgb, var(--foreground) 55%, transparent);
+}
+
+.dark {
+  --background: oklch(0.04 0 0);
+  --foreground: oklch(0.96 0 0);
+  --card: oklch(0.085 0 0);
+  --card-foreground: oklch(0.96 0 0);
+  --popover: oklch(0.075 0 0);
+  --popover-foreground: oklch(0.96 0 0);
+  --primary: oklch(0.78 0.16 215);
+  --primary-foreground: oklch(0.04 0 0);
+  --secondary: oklch(0.12 0 0);
+  --secondary-foreground: oklch(0.96 0 0);
+  --muted: oklch(0.11 0 0);
+  --muted-foreground: oklch(0.7 0 0);
+  --accent: oklch(0.78 0.16 215);
+  --accent-foreground: oklch(0.04 0 0);
+  --border: oklch(1 0 0 / 11%);
+  --input: oklch(1 0 0 / 14%);
+  --ring: oklch(0.78 0.16 215);
+}
+
+[data-palette="forest"] {
+  --primary: oklch(0.48 0.13 157);
+  --primary-foreground: oklch(0.98 0.01 150);
+  --accent: oklch(0.7 0.14 105);
+  --accent-foreground: oklch(0.2 0.05 150);
+  --ring: oklch(0.58 0.14 157);
+  --story-ring: oklch(0.7 0.14 105);
+}
+
+[data-palette="coral"] {
+  --primary: oklch(0.58 0.19 28);
+  --primary-foreground: oklch(0.98 0.01 30);
+  --accent: oklch(0.72 0.15 78);
+  --accent-foreground: oklch(0.24 0.06 30);
+  --ring: oklch(0.66 0.2 28);
+  --story-ring: oklch(0.66 0.2 28);
+}
+
+[data-palette="violet"] {
+  --primary: oklch(0.48 0.16 295);
+  --primary-foreground: oklch(0.98 0.01 295);
+  --accent: oklch(0.74 0.14 320);
+  --accent-foreground: oklch(0.22 0.05 295);
+  --ring: oklch(0.58 0.19 295);
+  --story-ring: oklch(0.66 0.19 320);
+}
+
+[data-palette="rose"] {
+  --primary: oklch(0.52 0.17 350);
+  --primary-foreground: oklch(0.98 0.01 350);
+  --accent: oklch(0.74 0.15 15);
+  --accent-foreground: oklch(0.23 0.05 350);
+  --ring: oklch(0.62 0.19 350);
+  --story-ring: oklch(0.67 0.18 15);
+}
+
+[data-palette="amber"] {
+  --primary: oklch(0.52 0.14 68);
+  --primary-foreground: oklch(0.99 0.01 80);
+  --accent: oklch(0.78 0.15 95);
+  --accent-foreground: oklch(0.24 0.05 65);
+  --ring: oklch(0.64 0.16 72);
+  --story-ring: oklch(0.72 0.17 90);
+}
+
+.dark[data-palette="forest"] {
+  --primary: oklch(0.72 0.14 157);
+  --primary-foreground: oklch(0.18 0.04 155);
+  --accent: oklch(0.76 0.14 105);
+  --accent-foreground: oklch(0.18 0.04 150);
+  --ring: oklch(0.72 0.14 157);
+}
+
+.dark[data-palette="coral"] {
+  --primary: oklch(0.72 0.17 28);
+  --primary-foreground: oklch(0.2 0.05 25);
+  --accent: oklch(0.78 0.14 78);
+  --accent-foreground: oklch(0.2 0.05 35);
+  --ring: oklch(0.72 0.17 28);
+}
+
+.dark[data-palette="violet"] {
+  --primary: oklch(0.74 0.15 295);
+  --primary-foreground: oklch(0.18 0.04 295);
+  --accent: oklch(0.78 0.14 320);
+  --accent-foreground: oklch(0.18 0.04 295);
+  --ring: oklch(0.74 0.15 295);
+}
+
+.dark[data-palette="rose"] {
+  --primary: oklch(0.74 0.15 350);
+  --primary-foreground: oklch(0.18 0.04 350);
+  --accent: oklch(0.78 0.13 15);
+  --accent-foreground: oklch(0.18 0.04 350);
+  --ring: oklch(0.74 0.15 350);
+}
+
+.dark[data-palette="amber"] {
+  --primary: oklch(0.82 0.15 78);
+  --primary-foreground: oklch(0.2 0.04 70);
+  --accent: oklch(0.83 0.14 95);
+  --accent-foreground: oklch(0.2 0.04 70);
+  --ring: oklch(0.82 0.15 78);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html,
+  body {
+    font-family: var(--font-sans);
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: var(--font-display);
+    letter-spacing: 0;
+  }
+}
+
+.dm-page {
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(in oklab, var(--background) 92%, var(--primary) 8%),
+      var(--background) 58%
+    ),
+    var(--background);
+  overflow: clip;
+}
+
+.dm-page::before,
+.dm-page::after {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  width: min(42rem, 70vw);
+  height: min(42rem, 70vw);
+  border-radius: 999px;
+  pointer-events: none;
+  filter: blur(90px);
+  opacity: 0.12;
+}
+
+.dm-page::before {
+  left: -20rem;
+  top: -18rem;
+  background: var(--primary);
+}
+
+.dm-page::after {
+  bottom: -22rem;
+  right: -18rem;
+  background: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dm-page .animate-fade-in {
+    animation: none;
+  }
+}
+
+@utility text-gradient-hero {
+  background: linear-gradient(
+    135deg,
+    oklch(0.32 0.13 258),
+    oklch(0.55 0.18 255),
+    oklch(0.72 0.16 215)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-hero-glow {
+  background:
+    radial-gradient(ellipse at top, oklch(0.72 0.16 215 / 0.18), transparent 60%),
+    radial-gradient(ellipse at bottom right, oklch(0.55 0.18 255 / 0.15), transparent 55%),
+    var(--color-background);
+}
+
+@keyframes aurora-shift {
+  0% {
+    background-position:
+      0% 30%,
+      100% 70%,
+      50% 50%;
+  }
+  33% {
+    background-position:
+      40% 60%,
+      60% 30%,
+      30% 70%;
+  }
+  66% {
+    background-position:
+      70% 20%,
+      30% 80%,
+      70% 30%;
+  }
+  100% {
+    background-position:
+      0% 30%,
+      100% 70%,
+      50% 50%;
+  }
+}
+
+.bg-aurora-shift {
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 30%, oklch(0.72 0.16 215 / 0.22), transparent 60%),
+    radial-gradient(ellipse 55% 50% at 80% 70%, oklch(0.55 0.18 255 / 0.2), transparent 60%),
+    radial-gradient(ellipse 50% 45% at 50% 50%, oklch(0.65 0.18 145 / 0.14), transparent 65%),
+    var(--color-background);
+  background-size:
+    200% 200%,
+    200% 200%,
+    220% 220%,
+    auto;
+  animation: aurora-shift 18s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-aurora-shift {
+    animation: none;
+  }
+}
+
+/* ===== Like / Notification micro-animations ===== */
+@keyframes like-pop {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.45);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes heart-burst {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.2);
+  }
+  70% {
+    opacity: 0.5;
+    transform: scale(1.6);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.2);
+  }
+}
+@keyframes bell-shake {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(-18deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  45% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(8deg);
+  }
+  75% {
+    transform: rotate(-4deg);
+  }
+}
+@keyframes count-bump {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-2px) scale(1.25);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes badge-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+@keyframes flame-flicker {
+  0%,
+  100% {
+    transform: scale(1) rotate(-3deg);
+    filter: drop-shadow(0 0 0 rgba(249, 115, 22, 0));
+  }
+  25% {
+    transform: scale(1.15) rotate(2deg);
+    filter: drop-shadow(0 0 6px rgba(249, 115, 22, 0.6));
+  }
+  50% {
+    transform: scale(1.05) rotate(-2deg);
+    filter: drop-shadow(0 0 10px rgba(234, 88, 12, 0.7));
+  }
+  75% {
+    transform: scale(1.18) rotate(3deg);
+    filter: drop-shadow(0 0 6px rgba(249, 115, 22, 0.6));
+  }
+}
+@keyframes streak-pop {
+  0% {
+    transform: scale(0.4) rotate(-15deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.35) rotate(6deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes streak-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(249, 115, 22, 0);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(249, 115, 22, 0.25);
+  }
+}
+@keyframes streak-spark {
+  0% {
+    transform: translate(0, 0) scale(0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x, 0), var(--y, -18px)) scale(0.2);
+    opacity: 0;
+  }
+}
+
+@utility animate-like-pop {
+  animation: like-pop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@utility animate-heart-burst {
+  animation: heart-burst 0.6s ease-out forwards;
+}
+@utility animate-bell-shake {
+  animation: bell-shake 0.7s ease-in-out;
+}
+@utility animate-count-bump {
+  animation: count-bump 0.35s ease-out;
+}
+@utility animate-badge-ping {
+  animation: badge-ping 1.4s ease-out infinite;
+}
+@utility animate-flame-flicker {
+  animation: flame-flicker 1.8s ease-in-out infinite;
+}
+@utility animate-streak-pop {
+  animation: streak-pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@utility animate-streak-glow {
+  animation: streak-glow 2.2s ease-in-out infinite;
+}
+@utility animate-streak-spark {
+  animation: streak-spark 0.8s ease-out forwards;
+}
+
+/* ===== Global tap feedback — every button/link/card feels responsive ===== */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [role="tab"]:not([aria-disabled="true"]),
+  [role="menuitem"]:not([aria-disabled="true"]),
+  a {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    transition:
+      transform var(--motion-fast, 120ms) var(--motion-ease, ease-out),
+      opacity var(--motion-fast, 120ms) var(--motion-ease, ease-out),
+      color var(--motion-fast, 120ms) var(--motion-ease, ease-out),
+      background-color var(--motion-fast, 120ms) var(--motion-ease, ease-out),
+      border-color var(--motion-fast, 120ms) var(--motion-ease, ease-out);
+  }
+  button:not(:disabled):active,
+  [role="button"]:not([aria-disabled="true"]):active,
+  [role="tab"]:not([aria-disabled="true"]):active,
+  [role="menuitem"]:not([aria-disabled="true"]):active,
+  a:active {
+    transform: scale(0.985);
+  }
+}
+
+/* Save-pulse: brief ring pulse to confirm a save action. */
+@keyframes save-pulse {
+  0% {
+    box-shadow: 0 0 0 0 oklch(0.68 0.16 155 / 0.55);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 0 10px oklch(0.68 0.16 155 / 0);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 0 0 oklch(0.68 0.16 155 / 0);
+    transform: scale(1);
+  }
+}
+@utility animate-save-pulse {
+  animation: save-pulse 0.7s ease-out;
+}
+
+@keyframes check-pop {
+  0% {
+    transform: scale(0) rotate(-30deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.3) rotate(6deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+}
+@utility animate-check-pop {
+  animation: check-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ===== Pro (premium) visual system ===== */
+@keyframes pro-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes pro-ring-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pro-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 18px oklch(0.82 0.16 85 / 0.35),
+      0 0 36px oklch(0.82 0.16 85 / 0.12);
+  }
+  50% {
+    box-shadow:
+      0 0 28px oklch(0.82 0.16 85 / 0.55),
+      0 0 56px oklch(0.82 0.16 85 / 0.22);
+  }
+}
+@utility pro-gradient-text {
+  background: linear-gradient(
+    110deg,
+    #b45309 0%,
+    #f59e0b 25%,
+    #fde68a 50%,
+    #f59e0b 75%,
+    #b45309 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: pro-shimmer 4s ease-in-out infinite;
+}
+@utility pro-gradient-bg {
+  background: linear-gradient(
+    110deg,
+    #b45309 0%,
+    #f59e0b 25%,
+    #fde68a 50%,
+    #f59e0b 75%,
+    #b45309 100%
+  );
+}
+@utility pro-glow-anim {
+  will-change: auto;
+}
+@utility pro-ring-spin {
+  animation: pro-ring-spin 6s linear infinite;
+}
+
+/* Prevent horizontal overflow on mobile — fixes "page extends beyond viewport" issue */
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Liquid Glass (beta) ==================================================
+   Opt-in translucent skin. Toggled by adding `.liquid-glass` to <html>.
+   Purely presentational: it re-skins existing card/border surfaces. */
+.liquid-glass {
+  --lg-tint: color-mix(in oklab, var(--card) 52%, transparent);
+  --lg-edge: color-mix(in oklab, var(--foreground) 12%, transparent);
+}
+.liquid-glass body {
+  background-image:
+    radial-gradient(
+      60rem 40rem at 12% -10%,
+      color-mix(in oklab, var(--primary) 26%, transparent),
+      transparent 65%
+    ),
+    radial-gradient(
+      50rem 36rem at 92% 8%,
+      color-mix(in oklab, var(--accent) 24%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      46rem 34rem at 40% 105%,
+      color-mix(in oklab, var(--primary) 18%, transparent),
+      transparent 62%
+    );
+  background-attachment: fixed;
+}
+/* IMPORTANT: these selectors must never match *variant* utilities such as
+   `hover:bg-muted` or `focus:bg-card`. A plain [class*="bg-muted"] match paints
+   a permanent whitish glass panel behind anything that only wanted a hover
+   tint (this is what made profile follower/following counts look washed out).
+   Excluding class attributes that contain `:bg-…` keeps variants hover-only. */
+.liquid-glass [class*="bg-card"]:not([class*=":bg-card"]),
+.liquid-glass [class*="bg-background"]:not([class*=":bg-background"]),
+.liquid-glass [class*="bg-popover"]:not([class*=":bg-popover"]),
+.liquid-glass [class*="bg-muted"]:not([class*=":bg-muted"]),
+.liquid-glass [class*="bg-secondary"]:not([class*=":bg-secondary"]) {
+  background-color: var(--lg-tint) !important;
+  backdrop-filter: blur(16px) saturate(160%);
+  transition:
+    background-color 0.28s ease,
+    box-shadow 0.28s ease,
+    transform 0.18s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.liquid-glass [class*="border-border"]:not([class*=":border-border"]) {
+  border-color: var(--lg-edge) !important;
+}
+.liquid-glass [class*="rounded-2xl"]:not([class*=":rounded-2xl"]),
+.liquid-glass [class*="rounded-3xl"]:not([class*=":rounded-3xl"]) {
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklab, white 30%, transparent),
+    inset 0 -1px 0 color-mix(in oklab, black 8%, transparent),
+    0 22px 54px -26px color-mix(in oklab, var(--primary) 50%, transparent);
+}
+.liquid-glass header,
+.liquid-glass nav {
+  backdrop-filter: blur(20px) saturate(160%);
+}
+.liquid-glass button:not(:disabled):hover {
+  filter: saturate(1.08) brightness(1.02);
+}
+
+@keyframes lg-sheen {
+  0% {
+    transform: translateX(-120%) skewX(-18deg);
+  }
+  100% {
+    transform: translateX(220%) skewX(-18deg);
+  }
+}
+@utility lg-sheen-anim {
+  animation: lg-sheen 2.8s ease-in-out infinite;
+}
+
+/* Soft entrance used across the dashboard so long pages feel alive. */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@utility animate-rise-in {
+  animation: rise-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ===== Liquid Glass: root escape hatch =====================================
+   The app shell wrapper matches [class*="bg-background"], which would blur the
+   whole page and flatten every nested card. Opt it out so the ambient mesh
+   shows through and only real surfaces get glass. */
+.liquid-glass [data-lg-root] {
+  background: transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+/* Ambient light mesh behind the glass — blur needs light spots to refract. */
+.liquid-glass body {
+  background-color: #e0f2fe;
+  background-image:
+    radial-gradient(60rem 40rem at 12% -8%, rgba(56, 189, 248, 0.35), transparent 62%),
+    radial-gradient(52rem 36rem at 92% 6%, rgba(129, 140, 248, 0.3), transparent 60%),
+    radial-gradient(46rem 34rem at 40% 104%, rgba(217, 130, 240, 0.24), transparent 62%);
+  background-attachment: fixed;
+}
+.dark.liquid-glass body {
+  background-color: #030712;
+  background-image:
+    radial-gradient(60rem 40rem at 12% -8%, rgba(14, 165, 233, 0.12), transparent 62%),
+    radial-gradient(52rem 36rem at 92% 6%, rgba(99, 102, 241, 0.12), transparent 60%),
+    radial-gradient(46rem 34rem at 40% 104%, rgba(129, 140, 248, 0.08), transparent 62%);
+}
+
+/* ===== Standardised glass utilities ======================================= */
+.liquid-glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow:
+    0 8px 32px 0 rgba(31, 38, 135, 0.07),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.8);
+}
+.dark .liquid-glass-card {
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  box-shadow:
+    0 12px 40px 0 rgba(0, 0, 0, 0.37),
+    inset 0 1px 0 0 rgba(148, 163, 184, 0.08);
+}
+.liquid-glass-dark-hero {
+  background: linear-gradient(135deg, rgba(14, 28, 54, 0.92) 0%, rgba(6, 15, 30, 0.96) 100%);
+  backdrop-filter: blur(24px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.25);
+}
+.glass-digit-box {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Pulse section parity ===============================================
+   Pulse ships its own scoped tokens; give it the same radius/shadow language
+   as the dashboard and let it join the glass skin when the beta is on. */
+.pulse-scope .pl-card {
+  border-radius: 16px;
+  box-shadow: var(
+    --shadow-soft,
+    0 1px 2px rgba(16, 19, 28, 0.06),
+    0 4px 16px rgba(16, 19, 28, 0.07)
+  );
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+.liquid-glass .pulse-scope,
+.liquid-glass .pulse-scope .pl-shell {
+  background: transparent !important;
+}
+.liquid-glass .pulse-scope .pl-card {
+  background: color-mix(in oklab, var(--pl-card) 55%, transparent) !important;
+  backdrop-filter: blur(18px) saturate(180%);
+  border-color: color-mix(in oklab, var(--pl-text) 14%, transparent) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    0 16px 40px -22px rgba(0, 0, 0, 0.45);
+}
+.liquid-glass .pulse-scope .pl-header,
+.liquid-glass .pulse-scope .pl-nav {
+  background: color-mix(in oklab, var(--pl-card) 45%, transparent) !important;
+  backdrop-filter: blur(26px) saturate(180%);
+}
+
+/* Bottom tab bar: ease into the active state instead of snapping. */
+.pulse-scope .pl-nav a,
+.pulse-scope .pl-nav button {
+  transition:
+    color 0.22s ease,
+    transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.pulse-scope .pl-nav a svg,
+.pulse-scope .pl-nav button svg {
+  transition:
+    transform 0.26s cubic-bezier(0.34, 1.56, 0.64, 1),
+    opacity 0.22s ease;
+  opacity: 0.8;
+}
+.pulse-scope .pl-nav a[data-active="true"] svg,
+.pulse-scope .pl-nav button[data-active="true"] svg {
+  transform: translateY(-1px) scale(1.16);
+  opacity: 1;
+}
+.pulse-scope .pl-nav a:active,
+.pulse-scope .pl-nav button:active {
+  transform: scale(0.94);
+}
+
+/* Highlight animation for "this is you" rows (leaderboard rank card). */
+@keyframes mine-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--pl-maths, #ffc857) 0%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 6px color-mix(in oklab, var(--pl-maths, #ffc857) 22%, transparent);
+  }
+}
+@utility animate-mine-glow {
+  animation: mine-glow 2.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-mine-glow {
+    animation: none !important;
+  }
+}
+
+/* ===== Navbar Liquid Glass controls ======================================= */
+@utility nav-glass-btn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.1) 48%,
+    rgba(255, 255, 255, 0.2)
+  );
+
+  backdrop-filter: blur(18px) saturate(190%) brightness(1.04);
+
+  -webkit-backdrop-filter: blur(18px) saturate(190%) brightness(1.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.48);
+
+  box-shadow:
+    0 8px 24px -12px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.58),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.12);
+
+  transition:
+    transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+
+  &:hover {
+    transform: translateY(-1px) scale(1.025);
+
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.42),
+      rgba(255, 255, 255, 0.15) 48%,
+      rgba(255, 255, 255, 0.28)
+    );
+
+    border-color: rgba(255, 255, 255, 0.65);
+
+    box-shadow:
+      0 12px 30px -14px rgba(0, 0, 0, 0.42),
+      inset 0 1px 0 rgba(255, 255, 255, 0.72),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.16);
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
+}
+
+.nav-glass-btn.dm-shortcut {
+  overflow: visible;
+}
+
+.dark .nav-glass-btn {
+  background: linear-gradient(
+    135deg,
+    rgba(148, 173, 214, 0.13),
+    rgba(9, 14, 26, 0.28) 52%,
+    rgba(148, 173, 214, 0.09)
+  );
+
+  border-color: rgba(148, 173, 214, 0.22);
+
+  box-shadow:
+    0 10px 28px -14px rgba(0, 0, 0, 0.75),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.dark .nav-glass-btn:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(148, 173, 214, 0.2),
+    rgba(9, 14, 26, 0.36) 52%,
+    rgba(148, 173, 214, 0.14)
+  );
+
+  border-color: rgba(186, 214, 255, 0.3);
+}
+
+/* Dashboard sections keep native scrolling responsive on touchpads and phones. */
+html:has(.dash-snap) {
+  scroll-behavior: auto;
+}
+.dash-snap > * > section,
+.dash-snap > * > div {
+  scroll-margin-top: 5rem;
+}
+@media (min-width: 768px) and (pointer: fine) {
+  html:has(.dash-snap) {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+  }
+  .dash-snap > * > section,
+  .dash-snap > * > div {
+    scroll-snap-align: start;
+    transition:
+      transform 0.35s cubic-bezier(0.2, 0.85, 0.25, 1),
+      opacity 0.35s ease;
+  }
+}
+
+/* ===== Canonical glass surface (GlassSurface.tsx) ==========================
+   One implementation for every card/panel/row. Page-level wrappers must NOT
+   use this class — they carry [data-lg-root] instead, otherwise nested blurs
+   stack and the whole surface renders flat/opaque. */
+.glass-surface {
+  position: relative;
+  /* Clearer, more see-through glass with a firmer edge so cards read as
+     prominent objects instead of milky panels. */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.2) 46%,
+    rgba(255, 255, 255, 0.38) 100%
+  ) !important;
+  backdrop-filter: blur(16px) saturate(175%) brightness(1.04) contrast(1.08);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  box-shadow:
+    0 20px 46px -22px rgba(23, 37, 84, 0.4),
+    0 1px 3px -1px rgba(23, 37, 84, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    inset 0 -18px 30px -22px rgba(255, 255, 255, 0.6);
+  color: var(--foreground);
+  isolation: isolate;
+  /* Perf: clip pseudo layers and keep repaints inside the card. */
+  contain: paint;
+  overflow: hidden;
+}
+
+/* Layer 1 — liquid sheen waves. Transform-only animation (compositor thread). */
+.glass-surface::before {
+  content: "";
+  position: absolute;
+  inset: -60%;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+  mix-blend-mode: screen;
+  background:
+    linear-gradient(
+      74deg,
+      transparent 34%,
+      rgba(255, 255, 255, 0.5) 44%,
+      rgba(186, 230, 253, 0.34) 50%,
+      rgba(255, 255, 255, 0.5) 56%,
+      transparent 66%
+    ),
+    linear-gradient(108deg, transparent 40%, rgba(255, 255, 255, 0.28) 50%, transparent 60%);
+  transform: translate3d(-28%, -12%, 0);
+  animation: lg-wave 9s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Layer 2 — refraction-like moving highlights (caustics). */
+.glass-surface::after {
+  content: "";
+  position: absolute;
+  inset: -25%;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.4;
+  mix-blend-mode: screen;
+  background:
+    radial-gradient(30% 44% at 22% 26%, rgba(255, 255, 255, 0.85), transparent 70%),
+    radial-gradient(26% 40% at 78% 70%, rgba(186, 230, 253, 0.7), transparent 72%),
+    radial-gradient(24% 36% at 52% 96%, rgba(221, 214, 254, 0.6), transparent 74%);
+  transform: translate3d(-3%, -2%, 0) scale(1.04);
+  animation: lg-caustic 14s ease-in-out infinite alternate;
+  will-change: transform, opacity;
+}
+.dark .glass-surface::after {
+  opacity: 0.12;
+}
+/* Lift children above the animated pseudo layers, but never override an
+   explicitly positioned child (e.g. an absolutely placed search icon). */
+.glass-surface > *:not(.absolute):not(.fixed):not(.sticky) {
+  position: relative;
+  z-index: 1;
+}
+.glass-surface > .absolute,
+.glass-surface > .fixed,
+.glass-surface > .sticky {
+  z-index: 1;
+}
+
+@keyframes lg-wave {
+  0% {
+    transform: translate3d(-30%, -14%, 0);
+  }
+  50% {
+    transform: translate3d(30%, 14%, 0);
+  }
+  100% {
+    transform: translate3d(-30%, -14%, 0);
+  }
+}
+@keyframes lg-caustic {
+  0% {
+    transform: translate3d(-4%, -3%, 0) scale(1.03);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translate3d(4%, 3%, 0) scale(1.1);
+    opacity: 0.72;
+  }
+  100% {
+    transform: translate3d(-2%, 4%, 0) scale(1.05);
+    opacity: 0.5;
+  }
+}
+@keyframes lg-ripple {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.9);
+    opacity: 0.35;
+  }
+  60% {
+    transform: translate3d(0, 0, 0) scale(1.14);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1.06);
+    opacity: 0.85;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .glass-surface::before,
+  .glass-surface::after {
+    animation: none;
+  }
+}
+
+.dark .glass-surface {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.94) 0%,
+    rgba(10, 16, 30, 0.96) 48%,
+    rgba(17, 24, 39, 0.94) 100%
+  ) !important;
+  border-color: rgba(148, 163, 184, 0.16);
+  box-shadow:
+    0 20px 46px -20px rgba(0, 0, 0, 0.66),
+    inset 0 1px 0 rgba(148, 163, 184, 0.08),
+    inset 0 0 30px -14px rgba(56, 189, 248, 0.08);
+}
+.dark .glass-surface::before {
+  opacity: 0.18;
+}
+
+.glass-surface-interactive {
+  transition:
+    transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  overflow: hidden;
+}
+.glass-surface-interactive:hover,
+.glass-surface-interactive:focus-visible,
+.glass-surface-interactive:focus-within {
+  transform: translate3d(0, -2px, 0);
+  border-color: rgba(255, 255, 255, 0.9);
+  box-shadow:
+    0 26px 56px -22px rgba(23, 37, 84, 0.46),
+    inset 0 1px 0 rgba(255, 255, 255, 1),
+    inset 0 0 40px -12px rgba(255, 255, 255, 0.8);
+}
+/* Liquid ripple + brighter shimmer on hover / keyboard focus. */
+.glass-surface-interactive:hover::after,
+.glass-surface-interactive:focus-visible::after,
+.glass-surface-interactive:focus-within::after {
+  animation: lg-ripple 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 1;
+}
+.glass-surface-interactive:hover::before,
+.glass-surface-interactive:focus-visible::before,
+.glass-surface-interactive:focus-within::before {
+  animation-duration: 3.2s;
+  opacity: 1;
+}
+.dark .glass-surface-interactive:hover,
+.dark .glass-surface-interactive:focus-visible,
+.dark .glass-surface-interactive:focus-within {
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+/* Perf guard: on low-power / small screens drop the most expensive layer and
+   lighten the blur so scrolling stays at 60fps. */
+@media (max-width: 640px), (prefers-reduced-transparency: reduce) {
+  .glass-surface {
+    backdrop-filter: blur(14px) saturate(170%) contrast(1.1);
+  }
+  .glass-surface::after {
+    animation-duration: 20s;
+  }
+}
+
+/* A glass surface must never be blurred again by the generic skin below. */
+.liquid-glass [data-glass-surface] [class*="bg-card"],
+.liquid-glass [data-glass-surface] [class*="bg-background"] {
+  backdrop-filter: none !important;
+}
+
+/* Text legibility on glass: the translucent skin was washing copy out. */
+.liquid-glass body {
+  color: var(--foreground);
+}
+.liquid-glass [data-glass-surface] {
+  text-shadow: none;
+}
+.liquid-glass [class*="text-muted-foreground"] {
+  color: color-mix(in oklab, var(--foreground) 62%, transparent) !important;
+}
+
+/* ===== Liquid text ========================================================
+   Flowing gradient type used for numbers/labels that should read as part of
+   the glass skin (profile stats, DM header, membership card). */
+@keyframes liquid-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.text-liquid {
+  background-image: linear-gradient(
+    110deg,
+    color-mix(in oklab, var(--primary) 92%, transparent) 0%,
+    color-mix(in oklab, var(--accent) 88%, transparent) 32%,
+    color-mix(in oklab, var(--foreground) 82%, transparent) 55%,
+    color-mix(in oklab, var(--accent) 88%, transparent) 78%,
+    color-mix(in oklab, var(--primary) 92%, transparent) 100%
+  );
+  background-size: 260% 100%;
+  background-clip: text;
+  color: transparent;
+  animation: liquid-flow 7s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .text-liquid {
+    animation: none;
+  }
+}
+
+/* ===== Liquid chat bubbles (DMs, squad, community) ======================== */
+.bubble-liquid-in {
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(16px) saturate(170%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 8px 24px -18px rgba(23, 37, 84, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  color: var(--foreground);
+}
+.dark .bubble-liquid-in {
+  background: rgba(15, 23, 42, 0.66);
+  border-color: rgba(255, 255, 255, 0.13);
+  box-shadow:
+    0 10px 28px -18px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+.bubble-liquid-out {
+  background: linear-gradient(
+    135deg,
+    color-mix(in oklab, var(--primary) 92%, transparent),
+    color-mix(in oklab, var(--accent) 78%, transparent)
+  );
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow:
+    0 10px 26px -18px rgba(23, 37, 84, 0.75),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+/* Smoother glass motion: springy, never snappy. */
+.glass-surface {
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ===== Gemini-style global gradient skin (dark charcoal base) ============== */
+@keyframes gemini-shift {
+  0% {
+    background-position:
+      0% 20%,
+      100% 80%,
+      50% 50%,
+      20% 100%;
+  }
+  25% {
+    background-position:
+      30% 60%,
+      70% 30%,
+      20% 70%,
+      60% 60%;
+  }
+  50% {
+    background-position:
+      70% 80%,
+      30% 20%,
+      80% 30%,
+      90% 20%;
+  }
+  75% {
+    background-position:
+      40% 30%,
+      60% 70%,
+      40% 80%,
+      40% 70%;
+  }
+  100% {
+    background-position:
+      0% 20%,
+      100% 80%,
+      50% 50%,
+      20% 100%;
+  }
+}
+
+/* User-tunable background motion (localStorage only, see src/lib/bg-motion.ts) */
+:root {
+  --bg-strength: 1;
+  --bg-speed: 14s;
+  --bg-wash-speed: 11s;
+  --bg-hue-speed: 9s;
+}
+
+/* LIGHT mode: uniform ice-blue glass wash (matches the header palette —
+   soft sky blue everywhere, no multi-colour cycling). */
+.liquid-glass body {
+  background-color: #dbeefc;
+  background-image:
+    radial-gradient(
+      60rem 42rem at 8% -6%,
+      rgba(147, 197, 253, calc(0.5 * var(--bg-strength))),
+      transparent 62%
+    ),
+    radial-gradient(
+      52rem 38rem at 94% 6%,
+      rgba(186, 230, 253, calc(0.55 * var(--bg-strength))),
+      transparent 60%
+    ),
+    radial-gradient(
+      50rem 36rem at 30% 104%,
+      rgba(125, 211, 252, calc(0.42 * var(--bg-strength))),
+      transparent 62%
+    ),
+    radial-gradient(
+      44rem 32rem at 82% 78%,
+      rgba(191, 219, 254, calc(0.4 * var(--bg-strength))),
+      transparent 64%
+    );
+  background-size:
+    200% 200%,
+    200% 200%,
+    220% 220%,
+    240% 240%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  animation: gemini-shift var(--bg-speed) ease-in-out infinite;
+  /* NEVER add transform/filter here: it makes <body> the containing block for
+     fixed elements, which breaks every dialog, drawer and sheet in the app. */
+  will-change: background-position;
+  color: var(--foreground);
+}
+
+/* Colour-cycling wash on top of the drifting gradient. The hue rotation lives
+   on a pseudo element (never on <body>) so fixed dialogs/drawers stay intact. */
+.liquid-glass body::before {
+  content: "";
+  position: fixed;
+  inset: -10vmax;
+  z-index: -1;
+  pointer-events: none;
+  opacity: var(--bg-strength);
+  background-image:
+    radial-gradient(38rem 30rem at 22% 18%, rgba(96, 165, 250, 0.3), transparent 66%),
+    radial-gradient(34rem 28rem at 78% 32%, rgba(56, 189, 248, 0.26), transparent 66%),
+    radial-gradient(36rem 28rem at 40% 82%, rgba(125, 211, 252, 0.28), transparent 66%),
+    radial-gradient(30rem 24rem at 84% 88%, rgba(147, 197, 253, 0.26), transparent 66%);
+  background-size:
+    170% 170%,
+    170% 170%,
+    190% 190%,
+    200% 200%;
+  animation: gemini-shift var(--bg-wash-speed) ease-in-out infinite;
+  will-change: background-position;
+}
+.liquid-glass[data-bg-motion="on"][data-bg-hue="on"] body::before {
+  animation:
+    gemini-shift var(--bg-wash-speed) ease-in-out infinite,
+    lg-hue var(--bg-hue-speed) ease-in-out infinite;
+  will-change: background-position, filter;
+}
+.dark.liquid-glass body::before {
+  opacity: calc(0.75 * var(--bg-strength));
+}
+
+/* Colour cycling off: keep the drift, drop the hue rotation. */
+[data-bg-hue="off"].liquid-glass body::before {
+  animation: gemini-shift var(--bg-wash-speed) ease-in-out infinite;
+}
+
+/* Motion off: static, calm background. */
+[data-bg-motion="off"].liquid-glass body,
+[data-bg-motion="off"].dark.liquid-glass body,
+[data-bg-motion="off"].liquid-glass body::before {
+  animation: none;
+}
+[data-bg-motion="off"].liquid-glass body::before {
+  opacity: 0;
+}
+
+@keyframes lg-hue {
+  0% {
+    filter: hue-rotate(0deg) saturate(1);
+  }
+  50% {
+    filter: hue-rotate(160deg) saturate(1.18);
+  }
+  100% {
+    filter: hue-rotate(360deg) saturate(1);
+  }
+}
+
+/* DARK mode: same motion over a charcoal base. */
+.dark.liquid-glass body {
+  background-color: #000000;
+  background-image:
+    radial-gradient(
+      60rem 42rem at 10% -6%,
+      rgba(255, 255, 255, calc(0.035 * var(--bg-strength))),
+      transparent 62%
+    ),
+    radial-gradient(
+      54rem 38rem at 92% 4%,
+      rgba(255, 255, 255, calc(0.025 * var(--bg-strength))),
+      transparent 60%
+    ),
+    radial-gradient(
+      50rem 36rem at 40% 104%,
+      rgba(255, 255, 255, calc(0.02 * var(--bg-strength))),
+      transparent 62%
+    ),
+    radial-gradient(
+      40rem 30rem at 80% 70%,
+      rgba(255, 255, 255, calc(0.015 * var(--bg-strength))),
+      transparent 64%
+    );
+  animation: gemini-shift var(--bg-speed) ease-in-out infinite;
+  color: #f5f5f5;
+}
+
+/* User-selected page tints sit beneath existing content and animated washes. */
+html[data-background-color]:not([data-background-color="default"]) body {
+  background-color: color-mix(
+    in srgb,
+    var(--jph-page-bg-color, #dbeefc) var(--jph-page-bg-strength, 72%),
+    #dbeefc
+  );
+}
+
+html.dark[data-background-color]:not([data-background-color="default"]) body {
+  background-color: color-mix(
+    in srgb,
+    var(--jph-page-bg-color, #dbeefc) calc(var(--jph-page-bg-strength, 72%) * 0.22),
+    #000000
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liquid-glass body,
+  .dark.liquid-glass body,
+  .liquid-glass body::before {
+    animation: none;
+  }
+}
+
+/* Crisp type over the gradient */
+.liquid-glass body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Translucent dark glass surfaces so the gradient glows through (dark only) */
+.dark.liquid-glass [class*="bg-card"]:not([class*=":bg-card"]),
+.dark.liquid-glass [class*="bg-background"]:not([class*=":bg-background"]),
+.dark.liquid-glass [class*="bg-popover"]:not([class*=":bg-popover"]),
+.dark.liquid-glass [class*="bg-muted"]:not([class*=":bg-muted"]),
+.dark.liquid-glass [class*="bg-secondary"]:not([class*=":bg-secondary"]),
+.dark.liquid-glass .glass-surface,
+.dark.liquid-glass [data-glass-surface] {
+  background-color: rgba(8, 8, 8, 0.68);
+  backdrop-filter: blur(14px) saturate(115%);
+  border-color: rgba(255, 255, 255, 0.11);
+  color: #f2f2f2;
+}
+
+.liquid-glass [data-lg-root],
+.liquid-glass [class*="bg-transparent"] {
+  background-color: transparent !important;
+}
+
+/* Smoother, sharper liquid text (no repaint jank) */
+.text-liquid {
+  will-change: background-position;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  animation-duration: 9s;
+}
+
+/* ------------------------------------------------------------------ *
+ * Liquid lens indicator (iOS-26 style)
+ * A glass blob that squishes into place behind the active item and
+ * slightly magnifies its label, with a soft caustic edge.
+ * ------------------------------------------------------------------ */
+@keyframes lens-settle {
+  0% {
+    transform: scale(0.72, 1.18);
+  }
+  45% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.97, 1.03);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes lens-glint {
+  0% {
+    transform: translateX(-140%) skewX(-14deg);
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateX(140%) skewX(-14deg);
+    opacity: 0;
+  }
+}
+
+.liquid-lens-item {
+  position: relative;
+  isolation: isolate;
+  transition:
+    color 0.25s ease,
+    transform 0.35s cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+.liquid-lens-item > * {
+  position: relative;
+  z-index: 1;
+}
+
+.liquid-lens-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transform: scale(0.7, 1.2);
+  pointer-events: none;
+  background:
+    radial-gradient(
+      120% 150% at 30% 0%,
+      color-mix(in oklab, var(--background) 88%, transparent),
+      transparent 70%
+    ),
+    linear-gradient(
+      160deg,
+      color-mix(in oklab, var(--background) 78%, transparent),
+      color-mix(in oklab, var(--primary) 14%, transparent)
+    );
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklab, white 55%, transparent),
+    inset 0 -1px 0 color-mix(in oklab, var(--primary) 22%, transparent),
+    0 6px 18px -8px color-mix(in oklab, var(--primary) 45%, transparent);
+  backdrop-filter: blur(10px) saturate(190%);
+  -webkit-backdrop-filter: blur(10px) saturate(190%);
+  transition: opacity 0.2s ease;
+  will-change: transform, opacity;
+}
+
+/* travelling glint clipped to the lens */
+.liquid-lens-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    100deg,
+    transparent 35%,
+    color-mix(in oklab, white 65%, transparent) 50%,
+    transparent 65%
+  );
+  mask-image: radial-gradient(100% 100% at 50% 50%, black 99%, transparent);
+}
+
+.liquid-lens-item[data-state="active"]::before,
+.liquid-lens-item[aria-selected="true"]::before,
+.liquid-lens-item[data-status="active"]::before,
+.liquid-lens-item[aria-current="page"]::before,
+.liquid-lens-item.is-active::before {
+  opacity: 1;
+  animation: lens-settle 0.55s cubic-bezier(0.22, 1.2, 0.3, 1) both;
+}
+
+.liquid-lens-item[data-state="active"]::after,
+.liquid-lens-item[aria-selected="true"]::after,
+.liquid-lens-item[data-status="active"]::after,
+.liquid-lens-item[aria-current="page"]::after,
+.liquid-lens-item.is-active::after {
+  animation: lens-glint 0.75s ease-out 0.05s both;
+}
+
+.liquid-lens-item[data-state="active"],
+.liquid-lens-item[aria-selected="true"],
+.liquid-lens-item[data-status="active"],
+.liquid-lens-item[aria-current="page"],
+.liquid-lens-item.is-active {
+  transform: scale(1.06);
+}
+
+.liquid-lens-item:active {
+  transform: scale(0.96);
+}
+
+.dark .liquid-lens-item::before {
+  background:
+    radial-gradient(
+      120% 150% at 30% 0%,
+      color-mix(in oklab, white 16%, transparent),
+      transparent 70%
+    ),
+    linear-gradient(
+      160deg,
+      color-mix(in oklab, white 10%, transparent),
+      color-mix(in oklab, var(--primary) 26%, transparent)
+    );
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklab, white 28%, transparent),
+    0 8px 22px -10px color-mix(in oklab, var(--primary) 60%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liquid-lens-item,
+  .liquid-lens-item::before,
+  .liquid-lens-item::after {
+    animation: none !important;
+    transition: opacity 0.15s linear;
+    transform: none !important;
+  }
+}
+
+/* Menu rows keep the lens glow but never scale/translate — scaling inside a
+   scrolling drawer pushed rows outside their container. */
+.liquid-lens-item.liquid-lens-flat,
+.liquid-lens-item.liquid-lens-flat[data-state="active"],
+.liquid-lens-item.liquid-lens-flat[aria-current="page"],
+.liquid-lens-item.liquid-lens-flat.is-active,
+.liquid-lens-item.liquid-lens-flat:active {
+  transform: none;
+}
+
+@utility hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* =========================================================================
+   Scholar Desk skin — an editorial study-journal identity, deliberately
+   different from Liquid Glass: warm ruled-paper canvas, ink typography,
+   crisp page edges and a restrained brass/accent rail. Enabled with
+   [data-ui="legacy"] to keep existing saved preferences compatible.
+   ========================================================================= */
+[data-ui="legacy"] {
+  --background: oklch(0.958 0.022 88);
+  --foreground: oklch(0.25 0.035 250);
+  --card: oklch(0.993 0.009 91);
+  --card-foreground: oklch(0.25 0.035 250);
+  --popover: oklch(0.993 0.009 91);
+  --popover-foreground: oklch(0.25 0.035 250);
+  --secondary: oklch(0.925 0.025 86);
+  --secondary-foreground: oklch(0.29 0.04 248);
+  --muted: oklch(0.925 0.023 88);
+  --muted-foreground: oklch(0.47 0.035 247);
+  --border: oklch(0.84 0.03 83);
+  --input: oklch(0.84 0.03 83);
+  --radius: 0.68rem;
+  --shadow-soft: 0 2px 0 oklch(0.36 0.055 250 / 0.07), 0 8px 18px oklch(0.36 0.055 250 / 0.07);
+  --shadow-glow:
+    0 0 0 1px color-mix(in srgb, var(--primary) 20%, transparent),
+    0 5px 0 color-mix(in srgb, var(--primary) 10%, transparent);
+  --font-sans: var(--scholar-font-family, Georgia, "Times New Roman", serif);
+  --font-display: var(--scholar-display-family, Georgia, "Times New Roman", serif);
+  --text-xs: var(--scholar-text-xs, 0.75rem);
+  --text-sm: var(--scholar-text-sm, 0.875rem);
+  --text-base: var(--scholar-text-base, 1rem);
+  --text-lg: var(--scholar-text-lg, 1.125rem);
+  --text-xl: var(--scholar-text-xl, 1.25rem);
+  --text-2xl: var(--scholar-text-2xl, 1.5rem);
+  --text-3xl: var(--scholar-text-3xl, 1.875rem);
+  --text-4xl: var(--scholar-text-4xl, 2.25rem);
+  --text-5xl: var(--scholar-text-5xl, 3rem);
+  --text-6xl: var(--scholar-text-6xl, 3.75rem);
+  --text-7xl: var(--scholar-text-7xl, 4.5rem);
+  --text-8xl: var(--scholar-text-8xl, 6rem);
+  --text-9xl: var(--scholar-text-9xl, 8rem);
+}
+
+[data-ui="legacy"].dark,
+[data-ui="legacy"] .dark {
+  --background: oklch(0.18 0.018 250);
+  --foreground: oklch(0.93 0.018 88);
+  --card: oklch(0.235 0.022 250);
+  --card-foreground: oklch(0.93 0.018 88);
+  --popover: oklch(0.22 0.02 250);
+  --popover-foreground: oklch(0.93 0.018 88);
+  --secondary: oklch(0.285 0.024 248);
+  --secondary-foreground: oklch(0.92 0.02 88);
+  --muted: oklch(0.275 0.023 249);
+  --muted-foreground: oklch(0.73 0.025 235);
+  --border: oklch(0.39 0.025 245);
+  --input: oklch(0.39 0.025 245);
+  --shadow-soft: 0 2px 0 oklch(0 0 0 / 0.22), 0 8px 20px oklch(0 0 0 / 0.18);
+  --shadow-glow:
+    0 0 0 1px color-mix(in srgb, var(--primary) 32%, transparent),
+    0 5px 0 color-mix(in srgb, var(--primary) 16%, transparent);
+}
+
+[data-ui="legacy"] body {
+  background-image:
+    linear-gradient(90deg, color-mix(in srgb, var(--primary) 3%, transparent), transparent 34rem),
+    repeating-linear-gradient(
+      180deg,
+      transparent 0 39px,
+      color-mix(in srgb, var(--foreground) 3.2%, transparent) 40px,
+      transparent 41px
+    );
+  background-attachment: scroll;
+}
+
+[data-ui="legacy"] .bg-aurora-shift,
+[data-ui="legacy"] [data-lg-root] {
+  background-color: var(--color-background) !important;
+  background-image: none !important;
+  animation: none !important;
+}
+
+[data-ui="legacy"] .glass-surface,
+[data-ui="legacy"] [data-glass-surface] {
+  background: var(--color-card) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid var(--color-border) !important;
+  border-inline-start: 3px solid color-mix(in srgb, var(--primary) 52%, var(--color-border)) !important;
+  border-radius: 0.9rem !important;
+  box-shadow: var(--shadow-soft) !important;
+  filter: none !important;
+}
+
+[data-ui="legacy"] .glass-surface::before,
+[data-ui="legacy"] .glass-surface::after,
+[data-ui="legacy"] [data-glass-surface]::before,
+[data-ui="legacy"] [data-glass-surface]::after {
+  display: none !important;
+}
+
+[data-ui="legacy"] .glass-surface-interactive:hover {
+  border-inline-start-color: var(--primary) !important;
+  box-shadow: var(--shadow-soft) !important;
+  transform: none !important;
+}
+
+[data-ui="legacy"] .nav-glass-btn {
+  background: var(--color-card) !important;
+  backdrop-filter: none !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 0.7rem !important;
+  box-shadow: inset 0 -2px 0 color-mix(in srgb, var(--primary) 28%, transparent) !important;
+}
+
+[data-ui="legacy"] .text-liquid {
+  background: none !important;
+  -webkit-text-fill-color: currentColor;
+  color: var(--color-foreground);
+  animation: none !important;
+}
+
+[data-ui="legacy"] .liquid-lens-item::before,
+[data-ui="legacy"] .liquid-lens-item::after {
+  display: none !important;
+}
+[data-ui="legacy"] .liquid-lens-item {
+  transform: none !important;
+  border-radius: 0.6rem !important;
+}
+[data-ui="legacy"] .liquid-lens-item[aria-current="page"],
+[data-ui="legacy"] .liquid-lens-item.is-active,
+[data-ui="legacy"] .liquid-lens-item[data-state="active"] {
+  background: color-mix(in srgb, var(--primary) 11%, var(--color-card)) !important;
+  border-inline-start: 3px solid var(--primary) !important;
+  color: var(--primary) !important;
+  font-weight: 700;
+}
+
+[data-ui="legacy"]
+  :is(input, select, textarea):not([type="checkbox"]):not([type="radio"]):not([type="range"]):not(
+    [type="color"]
+  ) {
+  border-radius: 0.55rem;
+}
+[data-ui="legacy"] :is(button, a, input, select, textarea):focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--primary) 72%, transparent);
+  outline-offset: 2px;
+}
+
+/* Light mode legibility: raise the glass tint so text never washes out. */
+html:not(.dark) .glass-surface {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.62) 0%,
+    rgba(255, 255, 255, 0.34) 46%,
+    rgba(255, 255, 255, 0.5) 100%
+  ) !important;
+}
+
+/* =========================================================================
+   Dark mode glass: calm, smoky, no white shine.
+   The light skin uses bright white sheen + caustics; on dark that reads as a
+   greasy shine, so here the same layers become a soft navy depth instead.
+   ========================================================================= */
+.dark .glass-surface {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.055) 0%,
+    rgba(8, 8, 8, 0.72) 52%,
+    rgba(255, 255, 255, 0.025) 100%
+  ) !important;
+  backdrop-filter: blur(18px) saturate(115%) brightness(0.98);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 18px 44px -24px rgba(0, 0, 0, 0.88),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+.dark .glass-surface::before {
+  opacity: 0.14;
+  mix-blend-mode: soft-light;
+  background: linear-gradient(
+    74deg,
+    transparent 36%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 64%
+  );
+}
+.dark .glass-surface::after {
+  opacity: 0.16;
+  mix-blend-mode: soft-light;
+  background:
+    radial-gradient(32% 46% at 20% 24%, rgba(255, 255, 255, 0.075), transparent 72%),
+    radial-gradient(28% 42% at 80% 74%, rgba(255, 255, 255, 0.045), transparent 74%);
+}
+.dark .glass-surface-interactive:hover,
+.dark .glass-surface-interactive:focus-visible,
+.dark .glass-surface-interactive:focus-within {
+  border-color: rgba(148, 173, 214, 0.24);
+  box-shadow:
+    0 24px 52px -24px rgba(0, 0, 0, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.09);
+}
+.dark .glass-surface-interactive:hover::after,
+.dark .glass-surface-interactive:focus-visible::after,
+.dark .glass-surface-interactive:focus-within::after {
+  opacity: 0.26;
+}
+.dark.liquid-glass .glass-surface,
+.dark.liquid-glass [data-glass-surface] {
+  background-color: transparent;
+  border-color: rgba(148, 173, 214, 0.14);
+}
+
+/* =========================================================================
+   Community feed → Liquid Glass.
+   The feed markup uses flat slate/white utilities; inside this wrapper they are
+   translated into the app's glass language (and left flat in Legacy mode).
+   ========================================================================= */
+.community-feed-glass {
+  background: transparent !important;
+}
+
+[data-ui="glass"] .community-feed-glass [class*="bg-white"],
+[data-ui="glass"] .community-feed-glass [class*="bg-slate-50"],
+[data-ui="glass"] .community-feed-glass [class*="bg-slate-100"],
+[data-ui="glass"] .community-feed-glass [class*="bg-gray-50"],
+[data-ui="glass"] .community-feed-glass [class*="bg-gray-100"] {
+  background-color: transparent !important;
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.34) 48%,
+    rgba(255, 255, 255, 0.5) 100%
+  ) !important;
+  backdrop-filter: blur(16px) saturate(170%);
+  -webkit-backdrop-filter: blur(16px) saturate(170%);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+[data-ui="glass"] .community-feed-glass [class*="border-slate-2"],
+[data-ui="glass"] .community-feed-glass [class*="border-slate-1"],
+[data-ui="glass"] .community-feed-glass [class*="border-gray-2"],
+[data-ui="glass"] .community-feed-glass [class*="border-gray-1"] {
+  border-color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.dark [data-ui="glass"] .community-feed-glass [class*="bg-white"],
+.dark[data-ui="glass"] .community-feed-glass [class*="bg-white"],
+.dark[data-ui="glass"] .community-feed-glass [class*="bg-slate-50"],
+.dark[data-ui="glass"] .community-feed-glass [class*="bg-slate-100"],
+.dark[data-ui="glass"] .community-feed-glass [class*="bg-gray-50"],
+.dark[data-ui="glass"] .community-feed-glass [class*="bg-gray-100"] {
+  background-image: linear-gradient(
+    135deg,
+    rgba(148, 173, 214, 0.07) 0%,
+    rgba(9, 14, 26, 0.58) 52%,
+    rgba(148, 173, 214, 0.05) 100%
+  ) !important;
+  backdrop-filter: blur(18px) saturate(125%);
+  -webkit-backdrop-filter: blur(18px) saturate(125%);
+  border-color: rgba(148, 173, 214, 0.14) !important;
+}
+
+/* Dark mode readability for the feed's hardcoded slate text. */
+.dark .community-feed-glass [class*="text-slate-9"],
+.dark .community-feed-glass [class*="text-slate-8"],
+.dark .community-feed-glass [class*="text-gray-9"],
+.dark .community-feed-glass [class*="text-gray-8"] {
+  color: #eaf0fb !important;
+}
+.dark .community-feed-glass [class*="text-slate-7"],
+.dark .community-feed-glass [class*="text-slate-6"],
+.dark .community-feed-glass [class*="text-slate-5"],
+.dark .community-feed-glass [class*="text-slate-4"],
+.dark .community-feed-glass [class*="text-gray-6"],
+.dark .community-feed-glass [class*="text-gray-5"] {
+  color: rgba(215, 226, 245, 0.72) !important;
+}
+.dark .community-feed-glass [class*="divide-slate"] > * + * {
+  border-color: rgba(148, 173, 214, 0.14) !important;
+}
+
+/* ==========================================================================
+   LIQUID GLASS POLISH — JEE PREP HUB
+   Final refinement layer. Keeps the existing design system intact while adding
+   depth, edge refraction, stronger interaction states, and mobile safeguards.
+   ========================================================================== */
+
+/* --- 1. Neutral black glass: depth comes from separation, not blue tint --- */
+.dark.liquid-glass body,
+.dark.liquid-glass [data-lg-root] {
+  background-color: #000;
+}
+
+.dark.liquid-glass [class*="bg-card"],
+.dark.liquid-glass [class*="bg-popover"],
+.dark.liquid-glass [class*="bg-secondary"],
+.dark.liquid-glass [class*="bg-muted"] {
+  background-image:
+    radial-gradient(120% 90% at 0% 0%, rgba(255, 255, 255, 0.035), transparent 58%),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.045),
+      rgba(255, 255, 255, 0.012) 52%,
+      rgba(0, 0, 0, 0.18)
+    );
+}
+
+/* --- 2. Better glass edge: thin highlight + restrained internal refraction --- */
+.dark .glass-surface,
+.dark.liquid-glass [data-glass-surface] {
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid rgba(255, 255, 255, 0.105) !important;
+  box-shadow:
+    0 18px 55px -30px rgba(0, 0, 0, 0.95),
+    0 2px 10px -5px rgba(0, 0, 0, 0.75),
+    inset 0 1px 0 rgba(255, 255, 255, 0.075),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.35);
+}
+
+.dark .glass-surface::before {
+  opacity: 0.22 !important;
+  background:
+    linear-gradient(
+      112deg,
+      transparent 22%,
+      rgba(255, 255, 255, 0.075) 42%,
+      rgba(255, 255, 255, 0.018) 51%,
+      transparent 68%
+    ),
+    radial-gradient(90% 70% at 8% 0%, rgba(255, 255, 255, 0.06), transparent 55%);
+  mix-blend-mode: screen;
+}
+
+.dark .glass-surface::after {
+  opacity: 0.19 !important;
+  background:
+    radial-gradient(42% 55% at 8% 8%, rgba(255, 255, 255, 0.055), transparent 72%),
+    radial-gradient(35% 45% at 92% 92%, rgba(255, 255, 255, 0.025), transparent 74%),
+    linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.018) 100%);
+  mix-blend-mode: screen;
+}
+
+.dark .glass-surface-interactive:hover,
+.dark .glass-surface-interactive:focus-visible,
+.dark .glass-surface-interactive:focus-within {
+  border-color: rgba(255, 255, 255, 0.17) !important;
+  transform: translateY(-1px);
+  box-shadow:
+    0 24px 65px -30px rgba(0, 0, 0, 1),
+    0 8px 22px -16px rgba(255, 255, 255, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.11),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.42);
+}
+
+/* --- 3. Navbar becomes a single floating glass layer --- */
+.dark.liquid-glass header,
+.dark.liquid-glass nav {
+  background: linear-gradient(180deg, rgba(18, 18, 18, 0.78), rgba(5, 5, 5, 0.62)) !important;
+  border-color: rgba(255, 255, 255, 0.09) !important;
+  box-shadow:
+    0 16px 40px -28px rgba(0, 0, 0, 1),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.045);
+  -webkit-backdrop-filter: blur(24px) saturate(145%);
+  backdrop-filter: blur(24px) saturate(145%);
+}
+
+.dark .nav-glass-btn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.105),
+    rgba(255, 255, 255, 0.035)
+  ) !important;
+  border-color: rgba(255, 255, 255, 0.13) !important;
+  box-shadow:
+    0 7px 20px -11px rgba(0, 0, 0, 0.95),
+    inset 0 1px 0 rgba(255, 255, 255, 0.11),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.28);
+  -webkit-backdrop-filter: blur(18px) saturate(155%);
+  backdrop-filter: blur(18px) saturate(155%);
+}
+
+.dark .nav-glass-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.09) 48%,
+    transparent 66%
+  );
+  transform: translateX(-120%);
+  transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.dark .nav-glass-btn:hover::before,
+.dark .nav-glass-btn:focus-visible::before {
+  transform: translateX(120%);
+}
+
+.dark .nav-glass-btn:hover,
+.dark .nav-glass-btn:focus-visible {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.14),
+    rgba(255, 255, 255, 0.055)
+  ) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  transform: translateY(-1px) scale(1.025);
+}
+
+.dark .nav-glass-btn:active {
+  transform: scale(0.96);
+}
+
+/* --- 4. Active navigation lens: softer and more physical --- */
+.dark .liquid-lens-item::before {
+  background:
+    radial-gradient(120% 150% at 28% 0%, rgba(255, 255, 255, 0.13), transparent 68%),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.095), rgba(255, 255, 255, 0.025));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.17),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.25),
+    0 10px 28px -15px rgba(0, 0, 0, 0.95);
+}
+
+.dark .liquid-lens-item::after {
+  background: linear-gradient(
+    105deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.14) 50%,
+    transparent 70%
+  );
+  filter: blur(1px);
+}
+
+.dark .liquid-lens-item[data-state="active"],
+.dark .liquid-lens-item[aria-selected="true"],
+.dark .liquid-lens-item[aria-current="page"],
+.dark .liquid-lens-item.is-active {
+  color: #fff;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.35));
+}
+
+/* --- 5. Generic glass buttons / controls --- */
+.dark.liquid-glass button:not([data-unstyled]),
+.dark.liquid-glass [role="button"] {
+  transition:
+    transform 0.16s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.dark.liquid-glass button:not([data-unstyled]):hover,
+.dark.liquid-glass [role="button"]:hover {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+.dark.liquid-glass button:not([data-unstyled]):active,
+.dark.liquid-glass [role="button"]:active {
+  transform: scale(0.975);
+}
+
+/* Don't override disabled controls with interaction effects. */
+.dark.liquid-glass button:disabled,
+.dark.liquid-glass [role="button"][aria-disabled="true"] {
+  transform: none !important;
+  filter: none !important;
+}
+
+/* --- 6. Inputs: glass, but readable and stable --- */
+.dark.liquid-glass input,
+.dark.liquid-glass textarea,
+.dark.liquid-glass select {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.055),
+    rgba(255, 255, 255, 0.018)
+  ) !important;
+  border-color: rgba(255, 255, 255, 0.105) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.045);
+  -webkit-backdrop-filter: blur(12px) saturate(130%);
+  backdrop-filter: blur(12px) saturate(130%);
+}
+
+.dark.liquid-glass input:focus,
+.dark.liquid-glass textarea:focus,
+.dark.liquid-glass select:focus {
+  border-color: color-mix(in oklab, var(--primary) 58%, rgba(255, 255, 255, 0.18)) !important;
+  box-shadow:
+    0 0 0 3px color-mix(in oklab, var(--primary) 16%, transparent),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07) !important;
+}
+
+/* --- 7. Community feed gets the same neutral-black glass language --- */
+.dark[data-ui="glass"] .community-feed-glass [class*="bg-white"],
+.dark[data-ui="glass"] .community-feed-glass [class*="bg-slate-50"],
+.dark[data-ui="glass"] .community-feed-glass [class*="bg-slate-100"],
+.dark[data-ui="glass"] .community-feed-glass [class*="bg-gray-50"],
+.dark[data-ui="glass"] .community-feed-glass [class*="bg-gray-100"] {
+  background-image: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.065),
+    rgba(255, 255, 255, 0.018) 55%,
+    rgba(0, 0, 0, 0.12)
+  ) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.055),
+    0 12px 35px -24px rgba(0, 0, 0, 0.95);
+}
+
+/* --- 8. Mobile: less blur, same visual depth, better battery/GPU behaviour --- */
+@media (max-width: 768px) {
+  .dark.liquid-glass header,
+  .dark.liquid-glass nav {
+    -webkit-backdrop-filter: blur(18px) saturate(135%);
+    backdrop-filter: blur(18px) saturate(135%);
+  }
+
+  .dark .glass-surface,
+  .dark.liquid-glass [data-glass-surface] {
+    -webkit-backdrop-filter: blur(14px) saturate(120%);
+    backdrop-filter: blur(14px) saturate(120%);
+    box-shadow:
+      0 14px 36px -26px rgba(0, 0, 0, 0.95),
+      inset 0 1px 0 rgba(255, 255, 255, 0.065);
+  }
+
+  .dark .glass-surface-interactive:hover,
+  .dark .glass-surface-interactive:focus-visible,
+  .dark .glass-surface-interactive:focus-within {
+    transform: none;
+  }
+
+  .dark .nav-glass-btn:hover {
+    transform: none;
+  }
+}
+
+/* --- 9. Accessibility: respect reduced-motion everywhere in this layer --- */
+@media (prefers-reduced-motion: reduce) {
+  .dark .nav-glass-btn,
+  .dark .glass-surface-interactive,
+  .dark.liquid-glass button:not([data-unstyled]),
+  .dark.liquid-glass [role="button"] {
+    transition: none !important;
+  }
+
+  .dark .nav-glass-btn::before {
+    display: none !important;
+  }
+
+  .dark .glass-surface-interactive:hover,
+  .dark .glass-surface-interactive:focus-visible,
+  .dark .glass-surface-interactive:focus-within,
+  .dark .nav-glass-btn:hover,
+  .dark .nav-glass-btn:focus-visible {
+    transform: none !important;
+  }
+}
+
+/* ============================================================================
+   LIQUID GLASS V3 — DEPTH + REFRACTION POLISH
+   Screenshot-driven refinement for JEE Prep Hub.
+   Keeps the existing architecture; this layer only fine-tunes visual hierarchy.
+   ============================================================================ */
+
+/* 1. LIGHT MODE — less milky, more transparent glass. */
+html:not(.dark).liquid-glass body {
+  background-color: #dcecf5;
+  background-image:
+    radial-gradient(58rem 38rem at 4% -8%, rgba(255, 255, 255, 0.72), transparent 64%),
+    radial-gradient(52rem 36rem at 96% 4%, rgba(125, 211, 252, 0.3), transparent 62%),
+    radial-gradient(48rem 34rem at 38% 104%, rgba(186, 230, 253, 0.3), transparent 64%),
+    radial-gradient(36rem 28rem at 82% 70%, rgba(255, 255, 255, 0.26), transparent 68%);
+}
+
+html:not(.dark) .glass-surface {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.58),
+    rgba(255, 255, 255, 0.26) 46%,
+    rgba(239, 250, 255, 0.42) 100%
+  ) !important;
+  backdrop-filter: blur(22px) saturate(175%) brightness(1.02);
+  -webkit-backdrop-filter: blur(22px) saturate(175%) brightness(1.02);
+  border-color: rgba(255, 255, 255, 0.66) !important;
+  box-shadow:
+    0 22px 50px -28px rgba(15, 23, 42, 0.3),
+    0 2px 8px -4px rgba(15, 23, 42, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88),
+    inset 0 -1px 0 rgba(125, 211, 252, 0.16) !important;
+}
+
+html:not(.dark) .glass-surface::before {
+  opacity: 0.38 !important;
+  background:
+    linear-gradient(112deg, transparent 25%, rgba(255, 255, 255, 0.55) 46%, transparent 66%),
+    radial-gradient(90% 70% at 8% 0%, rgba(255, 255, 255, 0.42), transparent 58%);
+}
+
+html:not(.dark) .glass-surface::after {
+  opacity: 0.3 !important;
+  background:
+    radial-gradient(42% 55% at 8% 8%, rgba(255, 255, 255, 0.7), transparent 72%),
+    radial-gradient(34% 45% at 92% 92%, rgba(125, 211, 252, 0.22), transparent 74%);
+}
+
+/* 2. DARK MODE — true black foundation with restrained cyan only as an accent. */
+.dark.liquid-glass body {
+  background-color: #000 !important;
+  background-image:
+    radial-gradient(52rem 34rem at 8% -10%, rgba(34, 211, 238, 0.075), transparent 65%),
+    radial-gradient(46rem 32rem at 96% 8%, rgba(255, 255, 255, 0.028), transparent 66%),
+    radial-gradient(44rem 32rem at 35% 110%, rgba(34, 211, 238, 0.035), transparent 68%) !important;
+}
+
+.dark.liquid-glass .liquid-glass-card,
+.dark.liquid-glass .liquid-glass-dark-hero {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.065),
+    rgba(8, 8, 8, 0.74) 52%,
+    rgba(34, 211, 238, 0.025)
+  ) !important;
+  border-color: rgba(255, 255, 255, 0.105) !important;
+  box-shadow:
+    0 22px 55px -30px rgba(0, 0, 0, 0.98),
+    inset 0 1px 0 rgba(255, 255, 255, 0.075),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.42) !important;
+}
+
+/* 3. GLASS DEPTH LEVELS — small inner surfaces should not compete with hero cards. */
+.dark.liquid-glass [data-glass-surface] .glass-surface,
+.dark.liquid-glass .glass-surface .glass-surface {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.045),
+    rgba(7, 7, 7, 0.52) 54%,
+    rgba(34, 211, 238, 0.018)
+  ) !important;
+  border-color: rgba(255, 255, 255, 0.075) !important;
+  box-shadow:
+    0 12px 30px -22px rgba(0, 0, 0, 0.98),
+    inset 0 1px 0 rgba(255, 255, 255, 0.055) !important;
+}
+
+/* 4. ACTIVE LIQUID LENS — less scale, more physical glass. */
+.liquid-lens-item[data-state="active"],
+.liquid-lens-item[aria-selected="true"],
+.liquid-lens-item[aria-current="page"],
+.liquid-lens-item.is-active {
+  transform: scale(1.035) !important;
+}
+
+.dark .liquid-lens-item::before {
+  background:
+    radial-gradient(130% 150% at 25% 0%, rgba(255, 255, 255, 0.14), transparent 68%),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.085), rgba(255, 255, 255, 0.018)) !important;
+  border: 1px solid rgba(255, 255, 255, 0.065);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3),
+    0 12px 28px -18px rgba(0, 0, 0, 0.95) !important;
+}
+
+/* 5. NAVBAR — one continuous sheet; controls become quieter windows into it. */
+.liquid-glass header,
+.liquid-glass nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 14px 38px -30px rgba(0, 0, 0, 0.55),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(26px) saturate(155%);
+  backdrop-filter: blur(26px) saturate(155%);
+}
+
+html:not(.dark) .liquid-glass header,
+html:not(.dark) .liquid-glass nav {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.52),
+    rgba(231, 247, 255, 0.3)
+  ) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.54);
+}
+
+.dark.liquid-glass header,
+.dark.liquid-glass nav {
+  background: linear-gradient(180deg, rgba(15, 15, 15, 0.78), rgba(3, 3, 3, 0.58)) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.075);
+}
+
+/* 6. NAV BUTTONS — no chunky bubbles; preserve tactile interaction. */
+html:not(.dark) .nav-glass-btn {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.48),
+    rgba(255, 255, 255, 0.16)
+  ) !important;
+  border-color: rgba(255, 255, 255, 0.58) !important;
+  box-shadow:
+    0 7px 20px -14px rgba(15, 23, 42, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark .nav-glass-btn {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.095),
+    rgba(255, 255, 255, 0.025)
+  ) !important;
+  border-color: rgba(255, 255, 255, 0.115) !important;
+}
+
+/* 7. PROGRESS / ACCENT AREAS — glow without flooding the glass. */
+.dark.liquid-glass [role="progressbar"] {
+  box-shadow: 0 0 16px -8px rgba(34, 211, 238, 0.65);
+}
+
+/* 8. FORM CONTROLS — same material as the cards, but slightly flatter. */
+html:not(.dark) .liquid-glass input,
+html:not(.dark) .liquid-glass textarea,
+html:not(.dark) .liquid-glass select {
+  background: rgba(255, 255, 255, 0.38) !important;
+  border-color: rgba(255, 255, 255, 0.58) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  backdrop-filter: blur(14px) saturate(150%);
+}
+
+/* 9. COMMUNITY LIVE / SMALL FEATURE SURFACES — avoid heavy opacity. */
+html:not(.dark) [data-ui="glass"] .community-feed-glass [class*="bg-white"],
+html:not(.dark) [data-ui="glass"] .community-feed-glass [class*="bg-slate-50"],
+html:not(.dark) [data-ui="glass"] .community-feed-glass [class*="bg-gray-50"] {
+  background-image: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.2)
+  ) !important;
+  border-color: rgba(255, 255, 255, 0.58) !important;
+}
+
+/* 10. MOBILE — reduce nested blur and preserve the same hierarchy. */
+@media (max-width: 768px) {
+  .liquid-glass header,
+  .liquid-glass nav {
+    -webkit-backdrop-filter: blur(18px) saturate(145%);
+    backdrop-filter: blur(18px) saturate(145%);
+  }
+
+  .glass-surface {
+    backdrop-filter: blur(15px) saturate(165%) !important;
+    -webkit-backdrop-filter: blur(15px) saturate(165%) !important;
+  }
+
+  .glass-surface::before,
+  .glass-surface::after {
+    animation-duration: 18s;
+  }
+
+  .liquid-lens-item[data-state="active"],
+  .liquid-lens-item[aria-selected="true"],
+  .liquid-lens-item[aria-current="page"],
+  .liquid-lens-item.is-active {
+    transform: scale(1.02) !important;
+  }
+}
+
+/* 11. ACCESSIBILITY / LOW POWER — effects never become mandatory. */
+@media (prefers-reduced-motion: reduce), (prefers-reduced-transparency: reduce) {
+  .glass-surface::before,
+  .glass-surface::after,
+  .nav-glass-btn::before {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Low-cost rendering profile for touch devices. Keep the same hierarchy and
+   colors, but avoid backdrop-filter and continuously animated pseudo-elements
+   that are disproportionately expensive while scrolling. */
+@media (max-width: 640px), (pointer: coarse) {
+  .liquid-glass header,
+  .liquid-glass nav,
+  .glass-surface,
+  .liquid-glass input,
+  .liquid-glass textarea,
+  .liquid-glass select {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+
+  .glass-surface::before,
+  .glass-surface::after,
+  .nav-glass-btn::before,
+  .nav-glass-btn::after {
+    animation: none !important;
+  }
+
+  .liquid-lens-item[data-state="active"],
+  .liquid-lens-item[aria-selected="true"],
+  .liquid-lens-item[aria-current="page"],
+  .liquid-lens-item.is-active {
+    transform: none !important;
+  }
+}
+
+/* Community lists are long-running mobile surfaces. Keep scroll gestures on
+   their own pane and skip paint/layout work for cards outside the viewport. */
+.community-chat-scroll {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+  touch-action: pan-y;
+  scrollbar-gutter: stable;
+}
+
+.community-touch-strip {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x pan-y;
+}
+
+.community-chat-message {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 76px;
+}
+
+.community-feed-post,
+.community-doubt-card {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 420px;
+}
+
+.community-feed-mobile-nav {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+}
+
+.community-feed-glass {
+  padding-bottom: calc(5rem + env(safe-area-inset-bottom));
+}
+/* Larger touch targets and wider reading lanes on tablets/laptops. */
+@media (min-width: 768px) {
+  .community-live-shell > header h1 { font-size: 1.05rem; }
+  .community-live-shell > header p { font-size: 0.75rem; }
+  .community-live-shell > header nav button { min-height: 2.55rem; font-size: 0.82rem; }
+  .community-live-shell .community-chat-scroll {
+    padding-left: clamp(1.5rem, 5vw, 8rem);
+    padding-right: clamp(1.5rem, 5vw, 8rem);
+  }
+  .community-live-shell .community-chat-message > div > div { max-width: min(78%, 58rem); }
+  .community-live-shell textarea, .community-live-shell input { font-size: 0.95rem; }
+}
+@media (min-width: 1200px) {
+  .community-live-shell .community-chat-scroll {
+    padding-left: clamp(3rem, 10vw, 14rem);
+    padding-right: clamp(3rem, 10vw, 14rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .community-feed-glass {
+    padding-bottom: 0;
+  }
+}
+
+/* Shared site motion language: compositor-friendly, brief, and opt-outable. */
+:root {
+  --motion-ease: cubic-bezier(0.2, 0.75, 0.25, 1);
+  --motion-fast: 150ms;
+  --motion-base: 220ms;
+}
+
+html.has-motion-system .motion-reveal:not(.motion-revealed) {
+  opacity: 0;
+  transform: translate3d(0, var(--motion-distance, 12px), 0);
+}
+
+html.has-motion-system .motion-reveal[data-motion-variant="slide-up"]:not(.motion-revealed) {
+  --motion-distance: 18px;
+}
+
+html.has-motion-system .motion-reveal[data-motion-variant="scale-in"]:not(.motion-revealed) {
+  transform: translate3d(0, 6px, 0) scale(0.985);
+}
+
+html.has-motion-system .motion-reveal[data-motion-variant="fade"]:not(.motion-revealed) {
+  transform: none;
+}
+
+.motion-reveal {
+  transition:
+    opacity var(--motion-base) var(--motion-ease),
+    transform var(--motion-base) var(--motion-ease);
+  transition-delay: var(--motion-item-delay, 0ms);
+}
+
+.motion-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+/* Radix surfaces already expose state attributes; normalize their timing and
+   leave their existing placement/origin animations intact. */
+[data-state="open"].animate-in,
+[data-state="visible"].animate-in {
+  animation-duration: var(--motion-base);
+  animation-timing-function: var(--motion-ease);
+}
+
+[data-state="closed"].animate-out,
+[data-state="hidden"].animate-out {
+  animation-duration: var(--motion-fast);
+  animation-timing-function: var(--motion-ease);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.has-motion-system .motion-reveal:not(.motion-revealed) {
+    opacity: 1;
+    transform: none;
+  }
+
+  .motion-reveal,
+  [data-state="open"].animate-in,
+  [data-state="visible"].animate-in,
+  [data-state="closed"].animate-out,
+  [data-state="hidden"].animate-out {
+    animation: none !important;
+    transition: none !important;
+    scale: 1 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .motion-reveal {
+    transition-duration: 170ms;
+  }
+
+  html.has-motion-system .motion-reveal[data-motion-variant="slide-up"]:not(.motion-revealed) {
+    --motion-distance: 10px;
+  }
+}
+
+/* Keep the primary navigation responsive even on low-end touch devices. */
+.feature-menu-trigger {
+  transition:
+    transform 120ms var(--motion-ease),
+    background 120ms var(--motion-ease),
+    box-shadow 120ms var(--motion-ease),
+    border-color 120ms var(--motion-ease) !important;
+}
+
+.feature-menu-overlay {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  animation-duration: 100ms !important;
+  z-index: 60 !important;
+}
+
+.feature-menu-content {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  background: var(--popover) !important;
+  color: var(--popover-foreground) !important;
+  animation-duration: 150ms !important;
+  animation-timing-function: var(--motion-ease) !important;
+  isolation: isolate;
+  overflow: hidden;
+  z-index: 70 !important;
+}
+
+.feature-menu-section {
+  background-color: var(--popover) !important;
+}
+
+.feature-menu-item {
+  background: var(--card) !important;
+  border-color: var(--border) !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+.feature-menu-item.liquid-lens-item::before,
+.feature-menu-item.liquid-lens-item::after {
+  animation: none !important;
+}
+.feature-menu-item.liquid-lens-item::before {
+  transform: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+.feature-menu-item.liquid-lens-item::after {
+  display: none !important;
+}
+
+.feature-menu-search {
+  background-color: var(--muted) !important;
+  color: var(--foreground);
+}
+
+.feature-menu-shell {
+  min-height: 0;
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feature-menu-trigger,
+  .feature-menu-overlay,
+  .feature-menu-content {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+/* Challenge Arena controls retain a visible theme-colored keyboard focus ring. */
+.quiz-theme :is(button:not(:disabled), a, [role="radio"]):focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+}
+
+/* Keep the active quiz above site chrome while preserving the mounted page underneath. */
+.quiz-play-overlay {
+  z-index: 2147483000;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: var(--background);
+  background-image: none;
+  background-repeat: no-repeat;
+}
+
+/* Custom per-widget dashboard tint: hue stays on the outer frame, never on text or inner surfaces. */
+.dashboard-widget-tint {
+  border: 1px solid
+    color-mix(in srgb, var(--dashboard-widget-tint) var(--dashboard-widget-strength), transparent);
+  border-radius: 1.9rem;
+  background-color: color-mix(
+    in srgb,
+    var(--dashboard-widget-tint) var(--dashboard-widget-strength),
+    transparent
+  );
+  padding: 3px;
+  box-shadow: 0 10px 26px -18px color-mix(in srgb, var(--dashboard-widget-tint) 48%, transparent);
+}
+.dark .dashboard-widget-tint {
+  border-color: color-mix(
+    in srgb,
+    var(--dashboard-widget-tint) var(--dashboard-widget-dark-strength),
+    transparent
+  );
+  background-color: color-mix(
+    in srgb,
+    var(--dashboard-widget-tint) var(--dashboard-widget-dark-strength),
+    transparent
+  );
+}
+
+/* Final skin guard: the root keeps its legacy liquid-glass class for compatibility,
+   so these higher-specificity rules prevent downstream Glass polish from leaking in. */
+html[data-ui="legacy"].liquid-glass body,
+html[data-ui="legacy"].dark.liquid-glass body {
+  background-image:
+    linear-gradient(90deg, color-mix(in srgb, var(--primary) 3%, transparent), transparent 34rem),
+    repeating-linear-gradient(
+      180deg,
+      transparent 0 39px,
+      color-mix(in srgb, var(--foreground) 3.2%, transparent) 40px,
+      transparent 41px
+    ) !important;
+  background-attachment: scroll !important;
+  animation: none !important;
+  will-change: auto !important;
+  color: var(--foreground) !important;
+}
+html[data-ui="legacy"].liquid-glass body::before,
+html[data-ui="legacy"].dark.liquid-glass body::before {
+  display: none !important;
+  content: none !important;
+  animation: none !important;
+  will-change: auto !important;
+}
+html[data-ui="legacy"].dark.liquid-glass [data-lg-root] {
+  background: var(--color-background) !important;
+  background-image: none !important;
+  animation: none !important;
+}
+html[data-ui="legacy"] .glass-surface,
+html[data-ui="legacy"] [data-glass-surface],
+html[data-ui="legacy"].dark.liquid-glass [data-glass-surface] .glass-surface,
+html[data-ui="legacy"].dark.liquid-glass .glass-surface .glass-surface {
+  background: var(--color-card) !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  border: 1px solid var(--color-border) !important;
+  border-inline-start: 3px solid color-mix(in srgb, var(--primary) 52%, var(--color-border)) !important;
+  border-radius: 0.9rem !important;
+  box-shadow: var(--shadow-soft) !important;
+  filter: none !important;
+  transform: none !important;
+}
+html[data-ui="legacy"] .glass-surface::before,
+html[data-ui="legacy"] .glass-surface::after,
+html[data-ui="legacy"] [data-glass-surface]::before,
+html[data-ui="legacy"] [data-glass-surface]::after {
+  display: none !important;
+  animation: none !important;
+}
+html[data-ui="legacy"].dark.liquid-glass header.glass-surface,
+html[data-ui="legacy"].dark.liquid-glass nav.glass-surface,
+html[data-ui="legacy"].dark .nav-glass-btn {
+  background: var(--color-card) !important;
+  border-color: var(--color-border) !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  box-shadow:
+    inset 0 -2px 0 color-mix(in srgb, var(--primary) 28%, transparent),
+    var(--shadow-soft) !important;
+  transform: none !important;
+}
+html[data-ui="legacy"] .nav-glass-btn::before,
+html[data-ui="legacy"] .liquid-lens-item::before,
+html[data-ui="legacy"] .liquid-lens-item::after {
+  display: none !important;
+  content: none !important;
+  animation: none !important;
+}
+html[data-ui="legacy"].dark .liquid-lens-item[data-state="active"],
+html[data-ui="legacy"].dark .liquid-lens-item[aria-selected="true"],
+html[data-ui="legacy"].dark .liquid-lens-item[aria-current="page"],
+html[data-ui="legacy"].dark .liquid-lens-item.is-active {
+  background: color-mix(in srgb, var(--primary) 18%, var(--color-card)) !important;
+  border-inline-start: 3px solid var(--primary) !important;
+  color: var(--primary) !important;
+  filter: none !important;
+}
+
+/* Shared rich-content renderer used by articles and study notes. */
+.study-markdown {
+  color: var(--foreground, #18231f);
+  font-size: 1rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.study-markdown > :first-child {
+  margin-top: 0;
+}
+.study-markdown > :last-child {
+  margin-bottom: 0;
+}
+.study-markdown h1,
+.study-markdown h2,
+.study-markdown h3,
+.study-markdown h4 {
+  color: var(--foreground, #18231f);
+  font-weight: 750;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+  scroll-margin-top: 5rem;
+}
+.study-markdown h1 {
+  margin: 2.25rem 0 1rem;
+  font-size: clamp(1.8rem, 4vw, 2.35rem);
+}
+.study-markdown h2 {
+  margin: 2rem 0 0.75rem;
+  font-size: clamp(1.45rem, 3vw, 1.85rem);
+}
+.study-markdown h3 {
+  margin: 1.6rem 0 0.6rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.45rem);
+}
+.study-markdown h4 {
+  margin: 1.35rem 0 0.5rem;
+  font-size: 1.08rem;
+}
+.study-markdown p {
+  margin: 0 0 1.15rem;
+  color: color-mix(in srgb, var(--foreground, #18231f) 90%, transparent);
+}
+.study-markdown ul,
+.study-markdown ol {
+  margin: 0 0 1.25rem;
+  padding-left: 1.5rem;
+}
+.study-markdown li {
+  margin: 0.35rem 0;
+  padding-left: 0.2rem;
+}
+.study-markdown li > p {
+  margin-bottom: 0.35rem;
+}
+.study-markdown blockquote {
+  margin: 1.5rem 0;
+  border-left: 3px solid color-mix(in srgb, var(--primary, #2586bd) 60%, transparent);
+  border-radius: 0 0.75rem 0.75rem 0;
+  background: color-mix(in srgb, var(--primary, #2586bd) 8%, transparent);
+  padding: 0.8rem 1rem;
+}
+.study-markdown blockquote p:last-child {
+  margin-bottom: 0;
+}
+.study-markdown a {
+  color: var(--primary, #2586bd);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.study-markdown img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 1rem;
+  object-fit: contain;
+}
+.study-markdown hr {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid var(--border, #e5e9e5);
+}
+.study-markdown-table-wrap {
+  width: 100%;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  border: 1px solid var(--border, #e5e9e5);
+  border-radius: 0.9rem;
+  -webkit-overflow-scrolling: touch;
+}
+.study-markdown table {
+  width: 100%;
+  min-width: 34rem;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.study-markdown th,
+.study-markdown td {
+  border-bottom: 1px solid var(--border, #e5e9e5);
+  padding: 0.75rem 0.9rem;
+  text-align: left;
+  vertical-align: top;
+}
+.study-markdown th {
+  background: color-mix(in srgb, var(--muted, #eef2f0) 70%, transparent);
+  color: var(--foreground, #18231f);
+  font-weight: 750;
+}
+.study-markdown tr:last-child td {
+  border-bottom: 0;
+}
+.study-markdown code {
+  border-radius: 0.35rem;
+  background: color-mix(in srgb, var(--muted, #eef2f0) 85%, transparent);
+  padding: 0.12rem 0.35rem;
+  font-size: 0.88em;
+}
+.study-markdown pre {
+  margin: 1.25rem 0;
+  max-width: 100%;
+  overflow-x: auto;
+  border-radius: 0.85rem;
+  background: color-mix(in srgb, var(--foreground, #18231f) 8%, var(--background, #fff));
+  padding: 1rem;
+  line-height: 1.6;
+}
+.study-markdown pre code {
+  padding: 0;
+  background: transparent;
+}
+.study-markdown .katex-display {
+  max-width: 100%;
+  margin: 1.35rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.2rem 0 0.35rem;
+}
+.study-markdown .katex {
+  font-size: 1.05em;
+}
+@media (max-width: 640px) {
+  .study-markdown {
+    font-size: 0.96rem;
+    line-height: 1.75;
+  }
+  .study-markdown table {
+    min-width: 30rem;
+  }
+  .study-markdown th,
+  .study-markdown td {
+    padding: 0.65rem 0.7rem;
+  }
+  .study-markdown .katex {
+    font-size: 0.98em;
+  }
+}
+
+/* Preserve native scroll and router restoration; keep in-page targets clear of the sticky header. */
+html {
+  scroll-padding-top: 5rem;
+}
+
+/* Keep touch scrolling on the compositor: temporarily pause decorative glass
+   and background motion while a gesture is in progress. */
+html.is-scrolling .glass-surface,
+html.is-scrolling [data-glass-surface] {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+html.is-scrolling .glass-surface::before,
+html.is-scrolling .glass-surface::after,
+html.is-scrolling.liquid-glass body::before,
+html.is-scrolling.liquid-glass body::after {
+  animation-play-state: paused !important;
+}
+
+/* Theme changes animate only semantic surfaces for a brief, synchronous color crossfade. */
+html.theme-transitioning body,
+html.theme-transitioning
+  body
+  :is(
+    [data-glass-surface],
+    .glass-surface,
+    [class*="bg-background"],
+    [class*="bg-card"],
+    [class*="bg-popover"],
+    [class*="bg-muted"],
+    [class*="border-border"],
+    [class*="text-foreground"],
+    [class*="text-muted-foreground"]
+  ) {
+  transition-property: color, background-color, border-color, fill, stroke;
+  transition-duration: 140ms;
+  transition-timing-function: var(--motion-ease);
+}
+
+/* Keep glass blur stable during the color crossfade; removing it briefly causes
+   a visible flash. Only pause decorative sheen while the palette changes. */
+html.theme-transitioning .glass-surface::before,
+html.theme-transitioning .glass-surface::after,
+html.theme-transitioning .nav-glass-btn::before,
+html.theme-transitioning .nav-glass-btn::after {
+  animation-play-state: paused !important;
+}
+
+/* Fixed, animated gradients are costly during touch scrolling; keep their appearance static on phones. */
+@media (max-width: 640px) {
+  .bg-aurora-shift {
+    animation-play-state: paused;
+  }
+
+  .liquid-glass body {
+    background-attachment: scroll;
+  }
+}
+
+/* One reliable accessibility guard for site, component-library and custom animations. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+
+  button:not(:disabled):active,
+  [role="button"]:not([aria-disabled="true"]):active,
+  [role="tab"]:not([aria-disabled="true"]):active,
+  [role="menuitem"]:not([aria-disabled="true"]):active,
+  a:active {
+    transform: none !important;
+  }
+}
+
+/* Dark mobile navigation: keep both the side drawer and bottom sheet black,
+   independent of global Liquid Glass, popover, and legacy skin surfaces. */
+@media (max-width: 640px) {
+  html.dark .feature-menu-mobile-surface.liquid-glass-card {
+    background: #000000 !important;
+    background-color: #000000 !important;
+    background-image: none !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    border-color: var(--border) !important;
+    box-shadow: none !important;
+  }
+
+  html.dark .feature-menu-mobile-surface .feature-menu-shell,
+  html.dark .feature-menu-mobile-surface .feature-menu-section,
+  html.dark .feature-menu-mobile-surface .feature-menu-search,
+  html.dark .feature-menu-mobile-surface .feature-menu-style-switch,
+  html.dark .feature-menu-mobile-surface .nav-glass-btn {
+    background: #000000 !important;
+    background-color: #000000 !important;
+    background-image: none !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+  }
+
+  html.dark .feature-menu-mobile-surface .feature-menu-item.liquid-glass-card {
+    background: #080808 !important;
+    background-color: #080808 !important;
+    background-image: none !important;
+    border-color: var(--border) !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+  }
+
+  html.dark .feature-menu-mobile-surface::before,
+  html.dark .feature-menu-mobile-surface::after,
+  html.dark .feature-menu-mobile-surface .feature-menu-section::before,
+  html.dark .feature-menu-mobile-surface .feature-menu-section::after,
+  html.dark .feature-menu-mobile-surface .feature-menu-search::before,
+  html.dark .feature-menu-mobile-surface .feature-menu-search::after,
+  html.dark .feature-menu-mobile-surface .feature-menu-item::before,
+  html.dark .feature-menu-mobile-surface .feature-menu-item::after,
+  html.dark .feature-menu-mobile-surface .nav-glass-btn::before,
+  html.dark .feature-menu-mobile-surface .nav-glass-btn::after {
+    content: none !important;
+    display: none !important;
+    background: none !important;
+    animation: none !important;
+  }
+}
+
+/* Global micro-interactions: consistent, fast feedback across every page. */
+@layer components {
+  :where(
+    button:not(:disabled),
+    a,
+    [role="button"]:not([aria-disabled="true"]),
+    [role="tab"]:not([aria-disabled="true"]),
+    [role="menuitem"]:not([aria-disabled="true"])
+  ) {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  :where(
+    button:not(:disabled),
+    a,
+    [role="button"]:not([aria-disabled="true"]),
+    [role="tab"]:not([aria-disabled="true"]),
+    [role="menuitem"]:not([aria-disabled="true"])
+  ):hover {
+    transform: translate3d(0, -1px, 0);
+  }
+
+  :where(
+    button:not(:disabled),
+    a,
+    [role="button"]:not([aria-disabled="true"]),
+    [role="tab"]:not([aria-disabled="true"]),
+    [role="menuitem"]:not([aria-disabled="true"])
+  ):active {
+    transform: translate3d(0, 0, 0) scale(0.975);
+    transition-duration: 80ms;
+  }
+
+  :where(
+    button:not(:disabled),
+    a,
+    [role="button"]:not([aria-disabled="true"]),
+    [role="tab"]:not([aria-disabled="true"]),
+    [role="menuitem"]:not([aria-disabled="true"])
+  ):focus-visible {
+    outline: 2px solid color-mix(in oklab, var(--ring) 78%, transparent);
+    outline-offset: 3px;
+  }
+
+  :where(article.rounded-xl, article.rounded-2xl, article.rounded-3xl, [data-interactive-card]) {
+    transition:
+      transform var(--motion-fast, 120ms) var(--motion-ease, ease-out),
+      box-shadow var(--motion-base, 180ms) var(--motion-ease, ease-out),
+      border-color var(--motion-fast, 120ms) var(--motion-ease, ease-out);
+  }
+
+  :where(
+    article.rounded-xl,
+    article.rounded-2xl,
+    article.rounded-3xl,
+    [data-interactive-card]
+  ):hover {
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 12px 28px -20px color-mix(in oklab, var(--foreground) 32%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(
+    button:not(:disabled),
+    a,
+    [role="button"]:not([aria-disabled="true"]),
+    [role="tab"]:not([aria-disabled="true"]),
+    [role="menuitem"]:not([aria-disabled="true"]),
+    article.rounded-xl,
+    article.rounded-2xl,
+    article.rounded-3xl,
+    [data-interactive-card]
+  ) {
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* Route and tab transitions: short opacity/transform motion keeps navigation
+   feeling continuous without animating layout, filters, or large shadows. */
+html.route-transitioning [data-route-content] {
+  will-change: opacity, transform;
+}
+
+[role="tabpanel"][data-state="active"],
+[role="tabpanel"][aria-hidden="false"],
+[data-state="active"][data-tab-panel] {
+  animation: tab-panel-enter 220ms var(--motion-ease, ease-out) both;
+}
+
+@keyframes tab-panel-enter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 6px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.route-transitioning [data-route-content],
+  [role="tabpanel"][data-state="active"],
+  [role="tabpanel"][aria-hidden="false"],
+  [data-state="active"][data-tab-panel] {
+    animation: none !important;
+    transform: none !important;
+    will-change: auto !important;
+  }
+}
+
+/* ============================================================================
+   Responsive readability
+   Mobile remains intentionally unchanged. On tablets and larger screens the
+   site gets a little more type scale, page width, and vertical rhythm so cards
+   and controls do not feel undersized on laptop/desktop displays.
+============================================================================ */
+@media (min-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+
+  .site-global-header {
+    min-height: var(--site-global-header-height);
+  }
+
+  .site-global-header > header {
+    min-height: var(--site-global-header-height);
+  }
+
+  [data-lg-root] main {
+    line-height: 1.55;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 18px;
+  }
+
+  .site-global-header > header {
+    gap: 1rem;
+  }
+}
+
+/* Phone browsers can request a desktop viewport, which produces a cramped,
+   scaled-down layout that cannot be made reliable with responsive CSS alone. */
+.mobile-desktop-mode-notice {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  overflow-y: auto;
+  padding: max(1.25rem, env(safe-area-inset-top)) 1.25rem max(1.25rem, env(safe-area-inset-bottom));
+  background: color-mix(in srgb, var(--background) 94%, var(--primary) 6%);
+  color: var(--foreground);
+}
+
+.mobile-desktop-mode-card {
+  width: min(100%, 28rem);
+  border: 1px solid color-mix(in srgb, var(--primary) 20%, var(--border));
+  border-radius: 1.5rem;
+  background: color-mix(in srgb, var(--card) 96%, transparent);
+  padding: clamp(1.5rem, 7vw, 2.5rem);
+  text-align: center;
+  box-shadow: 0 1.5rem 4rem color-mix(in srgb, var(--primary) 20%, transparent);
+}
+
+.mobile-desktop-mode-icon {
+  display: grid;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1.25rem;
+  place-items: center;
+  border-radius: 1.25rem;
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
+  color: var(--primary);
+}
+
+.mobile-desktop-mode-eyebrow {
+  margin: 0;
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.mobile-desktop-mode-card h1 {
+  margin: 0.65rem 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 7vw, 2rem);
+  line-height: 1.1;
+}
+
+.mobile-desktop-mode-card p:not(.mobile-desktop-mode-eyebrow) {
+  margin: 1rem 0 0;
+  color: var(--muted-foreground);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.mobile-desktop-mode-card button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 1.5rem;
+  border: 0;
+  border-radius: 0.85rem;
+  background: var(--primary);
+  padding: 0.8rem 1rem;
+  color: var(--primary-foreground);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.mobile-desktop-mode-card button:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--ring) 55%, transparent);
+  outline-offset: 3px;
+}
+
+/* Larger device motion scale: stronger visual presence without changing mobile rhythm. */
+@media (min-width: 768px) {
+  html.has-motion-system .motion-reveal[data-motion-variant="slide-up"]:not(.motion-revealed) { transform: translate3d(0, 16px, 0); }
+  html.has-motion-system .motion-reveal[data-motion-variant="scale-in"]:not(.motion-revealed) { transform: translate3d(0, 0, 0) scale(0.965); }
+  .motion-revealed { transition-duration: 240ms; }
+  .community-logo { transition: transform 240ms cubic-bezier(0.2, 0.75, 0.25, 1); }
+}
+
+/* ============================================================================
+   iOS 27 beta skin
+   Opt-in browser mode. This is an original iOS-inspired visual language, not
+   a copy of Apple's private or unreleased implementation.
+============================================================================ */
+html {
+  --ios27-pointer-x: 50%;
+  --ios27-pointer-y: 18%;
+}
+html[data-ui="ios27"] {
+  --radius: 1.35rem;
+  --background: oklch(0.93 0.035 238);
+  --foreground: oklch(0.19 0.045 260);
+  --card: oklch(0.99 0.008 240);
+  --card-foreground: oklch(0.19 0.045 260);
+  --popover: oklch(0.99 0.008 240);
+  --popover-foreground: oklch(0.19 0.045 260);
+  --border: oklch(0.82 0.035 245 / 0.72);
+  --input: oklch(0.82 0.035 245 / 0.72);
+  --muted: oklch(0.91 0.025 240);
+  --muted-foreground: oklch(0.45 0.045 258);
+  --primary: oklch(0.58 0.18 258);
+  --primary-foreground: oklch(0.99 0.008 240);
+  --accent: oklch(0.72 0.17 205);
+  --ring: oklch(0.58 0.18 258 / 0.5);
+}
+html.dark[data-ui="ios27"] {
+  --background: oklch(0.105 0.025 260);
+  --foreground: oklch(0.97 0.012 240);
+  --card: oklch(0.16 0.03 258);
+  --card-foreground: oklch(0.97 0.012 240);
+  --popover: oklch(0.16 0.03 258);
+  --popover-foreground: oklch(0.97 0.012 240);
+  --border: oklch(0.82 0.035 245 / 0.2);
+  --input: oklch(0.82 0.035 245 / 0.24);
+  --muted: oklch(0.2 0.035 258);
+  --muted-foreground: oklch(0.74 0.035 242);
+  --primary: oklch(0.72 0.16 255);
+  --primary-foreground: oklch(0.13 0.03 260);
+  --accent: oklch(0.75 0.15 205);
+  --ring: oklch(0.72 0.16 255 / 0.55);
+}
+html[data-ui="ios27"] body {
+  background:
+    radial-gradient(circle at 8% -8%, color-mix(in srgb, #7dd3fc 24%, transparent), transparent 32rem),
+    radial-gradient(circle at 96% 12%, color-mix(in srgb, #a78bfa 18%, transparent), transparent 34rem),
+    var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", system-ui, sans-serif;
+  letter-spacing: -0.008em;
+  -webkit-tap-highlight-color: color-mix(in srgb, var(--primary) 18%, transparent);
+  accent-color: var(--primary);
+  scrollbar-color: color-mix(in srgb, var(--primary) 42%, transparent) transparent;
+  isolation: isolate;
+  overflow-x: clip;
+  overscroll-behavior-x: none;
+}
+html[data-ui="ios27"] {
+  scroll-padding-top: calc(var(--site-global-header-height) + 1rem);
+}
+html[data-ui="ios27"] body::before,
+html[data-ui="ios27"] body::after {
+  position: fixed;
+  inset: -16%;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+}
+html[data-ui="ios27"] body::before {
+  background:
+    radial-gradient(
+      32rem 28rem at var(--ios27-pointer-x) var(--ios27-pointer-y),
+      color-mix(in srgb, var(--accent) 21%, transparent),
+      transparent 68%
+    ),
+    radial-gradient(28rem 26rem at 8% 92%, color-mix(in srgb, #67e8f9 11%, transparent), transparent 72%);
+  filter: blur(18px) saturate(125%);
+  opacity: 0.9;
+  transition: background-position 700ms cubic-bezier(.2,.8,.2,1);
+}
+html[data-ui="ios27"] body::after {
+  background:
+    radial-gradient(ellipse at center, transparent 48%, color-mix(in srgb, var(--foreground) 5%, transparent) 100%),
+    repeating-linear-gradient(115deg, color-mix(in srgb, white 2%, transparent) 0 1px, transparent 1px 5px);
+  mix-blend-mode: soft-light;
+  opacity: 0.32;
+}
+html[data-ui="ios27"] ::selection {
+  background: color-mix(in srgb, var(--primary) 28%, transparent);
+  color: var(--foreground);
+}
+html.dark[data-ui="ios27"] body {
+  background:
+    radial-gradient(circle at 8% -8%, color-mix(in srgb, #38bdf8 15%, transparent), transparent 34rem),
+    radial-gradient(circle at 96% 12%, color-mix(in srgb, #8b5cf6 14%, transparent), transparent 36rem),
+    var(--background);
+}
+html[data-ui="ios27"] .site-global-header {
+  top: 0;
+  z-index: 50;
+  min-height: var(--site-global-header-height);
+  border-bottom: 0 !important;
+  background: color-mix(in srgb, var(--background) 58%, transparent) !important;
+  backdrop-filter: blur(18px) saturate(125%);
+  -webkit-backdrop-filter: blur(18px) saturate(125%);
+  isolation: isolate;
+}
+html[data-ui="ios27"] .site-global-header > header {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  width: calc(100% - 1.25rem);
+  margin: .65rem auto;
+  border: 1px solid color-mix(in srgb, var(--foreground) 10%, transparent);
+  border-radius: 1.5rem;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, white 46%, transparent), color-mix(in srgb, #a6dcff 26%, transparent)),
+    color-mix(in srgb, var(--background) 72%, transparent);
+  box-shadow: 0 1rem 3rem -2rem color-mix(in srgb, var(--foreground) 35%, transparent), inset 0 1px 0 color-mix(in srgb, white 35%, transparent);
+  backdrop-filter: blur(24px) saturate(145%);
+  -webkit-backdrop-filter: blur(24px) saturate(145%);
+  transition:
+    background 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+}
+html[data-ui="ios27"] .site-global-header[data-scroll-position="scrolled"] > header {
+  border-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, white 52%, transparent), color-mix(in srgb, #a6dcff 31%, transparent)),
+    color-mix(in srgb, var(--background) 84%, transparent);
+  box-shadow: 0 1.2rem 3.5rem -2rem color-mix(in srgb, var(--foreground) 42%, transparent), inset 0 1px 0 color-mix(in srgb, white 42%, transparent);
+}
+html[data-ui="ios27"] .site-global-header > header > div:last-child {
+  min-width: 0;
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+  padding: .22rem;
+  border: 1px solid color-mix(in srgb, var(--foreground) 8%, transparent);
+  border-radius: 1.2rem;
+  background: color-mix(in srgb, #d8f0ff 28%, transparent);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 24%, transparent);
+}
+html[data-ui="ios27"] .site-global-header {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+html[data-ui="ios27"] .glass-surface,
+html[data-ui="ios27"] [data-glass-surface],
+html[data-ui="ios27"] .liquid-glass-card {
+  border-color: color-mix(in srgb, var(--foreground) 10%, transparent) !important;
+  border-radius: 1.75rem !important;
+  background:
+    radial-gradient(125% 145% at var(--ios27-pointer-x) var(--ios27-pointer-y), color-mix(in srgb, var(--primary) 9%, transparent), transparent 52%),
+    color-mix(in srgb, var(--card) 70%, transparent) !important;
+  box-shadow: 0 1.5rem 4rem -2.5rem color-mix(in srgb, var(--foreground) 35%, transparent), inset 0 1px 0 color-mix(in srgb, white 30%, transparent), inset 0 -1.2rem 2rem -1.8rem color-mix(in srgb, var(--primary) 30%, transparent) !important;
+  backdrop-filter: blur(26px) saturate(150%) contrast(1.04);
+  transform-style: preserve-3d;
+}
+html[data-ui="ios27"] .glass-surface::before,
+html[data-ui="ios27"] .glass-surface::after,
+html[data-ui="ios27"] [data-glass-surface]::before,
+html[data-ui="ios27"] [data-glass-surface]::after { opacity: .25; }
+html[data-ui="ios27"].has-motion-system .motion-reveal {
+  transition:
+    opacity 420ms cubic-bezier(.16, 1, .3, 1),
+    transform 520ms cubic-bezier(.16, 1, .3, 1);
+}
+html[data-ui="ios27"].has-motion-system .motion-revealed {
+  animation: ios27-component-settle 520ms cubic-bezier(.16, 1, .3, 1) both;
+}
+html[data-ui="ios27"] .glass-surface-interactive {
+  transition:
+    transform 360ms cubic-bezier(.2, .8, .2, 1),
+    box-shadow 360ms cubic-bezier(.2, .8, .2, 1),
+    border-color 240ms ease;
+  will-change: transform;
+}
+html[data-ui="ios27"] .glass-surface-interactive:active {
+  transform: scale(.985) translateY(1px);
+  transition-duration: 120ms;
+}
+html[data-ui="ios27"] .glass-surface-interactive:active::before {
+  opacity: .4;
+}
+@media (hover: hover) and (pointer: fine) {
+  html[data-ui="ios27"] .glass-surface-interactive:hover,
+  html[data-ui="ios27"] .glass-surface-interactive:focus-visible,
+  html[data-ui="ios27"] .glass-surface-interactive:focus-within {
+    transform: translateY(-3px) scale(1.006);
+    border-color: color-mix(in srgb, var(--primary) 26%, transparent) !important;
+    box-shadow: 0 1.8rem 4rem -2.4rem color-mix(in srgb, var(--primary) 36%, transparent), inset 0 1px 0 color-mix(in srgb, white 38%, transparent) !important;
+  }
+}
+@keyframes ios27-component-settle {
+  0% { filter: blur(3px); }
+  70% { filter: blur(0); }
+  100% { filter: blur(0); }
+}
+@keyframes ios27-modal-present {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(.94);
+    filter: blur(8px);
+  }
+  68% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.012);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    filter: blur(0);
+  }
+}
+html[data-ui="ios27"] .ios27-modal-overlay,
+html[data-ui="ios27"] .ios27-sheet-overlay {
+  background: color-mix(in srgb, var(--foreground) 28%, transparent) !important;
+  backdrop-filter: blur(10px) saturate(115%);
+  -webkit-backdrop-filter: blur(10px) saturate(115%);
+  transition: opacity 260ms cubic-bezier(.16, 1, .3, 1);
+}
+html[data-ui="ios27"] .ios27-modal-surface,
+html[data-ui="ios27"] .ios27-sheet-surface {
+  border-color: color-mix(in srgb, var(--foreground) 12%, transparent) !important;
+  background:
+    radial-gradient(120% 90% at 50% 0%, color-mix(in srgb, white 24%, transparent), transparent 65%),
+    color-mix(in srgb, var(--card) 82%, transparent) !important;
+  box-shadow: 0 2rem 5rem -2rem color-mix(in srgb, var(--foreground) 48%, transparent), inset 0 1px 0 color-mix(in srgb, white 34%, transparent) !important;
+  backdrop-filter: blur(30px) saturate(155%);
+  -webkit-backdrop-filter: blur(30px) saturate(155%);
+}
+html[data-ui="ios27"] .ios27-modal-surface[data-state="open"] {
+  animation: ios27-modal-present 420ms cubic-bezier(.16, 1, .3, 1) both;
+}
+html[data-ui="ios27"] .ios27-sheet-surface {
+  border-radius: 1.8rem 1.8rem 0 0;
+}
+html[data-ui="ios27"] .ios27-sheet-surface::before {
+  position: absolute;
+  top: .55rem;
+  left: 50%;
+  width: 2.7rem;
+  height: .25rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--foreground) 20%, transparent);
+  content: "";
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+html[data-ui="ios27"] [data-radix-popover-content],
+html[data-ui="ios27"] [data-radix-dropdown-menu-content],
+html[data-ui="ios27"] [data-radix-select-content] {
+  animation-duration: 360ms !important;
+  animation-timing-function: cubic-bezier(.16, 1, .3, 1) !important;
+}
+html[data-ui="ios27"] .nav-glass-btn {
+  border: 1px solid color-mix(in srgb, var(--foreground) 10%, transparent);
+  border-radius: 1rem;
+  background: color-mix(in srgb, #e8f7ff 34%, transparent);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 26%, transparent);
+}
+html[data-ui="ios27"] [data-radix-menu-content],
+html[data-ui="ios27"] [data-radix-dropdown-menu-content] {
+  border-color: color-mix(in srgb, var(--foreground) 11%, transparent) !important;
+  border-radius: 1.5rem !important;
+  background: color-mix(in srgb, var(--card) 76%, transparent) !important;
+  box-shadow: 0 1.5rem 4rem -1.5rem color-mix(in srgb, var(--foreground) 38%, transparent), inset 0 1px 0 color-mix(in srgb, white 30%, transparent) !important;
+  backdrop-filter: blur(28px) saturate(160%);
+}
+html[data-ui="ios27"] [data-radix-menu-content] [role="menuitem"],
+html[data-ui="ios27"] [data-radix-dropdown-menu-content] [role="menuitem"] {
+  border-radius: .9rem;
+}
+html[data-ui="ios27"] [data-radix-menu-content] [role="menuitem"]:hover,
+html[data-ui="ios27"] [data-radix-dropdown-menu-content] [role="menuitem"]:hover {
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
+}
+html[data-ui="ios27"] button:not([data-unstyled]),
+html[data-ui="ios27"] [role="button"] { border-radius: 1rem; transition: transform .2s cubic-bezier(.2,.8,.2,1), box-shadow .2s ease, background-color .2s ease, border-color .2s ease; }
+html[data-ui="ios27"] button:not(:disabled):active,
+html[data-ui="ios27"] [role="button"]:active { transform: scale(.975); }
+html[data-ui="ios27"] input,
+html[data-ui="ios27"] textarea,
+html[data-ui="ios27"] select {
+  border-radius: 1rem;
+  border-color: color-mix(in srgb, var(--foreground) 12%, transparent);
+  background: color-mix(in srgb, var(--card) 72%, transparent);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 18%, transparent);
+}
+html[data-ui="ios27"] :is(input, textarea, select):focus { border-color: color-mix(in srgb, var(--primary) 65%, transparent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 16%, transparent), inset 0 1px 0 color-mix(in srgb, white 18%, transparent); }
+html[data-ui="ios27"] .mobile-glass-nav {
+  z-index: 70;
+  border-color: color-mix(in srgb, var(--foreground) 14%, transparent);
+  border-radius: 1.75rem;
+  background: color-mix(in srgb, var(--card) 75%, transparent);
+  box-shadow: 0 1.2rem 3rem -1.4rem color-mix(in srgb, var(--foreground) 40%, transparent), inset 0 1px 0 color-mix(in srgb, white 28%, transparent);
+  backdrop-filter: blur(28px) saturate(155%);
+  -webkit-backdrop-filter: blur(28px) saturate(155%);
+  padding-bottom: max(.35rem, env(safe-area-inset-bottom, 0px));
+  touch-action: manipulation;
+}
+html[data-ui="ios27"] .mobile-glass-nav::after {
+  position: absolute;
+  top: 5px;
+  left: 22%;
+  width: 28%;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, white 78%, transparent), transparent);
+  content: "";
+  opacity: .72;
+  pointer-events: none;
+}
+@media (max-width: 640px) {
+  html[data-ui="ios27"] .site-global-header > header {
+    width: calc(100% - .75rem);
+    gap: .35rem;
+    margin: .45rem auto;
+    padding: .45rem .5rem;
+    border-radius: 1.35rem;
+  }
+  html[data-ui="ios27"] .site-global-header > header > div:first-child {
+    min-width: 0;
+    flex: 0 1 auto;
+  }
+  html[data-ui="ios27"] .site-global-header > header > div:last-child {
+    gap: .12rem;
+    padding: .14rem;
+  }
+  html[data-ui="ios27"] .site-global-header .nav-glass-btn {
+    width: 2.35rem;
+    height: 2.35rem;
+    flex: 0 0 auto;
+  }
+  html[data-ui="ios27"] .site-global-header .feature-menu-trigger {
+    flex: 0 0 auto;
+    width: max-content;
+    max-width: none;
+    overflow: visible;
+    padding-inline: .72rem;
+    white-space: nowrap;
+  }
+  html[data-ui="ios27"] .site-global-header a[href="/auth"] {
+    flex: 0 0 auto;
+    padding-inline: .8rem;
+    white-space: nowrap;
+  }
+}
+html[data-ui="ios27"] .mobile-glass-nav__indicator { border-color: color-mix(in srgb, var(--primary) 30%, transparent); background: color-mix(in srgb, var(--primary) 17%, var(--card)); box-shadow: 0 .35rem 1rem color-mix(in srgb, var(--primary) 20%, transparent), inset 0 1px 0 color-mix(in srgb, white 35%, transparent); }
+html[data-ui="ios27"] .mobile-glass-nav__item.is-active { color: var(--primary); }
+html[data-ui="ios27"] .mobile-glass-nav__item { border-radius: 1.35rem; }
+html[data-ui="ios27"] :is(.rounded-2xl, .rounded-3xl) { border-radius: 1.5rem; }
+html[data-ui="ios27"] :is(button, [role="button"], a):focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--primary) 45%, transparent);
+  outline-offset: 3px;
+}
+@media (hover: hover) and (pointer: fine) {
+  html[data-ui="ios27"] button:not(:disabled):hover,
+  html[data-ui="ios27"] [role="button"]:hover {
+    transform: translateY(-1px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-ui="ios27"] body::before,
+  html[data-ui="ios27"] body::after {
+    transition: none;
+  }
+  html[data-ui="ios27"] .motion-reveal,
+  html[data-ui="ios27"].has-motion-system .motion-revealed,
+  html[data-ui="ios27"] .glass-surface-interactive,
+  html[data-ui="ios27"] .ios27-modal-overlay,
+  html[data-ui="ios27"] .ios27-sheet-overlay,
+  html[data-ui="ios27"] .ios27-modal-surface,
+  html[data-ui="ios27"] .ios27-sheet-surface,
+  html[data-ui="ios27"] [data-radix-popover-content],
+  html[data-ui="ios27"] [data-radix-dropdown-menu-content],
+  html[data-ui="ios27"] [data-radix-select-content] {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    filter: none !important;
+  }
+  html[data-ui="ios27"] button:not([data-unstyled]), html[data-ui="ios27"] [role="button"] { transition: none; }
+}

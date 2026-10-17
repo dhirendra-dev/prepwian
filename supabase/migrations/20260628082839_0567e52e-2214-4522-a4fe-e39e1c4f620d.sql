@@ -1,0 +1,1 @@
+ALTER TYPE session_type ADD VALUE IF NOT EXISTS 'manual';

@@ -1,0 +1,12 @@
+# JEE Prep Hub
+
+> A focused community and study platform for Indian Class 11 & 12 students preparing for the JEE 2028 exam — curated materials, Pomodoro timer, leaderboard, study squads and live community chat.
+
+JEE Prep Hub brings together quality study resources (notes, modules, PYQs, test series), productivity tools, and a real community of serious aspirants. Most content is gated behind a free account; the pages below are publicly readable.
+
+## Pages
+
+- [Home](/): What JEE Prep Hub is, latest materials preview and feature overview.
+- [Community](/community): WhatsApp groups (main community, doubt discussion, problem solving, resources) and live on-site chat.
+- [Community Feed](/feed): Public social feed where aspirants share questions, tips and wins.
+- [Sign in](/auth): Create a free account or sign in to access materials, focus timer, study squads, leaderboard and certificates.

@@ -1,0 +1,19 @@
+insert into public.articles(author_name,title,slug,summary,category,body_markdown,status,reading_minutes,published_at)
+values
+('JEE Prep Hub Editorial','How to Start Class 11 JEE Preparation Without Feeling Lost','start-class-11-jee-preparation','A practical framework for concepts, practice, revision and consistency.','Study Strategy',
+'## Start with a simple system\n\nClass 11 can feel like a sudden jump. Build a repeatable process instead of trying to finish every resource at once.\n\n### A weekly loop\n1. Attend lectures actively.\n2. Revise within 24 hours.\n3. Solve basic examples before tougher problems.\n4. Mark unsolved questions and revisit the concept.\n5. Take a short test and analyse mistakes.\n\n**Consistency beats a perfect timetable that lasts two days.**','published',3,now()),
+('JEE Prep Hub Editorial','Newton’s Laws of Motion: A Beginner-Friendly Guide','newtons-laws-motion','Understand force, inertia, acceleration and free-body diagrams.','Physics',
+'## Newton’s second law\n\nFor constant mass, the net force is\n\n$$F_{net}=ma$$\n\nAcceleration points in the direction of net force. Draw a separate free-body diagram for each object and include only forces acting on that object.','published',3,now()),
+('JEE Prep Hub Editorial','Chemical Bonding: The Concepts You Must Get Clear','chemical-bonding-core-concepts','A structured overview of ionic, covalent and coordinate bonding.','Chemistry',
+'## Begin with valence electrons\n\nLewis structures help track how atoms share or transfer electrons.\n\n- **Ionic bonding:** attraction between oppositely charged ions.\n- **Covalent bonding:** atoms share electron pairs.\n- **Coordinate bonding:** one atom donates both electrons in a shared pair.\n\nPractise deriving structures rather than memorising them alone.','published',3,now()),
+('JEE Prep Hub Editorial','Quadratic Equations: From Roots to JEE Problems','quadratic-equations-roots-jee','Discriminants, root relationships and common question patterns.','Mathematics',
+'A quadratic equation is $ax^2+bx+c=0$, where $a\\ne0$. Its discriminant is $D=b^2-4ac$. If $D>0$, there are two distinct real roots; if $D=0$, one repeated real root; if $D<0$, no real roots.','published',3,now()),
+('JEE Prep Hub Editorial','How to Analyse a Mock Test Properly','analyse-jee-mock-test','Turn mock scores into an actionable improvement plan.','Test Strategy',
+'## Review beyond the score\n\nClassify each missed question: concept gap, calculation error, poor question selection or time pressure. Maintain a short error log with the mistake and the next action. One test is feedback, not a final judgement.','published',2,now()),
+('JEE Prep Hub Editorial','Spaced Revision for JEE Subjects','spaced-revision-jee','A manageable rhythm for revisiting ideas before they fade.','Revision',
+'Revisit a topic on the day you learn it, the next day, a few days later and again the following week. Recall formulas before looking at notes, solve representative questions and record recurring mistakes.','published',2,now()),
+('JEE Prep Hub Editorial','Biology for PCMB Students: Make NCERT Active','biology-pcmb-ncert-active','Study diagrams and processes through active recall.','Biology',
+'Read a small section, close the book and recall its main points. Recreate diagrams from memory, solve a few topic questions and revisit what you forgot. Schedule Biology realistically alongside JEE practice.','published',2,now()),
+('JEE Prep Hub Editorial','Build a Backlog Recovery Plan You Can Follow','backlog-recovery-plan','Prioritise old lectures without abandoning current topics.','Study Strategy',
+'Split backlog into chapters and small tasks. Prioritise prerequisites for current lectures, foundational concepts and short practice sets. Keep current classes moving while reserving a realistic daily backlog block.','published',2,now())
+on conflict(slug) do nothing;
