@@ -1,0 +1,28 @@
+{
+  "sourceRepository": "https://github.com/dhruv-programmes/JeeHub",
+  "sourceCommit": "63e2575d4a9484fca89d1a26b4bddd35761becf3",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "papers": [
+    { "file": "27s1.json", "title": "JEE Main 2024 · 27 January · Shift 1", "questionCount": 66 },
+    { "file": "27s2.json", "title": "JEE Main 2024 · 27 January · Shift 2", "questionCount": 80 },
+    { "file": "29s1.json", "title": "JEE Main 2024 · 29 January · Shift 1", "questionCount": 80 },
+    { "file": "29s2.json", "title": "JEE Main 2024 · 29 January · Shift 2", "questionCount": 81 },
+    { "file": "30s1.json", "title": "JEE Main 2024 · 30 January · Shift 1", "questionCount": 78 },
+    { "file": "30s2.json", "title": "JEE Main 2024 · 30 January · Shift 2", "questionCount": 73 },
+    { "file": "31s1.json", "title": "JEE Main 2024 · 31 January · Shift 1", "questionCount": 73 },
+    { "file": "31s2.json", "title": "JEE Main 2024 · 31 January · Shift 2", "questionCount": 79 },
+    { "file": "1s1.json", "title": "JEE Main 2024 · 1 February · Shift 1", "questionCount": 67 },
+    { "file": "1s2.json", "title": "JEE Main 2024 · 1 February · Shift 2", "questionCount": 75 },
+    {
+      "file": "jee-advance-2023.json",
+      "title": "JEE Advanced 2023 · Selected Questions",
+      "questionCount": 35
+    },
+    { "file": "bitsat-2022.json", "title": "BITSAT 2022", "questionCount": 88 },
+    { "file": "neet-2023.json", "title": "NEET 2022 · 7 May", "questionCount": 125 },
+    { "file": "comedk-2023.json", "title": "COMEDK 2023", "questionCount": 174 },
+    { "file": "mht-cet-2023.json", "title": "MHT-CET 2023", "questionCount": 142 }
+  ],
+  "externalImages": "Question and option image URLs remain external references; image files were not copied."
+}

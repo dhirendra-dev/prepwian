@@ -1,0 +1,716 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "JEE Prep Hub — Crack JEE Together"
+    },
+    {
+      "path": "/about",
+      "title": "About"
+    },
+    {
+      "path": "/admin",
+      "title": "Admin Center"
+    },
+    {
+      "path": "/admin/appeals",
+      "title": "Appeals — Admin"
+    },
+    {
+      "path": "/admin/audit",
+      "title": "Admin · Audit Log"
+    },
+    {
+      "path": "/admin/certificates",
+      "title": "Admin · Certificates"
+    },
+    {
+      "path": "/admin/community",
+      "title": "Admin · Community"
+    },
+    {
+      "path": "/admin/consent-settings",
+      "title": "Consent Settings — Admin"
+    },
+    {
+      "path": "/admin/consents",
+      "title": "Verification Center — Admin"
+    },
+    {
+      "path": "/admin/contact",
+      "title": "Contact Inbox — Admin"
+    },
+    {
+      "path": "/admin/developer-access",
+      "title": "Developer Access Requests — Admin"
+    },
+    {
+      "path": "/admin/email",
+      "title": "Admin · Email Center"
+    },
+    {
+      "path": "/admin/feedback",
+      "title": "Feedback Console"
+    },
+    {
+      "path": "/admin/materials",
+      "title": "Admin · Materials"
+    },
+    {
+      "path": "/admin/moderators",
+      "title": "Admin · Moderators"
+    },
+    {
+      "path": "/admin/notes",
+      "title": "Admin · Notes"
+    },
+    {
+      "path": "/admin/notices",
+      "title": "Admin · Notice Board"
+    },
+    {
+      "path": "/admin/notifications",
+      "title": "Admin · Notifications"
+    },
+    {
+      "path": "/admin/nta",
+      "title": "Admin · NTA Sync"
+    },
+    {
+      "path": "/admin/pro",
+      "title": "Admin · Pro Members"
+    },
+    {
+      "path": "/admin/scheduled-tests",
+      "title": "Scheduled Test Runs — Admin"
+    },
+    {
+      "path": "/admin/search-analytics",
+      "title": "Search Analytics — Admin"
+    },
+    {
+      "path": "/admin/security",
+      "title": "Admin · Security"
+    },
+    {
+      "path": "/admin/system",
+      "title": "System Control Center"
+    },
+    {
+      "path": "/admin/tests",
+      "title": "Admin — Tests"
+    },
+    {
+      "path": "/admin/tests/:testId",
+      "title": "Edit Test"
+    },
+    {
+      "path": "/admin/tests/:testId/import",
+      "title": "Import PDF — Admin"
+    },
+    {
+      "path": "/admin/tests/approvals",
+      "title": "Admin — CBT Approvals"
+    },
+    {
+      "path": "/admin/toppers",
+      "title": "Admin · Toppers"
+    },
+    {
+      "path": "/admin/users",
+      "title": "Admin · Users"
+    },
+    {
+      "path": "/admin/verification",
+      "title": "Admin · Account Verification"
+    },
+    {
+      "path": "/admin/videos",
+      "title": "Video Lectures — Admin"
+    },
+    {
+      "path": "/ai-chat",
+      "title": "AI Study Chat"
+    },
+    {
+      "path": "/app",
+      "title": "JEE Prep Hub — The JEE Preparation Ecosystem"
+    },
+    {
+      "path": "/appeal",
+      "title": "Appeal My Account"
+    },
+    {
+      "path": "/articles",
+      "title": "Articles"
+    },
+    {
+      "path": "/articles/:slug",
+      "title": "Slug"
+    },
+    {
+      "path": "/auth",
+      "title": "Sign in to JEE Prep Hub — Join the JEE 2028 Community"
+    },
+    {
+      "path": "/birthday",
+      "title": "Birthday Hub"
+    },
+    {
+      "path": "/certificates",
+      "title": "Certificates"
+    },
+    {
+      "path": "/certificates/verify/:code",
+      "title": "Certificate · ${loaderData?.type?.name ?? loaderData?.certificate?.custom_title ??"
+    },
+    {
+      "path": "/community",
+      "title": "Community Chat"
+    },
+    {
+      "path": "/consent",
+      "title": "Restricted Account Verification"
+    },
+    {
+      "path": "/contact",
+      "title": "Contact Admin"
+    },
+    {
+      "path": "/dashboard",
+      "title": "Dashboard"
+    },
+    {
+      "path": "/developer",
+      "title": "Developer Portal"
+    },
+    {
+      "path": "/donate",
+      "title": "Support JEE Prep Hub"
+    },
+    {
+      "path": "/engineering",
+      "title": "The Future of Engineering"
+    },
+    {
+      "path": "/faq",
+      "title": "FAQs"
+    },
+    {
+      "path": "/feed",
+      "title": "Community Feed"
+    },
+    {
+      "path": "/feedback",
+      "title": "Feedback Hub"
+    },
+    {
+      "path": "/focus",
+      "title": "Focus Zone — Deep work suite for JEE aspirants"
+    },
+    {
+      "path": "/focus/block",
+      "title": "Distraction Block — Focus Zone"
+    },
+    {
+      "path": "/focus/create",
+      "title": "Create a todo — Focus Zone"
+    },
+    {
+      "path": "/focus/friends",
+      "title": "Friends — Focus Zone"
+    },
+    {
+      "path": "/focus/groups",
+      "title": "Groups — Focus Zone"
+    },
+    {
+      "path": "/focus/habits",
+      "title": "Habits — Focus Zone"
+    },
+    {
+      "path": "/focus/stats",
+      "title": "Stats — Focus Zone"
+    },
+    {
+      "path": "/focus/todos",
+      "title": "Todos — Focus Zone"
+    },
+    {
+      "path": "/follow-channel",
+      "title": "Follow WhatsApp Channel"
+    },
+    {
+      "path": "/forum",
+      "title": "Threads"
+    },
+    {
+      "path": "/friends",
+      "title": "Friends"
+    },
+    {
+      "path": "/groups",
+      "title": "Communities & Groups"
+    },
+    {
+      "path": "/help",
+      "title": "Help Center"
+    },
+    {
+      "path": "/home",
+      "title": "JEE Prep Hub — Crack JEE Together"
+    },
+    {
+      "path": "/jee-advanced-chemistry-problems",
+      "title": "${TITLE}"
+    },
+    {
+      "path": "/jee-advanced-math-problems",
+      "title": "JEE Advanced Math Problems — Free PYQs, Books & Notes"
+    },
+    {
+      "path": "/jee-advanced-physics-problems",
+      "title": "JEE Advanced Physics Problems — Free PYQs, Books & Notes"
+    },
+    {
+      "path": "/jee-predictor",
+      "title": "JEE Predictor"
+    },
+    {
+      "path": "/jee-predictor/admission-fit",
+      "title": "Admission Fit"
+    },
+    {
+      "path": "/jee-predictor/advanced",
+      "title": "Advanced"
+    },
+    {
+      "path": "/jee-predictor/backlog",
+      "title": "Backlog"
+    },
+    {
+      "path": "/jee-predictor/branch-demand",
+      "title": "Branch Demand"
+    },
+    {
+      "path": "/jee-predictor/branches",
+      "title": "Branches"
+    },
+    {
+      "path": "/jee-predictor/campus",
+      "title": "Campus"
+    },
+    {
+      "path": "/jee-predictor/choice-filling",
+      "title": "Choice Filling"
+    },
+    {
+      "path": "/jee-predictor/college",
+      "title": "JEE College Predictor"
+    },
+    {
+      "path": "/jee-predictor/college-comparison",
+      "title": "College Comparison"
+    },
+    {
+      "path": "/jee-predictor/compare",
+      "title": "Compare"
+    },
+    {
+      "path": "/jee-predictor/comparison-360",
+      "title": "Comparison 360"
+    },
+    {
+      "path": "/jee-predictor/concept-map",
+      "title": "Concept Map"
+    },
+    {
+      "path": "/jee-predictor/counselling-checklist",
+      "title": "Counselling Checklist"
+    },
+    {
+      "path": "/jee-predictor/cutoff-tracker",
+      "title": "Cutoff Tracker"
+    },
+    {
+      "path": "/jee-predictor/cutoffs",
+      "title": "Cutoffs"
+    },
+    {
+      "path": "/jee-predictor/daily-practice",
+      "title": "Daily Practice"
+    },
+    {
+      "path": "/jee-predictor/documents",
+      "title": "Documents"
+    },
+    {
+      "path": "/jee-predictor/dpp-tracker",
+      "title": "Dpp Tracker"
+    },
+    {
+      "path": "/jee-predictor/fees",
+      "title": "Fees"
+    },
+    {
+      "path": "/jee-predictor/heatmap",
+      "title": "Heatmap"
+    },
+    {
+      "path": "/jee-predictor/institutes",
+      "title": "Institutes"
+    },
+    {
+      "path": "/jee-predictor/living-costs",
+      "title": "Living Costs"
+    },
+    {
+      "path": "/jee-predictor/marks-percentile",
+      "title": "Marks Percentile"
+    },
+    {
+      "path": "/jee-predictor/marks-rank",
+      "title": "Marks Rank"
+    },
+    {
+      "path": "/jee-predictor/mistake-book",
+      "title": "Mistake Book"
+    },
+    {
+      "path": "/jee-predictor/mock-analysis",
+      "title": "Mock Analysis"
+    },
+    {
+      "path": "/jee-predictor/nit-iiit-gfti",
+      "title": "Nit Iiit Gfti"
+    },
+    {
+      "path": "/jee-predictor/placements",
+      "title": "Placements"
+    },
+    {
+      "path": "/jee-predictor/preference-optimizer",
+      "title": "Preference Optimizer"
+    },
+    {
+      "path": "/jee-predictor/preferences",
+      "title": "Preferences"
+    },
+    {
+      "path": "/jee-predictor/programs",
+      "title": "Programs"
+    },
+    {
+      "path": "/jee-predictor/pyq",
+      "title": "Pyq"
+    },
+    {
+      "path": "/jee-predictor/range-explorer",
+      "title": "Range Explorer"
+    },
+    {
+      "path": "/jee-predictor/rank-trends",
+      "title": "Rank Trends"
+    },
+    {
+      "path": "/jee-predictor/recommendations",
+      "title": "Recommendations"
+    },
+    {
+      "path": "/jee-predictor/revision",
+      "title": "Revision"
+    },
+    {
+      "path": "/jee-predictor/roi",
+      "title": "Roi"
+    },
+    {
+      "path": "/jee-predictor/scholarship-checker",
+      "title": "Scholarship Checker"
+    },
+    {
+      "path": "/jee-predictor/scholarships",
+      "title": "Scholarships"
+    },
+    {
+      "path": "/jee-predictor/seat-matrix",
+      "title": "Seat Matrix"
+    },
+    {
+      "path": "/jee-predictor/shortlist",
+      "title": "Shortlist"
+    },
+    {
+      "path": "/jee-predictor/smart-revision",
+      "title": "Smart Revision"
+    },
+    {
+      "path": "/jee-predictor/study-now",
+      "title": "Study Now"
+    },
+    {
+      "path": "/jee-predictor/study-planner",
+      "title": "Daily Study Plan"
+    },
+    {
+      "path": "/jee-predictor/syllabus",
+      "title": "Syllabus"
+    },
+    {
+      "path": "/jee-predictor/weak-chapters",
+      "title": "Weak Chapters"
+    },
+    {
+      "path": "/jee360",
+      "title": "JEE 360 — Lecture Planner, Backlog & Test Command Centre"
+    },
+    {
+      "path": "/jee360/backlog",
+      "title": "Lecture Backlog — JEE 360"
+    },
+    {
+      "path": "/jee360/coach",
+      "title": "Study Coach — JEE 360"
+    },
+    {
+      "path": "/jee360/errors",
+      "title": "Mistake Book — JEE 360"
+    },
+    {
+      "path": "/jee360/focus",
+      "title": "Focus Sessions — JEE 360"
+    },
+    {
+      "path": "/jee360/lab",
+      "title": "Study Lab — JEE 360"
+    },
+    {
+      "path": "/jee360/memory",
+      "title": "Revision Cards — JEE 360"
+    },
+    {
+      "path": "/jee360/plans",
+      "title": "Study Plans — JEE 360"
+    },
+    {
+      "path": "/jee360/rank",
+      "title": "Rank Estimates — JEE 360"
+    },
+    {
+      "path": "/jee360/reminders",
+      "title": "Study Reminders — JEE 360"
+    },
+    {
+      "path": "/jee360/schedule",
+      "title": "Lecture Schedule — JEE 360"
+    },
+    {
+      "path": "/jee360/sprint",
+      "title": "Study Sprint — JEE 360"
+    },
+    {
+      "path": "/jee360/tests",
+      "title": "Mock Test Log — JEE 360"
+    },
+    {
+      "path": "/jee360/upload",
+      "title": "Import Study Data — JEE 360"
+    },
+    {
+      "path": "/leaderboard",
+      "title": "Leaderboard"
+    },
+    {
+      "path": "/lecture-tracker",
+      "title": "Lecture Tracker"
+    },
+    {
+      "path": "/legal",
+      "title": "Legal"
+    },
+    {
+      "path": "/legal/:docId",
+      "title": "Policy not found"
+    },
+    {
+      "path": "/materials",
+      "title": "Study Material"
+    },
+    {
+      "path": "/messages",
+      "title": "Squad"
+    },
+    {
+      "path": "/messages/:peerId",
+      "title": "Private Chat"
+    },
+    {
+      "path": "/my-activity",
+      "title": "My Activity"
+    },
+    {
+      "path": "/notes",
+      "title": "Notes & NCERT"
+    },
+    {
+      "path": "/notes/:classId/:subject",
+      "title": "Class ${params.classId} ${params.subject} Notes"
+    },
+    {
+      "path": "/notes/chapter/:chapterId",
+      "title": "Chapter Notes"
+    },
+    {
+      "path": "/notices",
+      "title": "Notice Board"
+    },
+    {
+      "path": "/notifications",
+      "title": "Notifications"
+    },
+    {
+      "path": "/nta",
+      "title": "NTA JEE Main"
+    },
+    {
+      "path": "/official",
+      "title": "Official Website"
+    },
+    {
+      "path": "/planner",
+      "title": "Study Planner"
+    },
+    {
+      "path": "/prep-lab",
+      "title": "Prep Lab — Adaptive JEE & NEET Practice"
+    },
+    {
+      "path": "/pricing",
+      "title": "Earn JEE Prep Hub Pro — Weekly Leaderboard"
+    },
+    {
+      "path": "/pro",
+      "title": "Pro"
+    },
+    {
+      "path": "/profile",
+      "title": "Profile"
+    },
+    {
+      "path": "/progress",
+      "title": "Progress Tracker — Rating, Tiers & Badges"
+    },
+    {
+      "path": "/pulse",
+      "title": "Pulse AI"
+    },
+    {
+      "path": "/quiz",
+      "title": "Quiz"
+    },
+    {
+      "path": "/quiz/battle/:battleId",
+      "title": "Live Quiz Battle"
+    },
+    {
+      "path": "/sahai",
+      "title": "SahAI — your AI study buddy"
+    },
+    {
+      "path": "/searches",
+      "title": "Search JEE Resources"
+    },
+    {
+      "path": "/settings",
+      "title": "Account Settings"
+    },
+    {
+      "path": "/squad/:groupId",
+      "title": "Squad Chat"
+    },
+    {
+      "path": "/squad/join/:code",
+      "title": "Join Squad"
+    },
+    {
+      "path": "/start",
+      "title": "Choose your next step"
+    },
+    {
+      "path": "/tests",
+      "title": "Tests"
+    },
+    {
+      "path": "/tests/:testId",
+      "title": "Test Details"
+    },
+    {
+      "path": "/tests/attempt/:attemptId",
+      "title": "CBT Test — In Progress"
+    },
+    {
+      "path": "/tests/create",
+      "title": "Create a CBT Test"
+    },
+    {
+      "path": "/tests/jee-hub",
+      "title": "JEEHub Paper Archive — Test Series"
+    },
+    {
+      "path": "/tests/leaderboard",
+      "title": "Test Series Ranking — Points Leaderboard"
+    },
+    {
+      "path": "/tests/leaderboard/:testId",
+      "title": "Test Leaderboard"
+    },
+    {
+      "path": "/tests/result/:attemptId",
+      "title": "Test Result"
+    },
+    {
+      "path": "/timer",
+      "title": "Focus Timer — Pomodoro, Stopwatch & Analytics for JEE Aspirants"
+    },
+    {
+      "path": "/toppers",
+      "title": "Toppers Hall of Fame"
+    },
+    {
+      "path": "/u/:userId",
+      "title": "Member profile"
+    },
+    {
+      "path": "/updates",
+      "title": "Updates & Change History"
+    },
+    {
+      "path": "/verified",
+      "title": "How to get the Blue Tick"
+    },
+    {
+      "path": "/verify-account",
+      "title": "Verify Account"
+    },
+    {
+      "path": "/watch",
+      "title": "Watch"
+    },
+    {
+      "path": "/watch-history",
+      "title": "Watch History"
+    },
+    {
+      "path": "/watch/:roomId",
+      "title": "Study Watch Party"
+    },
+    {
+      "path": "/welcome",
+      "title": "Welcome to JEE Prep Hub"
+    },
+    {
+      "path": "/youtube-checklist",
+      "title": "YouTube Study Checklist"
+    }
+  ]
+}

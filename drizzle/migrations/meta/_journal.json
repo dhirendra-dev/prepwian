@@ -1,0 +1,55 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1791390552131,
+      "tag": "0000_lock_three_reference_tables",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791421986740,
+      "tag": "0001_account_verification_mode",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791550386673,
+      "tag": "0002_lock_unused_reference_tables",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1791550519275,
+      "tag": "0003_test_series_v2_schema",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1791855159444,
+      "tag": "0004_migration",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1791997508193,
+      "tag": "0005_lock_three_reference_tables",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1791997720647,
+      "tag": "0006_lock_three_more_reference_tables",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+REVOKE EXECUTE ON FUNCTION public.finalize_weekly_winners() FROM authenticated;
