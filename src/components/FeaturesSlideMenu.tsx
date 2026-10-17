@@ -332,9 +332,9 @@ const allGroups: Group[] = [
     bg: "bg-slate-500/10",
     items: [
       { to: "/engineering", label: "Engineering", icon: Building2, desc: "Explore engineering branches and careers" },
-      { to: "/about", label: "About Us", icon: Info, desc: "Learn about the JEE Prep Hub ecosystem" },
+      { to: "/about", label: "About Us", icon: Info, desc: "Learn about the PREPWIAN ecosystem" },
       { to: "/developer", label: "Developer Portal", icon: Code2, desc: "Explore the public GitHub project" },
-      { to: "/official", label: "Official", icon: BadgeCheck, desc: "Official JEE Prep Hub resources and links" },
+      { to: "/official", label: "Official", icon: BadgeCheck, desc: "Official PREPWIAN resources and links" },
       { to: "/legal", label: "About & Policies", icon: ShieldCheck, desc: "Who we are, rules & all documents" },
     ],
   },
@@ -542,7 +542,7 @@ export function FeaturesSlideMenu() {
       <Logo className="h-9 w-9 shrink-0 md:h-11 md:w-11" />
       <div className="min-w-0 flex-1 text-left">
         <Dialog.Title className="truncate font-display text-base font-semibold leading-tight">
-          JEE Prep Hub
+          PREPWIAN
         </Dialog.Title>
         <p className="truncate text-[11px] text-muted-foreground">All features, one tap away</p>
       </div>

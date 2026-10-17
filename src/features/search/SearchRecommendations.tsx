@@ -477,7 +477,7 @@ export function SearchRecommendations() {
                 <MessageCircle className="h-6 w-6 text-accent" /> Latest from the community
               </h2>
               <p className="mt-1 text-sm text-muted-foreground">
-                Doubts, tips, wins and updates shared by JEE Prep Hub learners.
+                Doubts, tips, wins and updates shared by PREPWIAN learners.
               </p>
             </div>
             <Link

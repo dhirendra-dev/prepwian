@@ -32,7 +32,7 @@ export const Route = createFileRoute(
   head: () => ({
     meta: [
       {
-        title: "Admin · Account Verification — JEE Prep Hub",
+        title: "Admin · Account Verification — PREPWIAN",
       },
       {
         name: "robots",

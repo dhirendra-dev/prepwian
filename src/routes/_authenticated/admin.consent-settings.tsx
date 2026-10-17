@@ -52,12 +52,12 @@ function AdminConsentSettings() {
     show_consent_skipped_banner: false,
 
     maintenance_mode: false,
-    maintenance_title: "JEE Prep Hub is taking a short study break",
+    maintenance_title: "PREPWIAN is taking a short study break",
     maintenance_subtitle: "We're working behind the scenes.",
     maintenance_message:
       "The platform is temporarily unavailable while we make improvements. Your account and study data are safe. We'll be back shortly.",
     maintenance_button_enabled: false,
-    maintenance_button_text: "Visit JEE Prep Hub",
+    maintenance_button_text: "Visit PREPWIAN",
     maintenance_button_url: "",
 
     require_device: true,
@@ -93,7 +93,7 @@ function AdminConsentSettings() {
 
           maintenance_title:
             (data as any).maintenance_title ??
-            "JEE Prep Hub is taking a short study break",
+            "PREPWIAN is taking a short study break",
 
           maintenance_subtitle:
             (data as any).maintenance_subtitle ??
@@ -108,7 +108,7 @@ function AdminConsentSettings() {
 
           maintenance_button_text:
             (data as any).maintenance_button_text ??
-            "Visit JEE Prep Hub",
+            "Visit PREPWIAN",
 
           maintenance_button_url:
             (data as any).maintenance_button_url ?? "",
@@ -304,7 +304,7 @@ function AdminConsentSettings() {
                     maintenance_title: v,
                   })
                 }
-                placeholder="JEE Prep Hub is taking a short study break"
+                placeholder="PREPWIAN is taking a short study break"
               />
 
               <TextField
@@ -355,7 +355,7 @@ function AdminConsentSettings() {
                         maintenance_button_text: v,
                       })
                     }
-                    placeholder="Visit JEE Prep Hub"
+                    placeholder="Visit PREPWIAN"
                   />
 
                   <TextField

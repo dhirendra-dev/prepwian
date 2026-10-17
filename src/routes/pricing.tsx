@@ -5,12 +5,12 @@ import { useProStatus } from "@/hooks/use-pro";
 
 export const Route = createFileRoute("/pricing")({
   head: () => ({ meta: [
-      { name: "twitter:title", content: "Earn JEE Prep Hub Pro" },
+      { name: "twitter:title", content: "Earn PREPWIAN Pro" },
       { name: "twitter:description", content: "Study, reach weekly #1, and unlock Pro automatically." },
 
-    { title: "Earn JEE Prep Hub Pro — Weekly Leaderboard" },
-    { name: "description", content: "JEE Prep Hub Pro is earned, not purchased. Finish #1 on the live weekly study leaderboard to unlock Pro." },
-    { property: "og:title", content: "Earn JEE Prep Hub Pro" },
+    { title: "Earn PREPWIAN Pro — Weekly Leaderboard" },
+    { name: "description", content: "PREPWIAN Pro is earned, not purchased. Finish #1 on the live weekly study leaderboard to unlock Pro." },
+    { property: "og:title", content: "Earn PREPWIAN Pro" },
     { property: "og:description", content: "Study, reach weekly #1, and unlock Pro automatically." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary" },
@@ -37,7 +37,7 @@ function ProPage() {
             <div>
               <span className="inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-xs font-bold uppercase text-amber-700 dark:text-amber-300"><Crown className="h-3.5 w-3.5" /> Merit-based Pro</span>
               <h1 className="mt-5 font-display text-4xl font-bold leading-tight sm:text-6xl">Pro is <span className="pro-gradient-text">earned.</span><br />Never purchased.</h1>
-              <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">The member at #1 on the live Monday–Sunday leaderboard becomes the JEE Prep Hub Pro champion automatically.</p>
+              <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">The member at #1 on the live Monday–Sunday leaderboard becomes the PREPWIAN Pro champion automatically.</p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <Link to={user ? "/leaderboard" : "/auth"} className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"><Trophy className="h-4 w-4" /> {user ? "View live leaderboard" : "Start competing"}</Link>
                 <Link to="/donate" className="inline-flex items-center gap-2 rounded-lg border border-border bg-background px-5 py-3 text-sm font-semibold">Support the platform</Link>

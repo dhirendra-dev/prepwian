@@ -45,13 +45,13 @@ import { SOURCE_LABEL, fmtTime, parseSource, type ParsedSource } from "@/feature
 
 export const Route = createFileRoute("/_authenticated/watch/$roomId")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Study Watch Party — JEE Prep Hub" },
+      { property: "og:title", content: "Study Watch Party — PREPWIAN" },
       { property: "og:description", content: "Watch lectures together and discuss them with fellow JEE aspirants." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Study Watch Party — JEE Prep Hub" },
+      { name: "twitter:title", content: "Study Watch Party — PREPWIAN" },
       { name: "twitter:description", content: "Watch lectures together and discuss them with fellow JEE aspirants." },
-{ title: "Study Watch Party — JEE Prep Hub" }, { name: "description", content: "Watch lectures together and discuss them with fellow JEE aspirants." }] }),
+{ title: "Study Watch Party — PREPWIAN" }, { name: "description", content: "Watch lectures together and discuss them with fellow JEE aspirants." }] }),
 
   component: RoomRoute,
 });

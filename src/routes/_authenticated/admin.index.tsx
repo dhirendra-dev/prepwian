@@ -33,7 +33,7 @@ import {
 
 export const Route = createFileRoute("/_authenticated/admin/")({
   head: () => ({
-    meta: [{ title: "Admin Center — JEE Prep Hub" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "Admin Center — PREPWIAN" }, { name: "robots", content: "noindex" }],
   }),
   beforeLoad: async ({ context }) => {
     await requirePermission(context.user.id, "users");

@@ -291,7 +291,7 @@ export function ArticlesHub({
   }, [initialSlug, loading, articles, selected, openArticle]);
   async function requireLogin() {
     if (!user) {
-      setNotice("Please sign in with your existing JEE Prep Hub account to use this feature.");
+      setNotice("Please sign in with your existing PREPWIAN account to use this feature.");
       return null;
     }
     return user;
@@ -562,7 +562,7 @@ export function ArticlesHub({
       <section className="articles-hero">
         <div className="articles-hero-copy">
           <span className="articles-eyebrow">
-            <Sparkles size={14} /> THE JEE PREP HUB JOURNAL
+            <Sparkles size={14} /> THE PREPWIAN JOURNAL
           </span>
           <h1>
             Ideas that move

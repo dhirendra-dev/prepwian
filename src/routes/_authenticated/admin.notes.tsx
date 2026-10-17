@@ -17,7 +17,7 @@ import { NOTES_BUCKET, RESOURCE_TYPES, SUBJECTS, pad2, type Chapter, type Resour
 const db = supabase as any;
 
 export const Route = createFileRoute("/_authenticated/admin/notes")({
-  head: () => ({ meta: [{ title: "Admin · Notes — JEE Prep Hub" }] }),
+  head: () => ({ meta: [{ title: "Admin · Notes — PREPWIAN" }] }),
   ssr: false,
   beforeLoad: async ({ context }) => {
     const { data } = await supabase.from("user_roles").select("role").eq("user_id", context.user.id).eq("role", "admin").maybeSingle();

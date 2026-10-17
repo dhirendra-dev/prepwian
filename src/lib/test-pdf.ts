@@ -31,7 +31,7 @@ const LINE = rgb(0.85, 0.88, 0.92);
 const WASH = rgb(0.94, 0.965, 1);
 
 const SITE = "jeeprephub.co.in";
-const BRAND = "JEE Prep Hub";
+const BRAND = "PREPWIAN";
 
 /** Strip LaTeX-ish markup so text stays readable with standard PDF fonts. */
 function clean(input: string | null | undefined): string {

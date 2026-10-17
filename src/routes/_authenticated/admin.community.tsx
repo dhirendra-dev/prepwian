@@ -15,7 +15,7 @@ import { Trash2, Pencil, X } from "lucide-react";
 import { z } from "zod";
 
 export const Route = createFileRoute("/_authenticated/admin/community")({
-  head: () => ({ meta: [{ title: "Admin · Community — JEE Prep Hub" }] }),
+  head: () => ({ meta: [{ title: "Admin · Community — PREPWIAN" }] }),
   ssr: false,
   beforeLoad: async ({ context }) => {
     await requirePermission(context.user.id, "community");

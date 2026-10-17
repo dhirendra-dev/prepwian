@@ -4,7 +4,7 @@ The Materials library brings study resources into one searchable place. This gui
 
 ## Open the library
 
-Sign in to JEE Prep Hub and open **Materials** from the Study area or **Material Hub** from the feature menu. You can also open the [Materials page](https://jeeprephub.co.in/materials) directly. Materials access may show an on-screen unlock prompt; follow the prompt and use only access provided to you by the platform. Do not share account details or access credentials.
+Sign in to PREPWIAN and open **Materials** from the Study area or **Material Hub** from the feature menu. You can also open the [Materials page](https://jeeprephub.co.in/materials) directly. Materials access may show an on-screen unlock prompt; follow the prompt and use only access provided to you by the platform. Do not share account details or access credentials.
 
 ## Find a resource
 
@@ -38,7 +38,7 @@ Each result shows available details such as its title, subject, resource type, c
 
 > **Saved items are stored in this browser's local storage.** They are not a cloud-synced collection, so they may not appear on another device or browser. Clearing this browser's site data can remove saved bookmarks.
 
-Some resources are hosted by external providers. Their availability, sign-in prompts, and download behavior may depend on that provider. If a link appears broken, note the resource title and what happened, then report it through JEE Prep Hub's official feedback channel.
+Some resources are hosted by external providers. Their availability, sign-in prompts, and download behavior may depend on that provider. If a link appears broken, note the resource title and what happened, then report it through PREPWIAN's official feedback channel.
 
 ## A simple study flow
 
@@ -50,11 +50,11 @@ These are starting points, not a prescribed timetable. Choose resources that mat
 
 ## Troubleshooting
 
-| What you see                            | What to try                                                                                                                                    |
-| :-------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
-| No results                              | Clear the search, select **All** subjects, or remove a class/resource-type filter.                                                             |
-| A resource will not open                | Try **Open** instead of **Preview**; check whether the external provider requests its own access.                                              |
-| A bookmark is missing on another device | Bookmarks are saved locally in the browser and do not sync between devices.                                                                    |
-| The Materials page asks for access      | Follow the on-screen prompt. If you believe you should have access, contact a JEE Prep Hub administrator through the official support channel. |
+| What you see                            | What to try                                                                                                                                |
+| :-------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------- |
+| No results                              | Clear the search, select **All** subjects, or remove a class/resource-type filter.                                                         |
+| A resource will not open                | Try **Open** instead of **Preview**; check whether the external provider requests its own access.                                          |
+| A bookmark is missing on another device | Bookmarks are saved locally in the browser and do not sync between devices.                                                                |
+| The Materials page asks for access      | Follow the on-screen prompt. If you believe you should have access, contact a PREPWIAN administrator through the official support channel. |
 
 For corrections to this guide, use the [documentation issue form](../../.github/ISSUE_TEMPLATE/documentation.yml).

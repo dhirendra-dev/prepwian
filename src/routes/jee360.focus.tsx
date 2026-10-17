@@ -14,12 +14,12 @@ import type { Subject } from "@/lib/jee360/types";
 
 export const Route = createFileRoute("/jee360/focus")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Focus Sessions — JEE 360 | JEE Prep Hub" },
+      { property: "og:title", content: "Focus Sessions — JEE 360 | PREPWIAN" },
       { property: "og:description", content: "Run focused study sessions within your JEE 360 planner." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Focus Sessions — JEE 360 | JEE Prep Hub" },
-      { name: "twitter:description", content: "Run focused study sessions within your JEE 360 planner." },{ title: "Focus Sessions — JEE 360 | JEE Prep Hub" }, { name: "description", content: "Run focused study sessions within your JEE 360 planner." }] }),
+      { name: "twitter:title", content: "Focus Sessions — JEE 360 | PREPWIAN" },
+      { name: "twitter:description", content: "Run focused study sessions within your JEE 360 planner." },{ title: "Focus Sessions — JEE 360 | PREPWIAN" }, { name: "description", content: "Run focused study sessions within your JEE 360 planner." }] }),
  component: FocusPage });
 
 const PRESETS = [25, 50, 90];

@@ -20,14 +20,14 @@ const CalculatorPanel = lazy(() =>
 export const Route = createFileRoute("/tests/attempt/$attemptId")({
   head: () => ({
     meta: [
-      { property: "og:title", content: "CBT Test — In Progress | JEE Prep Hub" },
+      { property: "og:title", content: "CBT Test — In Progress | PREPWIAN" },
       { property: "og:description", content: "Live JEE CBT attempt." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "CBT Test — In Progress | JEE Prep Hub" },
+      { name: "twitter:title", content: "CBT Test — In Progress | PREPWIAN" },
       { name: "twitter:description", content: "Live JEE CBT attempt." },
 
-      { title: "CBT Test — In Progress | JEE Prep Hub" },
+      { title: "CBT Test — In Progress | PREPWIAN" },
       { name: "description", content: "Live JEE CBT attempt." },
       { name: "robots", content: "noindex" },
     ],

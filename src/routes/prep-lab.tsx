@@ -54,7 +54,7 @@ import "@/styles/prep-lab.css";
 export const Route = createFileRoute("/prep-lab")({
   head: () => ({
     meta: [
-      { title: "Prep Lab — Adaptive JEE & NEET Practice | JEE Prep Hub" },
+      { title: "Prep Lab — Adaptive JEE & NEET Practice | PREPWIAN" },
       { name: "description", content: "Build targeted JEE Main, JEE Advanced and NEET UG practice sessions from a 2,000-question original generated practice bank." },
       { property: "og:title", content: "Prep Lab — Adaptive Practice" },
       { property: "og:description", content: "Personalised practice sessions, worked explanations, bookmarks and mistake review." },
@@ -563,7 +563,7 @@ function PrepLabPage() {
   function exportBank() {
     const content = JSON.stringify({
       version: 1,
-      title: "JEE Prep Hub Prep Lab question bank",
+      title: "PREPWIAN Prep Lab question bank",
       note: "Original generated practice variants, not official PYQs.",
       questions: [...prepQuestionBank, ...customQuestions],
     }, null, 2);
@@ -898,7 +898,7 @@ function PrepLabPage() {
             <div className="pl-syllabus-footnote"><ShieldCheck size={15}/><p>Results are stored in this browser only. This version analyses logged overall results and Prep Lab question history; it does not yet parse chapter-wise marks from coaching PDFs or connect to an external test platform.</p></div>
           </section>}
 
-      <footer className="pl-footer"><span>JEE PREP HUB <i>·</i> PREP LAB</span><span><i/> YOUR WORK, YOUR DATA — STORED IN THIS BROWSER</span><span><ShieldCheck size={13}/> PRIVACY-FIRST PRACTICE</span></footer>
+      <footer className="pl-footer"><span>PREPWIAN <i>·</i> PREP LAB</span><span><i/> YOUR WORK, YOUR DATA — STORED IN THIS BROWSER</span><span><ShieldCheck size={13}/> PRIVACY-FIRST PRACTICE</span></footer>
     </div>
     </AppShell>
   );

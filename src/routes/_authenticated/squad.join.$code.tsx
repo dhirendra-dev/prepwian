@@ -8,14 +8,14 @@ import { toast } from "sonner";
 
 export const Route = createFileRoute("/_authenticated/squad/join/$code")({
   head: () => ({ meta: [
-      { name: "description", content: "Join a JEE Prep Hub study squad using its invitation link." },
-      { property: "og:title", content: "Join Squad — JEE Prep Hub" },
-      { property: "og:description", content: "Join a JEE Prep Hub study squad using its invitation link." },
+      { name: "description", content: "Join a PREPWIAN study squad using its invitation link." },
+      { property: "og:title", content: "Join Squad — PREPWIAN" },
+      { property: "og:description", content: "Join a PREPWIAN study squad using its invitation link." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Join Squad — JEE Prep Hub" },
-      { name: "twitter:description", content: "Join a JEE Prep Hub study squad using its invitation link." },
-{ title: "Join Squad — JEE Prep Hub" }] }),
+      { name: "twitter:title", content: "Join Squad — PREPWIAN" },
+      { name: "twitter:description", content: "Join a PREPWIAN study squad using its invitation link." },
+{ title: "Join Squad — PREPWIAN" }] }),
   component: JoinSquadPage,
 });
 

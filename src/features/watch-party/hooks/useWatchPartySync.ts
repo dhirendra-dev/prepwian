@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // Realtime playback synchronization
 // File: src/features/watch-party/hooks/useWatchPartySync.ts
 // ============================================================

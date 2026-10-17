@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { POLICY_DOCS } from "@/lib/legal/content";
 
 const DOC_LINKS: Array<{ id: string; label: string }> = [
-  { id: "about", label: "About JEE Prep Hub" },
+  { id: "about", label: "About PREPWIAN" },
   { id: "terms", label: "Terms of Use" },
   { id: "privacy", label: "Privacy Policy" },
   { id: "community-guidelines", label: "Community Guidelines" },
@@ -39,7 +39,7 @@ export function SiteFooter() {
           </Link>
         </div>
         <p className="mt-4 text-[11px] leading-relaxed text-muted-foreground">
-          JEE Prep Hub is a student-run, independent educational initiative. It is not affiliated with, endorsed by or
+          PREPWIAN is a student-run, independent educational initiative. It is not affiliated with, endorsed by or
           authorised by NTA, JEE Main, JEE Advanced, JoSAA, the IITs, any coaching institute or the Government of India.
           Always verify examination information with the official authority.
         </p>

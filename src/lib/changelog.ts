@@ -2948,7 +2948,7 @@ export const changelog: ChangelogDay[] = [
         area: "Homepage metadata",
         title: "Update homepage sharing metadata",
         detail:
-          "Removes the year from the homepage title and Open Graph title, and adds an Open Graph site name for JEE Prep Hub.",
+          "Removes the year from the homepage title and Open Graph title, and adds an Open Graph site name for PREPWIAN.",
         commit: "16965cb",
       },
       {
@@ -2956,7 +2956,7 @@ export const changelog: ChangelogDay[] = [
         area: "Root page metadata",
         title: "Refresh site metadata and icon references",
         detail:
-          "Updates the root document title and social metadata to use the JEE Prep Hub name, adds application and Apple web-app titles, and switches favicon references to PNG with an Apple touch icon.",
+          "Updates the root document title and social metadata to use the PREPWIAN name, adds application and Apple web-app titles, and switches favicon references to PNG with an Apple touch icon.",
         commit: "14a1628",
       },
       {
@@ -2985,7 +2985,7 @@ export const changelog: ChangelogDay[] = [
         area: "Community promotion",
         title: "Add WhatsApp community promo dialog",
         detail:
-          "Adds a dismissible popup promoting the JEE Prep Hub WhatsApp community. It waits 800 ms before opening and stores dismissal in local storage.",
+          "Adds a dismissible popup promoting the PREPWIAN WhatsApp community. It waits 800 ms before opening and stores dismissal in local storage.",
         commit: "00536f0",
       },
       {
@@ -3001,7 +3001,7 @@ export const changelog: ChangelogDay[] = [
         area: "SEO and social sharing",
         title: "Use branded large-image social previews",
         detail:
-          "Updates root-page metadata to use a large-image Twitter card and the JEE Prep Hub image for Open Graph and Twitter previews, including image dimensions.",
+          "Updates root-page metadata to use a large-image Twitter card and the PREPWIAN image for Open Graph and Twitter previews, including image dimensions.",
         commit: "28f5015",
       },
       {
@@ -3270,7 +3270,7 @@ export const changelog: ChangelogDay[] = [
     items: [
       { kind: "feature", area: "Certificates", title: "Verifiable certificates for streaks and study hours" },
       { kind: "feature", area: "Streaks", title: "Streak flame, history and recovery" },
-      { kind: "feature", area: "Pro", title: "Merit-based JEE Prep Hub Pro for leaderboard champions" },
+      { kind: "feature", area: "Pro", title: "Merit-based PREPWIAN Pro for leaderboard champions" },
     ],
   },
   {
@@ -3286,7 +3286,7 @@ export const changelog: ChangelogDay[] = [
   {
     date: "2026-06-10",
     version: "v1.0",
-    headline: "JEE Prep Hub launch",
+    headline: "PREPWIAN launch",
     items: [
       { kind: "feature", area: "Materials", title: "Curated notes, modules, PYQs and tests" },
       { kind: "feature", area: "Timer", title: "Pomodoro focus timer with study tracking" },

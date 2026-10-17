@@ -15,13 +15,13 @@ import { finalizeWeeklyWinners } from "@/lib/leaderboard.functions";
 export const Route = createFileRoute("/_authenticated/leaderboard")({
   head: () => ({ meta: [
       { name: "description", content: "Compare weekly study rankings and leaderboard achievements." },
-      { property: "og:title", content: "Leaderboard — JEE Prep Hub" },
+      { property: "og:title", content: "Leaderboard — PREPWIAN" },
       { property: "og:description", content: "Compare weekly study rankings and leaderboard achievements." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Leaderboard — JEE Prep Hub" },
+      { name: "twitter:title", content: "Leaderboard — PREPWIAN" },
       { name: "twitter:description", content: "Compare weekly study rankings and leaderboard achievements." },
-{ title: "Leaderboard — JEE Prep Hub" }] }),
+{ title: "Leaderboard — PREPWIAN" }] }),
   component: Leaderboard,
 });
 

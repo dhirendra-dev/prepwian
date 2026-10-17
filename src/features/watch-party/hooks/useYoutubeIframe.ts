@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // YouTube IFrame API hook
 // File: src/features/watch-party/hooks/useYoutubeIframe.ts
 // ============================================================

@@ -43,22 +43,22 @@ export const Route = createFileRoute(
   head: () => ({
     meta: [
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Study Material — JEE Prep Hub" },
+      { name: "twitter:title", content: "Study Material — PREPWIAN" },
       { property: "og:description", content: "Explore Physics, Chemistry and Mathematics notes, modules, previous-year questions, books and test series for Class 11, Class 12 and droppers." },
       { name: "twitter:description", content: "Explore Physics, Chemistry and Mathematics notes, modules, previous-year questions, books and test series for Class 11, Class 12 and droppers." },
       { property: "og:url", content: "https://jeeprephub.co.in/materials" },
 
       {
-        title: "Study Material — JEE Prep Hub",
+        title: "Study Material — PREPWIAN",
       },
       {
         name: "description",
         content:
-          "JEE Prep Hub study material library for Physics, Chemistry, Mathematics and more.",
+          "PREPWIAN study material library for Physics, Chemistry, Mathematics and more.",
       },
       {
         property: "og:title",
-        content: "Study Material — JEE Prep Hub",
+        content: "Study Material — PREPWIAN",
       },
       {
         property: "og:type",
@@ -88,7 +88,7 @@ export const Route = createFileRoute(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: "JEE Prep Hub Study Material Library",
+          name: "PREPWIAN Study Material Library",
           description:
             "Curated JEE study materials for Physics, Chemistry and Mathematics — notes, modules, PYQs, test series and books.",
           url: "https://jeeprephub.co.in/materials",
@@ -504,7 +504,7 @@ function MaterialsPage() {
             <div>
               <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-[11px] font-semibold backdrop-blur dark:border-white/10 dark:bg-white/5">
                 <Sparkles className="h-3.5 w-3.5 text-orange-300" />
-                JEE PREP HUB LIBRARY
+                PREPWIAN LIBRARY
               </div>
 
               <h1 className="max-w-2xl text-3xl font-black tracking-tight sm:text-4xl lg:text-5xl">

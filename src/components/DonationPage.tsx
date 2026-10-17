@@ -66,7 +66,7 @@ const money = (n: number) =>
 
 export default function DonationPage({
   upiId = "dhirendra01@fam",
-  projectName = "JEE Prep Hub",
+  projectName = "PREPWIAN",
   monthlyGoal = 5000,
   recentSupporters = [],
   expenses = DEFAULT_EXPENSES,
@@ -128,13 +128,13 @@ export default function DonationPage({
           <span>A bigger learning journey.</span>
         </h1>
         <p className="jph-hero-copy">
-          JEE Prep Hub is a student-powered project built to make useful study tools, resources and
+          PREPWIAN is a student-powered project built to make useful study tools, resources and
           a supportive learning space easier to access. Keeping it running takes time,
           infrastructure and ongoing maintenance.
         </p>
         <p className="jph-hero-copy jph-hero-copy-secondary">
           Thinking of spending a little on a pizza or burger? If you can comfortably spare it, you
-          could support JEE Prep Hub instead. Please never contribute money needed for essentials.
+          could support PREPWIAN instead. Please never contribute money needed for essentials.
         </p>
         <div className="jph-trust-row">
           <span>♡ Voluntary support</span>
@@ -152,7 +152,7 @@ export default function DonationPage({
               })
             }
           >
-            <span>♥</span> Support JEE Prep Hub <span className="jph-btn-arrow">↘</span>
+            <span>♥</span> Support PREPWIAN <span className="jph-btn-arrow">↘</span>
           </button>
           <button
             type="button"
@@ -250,11 +250,11 @@ export default function DonationPage({
             onClick={donate}
             aria-label={
               validAmount
-                ? `Support JEE Prep Hub with ${money(selectedAmount)}`
+                ? `Support PREPWIAN with ${money(selectedAmount)}`
                 : "Choose a valid contribution amount"
             }
           >
-            <span>♥</span> Support JEE Prep Hub{" "}
+            <span>♥</span> Support PREPWIAN{" "}
             <span className="jph-btn-amount">{validAmount ? money(selectedAmount) : ""}</span>{" "}
             <span className="jph-btn-arrow">↗</span>
           </button>
@@ -332,7 +332,7 @@ export default function DonationPage({
             </div>
             <h2>Built with effort, kept alive by community.</h2>
             <p>
-              JEE Prep Hub started with a simple idea: students should have a place to organise
+              PREPWIAN started with a simple idea: students should have a place to organise
               their preparation, discover useful resources and find helpful tools without feeling
               alone. Behind every feature are hours of learning, planning, coding, testing, fixing
               bugs and trying again when something breaks. I’m building this while continuing my own
@@ -356,7 +356,7 @@ export default function DonationPage({
               <span className="jph-avatar">D</span>
               <span>
                 <strong>Dhirendra</strong>
-                <small>Builder of JEE Prep Hub</small>
+                <small>Builder of PREPWIAN</small>
               </span>
             </div>
           </section>

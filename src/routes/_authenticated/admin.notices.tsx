@@ -15,7 +15,7 @@ import { Trash2, Send, Megaphone, Pin, PinOff, ExternalLink } from "lucide-react
 import { formatDistanceToNow } from "date-fns";
 
 export const Route = createFileRoute("/_authenticated/admin/notices")({
-  head: () => ({ meta: [{ title: "Admin · Notice Board — JEE Prep Hub" }] }),
+  head: () => ({ meta: [{ title: "Admin · Notice Board — PREPWIAN" }] }),
   ssr: false,
   beforeLoad: async ({ context }) => {
     await requirePermission(context.user.id, "notices");

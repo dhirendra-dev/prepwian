@@ -179,7 +179,7 @@ function PostCard({ post }: { post: FeedPostItem }) {
   };
   const share = async () => {
     const url = `${window.location.origin}/feed?post=${post.id}`;
-    try { if (navigator.share) await navigator.share({ title: "JEE Prep Hub post", text: post.content, url }); else { await navigator.clipboard.writeText(url); toast.success("Post link copied"); } } catch { /* cancelled */ }
+    try { if (navigator.share) await navigator.share({ title: "PREPWIAN post", text: post.content, url }); else { await navigator.clipboard.writeText(url); toast.success("Post link copied"); } } catch { /* cancelled */ }
   };
   const copyLink = async () => {
     try {

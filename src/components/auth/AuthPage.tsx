@@ -120,7 +120,7 @@ export default function AuthPage({
         <a
           className="jph-brand"
           href="/"
-          aria-label="JEE Prep Hub home"
+          aria-label="PREPWIAN home"
           onClick={
             onBackHome
               ? (e) => {
@@ -155,7 +155,7 @@ export default function AuthPage({
       </header>
 
       <div className="jph-auth-layout">
-        <section className="jph-auth-intro" aria-label="About JEE Prep Hub">
+        <section className="jph-auth-intro" aria-label="About PREPWIAN">
           <span className="jph-eyebrow jph-glass-pill">
             <span className="jph-live-dot" /> BUILT FOR JEE ASPIRANTS
           </span>
@@ -229,8 +229,8 @@ export default function AuthPage({
             <h2>{mode === "signin" ? "Welcome back" : "Create your account"}</h2>
             <p>
               {mode === "signin"
-                ? "Sign in to continue to JEE Prep Hub."
-                : "Start your JEE Prep Hub journey today."}
+                ? "Sign in to continue to PREPWIAN."
+                : "Start your PREPWIAN journey today."}
             </p>
           </div>
 
@@ -355,7 +355,7 @@ export default function AuthPage({
                     <a href={guidelinesUrl}>Community Guidelines</a> and{" "}
                     <a href={privacyUrl}>Privacy Policy</a>.
                     <small>
-                      JEE Prep Hub is an independent student-run initiative and is not affiliated
+                      PREPWIAN is an independent student-run initiative and is not affiliated
                       with NTA, the IITs or any government body.
                     </small>
                   </span>
@@ -407,7 +407,7 @@ export default function AuthPage({
             </button>
           )}
           <p className="jph-switch-copy">
-            {mode === "signin" ? "New to JEE Prep Hub?" : "Already have an account?"}{" "}
+            {mode === "signin" ? "New to PREPWIAN?" : "Already have an account?"}{" "}
             <button
               type="button"
               onClick={() => changeMode(mode === "signin" ? "signup" : "signin")}

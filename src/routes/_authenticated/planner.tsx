@@ -11,12 +11,12 @@ import { haptic } from "@/lib/haptics";
 export const Route = createFileRoute("/_authenticated/planner")({
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "Study Planner — JEE Prep Hub" },
+      { name: "twitter:title", content: "Study Planner — PREPWIAN" },
       { name: "twitter:description", content: "A day-by-day, subject-wise planner for JEE aspirants." },
 
-      { title: "Study Planner — JEE Prep Hub" },
+      { title: "Study Planner — PREPWIAN" },
       { name: "description", content: "Plan every study day subject by subject: Physics, Chemistry, Maths and more, with a weekly day strip and tick-off tasks." },
-      { property: "og:title", content: "Study Planner — JEE Prep Hub" },
+      { property: "og:title", content: "Study Planner — PREPWIAN" },
       { property: "og:description", content: "A day-by-day, subject-wise planner for JEE aspirants." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

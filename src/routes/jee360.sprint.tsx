@@ -13,12 +13,12 @@ import type { Subject } from "@/lib/jee360/types";
 
 export const Route = createFileRoute("/jee360/sprint")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Study Sprint — JEE 360 | JEE Prep Hub" },
+      { property: "og:title", content: "Study Sprint — JEE 360 | PREPWIAN" },
       { property: "og:description", content: "Work through a timed JEE 360 study sprint." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Study Sprint — JEE 360 | JEE Prep Hub" },
-      { name: "twitter:description", content: "Work through a timed JEE 360 study sprint." },{ title: "Study Sprint — JEE 360 | JEE Prep Hub" }, { name: "description", content: "Work through a timed JEE 360 study sprint." }] }),
+      { name: "twitter:title", content: "Study Sprint — JEE 360 | PREPWIAN" },
+      { name: "twitter:description", content: "Work through a timed JEE 360 study sprint." },{ title: "Study Sprint — JEE 360 | PREPWIAN" }, { name: "description", content: "Work through a timed JEE 360 study sprint." }] }),
  component: SprintPage });
 
 const LIMIT = 90;

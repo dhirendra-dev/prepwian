@@ -17,7 +17,7 @@ import { useEffect, useState } from "react";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/_authenticated/admin/tests/$testId/")({
-  head: () => ({ meta: [{ title: "Edit Test | JEE Prep Hub" }] }),
+  head: () => ({ meta: [{ title: "Edit Test | PREPWIAN" }] }),
   component: EditTest,
 });
 

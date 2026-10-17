@@ -12,11 +12,11 @@ const OG_IMAGE = `${BASE_URL}/og-jee-advanced-physics.png`;
 export const Route = createFileRoute("/jee-advanced-physics-problems")({
   head: () => ({
     meta: [
-      { title: "JEE Advanced Physics Problems — Free PYQs, Books & Notes | JEE Prep Hub" },
+      { title: "JEE Advanced Physics Problems — Free PYQs, Books & Notes | PREPWIAN" },
       { name: "description", content: "Master JEE Advanced physics problems with curated previous year questions, topic-wise books, mechanics, electromagnetism, optics and modern physics notes for Class 11 & 12 aspirants." },
       { name: "keywords", content: "JEE advanced physics problems, JEE Advanced physics, JEE physics PYQ, IIT JEE physics problems, JEE mechanics, JEE electromagnetism, JEE modern physics, Class 11 physics, Class 12 physics" },
       { property: "og:title", content: "JEE Advanced Physics Problems — Free PYQs, Books & Notes" },
-      { property: "og:description", content: "Curated JEE Advanced physics problems, previous year questions, books and notes. Practice mechanics, electromagnetism, optics and modern physics with JEE Prep Hub." },
+      { property: "og:description", content: "Curated JEE Advanced physics problems, previous year questions, books and notes. Practice mechanics, electromagnetism, optics and modern physics with PREPWIAN." },
       { property: "og:url", content: `${BASE_URL}/jee-advanced-physics-problems` },
       { property: "og:type", content: "website" },
       { property: "og:image", content: OG_IMAGE },
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/jee-advanced-physics-problems")({
           name: "JEE Advanced Physics Problems",
           url: `${BASE_URL}/jee-advanced-physics-problems`,
           description: "Master JEE Advanced physics problems with curated previous year questions, topic-wise books, mechanics, electromagnetism, optics and modern physics notes for Class 11 & 12 aspirants.",
-          isPartOf: { "@type": "WebSite", name: "JEE Prep Hub", url: BASE_URL },
+          isPartOf: { "@type": "WebSite", name: "PREPWIAN", url: BASE_URL },
           about: {
             "@type": "Thing",
             name: "Joint Entrance Examination Advanced Physics",
@@ -99,7 +99,7 @@ function PhysicsLandingPage() {
 
         {data.locked ? (
           <section className="mt-16">
-            <MaterialsUnlock title="Physics resources are locked" description="Our physics problem sets, books and PYQs are copyrighted material, so they are password protected. Enter the current access password shared by the JEE Prep Hub team." onUnlocked={() => query.refetch()} />
+            <MaterialsUnlock title="Physics resources are locked" description="Our physics problem sets, books and PYQs are copyrighted material, so they are password protected. Enter the current access password shared by the PREPWIAN team." onUnlocked={() => query.refetch()} />
           </section>
         ) : (
           <>
@@ -177,7 +177,7 @@ function PhysicsLandingPage() {
 
         {/* Internal navigation links */}
         <section className="mt-16">
-          <h2 className="font-display text-2xl font-bold sm:text-3xl">More ways to prepare on JEE Prep Hub</h2>
+          <h2 className="font-display text-2xl font-bold sm:text-3xl">More ways to prepare on PREPWIAN</h2>
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <Link to="/materials" className="group rounded-xl border border-border bg-card p-5 shadow-soft transition hover:shadow-glow">
               <BookOpen className="h-6 w-6 text-accent" />
@@ -219,7 +219,7 @@ function PhysicsLandingPage() {
       </main>
 
       <footer className="border-t border-border py-6 text-center text-xs text-muted-foreground">
-        <Link to="/" className="hover:underline">JEE Prep Hub</Link> — Built by aspirants, for aspirants.
+        <Link to="/" className="hover:underline">PREPWIAN</Link> — Built by aspirants, for aspirants.
       </footer>
     </div>
   );

@@ -1,5 +1,5 @@
 /**
- * PREPWIAN / JEE Prep Hub Prep Lab question bank.
+ * PREPWIAN / PREPWIAN Prep Lab question bank.
  *
  * This module produces original, parameterized practice questions from transparent
  * educational templates. These are NOT official PYQs, answer keys, or expert-reviewed

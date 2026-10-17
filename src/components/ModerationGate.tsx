@@ -100,7 +100,7 @@ export function ModerationGate({ children }: { children: React.ReactNode }) {
         </h1>
         <p className="mt-2 text-center text-sm text-muted-foreground">
           {isBanned
-            ? "Your access to JEE Prep Hub has been permanently revoked."
+            ? "Your access to PREPWIAN has been permanently revoked."
             : "Your account has been temporarily suspended."}
         </p>
 
@@ -173,7 +173,7 @@ export function ModerationGate({ children }: { children: React.ReactNode }) {
         </div>
 
         <p className="mt-4 text-center text-[11px] text-muted-foreground">
-          JEE Prep Hub · Community Guidelines Enforcement
+          PREPWIAN · Community Guidelines Enforcement
         </p>
       </div>
     </div>

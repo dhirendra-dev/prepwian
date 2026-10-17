@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // Realtime room presence
 // File: src/features/watch-party/hooks/useRoomPresence.ts
 // ============================================================

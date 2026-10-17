@@ -44,7 +44,7 @@ export function MobileDesktopModeNotice() {
         <p className="mobile-desktop-mode-eyebrow">Mobile view required</p>
         <h1 id="mobile-desktop-mode-title">Desktop site mode isn’t supported on phones</h1>
         <p id="mobile-desktop-mode-description">
-          JEE Prep Hub is optimized for your phone’s mobile layout. Turn off “Desktop site” in your
+          PREPWIAN is optimized for your phone’s mobile layout. Turn off “Desktop site” in your
           browser settings, then reload this page for the best experience.
         </p>
         <button type="button" onClick={() => window.location.reload()}>

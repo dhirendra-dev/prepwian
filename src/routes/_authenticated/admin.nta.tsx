@@ -6,7 +6,7 @@ import NTASync from "@/pages/admin/NTASync";
 export const Route = createFileRoute("/_authenticated/admin/nta")({
   head: () => ({
     meta: [
-      { title: "Admin · NTA Sync — JEE Prep Hub" },
+      { title: "Admin · NTA Sync — PREPWIAN" },
       {
         name: "robots",
         content: "noindex",

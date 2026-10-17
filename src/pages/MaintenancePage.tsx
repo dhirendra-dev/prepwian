@@ -31,7 +31,7 @@ export default function MaintenancePage({
         </div>
 
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-          {title || "JEE Prep Hub is taking a short study break"}
+          {title || "PREPWIAN is taking a short study break"}
         </h1>
 
         <p className="mt-5 text-lg font-medium text-muted-foreground">
@@ -48,12 +48,12 @@ export default function MaintenancePage({
             href={buttonUrl}
             className="mt-8 inline-flex items-center justify-center rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
           >
-            {buttonText || "Visit JEE Prep Hub"}
+            {buttonText || "Visit PREPWIAN"}
           </a>
         )}
 
         <p className="mt-10 text-xs text-muted-foreground">
-          © JEE Prep Hub
+          © PREPWIAN
         </p>
 
       </div>

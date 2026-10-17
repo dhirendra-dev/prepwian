@@ -15,18 +15,18 @@ export const Route = createFileRoute("/certificates/verify/$code")({
   },
   head: ({ loaderData }) => ({
     meta: [
-      { property: "og:title", content: `Certificate · ${loaderData?.type?.name ?? loaderData?.certificate?.custom_title ?? "Verified"} — JEE Prep Hub` },
-      { property: "og:description", content: `Verified certificate awarded to ${loaderData?.recipientName ?? "JEE Aspirant"} by JEE Prep Hub.` },
+      { property: "og:title", content: `Certificate · ${loaderData?.type?.name ?? loaderData?.certificate?.custom_title ?? "Verified"} — PREPWIAN` },
+      { property: "og:description", content: `Verified certificate awarded to ${loaderData?.recipientName ?? "JEE Aspirant"} by PREPWIAN.` },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: `Certificate · ${loaderData?.type?.name ?? loaderData?.certificate?.custom_title ?? "Verified"} — JEE Prep Hub` },
-      { name: "twitter:description", content: `Verified certificate awarded to ${loaderData?.recipientName ?? "JEE Aspirant"} by JEE Prep Hub.` },
+      { name: "twitter:title", content: `Certificate · ${loaderData?.type?.name ?? loaderData?.certificate?.custom_title ?? "Verified"} — PREPWIAN` },
+      { name: "twitter:description", content: `Verified certificate awarded to ${loaderData?.recipientName ?? "JEE Aspirant"} by PREPWIAN.` },
       {
-        title: `Certificate · ${loaderData?.type?.name ?? loaderData?.certificate?.custom_title ?? "Verified"} — JEE Prep Hub`,
+        title: `Certificate · ${loaderData?.type?.name ?? loaderData?.certificate?.custom_title ?? "Verified"} — PREPWIAN`,
       },
       {
         name: "description",
-        content: `Verified certificate awarded to ${loaderData?.recipientName ?? "JEE Aspirant"} by JEE Prep Hub.`,
+        content: `Verified certificate awarded to ${loaderData?.recipientName ?? "JEE Aspirant"} by PREPWIAN.`,
       },
     ],
   }),
@@ -118,7 +118,7 @@ function Verify() {
       <div className="mx-auto max-w-2xl">
         <Link to="/" className="mb-6 inline-flex items-center gap-2">
           <Logo className="h-8 w-8 rounded bg-sidebar-foreground p-1" />
-          <span className="font-display text-lg font-bold">JEE Prep Hub</span>
+          <span className="font-display text-lg font-bold">PREPWIAN</span>
         </Link>
         <div className="rounded-2xl border border-border bg-card p-8 shadow-soft">
           <div
@@ -210,7 +210,7 @@ function Verify() {
           </Button>
         </div>
         <p className="mt-4 text-center text-xs text-muted-foreground">
-          Issued by {certificate.issuer_name ?? type?.issuer_name ?? "JEE Prep Hub"} ·{" "}
+          Issued by {certificate.issuer_name ?? type?.issuer_name ?? "PREPWIAN"} ·{" "}
           <Link to="/" className="text-accent hover:underline">
             Join the community
           </Link>

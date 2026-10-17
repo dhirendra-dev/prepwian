@@ -26,14 +26,14 @@ import { BirthdaySettingsCard } from "@/components/birthday/BirthdaySettingsCard
 
 export const Route = createFileRoute("/_authenticated/profile")({
   head: () => ({ meta: [
-      { name: "description", content: "Manage your JEE Prep Hub member profile." },
-      { property: "og:title", content: "Profile — JEE Prep Hub" },
-      { property: "og:description", content: "Manage your JEE Prep Hub member profile." },
+      { name: "description", content: "Manage your PREPWIAN member profile." },
+      { property: "og:title", content: "Profile — PREPWIAN" },
+      { property: "og:description", content: "Manage your PREPWIAN member profile." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Profile — JEE Prep Hub" },
-      { name: "twitter:description", content: "Manage your JEE Prep Hub member profile." },
-{ title: "Profile — JEE Prep Hub" }] }),
+      { name: "twitter:title", content: "Profile — PREPWIAN" },
+      { name: "twitter:description", content: "Manage your PREPWIAN member profile." },
+{ title: "Profile — PREPWIAN" }] }),
   component: ProfilePage,
 });
 

@@ -17,12 +17,12 @@ import { useAppStore } from "@/lib/jee360/store";
 
 export const Route = createFileRoute("/jee360/reminders")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Study Reminders — JEE 360 | JEE Prep Hub" },
+      { property: "og:title", content: "Study Reminders — JEE 360 | PREPWIAN" },
       { property: "og:description", content: "Manage reminders for your JEE study plans and revision." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Study Reminders — JEE 360 | JEE Prep Hub" },
-      { name: "twitter:description", content: "Manage reminders for your JEE study plans and revision." },{ title: "Study Reminders — JEE 360 | JEE Prep Hub" }, { name: "description", content: "Manage reminders for your JEE study plans and revision." }] }),
+      { name: "twitter:title", content: "Study Reminders — JEE 360 | PREPWIAN" },
+      { name: "twitter:description", content: "Manage reminders for your JEE study plans and revision." },{ title: "Study Reminders — JEE 360 | PREPWIAN" }, { name: "description", content: "Manage reminders for your JEE study plans and revision." }] }),
  component: RemindersPage });
 
 function RemindersPage() {

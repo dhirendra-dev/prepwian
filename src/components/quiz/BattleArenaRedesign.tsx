@@ -59,7 +59,7 @@ export default function BattleArenaRedesign({
         <div className="jph-arena__brand">
           <span className="jph-arena__brand-mark"><Swords size={17} /></span>
           <span>
-            <strong>JEE PREP HUB</strong>
+            <strong>PREPWIAN</strong>
             <small>COMPETITIVE ARENA</small>
           </span>
         </div>

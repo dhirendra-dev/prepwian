@@ -1,6 +1,6 @@
-# JEE Prep Hub documentation
+# PREPWIAN documentation
 
-This directory collects practical guides for students using JEE Prep Hub. The guides explain how to navigate the current product; they do not replace instructions or access requirements shown in the app.
+This directory collects practical guides for students using PREPWIAN. The guides explain how to navigate the current product; they do not replace instructions or access requirements shown in the app.
 
 ## Student guides
 

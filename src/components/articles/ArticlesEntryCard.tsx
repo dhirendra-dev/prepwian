@@ -11,7 +11,7 @@ export function ArticlesEntryCard({ articlesHref = "/articles", mainHubHref = "/
   return (
     <section
       className="mt-4 grid gap-4 md:grid-cols-2"
-      aria-label="Choose your JEE Prep Hub experience"
+      aria-label="Choose your PREPWIAN experience"
     >
       <GlassSurface
         as={Link}
@@ -56,7 +56,7 @@ export function ArticlesEntryCard({ articlesHref = "/articles", mainHubHref = "/
           Your study workspace
         </span>
         <strong className="mt-2 font-display text-2xl font-bold tracking-tight text-foreground sm:text-[1.7rem]">
-          Open JEE Prep Hub
+          Open PREPWIAN
         </strong>
         <span className="mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">
           Return to your learning dashboard, resources, practice and study tools.

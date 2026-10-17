@@ -277,10 +277,10 @@ export function ProDashboard({
 
   const invite = async () => {
     const url = window.location.origin;
-    const text = "Study with me on JEE Prep Hub";
+    const text = "Study with me on PREPWIAN";
     if (navigator.share) {
       try {
-        await navigator.share({ title: "JEE Prep Hub", text, url });
+        await navigator.share({ title: "PREPWIAN", text, url });
       } catch {
         /* cancelled */
       }

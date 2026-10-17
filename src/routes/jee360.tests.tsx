@@ -24,12 +24,12 @@ import type { TestItem, TestSubject, TestType } from "@/lib/jee360/types";
 
 export const Route = createFileRoute("/jee360/tests")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Mock Test Log — JEE 360 | JEE Prep Hub" },
+      { property: "og:title", content: "Mock Test Log — JEE 360 | PREPWIAN" },
       { property: "og:description", content: "Record mock tests and review your JEE 360 performance." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Mock Test Log — JEE 360 | JEE Prep Hub" },
-      { name: "twitter:description", content: "Record mock tests and review your JEE 360 performance." },{ title: "Mock Test Log — JEE 360 | JEE Prep Hub" }, { name: "description", content: "Record mock tests and review your JEE 360 performance." }] }),
+      { name: "twitter:title", content: "Mock Test Log — JEE 360 | PREPWIAN" },
+      { name: "twitter:description", content: "Record mock tests and review your JEE 360 performance." },{ title: "Mock Test Log — JEE 360 | PREPWIAN" }, { name: "description", content: "Record mock tests and review your JEE 360 performance." }] }),
  component: TestsPage });
 
 function TestsPage() {

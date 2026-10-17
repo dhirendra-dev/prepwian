@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // Shared frontend types
 // File: src/features/watch-party/types.ts
 // ============================================================

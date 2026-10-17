@@ -44,7 +44,7 @@ import {
 import { generateCertificatePdf } from "@/lib/certificate-pdf";
 
 export const Route = createFileRoute("/_authenticated/admin/certificates")({
-  head: () => ({ meta: [{ title: "Admin · Certificates — JEE Prep Hub" }] }),
+  head: () => ({ meta: [{ title: "Admin · Certificates — PREPWIAN" }] }),
   ssr: false,
   beforeLoad: async ({ context }) => {
     await requirePermission(context.user.id, "certificates");
@@ -81,7 +81,7 @@ const blankType: TypeForm = {
   sort_order: "100",
   template_key: "ornate",
   certificate_kind: "appreciation",
-  issuer_name: "JEE Prep Hub Team",
+  issuer_name: "PREPWIAN Team",
   detail_fields: [],
   is_enabled: true,
   eligibility_mode: "manual",
@@ -114,7 +114,7 @@ const blankIssue: IssueForm = {
   category: "recognition",
   template_key: "ornate",
   certificate_kind: "appreciation",
-  issuer_name: "JEE Prep Hub Team",
+  issuer_name: "PREPWIAN Team",
   exam_category: "",
   test_name: "",
   rank_text: "",
@@ -147,7 +147,7 @@ function configToForm(type: CertificateType): TypeForm {
     sort_order: String(type.sort_order),
     template_key: type.template_key ?? "ornate",
     certificate_kind: type.certificate_kind ?? "achievement",
-    issuer_name: type.issuer_name ?? "JEE Prep Hub Team",
+    issuer_name: type.issuer_name ?? "PREPWIAN Team",
     detail_fields: Array.isArray(type.detail_fields) ? type.detail_fields : [],
     is_enabled: type.is_enabled !== false,
     eligibility_mode: eligibility?.mode ?? "manual",
@@ -186,7 +186,7 @@ function sampleDetails(fields: CertificateDetailField[]) {
     member_since: "12 October 2026",
     membership_duration: "365 days",
     join_date: "12 October 2025",
-    community_name: "JEE Prep Hub",
+    community_name: "PREPWIAN",
     consecutive_days: "30 days",
     completed_pomodoro_sessions: "120 sessions",
     achievement_period: "September–October 2026",
@@ -215,7 +215,7 @@ function sampleDetails(fields: CertificateDetailField[]) {
     contribution_type: "Doubt solving",
     verified_contributions: "24",
     recognition_reason: "Outstanding community support",
-    issuing_authority: "JEE Prep Hub Academic Team",
+    issuing_authority: "PREPWIAN Academic Team",
     chapter_name: "Electrostatics",
     pyq_count: "120 questions",
   };
@@ -999,7 +999,7 @@ function AdminCertificates() {
                       category: selected?.category ?? "recognition",
                       template_key: selected?.template_key ?? "ornate",
                       certificate_kind: selected?.certificate_kind ?? "appreciation",
-                      issuer_name: selected?.issuer_name ?? "JEE Prep Hub Team",
+                      issuer_name: selected?.issuer_name ?? "PREPWIAN Team",
                       details: {},
                     });
                   }}
@@ -1065,7 +1065,7 @@ function AdminCertificates() {
                     {input("rank_text", "Rank (only if verified)")}
                     {input("score", "Score (only if verified)", "", "number")}
                     {input("maximum_marks", "Maximum marks", "", "number")}
-                    {input("issuer_name", "Issuer", "JEE Prep Hub Team")}
+                    {input("issuer_name", "Issuer", "PREPWIAN Team")}
                   </div>
                   <div className="grid gap-3 sm:grid-cols-2">
                     <div className="space-y-1">
@@ -1354,7 +1354,7 @@ function IssuePreview({ issue, type }: { issue: IssueForm; type?: CertificateTyp
     category: type?.category ?? issue.category,
     template_key: type?.template_key ?? issue.template_key,
     certificate_kind: type?.certificate_kind ?? issue.certificate_kind,
-    issuer_name: issue.issuer_name || type?.issuer_name || "JEE Prep Hub Team",
+    issuer_name: issue.issuer_name || type?.issuer_name || "PREPWIAN Team",
     exam_category: issue.exam_category,
     test_name: issue.test_name,
     rank_text: issue.rank_text,

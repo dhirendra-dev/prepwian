@@ -27,7 +27,7 @@ import {
 } from "@/lib/system-control.functions";
 
 export const Route = createFileRoute("/_authenticated/admin/system")({
-  head: () => ({ meta: [{ title: "System Control Center — JEE Prep Hub" }] }),
+  head: () => ({ meta: [{ title: "System Control Center — PREPWIAN" }] }),
   ssr: false,
   beforeLoad: async ({ context }) => {
     const { data } = await supabase

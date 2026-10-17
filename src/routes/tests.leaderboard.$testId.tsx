@@ -10,13 +10,13 @@ import { Trophy, Loader2 } from "lucide-react";
 export const Route = createFileRoute("/tests/leaderboard/$testId")({
   head: () => ({ meta: [
       { name: "description", content: "Compare scores, accuracy and standings for this CBT test." },
-      { property: "og:title", content: "Test Leaderboard | JEE Prep Hub" },
+      { property: "og:title", content: "Test Leaderboard | PREPWIAN" },
       { property: "og:description", content: "Compare scores, accuracy and standings for this CBT test." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Test Leaderboard | JEE Prep Hub" },
+      { name: "twitter:title", content: "Test Leaderboard | PREPWIAN" },
       { name: "twitter:description", content: "Compare scores, accuracy and standings for this CBT test." },
-{ title: "Test Leaderboard | JEE Prep Hub" }] }),
+{ title: "Test Leaderboard | PREPWIAN" }] }),
   component: LB,
 });
 

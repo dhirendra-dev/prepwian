@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // Room details panel
 // File: src/features/watch-party/components/RoomDetailsPanel.tsx
 // ============================================================

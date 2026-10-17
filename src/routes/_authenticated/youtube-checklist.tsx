@@ -6,13 +6,13 @@ export const Route = createFileRoute(
   "/_authenticated/youtube-checklist",
 )({
   head: () => ({ meta: [
-      { property: "og:title", content: "YouTube Study Checklist — JEE Prep Hub" },
+      { property: "og:title", content: "YouTube Study Checklist — PREPWIAN" },
       { property: "og:description", content: "Import YouTube playlists and track lecture completion with personal study checklists." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "YouTube Study Checklist — JEE Prep Hub" },
+      { name: "twitter:title", content: "YouTube Study Checklist — PREPWIAN" },
       { name: "twitter:description", content: "Import YouTube playlists and track lecture completion with personal study checklists." },
-{ title: "YouTube Study Checklist — JEE Prep Hub" }, { name: "description", content: "Import YouTube playlists and track lecture completion with personal study checklists." }] }),
+{ title: "YouTube Study Checklist — PREPWIAN" }, { name: "description", content: "Import YouTube playlists and track lecture completion with personal study checklists." }] }),
 
   component: YouTubeChecklistPage,
 });

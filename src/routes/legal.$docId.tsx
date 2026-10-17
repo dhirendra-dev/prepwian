@@ -11,9 +11,9 @@ export const Route = createFileRoute("/legal/$docId")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Policy not found — JEE Prep Hub" }, { name: "robots", content: "noindex" }] };
+      return { meta: [{ title: "Policy not found — PREPWIAN" }, { name: "robots", content: "noindex" }] };
     }
-    const title = `${loaderData.doc.title} — JEE Prep Hub`;
+    const title = `${loaderData.doc.title} — PREPWIAN`;
     return {
       meta: [
         { title },

@@ -7,13 +7,13 @@ import { Scale, Mail, Award, MessageSquare, Clock, Flame, ShieldCheck, ArrowRigh
 export const Route = createFileRoute("/_authenticated/my-activity")({
   head: () => ({ meta: [
       { name: "description", content: "Review your personal study and community activity." },
-      { property: "og:title", content: "My Activity — JEE Prep Hub" },
+      { property: "og:title", content: "My Activity — PREPWIAN" },
       { property: "og:description", content: "Review your personal study and community activity." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "My Activity — JEE Prep Hub" },
+      { name: "twitter:title", content: "My Activity — PREPWIAN" },
       { name: "twitter:description", content: "Review your personal study and community activity." },
-{ title: "My Activity — JEE Prep Hub" }, { name: "robots", content: "noindex" }] }),
+{ title: "My Activity — PREPWIAN" }, { name: "robots", content: "noindex" }] }),
   component: MyActivity,
 });
 

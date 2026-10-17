@@ -24,18 +24,18 @@ export const Route = createFileRoute("/_authenticated/messages/$peerId")({
   validateSearch: z.object({ message: z.string().optional() }),
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "Private Chat — JEE Prep Hub" },
-      { name: "twitter:description", content: "Private study conversations for JEE Prep Hub members." },
+      { name: "twitter:title", content: "Private Chat — PREPWIAN" },
+      { name: "twitter:description", content: "Private study conversations for PREPWIAN members." },
 
-      { title: "Private Chat — JEE Prep Hub" },
+      { title: "Private Chat — PREPWIAN" },
       {
         name: "description",
-        content: "Continue a private study conversation with another JEE Prep Hub member.",
+        content: "Continue a private study conversation with another PREPWIAN member.",
       },
-      { property: "og:title", content: "Private Chat — JEE Prep Hub" },
+      { property: "og:title", content: "Private Chat — PREPWIAN" },
       {
         property: "og:description",
-        content: "Private study conversations for JEE Prep Hub members.",
+        content: "Private study conversations for PREPWIAN members.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

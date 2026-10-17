@@ -45,12 +45,12 @@ import "@/styles/feedback-ultimate.css";
 
 export const Route = createFileRoute("/feedback")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Feedback Hub — JEE Prep Hub" },
-      { property: "og:description", content: "Share suggestions, report bugs and send feedback about JEE Prep Hub." },
+      { property: "og:title", content: "Feedback Hub — PREPWIAN" },
+      { property: "og:description", content: "Share suggestions, report bugs and send feedback about PREPWIAN." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Feedback Hub — JEE Prep Hub" },
-      { name: "twitter:description", content: "Share suggestions, report bugs and send feedback about JEE Prep Hub." },{ title: "Feedback Hub — JEE Prep Hub" }, { name: "description", content: "Share suggestions, report bugs and send feedback about JEE Prep Hub." }] }),
+      { name: "twitter:title", content: "Feedback Hub — PREPWIAN" },
+      { name: "twitter:description", content: "Share suggestions, report bugs and send feedback about PREPWIAN." },{ title: "Feedback Hub — PREPWIAN" }, { name: "description", content: "Share suggestions, report bugs and send feedback about PREPWIAN." }] }),
  component: FeedbackPage });
 
 type Kind = "suggestion" | "bug" | "question";
@@ -127,7 +127,7 @@ const kinds: Record<
   question: {
     label: "Question",
     title: "Ask a question",
-    detail: "Help with a JEE Prep Hub feature",
+    detail: "Help with a PREPWIAN feature",
     icon: CircleHelp,
     tone: "bg-sky-100 text-sky-700 dark:bg-sky-400/10 dark:text-sky-300",
   },
@@ -339,7 +339,7 @@ function FeedbackPage() {
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-[.16em] text-primary">
             <Sparkles className="h-3.5 w-3.5" />
-            Help improve JEE Prep Hub
+            Help improve PREPWIAN
           </div>
           <h1 className="mt-1 text-2xl font-extrabold tracking-tight sm:text-3xl">
             Feedback & support

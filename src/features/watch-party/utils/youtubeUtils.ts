@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // YouTube URL utilities
 // File: src/features/watch-party/utils/youtubeUtils.ts
 // ============================================================

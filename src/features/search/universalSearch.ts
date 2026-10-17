@@ -100,7 +100,7 @@ function result(
     fields?: string[];
   },
 ): UniversalSearchResult {
-  const sourceName = fields.source ?? fields.name ?? "JEE Prep Hub";
+  const sourceName = fields.source ?? fields.name ?? "PREPWIAN";
   const title = text(row[fields.title]) || sourceName;
   const detail = fields.description ? text(row[fields.description]) : "";
   const body = fields.body ? text(row[fields.body]) : "";
@@ -114,7 +114,7 @@ function result(
     description: detail || sourceName,
     snippet,
     category: fields.category,
-    source: fields.source ?? fields.name ?? "JEE Prep Hub",
+    source: fields.source ?? fields.name ?? "PREPWIAN",
     url: fields.url
       .replaceAll("{id}", encodeURIComponent(safeId(row.id)))
       .replaceAll("{slug}", encodeURIComponent(text(row.slug)))
@@ -192,9 +192,9 @@ function routeResults(
     id: `route:${route.id}`,
     title: route.title,
     description: route.description || `Open ${route.path}`,
-    snippet: route.description || `Open the ${route.title} section of JEE Prep Hub.`,
+    snippet: route.description || `Open the ${route.title} section of PREPWIAN.`,
     category: "route",
-    source: "JEE Prep Hub page",
+    source: "PREPWIAN page",
     url: route.href,
     score: 0,
   }));
@@ -1986,9 +1986,9 @@ export async function getQuickSearchRoutesWithClient(
       id: `route:${route.id}`,
       title: route.title,
       description: route.description || `Open ${route.path}`,
-      snippet: route.description || `Open the ${route.title} section of JEE Prep Hub.`,
+      snippet: route.description || `Open the ${route.title} section of PREPWIAN.`,
       category: "route" as const,
-      source: "JEE Prep Hub page",
+      source: "PREPWIAN page",
       url: route.href,
     }));
 }

@@ -10,7 +10,7 @@ const PROVIDER_ENDPOINTS: Record<string, string> = {
 };
 
 const SYSTEM_PROMPT = [
-  "You are the JEE Prep Hub AI study tutor for Indian Class 11-12 students preparing for JEE Main, JEE Advanced and NEET.",
+  "You are the PREPWIAN AI study tutor for Indian Class 11-12 students preparing for JEE Main, JEE Advanced and NEET.",
   "Explain concepts step by step, in simple language, and keep answers focused and exam-oriented.",
   "Write mathematics with LaTeX between $...$ (inline) or $$...$$ (display).",
   "When asked for a problem, give the question first, then a clearly separated solution.",
@@ -76,7 +76,7 @@ export const aiChatCompletion = createServerFn({ method: "POST" })
       return {
         ok: false as const,
         code: "config",
-        error: "No platform API key is configured for this provider. Ask a JEE Prep Hub administrator to configure it in System Control Center.",
+        error: "No platform API key is configured for this provider. Ask a PREPWIAN administrator to configure it in System Control Center.",
       };
     }
 

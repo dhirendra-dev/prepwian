@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // Live room chat
 // File: src/features/watch-party/components/ChatPanel.tsx
 // ============================================================

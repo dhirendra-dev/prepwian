@@ -334,7 +334,7 @@ const syllabi = useMemo(
 
             <p className="max-w-2xl text-sm text-muted-foreground">
               Access official JEE Main notices, bulletins, question
-              papers and answer keys through JEE Prep Hub. Documents
+              papers and answer keys through PREPWIAN. Documents
               open directly from the official NTA website.
             </p>
           </div>

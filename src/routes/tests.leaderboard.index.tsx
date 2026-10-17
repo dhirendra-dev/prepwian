@@ -12,12 +12,12 @@ import { Podium } from "@/components/progress/Podium";
 export const Route = createFileRoute("/tests/leaderboard/")({
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "Test Series Ranking — JEE Prep Hub" },
+      { name: "twitter:title", content: "Test Series Ranking — PREPWIAN" },
       { name: "twitter:description", content: "See who leads on total test points across all JEE mock tests." },
 
-      { title: "Test Series Ranking — Points Leaderboard | JEE Prep Hub" },
-      { name: "description", content: "Overall Test Series ranking for JEE Prep Hub: total points earned across every CBT mock test, tests attempted and average accuracy." },
-      { property: "og:title", content: "Test Series Ranking — JEE Prep Hub" },
+      { title: "Test Series Ranking — Points Leaderboard | PREPWIAN" },
+      { name: "description", content: "Overall Test Series ranking for PREPWIAN: total points earned across every CBT mock test, tests attempted and average accuracy." },
+      { property: "og:title", content: "Test Series Ranking — PREPWIAN" },
       { property: "og:description", content: "See who leads on total test points across all JEE mock tests." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

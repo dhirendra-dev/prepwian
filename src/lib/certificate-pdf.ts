@@ -30,7 +30,7 @@ export type CertificatePdfInput = {
  *
  * A4 landscape
  * Premium institutional certificate
- * Uses type-specific navy/metallic accents and text-only JEE Prep Hub branding.
+ * Uses type-specific navy/metallic accents and text-only PREPWIAN branding.
  */
 
 export async function generateCertificatePdf(input: CertificatePdfInput): Promise<Uint8Array> {
@@ -174,7 +174,7 @@ export async function generateCertificatePdf(input: CertificatePdfInput): Promis
       thickness: 1.2,
       color: paleGold,
     });
-    page.drawText("JEE PREP HUB", { x: 50, y: H - 68, size: 21, font: serifBold, color: cream });
+    page.drawText("PREPWIAN", { x: 50, y: H - 68, size: 21, font: serifBold, color: cream });
     page.drawText("L E A R N    •    G R O W    •    S U C C E E D", {
       x: 51,
       y: H - 87,
@@ -485,7 +485,7 @@ export async function generateCertificatePdf(input: CertificatePdfInput): Promis
       thickness: 0.75,
       color: navy,
     });
-    const issuer = input.issuerName || "JEE PREP HUB TEAM";
+    const issuer = input.issuerName || "PREPWIAN TEAM";
     centerText(page, issuer.toUpperCase(), 402, 44, 7, textFont(issuer, sansBold), ink, 1, 1.2);
     page.drawLine({
       start: { x: 608, y: 47 },

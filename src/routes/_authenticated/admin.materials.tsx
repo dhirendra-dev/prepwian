@@ -15,7 +15,7 @@ import { getMaterialPasswordMeta, setMaterialPassword } from "@/lib/materials-ga
 import { z } from "zod";
 
 export const Route = createFileRoute("/_authenticated/admin/materials")({
-  head: () => ({ meta: [{ title: "Admin · Materials — JEE Prep Hub" }] }),
+  head: () => ({ meta: [{ title: "Admin · Materials — PREPWIAN" }] }),
   ssr: false,
   beforeLoad: async ({ context }) => {
     const { data } = await supabase.from("user_roles").select("role").eq("user_id", context.user.id).eq("role", "admin").maybeSingle();

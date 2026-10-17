@@ -204,7 +204,7 @@ function ChoiceFillingAssistant() {
               <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0" />
 
               <p className="text-sm leading-6 text-muted-foreground">
-                JEE Prep Hub only organizes and validates your
+                PREPWIAN only organizes and validates your
                 personal choices. It does not submit choices to
                 JoSAA and does not guarantee seat allocation.
               </p>

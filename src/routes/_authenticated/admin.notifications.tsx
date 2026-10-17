@@ -16,7 +16,7 @@ import { z } from "zod";
 import { formatDistanceToNow } from "date-fns";
 
 export const Route = createFileRoute("/_authenticated/admin/notifications")({
-  head: () => ({ meta: [{ title: "Admin · Notifications — JEE Prep Hub" }] }),
+  head: () => ({ meta: [{ title: "Admin · Notifications — PREPWIAN" }] }),
   ssr: false,
   beforeLoad: async ({ context }) => {
     await requirePermission(context.user.id, "notifications");

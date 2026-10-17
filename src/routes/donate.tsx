@@ -6,18 +6,18 @@ export const Route = createFileRoute("/donate")({
   head: () => ({
     meta: [
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Support JEE Prep Hub" },
-      { name: "twitter:description", content: "Help us keep JEE Prep Hub useful and accessible for aspirants." },
-      { title: "Support JEE Prep Hub" },
+      { name: "twitter:title", content: "Support PREPWIAN" },
+      { name: "twitter:description", content: "Help us keep PREPWIAN useful and accessible for aspirants." },
+      { title: "Support PREPWIAN" },
       {
         name: "description",
         content:
-          "Support JEE Prep Hub and help keep its study tools and community available to aspirants.",
+          "Support PREPWIAN and help keep its study tools and community available to aspirants.",
       },
-      { property: "og:title", content: "Support JEE Prep Hub" },
+      { property: "og:title", content: "Support PREPWIAN" },
       {
         property: "og:description",
-        content: "Help us keep JEE Prep Hub useful and accessible for aspirants.",
+        content: "Help us keep PREPWIAN useful and accessible for aspirants.",
       },
       { property: "og:type", content: "website" },
     ],

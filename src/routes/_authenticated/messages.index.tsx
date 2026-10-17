@@ -26,17 +26,17 @@ export const Route = createFileRoute("/_authenticated/messages/")({
       { property: "og:description", content: "Your direct messages and joined study groups in one place." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Squad — JEE Prep Hub" },
+      { name: "twitter:title", content: "Squad — PREPWIAN" },
       { name: "twitter:description", content: "Your direct messages and joined study groups in one place." },
 
-      { title: "Squad — JEE Prep Hub" },
+      { title: "Squad — PREPWIAN" },
       {
         name: "description",
         content: "Your direct messages and joined study groups in one place.",
       },
       {
         property: "og:title",
-        content: "Squad — JEE Prep Hub",
+        content: "Squad — PREPWIAN",
       },
     ],
   }),

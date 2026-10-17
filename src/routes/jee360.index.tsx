@@ -23,12 +23,12 @@ import { defaultPlanRange, useAppStore } from "@/lib/jee360/store";
 
 export const Route = createFileRoute("/jee360/")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Study Overview — JEE 360 | JEE Prep Hub" },
+      { property: "og:title", content: "Study Overview — JEE 360 | PREPWIAN" },
       { property: "og:description", content: "Review lectures, backlog and mock-test progress in your local JEE 360 workspace." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Study Overview — JEE 360 | JEE Prep Hub" },
-      { name: "twitter:description", content: "Review lectures, backlog and mock-test progress in your local JEE 360 workspace." },{ title: "Study Overview — JEE 360 | JEE Prep Hub" }, { name: "description", content: "Review lectures, backlog and mock-test progress in your local JEE 360 workspace." }] }),
+      { name: "twitter:title", content: "Study Overview — JEE 360 | PREPWIAN" },
+      { name: "twitter:description", content: "Review lectures, backlog and mock-test progress in your local JEE 360 workspace." },{ title: "Study Overview — JEE 360 | PREPWIAN" }, { name: "description", content: "Review lectures, backlog and mock-test progress in your local JEE 360 workspace." }] }),
  component: Home });
 
 function Stat({

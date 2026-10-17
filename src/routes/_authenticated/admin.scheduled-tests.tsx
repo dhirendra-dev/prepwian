@@ -28,7 +28,7 @@ export const Route = createFileRoute("/_authenticated/admin/scheduled-tests")({
   },
   head: () => ({
     meta: [
-      { title: "Scheduled Test Runs — Admin | JEE Prep Hub" },
+      { title: "Scheduled Test Runs — Admin | PREPWIAN" },
       { name: "description", content: "Monitor automated AI test generation runs, inspect failures, retry, reschedule or pause upcoming CBT releases." },
       { property: "og:title", content: "Scheduled Test Runs — Admin" },
       { property: "og:description", content: "Success and failure details plus retry controls for auto-generated JEE tests." },

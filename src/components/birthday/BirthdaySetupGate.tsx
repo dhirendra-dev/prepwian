@@ -290,7 +290,7 @@ export function BirthdaySetupGate({ children }: { children: ReactNode }) {
               id="birthday-setup-description"
               className="mx-auto mt-2 max-w-lg text-[13px] leading-5 text-muted-foreground sm:mt-3 sm:text-base sm:leading-6"
             >
-              Add your birthday to unlock your personalized celebration and join the JEE Prep Hub
+              Add your birthday to unlock your personalized celebration and join the PREPWIAN
               birthday community.
             </p>
           </div>
@@ -456,7 +456,7 @@ export function BirthdaySetupGate({ children }: { children: ReactNode }) {
                   )}
                 </Button>
                 <p className="mt-2 text-center text-[10px] leading-4 text-muted-foreground sm:mt-3 sm:text-[11px] sm:leading-5">
-                  This one-time setup is required before opening protected JEE Prep Hub pages.
+                  This one-time setup is required before opening protected PREPWIAN pages.
                 </p>
               </form>
             </>

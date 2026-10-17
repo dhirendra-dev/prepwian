@@ -77,22 +77,22 @@ export const Route = createFileRoute("/notices")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Notice Board — JEE Prep Hub" },
-      { name: "twitter:description", content: "Official announcements and updates for JEE Prep Hub students." },
+      { name: "twitter:title", content: "Notice Board — PREPWIAN" },
+      { name: "twitter:description", content: "Official announcements and updates for PREPWIAN students." },
 
-      { title: "Notice Board — JEE Prep Hub" },
+      { title: "Notice Board — PREPWIAN" },
       {
         name: "description",
         content:
-          "Official announcements, exam updates, results, events and important updates from JEE Prep Hub.",
+          "Official announcements, exam updates, results, events and important updates from PREPWIAN.",
       },
       {
         property: "og:title",
-        content: "Notice Board — JEE Prep Hub",
+        content: "Notice Board — PREPWIAN",
       },
       {
         property: "og:description",
-        content: "Official announcements and updates for JEE Prep Hub students.",
+        content: "Official announcements and updates for PREPWIAN students.",
       },
     ],
     links: [
@@ -269,7 +269,7 @@ function NoticesPage() {
 
             <p className="mx-auto mt-3 max-w-2xl text-sm leading-5 text-muted-foreground sm:text-base">
               Important updates, exam announcements, results, events and everything you need to know
-              from JEE Prep Hub.
+              from PREPWIAN.
             </p>
 
             <div className="mt-4 flex items-center justify-center gap-2">
@@ -365,7 +365,7 @@ function NoticesPage() {
                 <SectionHeading
                   icon={<Megaphone className="h-3.5 w-3.5" />}
                   title={pinned.length > 0 ? "Latest updates" : "Announcements"}
-                  description="The newest updates from JEE Prep Hub"
+                  description="The newest updates from PREPWIAN"
                 />
 
                 <div className="space-y-3">
@@ -392,7 +392,7 @@ function NoticesPage() {
             <h2 className="mt-1 text-xl font-bold tracking-tight">Your opinion matters</h2>
 
             <p className="mt-1 text-sm text-muted-foreground">
-              Participate in community polls and help shape JEE Prep Hub.
+              Participate in community polls and help shape PREPWIAN.
             </p>
           </div>
 

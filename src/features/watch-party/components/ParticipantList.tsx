@@ -1,5 +1,5 @@
 // ============================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // Participant list
 // File: src/features/watch-party/components/ParticipantList.tsx
 // ============================================================

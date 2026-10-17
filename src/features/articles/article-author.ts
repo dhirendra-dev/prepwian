@@ -43,7 +43,7 @@ export async function resolveArticleAuthorIdentity<T extends ArticleWithAuthorId
   if (!authorIds.length) {
     return articles.map((article) => ({
       ...article,
-      author_name: "JEE Prep Hub author",
+      author_name: "PREPWIAN author",
       author_avatar_url: null,
       author_username: null,
     }));

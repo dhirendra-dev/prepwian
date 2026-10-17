@@ -408,12 +408,12 @@ export default function LectureCommandCenter() {
     <main className="lcc-shell">
       <div className="lcc-app">
         <aside className="lcc-sidebar" aria-label="Lecture workspace navigation">
-          <div className="lcc-brand" aria-label="JEE Prep Hub study system">
+          <div className="lcc-brand" aria-label="PREPWIAN study system">
             <span className="lcc-brand-mark">
               <Sparkles size={19} />
             </span>
             <span>
-              JEE Prep Hub<small>STUDY SYSTEM</small>
+              PREPWIAN<small>STUDY SYSTEM</small>
             </span>
           </div>
           <div className="lcc-side-label">WORKSPACE</div>
@@ -1286,7 +1286,7 @@ export default function LectureCommandCenter() {
           </div>
           <footer className="lcc-footer">
             <span>
-              JEE PREP HUB <i>·</i> LECTURE COMMAND CENTER
+              PREPWIAN <i>·</i> LECTURE COMMAND CENTER
             </span>
             <span>Consistency over intensity.</span>
           </footer>

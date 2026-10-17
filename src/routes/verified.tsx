@@ -10,15 +10,15 @@ export const Route = createFileRoute("/verified")({
   component: VerifiedPage,
   head: () => ({
     meta: [
-      { property: "og:title", content: "How to get the Blue Tick — JEE Prep Hub" },
-      { property: "og:description", content: "Learn how to earn the verified blue tick on JEE Prep Hub by staying active, consistent, and helpful." },
+      { property: "og:title", content: "How to get the Blue Tick — PREPWIAN" },
+      { property: "og:description", content: "Learn how to earn the verified blue tick on PREPWIAN by staying active, consistent, and helpful." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "How to get the Blue Tick — JEE Prep Hub" },
-      { name: "twitter:description", content: "Learn how to earn the verified blue tick on JEE Prep Hub by staying active, consistent, and helpful." },
+      { name: "twitter:title", content: "How to get the Blue Tick — PREPWIAN" },
+      { name: "twitter:description", content: "Learn how to earn the verified blue tick on PREPWIAN by staying active, consistent, and helpful." },
 
-      { title: "How to get the Blue Tick — JEE Prep Hub" },
-      { name: "description", content: "Learn how to earn the verified blue tick on JEE Prep Hub by staying active, consistent, and helpful." },
+      { title: "How to get the Blue Tick — PREPWIAN" },
+      { name: "description", content: "Learn how to earn the verified blue tick on PREPWIAN by staying active, consistent, and helpful." },
     ],
   }),
 });

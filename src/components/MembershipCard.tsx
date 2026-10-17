@@ -6,7 +6,7 @@ import { BadgeCheck, Crown, Flame } from "lucide-react";
 
 /**
  * The member's identity card — a glass "credit card" showing who they are on
- * JEE Prep Hub. Used on the profile page and in the welcome overlay.
+ * PREPWIAN. Used on the profile page and in the welcome overlay.
  */
 export function MembershipCard({ userId, className = "" }: { userId: string; className?: string }) {
   const { isPro } = useProStatus(userId);
@@ -54,7 +54,7 @@ export function MembershipCard({ userId, className = "" }: { userId: string; cla
           <Logo className="h-8 w-8 shrink-0 md:h-10 md:w-10 lg:h-12 lg:w-12" />
           <div className="min-w-0">
             <p className="truncate text-[10px] font-bold uppercase tracking-[0.22em] text-muted-foreground">
-              JEE Prep Hub
+              PREPWIAN
             </p>
             <p className="truncate text-[11px] font-semibold">
               {isPro ? "Premium membership" : "Member card"}

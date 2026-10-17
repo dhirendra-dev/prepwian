@@ -47,15 +47,15 @@ const ADMIN_EMAIL = "jeeprephubofficial@gmail.com";
 export const Route = createFileRoute("/_authenticated/contact")({
   head: () => ({
     meta: [
-      { property: "og:title", content: "Contact Admin — JEE Prep Hub" },
-      { property: "og:description", content: "Get help from the JEE Prep Hub support team." },
+      { property: "og:title", content: "Contact Admin — PREPWIAN" },
+      { property: "og:description", content: "Get help from the PREPWIAN support team." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Contact Admin — JEE Prep Hub" },
-      { name: "twitter:description", content: "Get help from the JEE Prep Hub support team." },
+      { name: "twitter:title", content: "Contact Admin — PREPWIAN" },
+      { name: "twitter:description", content: "Get help from the PREPWIAN support team." },
 
-      { title: "Contact Admin — JEE Prep Hub" },
-      { name: "description", content: "Get help from the JEE Prep Hub support team." },
+      { title: "Contact Admin — PREPWIAN" },
+      { name: "description", content: "Get help from the PREPWIAN support team." },
       { name: "robots", content: "noindex, follow" },
     ],
   }),
@@ -131,7 +131,7 @@ function ContactAdminPage() {
       setSent(true);
       setSubject("");
       setBody("");
-      toast.success("Message sent to the JEE Prep Hub team.");
+      toast.success("Message sent to the PREPWIAN team.");
     } catch (error) {
       const message =
         error instanceof Error && error.message && !error.message.includes("[object")
@@ -144,7 +144,7 @@ function ContactAdminPage() {
   };
 
   const mailtoBody = encodeURIComponent(
-    `${body}\n\nCategory: ${categories.find((item) => item.id === category)?.label ?? "Other"}\nPriority: ${priority}\n\n— Sent from JEE Prep Hub\nUser ID: ${user.id}\nEmail: ${user.email ?? "n/a"}`,
+    `${body}\n\nCategory: ${categories.find((item) => item.id === category)?.label ?? "Other"}\nPriority: ${priority}\n\n— Sent from PREPWIAN\nUser ID: ${user.id}\nEmail: ${user.email ?? "n/a"}`,
   );
   const mailto = `mailto:${ADMIN_EMAIL}?subject=${encodeURIComponent(
     subject || "Support request",
@@ -159,7 +159,7 @@ function ContactAdminPage() {
           <div className="relative flex min-w-0 flex-col justify-between gap-4 sm:flex-row sm:items-center sm:gap-5">
             <div className="max-w-2xl">
               <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3 py-1.5 text-xs font-semibold text-primary">
-                <Sparkles className="h-3.5 w-3.5" /> JEE Prep Hub Support
+                <Sparkles className="h-3.5 w-3.5" /> PREPWIAN Support
               </div>
               <h1 className="break-words font-display text-[1.7rem] font-bold leading-tight tracking-tight sm:text-4xl">
                 How can we <span className="text-primary">help?</span>
@@ -394,7 +394,7 @@ function ContactAdminPage() {
               </Button>
             </div>
             <p className="text-center text-xs text-muted-foreground">
-              By sending, you agree to share this information with the JEE Prep Hub support team.
+              By sending, you agree to share this information with the PREPWIAN support team.
             </p>
           </form>
 

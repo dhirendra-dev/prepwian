@@ -8,13 +8,13 @@ import { consumePostLoginChoice } from "@/lib/post-login-destination";
 export const Route = createFileRoute("/start")({
   head: () => ({ meta: [
       { name: "description", content: "Choose resources, practice tests, focus tools or community spaces for your next study session." },
-      { property: "og:title", content: "Choose your next step — JEE Prep Hub" },
+      { property: "og:title", content: "Choose your next step — PREPWIAN" },
       { property: "og:description", content: "Choose resources, practice tests, focus tools or community spaces for your next study session." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Choose your next step — JEE Prep Hub" },
+      { name: "twitter:title", content: "Choose your next step — PREPWIAN" },
       { name: "twitter:description", content: "Choose resources, practice tests, focus tools or community spaces for your next study session." },
-{ title: "Choose your next step — JEE Prep Hub" }] }),
+{ title: "Choose your next step — PREPWIAN" }] }),
   component: StartPage,
 });
 

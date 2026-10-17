@@ -13,12 +13,12 @@ import { useAppStore } from "@/lib/jee360/store";
 
 export const Route = createFileRoute("/jee360/memory")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Revision Cards — JEE 360 | JEE Prep Hub" },
+      { property: "og:title", content: "Revision Cards — JEE 360 | PREPWIAN" },
       { property: "og:description", content: "Review study cards using spaced repetition in JEE 360." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Revision Cards — JEE 360 | JEE Prep Hub" },
-      { name: "twitter:description", content: "Review study cards using spaced repetition in JEE 360." },{ title: "Revision Cards — JEE 360 | JEE Prep Hub" }, { name: "description", content: "Review study cards using spaced repetition in JEE 360." }] }),
+      { name: "twitter:title", content: "Revision Cards — JEE 360 | PREPWIAN" },
+      { name: "twitter:description", content: "Review study cards using spaced repetition in JEE 360." },{ title: "Revision Cards — JEE 360 | PREPWIAN" }, { name: "description", content: "Review study cards using spaced repetition in JEE 360." }] }),
  component: MemoryPage });
 
 function MemoryPage() {

@@ -16,7 +16,7 @@ export function XpRewardTracker() {
     if (!userId) return;
     void claimLoginXp()
       .then((reward) => {
-        if (reward.awarded) showXpRewardToast(reward.amount, "Welcome back to JEE Prep Hub");
+        if (reward.awarded) showXpRewardToast(reward.amount, "Welcome back to PREPWIAN");
       })
       .catch(() => {});
   }, [userId]);

@@ -21,25 +21,25 @@ export const Route = createFileRoute("/official")({
   head: () => ({
     meta: [
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Official Website — JEE Prep Hub" },
-      { name: "twitter:description", content: "The only official JEE Prep Hub domain is jeeprephub.co.in." },
+      { name: "twitter:title", content: "Official Website — PREPWIAN" },
+      { name: "twitter:description", content: "The only official PREPWIAN domain is jeeprephub.co.in." },
 
       {
-        title: "Official Website — JEE Prep Hub",
+        title: "Official Website — PREPWIAN",
       },
       {
         name: "description",
         content:
-          "Verify the official JEE Prep Hub website. The only official domain is jeeprephub.co.in.",
+          "Verify the official PREPWIAN website. The only official domain is jeeprephub.co.in.",
       },
       {
         property: "og:title",
-        content: "Official Website — JEE Prep Hub",
+        content: "Official Website — PREPWIAN",
       },
       {
         property: "og:description",
         content:
-          "The only official JEE Prep Hub domain is jeeprephub.co.in.",
+          "The only official PREPWIAN domain is jeeprephub.co.in.",
       },
       {
         property: "og:type",
@@ -102,7 +102,7 @@ function OfficialWebsitePage() {
             </span>
 
             <span>
-              <strong>JEE Prep Hub</strong>
+              <strong>PREPWIAN</strong>
               <small>Official Website</small>
             </span>
           </Link>
@@ -129,7 +129,7 @@ function OfficialWebsitePage() {
             </button>
 
             <Link to="/app" className="official-nav-cta">
-              Open JEE Prep Hub
+              Open PREPWIAN
               <ArrowRight className="h-3.5 w-3.5" />
             </Link>
 
@@ -167,7 +167,7 @@ function OfficialWebsitePage() {
             </a>
 
             <Link to="/app" onClick={() => setMobileMenu(false)}>
-              Open JEE Prep Hub
+              Open PREPWIAN
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -187,7 +187,7 @@ function OfficialWebsitePage() {
           </h1>
 
           <p>
-            If you are looking for JEE Prep Hub, there is one address you
+            If you are looking for PREPWIAN, there is one address you
             should remember. Similar names and modified domains should not be
             assumed to represent the platform.
           </p>
@@ -231,7 +231,7 @@ function OfficialWebsitePage() {
 
           <div className="official-domain-meta">
             <Globe2 className="h-4 w-4" />
-            JEE Prep Hub · Founded by Dhirendra Kumar
+            PREPWIAN · Founded by Dhirendra Kumar
           </div>
         </div>
       </section>
@@ -288,7 +288,7 @@ function OfficialWebsitePage() {
 
             <p>
               These are examples of domain patterns that someone could
-              confuse with JEE Prep Hub. They are examples only — this
+              confuse with PREPWIAN. They are examples only — this
               page does not claim that each domain currently exists or
               is malicious.
             </p>
@@ -297,7 +297,7 @@ function OfficialWebsitePage() {
               <ShieldCheck className="h-4 w-4 shrink-0" />
 
               <span>
-                Unless explicitly confirmed by JEE Prep Hub, use only
+                Unless explicitly confirmed by PREPWIAN, use only
                 <strong> jeeprephub.co.in</strong>.
               </span>
             </div>
@@ -325,7 +325,7 @@ function OfficialWebsitePage() {
           <span>02 · OFFICIAL GUIDE</span>
 
           <h2>
-            How to identify the real JEE Prep Hub.
+            How to identify the real PREPWIAN.
           </h2>
 
           <p>
@@ -337,12 +337,12 @@ function OfficialWebsitePage() {
 
         <article className="official-article">
           <div className="official-article-meta">
-            <span>JEE PREP HUB · OFFICIAL NOTICE</span>
+            <span>PREPWIAN · OFFICIAL NOTICE</span>
             <span>For JEE Aspirants</span>
           </div>
 
           <h3>
-            There is only one official JEE Prep Hub website
+            There is only one official PREPWIAN website
           </h3>
 
           <p>
@@ -355,12 +355,12 @@ function OfficialWebsitePage() {
           </p>
 
           <p>
-            JEE Prep Hub has one official web address:
+            PREPWIAN has one official web address:
             <strong> jeeprephub.co.in</strong>. This is the domain students
-            should use when accessing the official JEE Prep Hub platform.
-            A website having the words “JEE Prep Hub” in its name does
+            should use when accessing the official PREPWIAN platform.
+            A website having the words “PREPWIAN” in its name does
             not, by itself, establish that it belongs to or is operated
-            by JEE Prep Hub.
+            by PREPWIAN.
           </p>
 
           <h4>
@@ -407,7 +407,7 @@ function OfficialWebsitePage() {
             Students may come across domains that contain similar words,
             different extensions, additional terms or slightly modified
             spellings. Such addresses should not automatically be treated
-            as official JEE Prep Hub websites.
+            as official PREPWIAN websites.
           </p>
 
           <p>
@@ -417,7 +417,7 @@ function OfficialWebsitePage() {
             or is malicious. The important rule is much simpler: if the
             address is not exactly
             <strong> jeeprephub.co.in</strong>, do not assume that it is
-            an official JEE Prep Hub website unless JEE Prep Hub has
+            an official PREPWIAN website unless PREPWIAN has
             explicitly confirmed it.
           </p>
 
@@ -445,7 +445,7 @@ function OfficialWebsitePage() {
             <li>
               <strong>Be careful with forwarded links.</strong> A link
               shared in a group or social-media post is not automatically
-              an official link just because it mentions JEE Prep Hub.
+              an official link just because it mentions PREPWIAN.
             </li>
 
             <li>
@@ -468,7 +468,7 @@ function OfficialWebsitePage() {
           </p>
 
           <p>
-            If you are looking for the official JEE Prep Hub platform,
+            If you are looking for the official PREPWIAN platform,
             remember one address:
             <strong> jeeprephub.co.in</strong>.
           </p>
@@ -482,14 +482,14 @@ function OfficialWebsitePage() {
           <div className="official-founder-photo-wrap">
             <img
               src="/founder-dhirendra-portrait.jpg"
-              alt="Dhirendra Kumar, founder of JEE Prep Hub"
+              alt="Dhirendra Kumar, founder of PREPWIAN"
               className="official-founder-photo"
             />
           </div>
 
           <div className="official-founder-copy">
             <div className="official-section-label">
-              ABOUT JEE PREP HUB
+              ABOUT PREPWIAN
             </div>
 
             <h2>
@@ -497,7 +497,7 @@ function OfficialWebsitePage() {
             </h2>
 
             <p>
-              JEE Prep Hub is built for JEE Aspirants, bringing
+              PREPWIAN is built for JEE Aspirants, bringing
               preparation resources, learning tools, tests, planning
               and student-focused features together in one platform.
             </p>
@@ -528,7 +528,7 @@ function OfficialWebsitePage() {
 
           <p>
             Only jeeprephub.co.in should be treated as the official
-            JEE Prep Hub website.
+            PREPWIAN website.
           </p>
 
           <a
@@ -543,7 +543,7 @@ function OfficialWebsitePage() {
 
       <footer className="official-footer">
         <div>
-          <strong>JEE Prep Hub</strong>
+          <strong>PREPWIAN</strong>
 
           <span>
             Official Website · Founded by Dhirendra Kumar
@@ -556,7 +556,7 @@ function OfficialWebsitePage() {
           </a>
 
           <Link to="/app">
-            JEE Prep Hub
+            PREPWIAN
             <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>

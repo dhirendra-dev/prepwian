@@ -30,7 +30,7 @@ export const Route = createFileRoute("/tests/create")({
       { name: "twitter:title", content: "Create a CBT Test" },
       { name: "twitter:description", content: "PDF to JEE-style CBT in minutes, reviewed by admins before publishing." },
 
-      { title: "Create a CBT Test — JEE Prep Hub" },
+      { title: "Create a CBT Test — PREPWIAN" },
       { name: "description", content: "Upload your coaching test paper and answer key PDFs and turn them into a JEE-style CBT test for the whole community." },
       { property: "og:title", content: "Create a CBT Test" },
       { property: "og:description", content: "PDF to JEE-style CBT in minutes, reviewed by admins before publishing." },

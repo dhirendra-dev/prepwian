@@ -52,10 +52,10 @@ export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({
     meta: [
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Dashboard — JEE Prep Hub" },
+      { name: "twitter:title", content: "Dashboard — PREPWIAN" },
       { name: "twitter:description", content: "Track your study hours, rank, streaks and JEE preparation in one place." },
 
-      { title: "Dashboard — JEE Prep Hub" },
+      { title: "Dashboard — PREPWIAN" },
       {
         name: "description",
         content:
@@ -63,7 +63,7 @@ export const Route = createFileRoute("/_authenticated/dashboard")({
       },
       {
         property: "og:title",
-        content: "Dashboard — JEE Prep Hub",
+        content: "Dashboard — PREPWIAN",
       },
       {
         property: "og:description",
@@ -494,13 +494,13 @@ squadWorkspaceLoading={squadWorkspace.isLoading}
 
                 <QrCodeDialog
                   url="https://jeeprephub.co.in"
-                  title="Share JEE Prep Hub"
+                  title="Share PREPWIAN"
                   description="Invite friends — they can scan this QR with any phone camera to open the site."
                   fileName="jee-prep-hub"
                   trigger={
                     <button
                       type="button"
-                      aria-label="Share JEE Prep Hub"
+                      aria-label="Share PREPWIAN"
                       className="inline-flex h-9 shrink-0 items-center gap-1.5 rounded-xl border border-border bg-background/70 px-3 text-xs font-semibold shadow-sm backdrop-blur transition hover:bg-muted"
                     >
                       <QrCode className="h-3.5 w-3.5" />

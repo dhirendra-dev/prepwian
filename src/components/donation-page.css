@@ -1,4 +1,4 @@
-/* JEE Prep Hub donations page — responsive, theme-aware and reduced-motion friendly */
+/* PREPWIAN donations page — responsive, theme-aware and reduced-motion friendly */
 .jph-donation {
   /* Inherit the site's existing light/dark tokens; do not create a separate theme system. */
   --jph-bg: var(--background, oklch(0.945 0.03 225));

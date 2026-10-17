@@ -11,14 +11,14 @@ import { Scale, Clock, CheckCircle2, XCircle, Send, FileText, Gavel } from "luci
 
 export const Route = createFileRoute("/_authenticated/appeal")({
   head: () => ({ meta: [
-      { name: "description", content: "Submit an appeal about your JEE Prep Hub account." },
-      { property: "og:title", content: "Appeal My Account — JEE Prep Hub" },
-      { property: "og:description", content: "Submit an appeal about your JEE Prep Hub account." },
+      { name: "description", content: "Submit an appeal about your PREPWIAN account." },
+      { property: "og:title", content: "Appeal My Account — PREPWIAN" },
+      { property: "og:description", content: "Submit an appeal about your PREPWIAN account." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Appeal My Account — JEE Prep Hub" },
-      { name: "twitter:description", content: "Submit an appeal about your JEE Prep Hub account." },
-{ title: "Appeal My Account — JEE Prep Hub" }, { name: "robots", content: "noindex" }] }),
+      { name: "twitter:title", content: "Appeal My Account — PREPWIAN" },
+      { name: "twitter:description", content: "Submit an appeal about your PREPWIAN account." },
+{ title: "Appeal My Account — PREPWIAN" }, { name: "robots", content: "noindex" }] }),
   component: AppealPage,
 });
 

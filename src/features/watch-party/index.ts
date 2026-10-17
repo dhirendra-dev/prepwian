@@ -1,5 +1,5 @@
 // ================================================
-// JEE PREP HUB — WATCH PARTY
+// PREPWIAN — WATCH PARTY
 // Feature barrel exports
 // File: src/features/watch-party/index.ts
 // ================================================

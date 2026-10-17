@@ -180,7 +180,7 @@ export function BirthdaySettingsCard({ userId }: { userId: string }) {
           </Select>
         </div>
         <p className="-mt-2 text-[11px] leading-5 text-muted-foreground sm:col-span-2">
-          Used to check your birthday in the JEE Prep Hub timezone (India Standard Time). February
+          Used to check your birthday in the PREPWIAN timezone (India Standard Time). February
           29 is supported.
         </p>
         <div className="space-y-2 sm:col-span-2">
@@ -245,7 +245,7 @@ export function BirthdaySettingsCard({ userId }: { userId: string }) {
                 birthday reminders
               </span>
               <span className="mt-1 block text-xs leading-5 text-muted-foreground">
-                When you use JEE Prep Hub, we check for upcoming birthdays shared with the community
+                When you use PREPWIAN, we check for upcoming birthdays shared with the community
                 and add reminders to Notifications. Private birthdays are never included.
               </span>
             </span>

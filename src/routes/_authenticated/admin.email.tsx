@@ -31,7 +31,7 @@ export const Route = createFileRoute("/_authenticated/admin/email")({
   head: () => ({
     meta: [
       {
-        title: "Admin · Email Center — JEE Prep Hub",
+        title: "Admin · Email Center — PREPWIAN",
       },
       {
         name: "robots",
@@ -421,7 +421,7 @@ function AdminEmailCenter() {
 
             <p className="mt-1 text-sm text-muted-foreground">
               Send individual Gmail messages or platform-wide
-              JEE Prep Hub announcements.
+              PREPWIAN announcements.
             </p>
           </div>
 
@@ -520,7 +520,7 @@ function AdminEmailCenter() {
               <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-amber-600 dark:text-amber-400" />
 
               <p className="text-xs text-muted-foreground">
-                Your Gmail password is never stored by JEE Prep Hub.
+                Your Gmail password is never stored by PREPWIAN.
                 Google handles the authorization, while the server
                 securely stores an encrypted refresh token.
               </p>
@@ -581,7 +581,7 @@ function AdminEmailCenter() {
                     event.target.value,
                   )
                 }
-                placeholder="JEE Prep Hub"
+                placeholder="PREPWIAN"
               />
 
               <p className="mt-1 text-right text-xs text-muted-foreground">
@@ -645,7 +645,7 @@ function AdminEmailCenter() {
 
             <div>
               <h2 className="font-semibold">
-                JEE Prep Hub Email Broadcast
+                PREPWIAN Email Broadcast
               </h2>
 
               <p className="text-xs text-muted-foreground">
@@ -815,7 +815,7 @@ function AdminEmailCenter() {
                       event.target.value,
                     )
                   }
-                  placeholder="Important JEE Prep Hub announcement"
+                  placeholder="Important PREPWIAN announcement"
                 />
 
                 <p className="mt-1 text-right text-xs text-muted-foreground">

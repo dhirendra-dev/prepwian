@@ -9,12 +9,12 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/_authenticated/watch-history")({
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "Watch History — JEE Prep Hub" },
+      { name: "twitter:title", content: "Watch History — PREPWIAN" },
       { name: "twitter:description", content: "Resume any lecture exactly where you left off." },
 
-      { title: "Watch History — JEE Prep Hub" },
+      { title: "Watch History — PREPWIAN" },
       { name: "description", content: "Every lecture you have watched on Pulse, with how far you got and quick links to resume." },
-      { property: "og:title", content: "Watch History — JEE Prep Hub" },
+      { property: "og:title", content: "Watch History — PREPWIAN" },
       { property: "og:description", content: "Resume any lecture exactly where you left off." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

@@ -19,15 +19,15 @@ export const Route = createFileRoute("/community")({
   }),
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "Community Chat — JEE Prep Hub" },
+      { name: "twitter:title", content: "Community Chat — PREPWIAN" },
       { name: "twitter:description", content: "Live chat, subject-wise doubt solving with AI, and official notices for JEE aspirants." },
-      { title: "Community Chat — JEE Prep Hub" },
+      { title: "Community Chat — PREPWIAN" },
       {
         name: "description",
         content:
           "Live JEE community chat: talk to fellow aspirants, ask subject doubts with AI help, and read official notices — all in one room.",
       },
-      { property: "og:title", content: "Community Chat — JEE Prep Hub" },
+      { property: "og:title", content: "Community Chat — PREPWIAN" },
       {
         property: "og:description",
         content:

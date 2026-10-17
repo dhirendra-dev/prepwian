@@ -105,15 +105,15 @@ function messageTitle(message: string) {
 export const Route = createFileRoute("/_authenticated/developer")({
   head: () => ({
     meta: [
-      { name: "description", content: "Manage approved development access for JEE Prep Hub." },
-      { property: "og:title", content: "Developer Portal — JEE Prep Hub" },
-      { property: "og:description", content: "Manage approved development access for JEE Prep Hub." },
+      { name: "description", content: "Manage approved development access for PREPWIAN." },
+      { property: "og:title", content: "Developer Portal — PREPWIAN" },
+      { property: "og:description", content: "Manage approved development access for PREPWIAN." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Developer Portal — JEE Prep Hub" },
-      { name: "twitter:description", content: "Manage approved development access for JEE Prep Hub." },
+      { name: "twitter:title", content: "Developer Portal — PREPWIAN" },
+      { name: "twitter:description", content: "Manage approved development access for PREPWIAN." },
 
-      { title: "Developer Portal — JEE Prep Hub" },
+      { title: "Developer Portal — PREPWIAN" },
       { name: "robots", content: "noindex, nofollow" },
     ],
   }),
@@ -388,7 +388,7 @@ function GitHubDeveloperPortal() {
         <div className="gh-wrap">
           <section className="gh-config">
             <div className="gh-brand-icon">⌘</div>
-            <p className="gh-overline">JEE PREP HUB · DEVELOPER PORTAL</p>
+            <p className="gh-overline">PREPWIAN · DEVELOPER PORTAL</p>
             <h1>Connect your GitHub repository</h1>
             <p>
               This page displays real repository information: commits, branches, releases, pull
@@ -419,7 +419,7 @@ function GitHubDeveloperPortal() {
     <main className="gh-portal">
       <div className="gh-wrap">
         <div className="gh-breadcrumb">
-          <a href="/">JEE Prep Hub</a>
+          <a href="/">PREPWIAN</a>
           <span>/</span>
           <strong>Developer</strong>
           <span className="gh-public-pill">Public project view</span>
@@ -454,7 +454,7 @@ function GitHubDeveloperPortal() {
                   </div>
                   <h1>{repo.name.replace(/[-_]/g, " ")}</h1>
                   <p>
-                    {repo.description || "JEE Prep Hub source repository and development history."}
+                    {repo.description || "PREPWIAN source repository and development history."}
                   </p>
                 </div>
                 <div className="gh-head-actions">

@@ -4,14 +4,14 @@ import GoogleSearchHome from "@/features/search/GoogleSearchHome";
 export const Route = createFileRoute("/searches")({
   head: () => ({
     meta: [
-      { property: "og:title", content: "Search JEE Resources — JEE Prep Hub" },
+      { property: "og:title", content: "Search JEE Resources — PREPWIAN" },
       { property: "og:description", content: "Search notes, PYQs, articles, lectures, questions and study resources for JEE preparation." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Search JEE Resources — JEE Prep Hub" },
+      { name: "twitter:title", content: "Search JEE Resources — PREPWIAN" },
       { name: "twitter:description", content: "Search notes, PYQs, articles, lectures, questions and study resources for JEE preparation." },
 
-      { title: "Search JEE Resources — JEE Prep Hub" },
+      { title: "Search JEE Resources — PREPWIAN" },
       {
         name: "description",
         content:

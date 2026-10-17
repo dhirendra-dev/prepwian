@@ -18,12 +18,12 @@ import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/jee360/plans")({
   head: () => ({ meta: [
-      { property: "og:title", content: "Study Plans — JEE 360 | JEE Prep Hub" },
+      { property: "og:title", content: "Study Plans — JEE 360 | PREPWIAN" },
       { property: "og:description", content: "Organize JEE preparation with lecture and revision plans." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Study Plans — JEE 360 | JEE Prep Hub" },
-      { name: "twitter:description", content: "Organize JEE preparation with lecture and revision plans." },{ title: "Study Plans — JEE 360 | JEE Prep Hub" }, { name: "description", content: "Organize JEE preparation with lecture and revision plans." }] }),
+      { name: "twitter:title", content: "Study Plans — JEE 360 | PREPWIAN" },
+      { name: "twitter:description", content: "Organize JEE preparation with lecture and revision plans." },{ title: "Study Plans — JEE 360 | PREPWIAN" }, { name: "description", content: "Organize JEE preparation with lecture and revision plans." }] }),
  component: PlansPage });
 
 const KIND_LABEL: Record<string, string> = {

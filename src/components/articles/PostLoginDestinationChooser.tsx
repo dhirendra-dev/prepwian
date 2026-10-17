@@ -5,7 +5,7 @@ export function PostLoginDestinationChooser({ userLabel }: { userLabel?: string 
   return (
     <main className="articles-destination-page">
       <section className="articles-destination-shell" aria-labelledby="articles-destination-title">
-        <span className="articles-destination-eyebrow">JEE PREP HUB</span>
+        <span className="articles-destination-eyebrow">PREPWIAN</span>
         <h1 id="articles-destination-title">Where would you like to go?</h1>
         <p className="articles-destination-subtitle">
           {userLabel ? `Welcome back, ${userLabel}. ` : "Welcome back. "}

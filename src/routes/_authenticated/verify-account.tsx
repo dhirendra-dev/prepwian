@@ -14,16 +14,16 @@ import {
 export const Route = createFileRoute("/_authenticated/verify-account")({
   head: () => ({
     meta: [
-      { name: "description", content: "Complete your JEE Prep Hub account verification." },
-      { property: "og:title", content: "Verify Account — JEE Prep Hub" },
-      { property: "og:description", content: "Complete your JEE Prep Hub account verification." },
+      { name: "description", content: "Complete your PREPWIAN account verification." },
+      { property: "og:title", content: "Verify Account — PREPWIAN" },
+      { property: "og:description", content: "Complete your PREPWIAN account verification." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Verify Account — JEE Prep Hub" },
-      { name: "twitter:description", content: "Complete your JEE Prep Hub account verification." },
+      { name: "twitter:title", content: "Verify Account — PREPWIAN" },
+      { name: "twitter:description", content: "Complete your PREPWIAN account verification." },
 
       {
-        title: "Verify Account — JEE Prep Hub",
+        title: "Verify Account — PREPWIAN",
       },
       {
         name: "robots",
@@ -145,7 +145,7 @@ function VerifyAccountPage() {
 
   function contactAdmin() {
     const message = encodeURIComponent(
-      `Hello JEE Prep Hub Admin,\n\nI need help verifying my account.\n\nMy registered email: ${email}\n\nPlease provide my account verification code.`,
+      `Hello PREPWIAN Admin,\n\nI need help verifying my account.\n\nMy registered email: ${email}\n\nPlease provide my account verification code.`,
     );
 
     window.open(`https://wa.me/?text=${message}`, "_blank");
@@ -176,7 +176,7 @@ function VerifyAccountPage() {
             </h1>
 
             <p className="mt-2 text-sm text-muted-foreground">
-              Your JEE Prep Hub account is waiting for verification.
+              Your PREPWIAN account is waiting for verification.
             </p>
           </div>
 
@@ -271,7 +271,7 @@ function VerifyAccountPage() {
           </Button>
 
           <p className="mt-5 text-center text-[11px] text-muted-foreground">
-            JEE Prep Hub · Account Verification
+            PREPWIAN · Account Verification
           </p>
         </div>
       </div>

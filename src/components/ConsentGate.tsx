@@ -224,7 +224,7 @@ export function ConsentGate({
 
         <p className="mt-3 text-center text-sm leading-6 text-muted-foreground">
           This account currently has restricted access. You must complete
-          the required account consent before using JEE Prep Hub.
+          the required account consent before using PREPWIAN.
         </p>
 
         {error && (

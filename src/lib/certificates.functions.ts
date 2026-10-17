@@ -75,7 +75,7 @@ function asCertificateType(value: unknown): CertificateType {
     subtitle: typeof row.subtitle === "string" ? row.subtitle : "",
     template_key: (row.template_key as CertificateTemplateKey) || "ornate",
     certificate_kind: (row.certificate_kind as CertificateKind) || "achievement",
-    issuer_name: typeof row.issuer_name === "string" ? row.issuer_name : "JEE Prep Hub Team",
+    issuer_name: typeof row.issuer_name === "string" ? row.issuer_name : "PREPWIAN Team",
     detail_fields: Array.isArray(row.detail_fields)
       ? row.detail_fields.filter(isCertificateDetailField).sort((a, b) => a.order - b.order)
       : [],
@@ -245,13 +245,13 @@ async function evaluateForUser(sb: ReturnType<typeof publicClient>, userId: stri
   }
   const normalizeSubject = (subject: string) => subject.toLowerCase().replace(/[^a-z]/g, "");
   const currentDetails: Record<string, string> = {
-    membership_type: "JEE Prep Hub member",
+    membership_type: "PREPWIAN member",
     member_since: profile?.created_at
       ? new Date(profile.created_at).toLocaleDateString("en-IN")
       : "",
     join_date: profile?.created_at ? new Date(profile.created_at).toLocaleDateString("en-IN") : "",
     membership_duration: memberDays ? `${memberDays} days` : "",
-    community_name: "JEE Prep Hub",
+    community_name: "PREPWIAN",
     consecutive_days: String(longestStreak || ""),
     completed_pomodoro_sessions: String(pomoCount || ""),
     total_study_hours: totalHours ? totalHours.toFixed(1) : "",
@@ -1073,7 +1073,7 @@ export const adminAwardCertificate = createServerFn({ method: "POST" })
     let templateKey: CertificateTemplateKey = data.template_key;
     let kind: CertificateKind = data.certificate_kind;
     let category = data.category;
-    let issuerName = data.issuer_name || "JEE Prep Hub Team";
+    let issuerName = data.issuer_name || "PREPWIAN Team";
     let savedFields: CertificateDetailValue[] = [];
     const certificateTypeId: string | null = data.certificate_type_id ?? null;
     if (certificateTypeId) {

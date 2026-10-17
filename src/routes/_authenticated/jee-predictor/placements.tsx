@@ -265,7 +265,7 @@ function PlacementExplorer() {
 
                 <p className="mx-auto mt-2 max-w-lg text-sm text-muted-foreground">
                   Verified placement data has not been imported
-                  for the selected filters yet. JEE Prep Hub
+                  for the selected filters yet. PREPWIAN
                   won't display invented placement figures.
                 </p>
               </CardContent>

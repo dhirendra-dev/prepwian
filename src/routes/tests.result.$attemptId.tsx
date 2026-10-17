@@ -15,13 +15,13 @@ import { useEffect, useMemo, useState } from "react";
 export const Route = createFileRoute("/tests/result/$attemptId")({
   head: () => ({ meta: [
       { name: "description", content: "Review your CBT score, saved responses and question analysis." },
-      { property: "og:title", content: "Test Result | JEE Prep Hub" },
+      { property: "og:title", content: "Test Result | PREPWIAN" },
       { property: "og:description", content: "Review your CBT score, saved responses and question analysis." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Test Result | JEE Prep Hub" },
+      { name: "twitter:title", content: "Test Result | PREPWIAN" },
       { name: "twitter:description", content: "Review your CBT score, saved responses and question analysis." },
-{ title: "Test Result | JEE Prep Hub" }, { name: "robots", content: "noindex" }] }),
+{ title: "Test Result | PREPWIAN" }, { name: "robots", content: "noindex" }] }),
   validateSearch: (search: Record<string, unknown>): { q?: number } => {
     const n = Number(search['q']);
     return Number.isFinite(n) && n >= 1 ? { q: Math.floor(n) } : {};

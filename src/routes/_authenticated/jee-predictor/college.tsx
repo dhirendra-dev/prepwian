@@ -17,7 +17,7 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/_authenticated/jee-predictor/college")({
   head: () => ({
     meta: [
-      { title: "JEE College Predictor — JEE Prep Hub" },
+      { title: "JEE College Predictor — PREPWIAN" },
       {
         name: "description",
         content:
@@ -217,7 +217,7 @@ function CollegePredictorPage() {
 
           <div className="mt-5 rounded-xl bg-muted/50 p-3 text-xs leading-5 text-muted-foreground">
             Entering a rank is required. Results are based on the
-            historical cutoff records available in JEE Prep Hub and
+            historical cutoff records available in PREPWIAN and
             should not be treated as a guaranteed allotment.
           </div>
         </section>
@@ -268,7 +268,7 @@ function CollegePredictorPage() {
             <EmptyState
               icon={Building2}
               title="No matching records yet"
-              description="The predictor is ready, but this rank/category combination does not currently have matching cutoff data in the JEE Prep Hub dataset."
+              description="The predictor is ready, but this rank/category combination does not currently have matching cutoff data in the PREPWIAN dataset."
             />
           ) : (
             <div className="grid gap-3 sm:grid-cols-2">
