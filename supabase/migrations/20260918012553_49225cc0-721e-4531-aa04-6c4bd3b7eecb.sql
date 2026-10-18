@@ -1,1 +1,0 @@
-REVOKE SELECT (explanation) ON public.test_questions FROM anon, authenticated;

@@ -1,83 +1,52 @@
-<div align="center">
+# PREPWIAN — Personal Learning Field Guide
 
-![PREPWIAN — The Future of Preparation](public/prepwian-readme-banner.svg)
+An independently created, offline-first study workspace. This project is built as its own product with its own interaction model and visual language; it does not reuse another project's code, brand assets, theme, or database schema.
 
-# PREPWIAN
+## Included
 
-### The Future of Preparation.
-
-**Learn smarter. Practise deliberately. Improve every day.**
-
-[![React](https://img.shields.io/badge/React-19-149eca?logo=react&logoColor=white)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-8-646cff?logo=vite&logoColor=white)](https://vite.dev/)
-[![Supabase](https://img.shields.io/badge/Backend-Supabase-3ecf8e?logo=supabase&logoColor=white)](https://supabase.com/)
-
-</div>
-
----
-
-PREPWIAN is an evolving preparation workspace designed to bring learning, practice, planning, revision, assessments, and progress insights into one focused experience. It is being developed with JEE Main, JEE Advanced, and NEET preparation in mind.
-
-> **Product principle:** useful tools, clear progress, fewer distractions. Features and availability depend on the current application build and account permissions.
-
-## The preparation loop
-
-1. **Learn** — organise topics, notes, and study resources.
-2. **Practise** — build consistency through quizzes and question practice.
-3. **Plan** — structure lectures, daily targets, and backlog recovery.
-4. **Review** — inspect mistakes, revisit weak areas, and adjust the next session.
-
-## Core areas
-
-- Study resources and revision workflows
-- Practice, quizzes, and assessment experiences
-- Daily planning, lecture tracking, and backlog management
-- Focus sessions and study activity
-- Progress views and performance insights
-- Student community and account features
-- Administration and moderation tools for authorised users
-
-The list describes intended product areas; it is not a guarantee that every feature is enabled in every deployment.
-
-## Technology stack
-
-| Layer             | Technologies                                       |
-| :---------------- | :------------------------------------------------- |
-| Application       | React, TypeScript, TanStack Start, TanStack Router |
-| UI                | Tailwind CSS, Radix UI, Lucide                     |
-| Build             | Vite, ESLint, Prettier                             |
-| Data and services | Supabase, PostgreSQL, Supabase Auth, Realtime      |
+- **Overview:** a compact daily snapshot and quick navigation.
+- **Daily plan:** create and check off study tasks.
+- **Concept atlas:** create personal concepts by subject and track them as Unseen, Learning, or Clear for now.
+- **Review journal:** write short end-of-session reflections and label the session feel.
+- **Practice lab:** one clearly labelled sample question to demonstrate answer feedback.
+- **Resource shelf:** maintain a searchable index of study materials.
+- **Progress:** transparent counts based on locally saved data.
+- **Focus timer:** focus and break sessions.
+- **Command bar:** try `help`, `plan`, `atlas`, `journal`, `practice`, `resources`, or `progress`.
 
 ## Run locally
 
-Requirements: Node.js version specified in `package.json` and npm.
-
 ```bash
 npm install
-cp .env.example .env
-# Add your own development environment values to .env
 npm run dev
 ```
 
-Build the application with `npm run build`. Never commit `.env` files, service-role keys, access tokens, or other secrets.
+## Build
 
-## Project structure
-
-```text
-public/       Brand assets and static files
-src/          Routes, components, features, and application logic
-supabase/     Database configuration and migrations
-docs/         Project and student documentation
+```bash
+npm run build
+npm run preview
 ```
 
-## Development notes
+## Important limitations
 
-- Keep changes focused and preserve existing working interfaces unless a migration is intentional.
-- Validate permissions on the server/database; hiding a UI control is not an authorization boundary.
-- Do not commit credentials or real user data.
-- Test locally before deploying changes.
+This version stores tasks, concepts, reflections, and resource entries in the current browser using `localStorage`. It has no cloud account, shared sync, official syllabus dataset, real question bank, or server-side data protection yet. Do not use it as a backup for important notes. The sample question is demo content, not an official exam question.
 
-## Status
+## Next independent milestones
 
-PREPWIAN is in active development. A source archive is not the same as a deployment; changes must be committed and deployed separately.
+1. Define a new PREPWIAN data model for profiles, study plans, concepts, attempts, and reflection notes.
+2. Add authenticated cloud sync and ownership rules after configuring a fresh backend project.
+3. Add user-editable syllabus packs and question imports with provenance.
+4. Add tested analytics only where there is real recorded study or assessment data.
+
+
+## PREPWIAN backend foundation (optional setup)
+
+A fresh Supabase schema is provided in `supabase/migrations/202610180001_prepwian_learning_core.sql`. It defines PREPWIAN's own tables for profiles, study plans, tasks, concepts, reflections, resources, practice attempts, and focus sessions. User-owned tables have row-level security policies based on `auth.uid()`.
+
+1. Create a **new Supabase project for PREPWIAN**. Do not point it at another product's database.
+2. In that project's SQL Editor, review and run the migration file.
+3. Copy `.env.example` to `.env.local` and fill in the project URL and public publishable/anon key.
+4. Run `npm install`, then `npm run dev`.
+
+The client helper in `src/lib/supabase.js` is only a configuration scaffold; the current screens still use browser-local storage and have not yet been wired to cloud sync. This migration has not been applied to a live database or tested against your Supabase project. Never place a Supabase `service_role` key in browser code.

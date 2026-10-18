@@ -1,8 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /admin
-Disallow: /_authenticated
-
-Host: https://jeeprephub.co.in
-
-Sitemap: https://jeeprephub.co.in/sitemap.xml

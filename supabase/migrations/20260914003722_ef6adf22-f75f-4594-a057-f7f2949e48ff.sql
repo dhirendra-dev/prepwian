@@ -1,1 +1,0 @@
-GRANT SELECT (is_guest) ON public.profiles TO anon;
